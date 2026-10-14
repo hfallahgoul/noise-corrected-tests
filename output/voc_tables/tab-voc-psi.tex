@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\centering
+\caption{Measuring the wedge in a random-feature design. Monthly US excess returns, $n=1,141$, $d=14$ Goyal--Welch predictors, $P=2,000$ random Fourier features on a rolling window of $T=12$, so $c=P/T=167$ in every cell. $\ztil=zT/P$ is the scale-free penalty of \cref{sec:optimal-penalty}. $\Psihatn$ is exact by \cref{lem:psi-t} and requires no assumption on the design. The closed form \eqref{eq:closed-main} sees only $c$ and $z$; at this $c$ it is within a percent of its ridgeless limit $1/(c-1)=0.0060$ for the two lightest penalties, falling to $0.0023$ at $z=10^2$ and $2\times10^{-6}$ at $z=10^4$. Against a rolling-mean benchmark \cref{prop:dof} scales all of these by $1-1/T=0.917$, which is immaterial at the discrepancies this table reports. $\mathcal R$ is the sanity ratio of \cref{eq:ratio}.}
+\label{tab:voc-psi}
+\small
+\begin{tabular}{rrrrr}
+\toprule
+$\gamma$ & $z$ & $\ztil=zT/P$ & $\Psihatn$ & $\mathcal R$ \\
+\midrule
+0.1 & 1e-02 & 6.0e-05 & 5.3543 & 0.74 \\
+ & 1e+00 & 6.0e-03 & 0.5583 & 1.30 \\
+ & 1e+02 & 6.0e-01 & 0.0093 & 2.81 \\
+ & 1e+04 & 6.0e+01 & 0.0000 & 3.66 \\
+\addlinespace
+0.3 & 1e-02 & 6.0e-05 & 4.4547 & 0.47 \\
+ & 1e+00 & 6.0e-03 & 1.2401 & 0.73 \\
+ & 1e+02 & 6.0e-01 & 0.0609 & 1.30 \\
+ & 1e+04 & 6.0e+01 & 0.0001 & 1.85 \\
+\addlinespace
+1.0 & 1e-02 & 6.0e-05 & 0.8769 & 0.36 \\
+ & 1e+00 & 6.0e-03 & 0.6207 & 0.43 \\
+ & 1e+02 & 6.0e-01 & 0.0926 & 0.54 \\
+ & 1e+04 & 6.0e+01 & 0.0001 & 0.60 \\
+\addlinespace
+3.0 & 1e-02 & 6.0e-05 & 0.0602 & 0.33 \\
+ & 1e+00 & 6.0e-03 & 0.0564 & 0.34 \\
+ & 1e+02 & 6.0e-01 & 0.0164 & 0.41 \\
+ & 1e+04 & 6.0e+01 & 0.0000 & 0.38 \\
+\bottomrule
+\end{tabular}
+\end{table}

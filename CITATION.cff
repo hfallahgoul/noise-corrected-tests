@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper."
+title: "Replication package for: Noise-Corrected Tests for High-Dimensional Forecasting Models"
+authors:
+  - family-names: Fallahgoul
+    given-names: Hasan
+    affiliation: Monash University
+license: MIT
+repository-code: "https://github.com/hfallahgoul/noise-corrected-tests"
+preferred-citation:
+  type: article
+  title: "Noise-Corrected Tests for High-Dimensional Forecasting Models"
+  authors:
+    - family-names: Fallahgoul
+      given-names: Hasan
+  year: 2026

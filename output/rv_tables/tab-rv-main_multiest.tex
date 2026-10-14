@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\caption{HAR against a high-dimensional nested alternative. Daily log realized variance for SPDR S&P 500 ETF (Risk Lab identifier 84398), $n=7,438$ evaluation points, rolling window $T=250$. The benchmark is the HAR \eqref{eq:rv-har}; the alternative \eqref{eq:rv-ridge} adds lags $2,\dots,P+1$ of the same series, fitted by ridge to the HAR residuals, so the comparison is nested. $c=P/T$ and $\ztil=zT/P$. $\Psihatn$ is exact by \cref{lem:psi-t}. $R^2_{\text{incr}}$ is the mean-square gap of the alternative over HAR divided by HAR's mean squared error, negative when the larger model forecasts worse. $\mathcal R$ is the sanity ratio of \eqref{eq:ratio}, which cannot fall below one in population and equals one exactly when the systematic component vanishes. $t_{CC}$ uses the scalar plug-in $\hat\sigma^2_w\Psihat_t$; $t_{CC}^{w}$ uses the weighted correction of \cref{prop:sigma-weighted}, with the inner variance taken from first differences of the benchmark residuals, as a lagged-dependent-variable benchmark requires.}
+\label{tab:rv-main}
+\small
+\begin{tabular}{rrrrrrrrrr}
+\toprule
+$P$ & $c$ & $\ztil$ & $\Psihatn$ & $\mathcal R$ & $R^2_{\text{incr}}$ & $t_{DM}$ & $t_{CW}$ & $t_{CC}$ & $t_{CC}^{w}$ \\
+\midrule
+25 & 0.10 & 0.001 & 29.8379 & 0.67$^{\dagger}$ & $-21.6325$ & $-21.72$ & 1.08 & 3.63 & 3.68 \\
+ &  & 0.01 & 3.0318 & 1.15 & $-3.2184$ & $-23.23$ & 2.74 & $-1.09$ & $-1.68$ \\
+ &  & 0.1 & 0.5841 & 2.65 & $-1.4781$ & $-19.89$ & 3.13 & $-5.73$ & $-5.77$ \\
+ &  & 1 & 0.1941 & 2.56 & $-0.4242$ & $-15.65$ & 3.74 & $-5.48$ & $-5.37$ \\
+ &  & 10 & 0.0164 & 1.93 & $-0.0091$ & $-1.95$ & 4.21 & 1.17 & 1.36 \\
+ &  & 100 & 0.0005 & 1.41 & 0.0021 & 3.00 & 3.95 & 2.95 & 2.99 \\
+ &  & 1000 & 0.0000 & 1.30 & 0.0003 & 3.71 & 3.82 & 3.01 & 3.01 \\
+\bottomrule
+\multicolumn{10}{@{}l}{\footnotesize $^{\dagger}$ sanity ratio below one; the corrected statistic should not be read in that row.}
+\end{tabular}
+\end{table}

@@ -1,0 +1,12 @@
+====================================================================================
+Does the lag-feature result survive when the features do NOT nest the benchmark?
+  features = lags (start+1) ... (start+P) of y;  start=1 means the usual nested set
+====================================================================================
+  first lag used    nests benchmark?       AR(3) bench         HAR bench
+------------------------------------------------------------------------------------
+               2                 yes      1.005 +/-0.025      0.975 +/-0.028
+               5             no (AR)      1.002 +/-0.025      0.985 +/-0.036
+               9                  no      1.018 +/-0.025      0.956 +/-0.050
+              24                  no      0.996 +/-0.025      1.009 +/-0.031
+
+[saved] <out>/nest_check.json

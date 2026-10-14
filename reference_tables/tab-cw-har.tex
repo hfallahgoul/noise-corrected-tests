@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\caption{CW under the sharp null with a rolling-window HAR benchmark and an exogenous
+extra block. The correct rejection frequency is $0.05$ throughout. $P=25$, $\ztil=1$,
+$n=700$, $300$ replications per seed, one-sided at $5\%$. $k$ is the number of
+independent seeds averaged in the entry beside it. Bold marks a rate outside the
+$95\%$ Monte Carlo band of an exact test, $0.05\pm1.96\sqrt{0.05\cdot0.95/(300k)}$.}
+\label{tab:cw-har}
+\small
+\begin{tabular}{lcrcrc}
+\toprule
+& & \multicolumn{2}{c}{$T=250$} & \multicolumn{2}{c}{$T=1000$} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+HAR coefficients scaled by & Spectral radius & size & $k$ & size & $k$ \\
+\midrule
+0.40 & 0.877 & \textbf{0.089} & 3 & 0.043 & 1 \\
+0.70 & 0.932 & \textbf{0.117} & 1 & 0.053 & 1 \\
+0.90 & 0.969 & \textbf{0.143} & 1 & 0.040 & 1 \\
+1.00 & 0.989 & \textbf{0.238} & 3 & 0.060 & 3 \\
+\midrule
+\multicolumn{2}{@{}l}{mean $t_{\mathrm{CW}}$ at scale $1.00$} &
+  \multicolumn{2}{c}{$0.99$} & \multicolumn{2}{c}{$0.11$} \\
+\bottomrule
+\end{tabular}
+\end{table}

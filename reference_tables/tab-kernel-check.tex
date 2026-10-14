@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\caption{Design-conditional kernel at $c=0.5$, $z=0.1$, computed exactly from
+\eqref{eq:w} rather than estimated from a time average, $n=400$ and $24$
+replications. The entries are root-mean-square across $t$, which is the moment
+$\gamma_\ell=\E[2\varrho_\ell^2]$ depends on; the average across $t$ of
+$\varrho_h$ itself is a mean-zero quantity and reports only its own sampling
+error. The last two columns are what \eqref{eq:kernel-decay} asks for:
+$\sqrt T$ times the $h=1$ ratio is flat, so $\varrho_h=O(\varrho_0T^{-1/2})$,
+and the summed absolute autocovariance of the innovation-driven score is
+bounded in $T$. $\Psi(0.5,0.1)=0.5690$.}
+\label{tab:kernel-check}
+\small
+\begin{tabular}{lrrrrrr@{\qquad}rr}
+\toprule
+& $\varrho_0$ & \multicolumn{5}{c}{$\mathrm{rms}_t(\varrho_h)/\varrho_0$} & $\sqrt T\,\frac{\mathrm{rms}_t(\varrho_1)}{\varrho_0}$ & $\sum_{\ell<T}|\gamma_\ell|$\\
+\cmidrule(lr){3-7}
+& & $h=1$ & $h=2$ & $h=T/4$ & $h=T/2$ & $h=T-1$ & & \\
+\midrule
+$T=60$ & 0.5726 & 0.1104 & 0.1109 & 0.0950 & 0.0828 & 0.0163 & 0.855 & 0.2121 \\
+$T=120$ & 0.5701 & 0.0802 & 0.0799 & 0.0672 & 0.0581 & 0.0083 & 0.879 & 0.2201 \\
+$T=240$ & 0.5693 & 0.0575 & 0.0568 & 0.0483 & 0.0404 & 0.0042 & 0.891 & 0.2245 \\
+\bottomrule
+\end{tabular}
+\end{table}

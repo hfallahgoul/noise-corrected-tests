@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{The cross-section: the correction. The comparison of \cref{tab:rv-main} --- \citet{corsi2009simple} HAR against ridge on lags $2,\dots,25$ of the same series --- run on 1{,}000 realized-variance series drawn at random from the Risk Lab universe, at three penalties fixed before the panel was run. $T=250$ throughout and no penalty is chosen per asset. $\Psi(c,z)$ is the deterministic equivalent \eqref{eq:closed-main}, evaluated at the raw penalty $z=\ztil c$; it sees only $c$ and $z$ and therefore returns one number for all 1{,}000 series. $\Psihatn$ is the realised correction, reported as the cross-sectional median and interquartile range. The last column expresses $\hat\sigma^2\Psihatn$ as a share of the benchmark's own out-of-sample mean squared error.}
+\label{tab:rv-cross-psi}
+\small
+\begin{tabular}{rrrrlr}
+\toprule
+$\ztil$ & $c$ & $\Psi(c,z)$ & median $\Psihatn$ & IQR & $\hat\sigma^2\Psihatn/\MSPE_1$ \\
+\midrule
+0.1 & 0.096 & 0.1037 & 0.1015 & [0.0994, 0.1039] & 0.099 \\
+1.0 & 0.096 & 0.0853 & 0.0744 & [0.0722, 0.0763] & 0.073 \\
+10.0 & 0.096 & 0.0244 & 0.0165 & [0.0153, 0.0173] & 0.016 \\
+\bottomrule
+\end{tabular}
+\end{table}

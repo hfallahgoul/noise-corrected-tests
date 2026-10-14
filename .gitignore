@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.DS_Store
+.mplcache/
+# per-date forecast store, about 409 MB; rebuilt by rv_window_store.py
+output/rv_window_store
+output/rv_window_store/
+# written by build_tables.py when the paper tree is absent
+tables/
+figures/
+# working backups and previews
+*.bak_*
+*-preview.png
+# run logs record local absolute paths
+output/rv_logs/

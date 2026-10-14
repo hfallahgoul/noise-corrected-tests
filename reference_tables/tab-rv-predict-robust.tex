@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering
+\caption{Robustness of \cref{tab:rv-predict} at the long window ($T=1000$). Each block varies one choice: the block length of the date bootstrap, the share of the sample used as the outcome period, and whether the ridge penalty is held at its $T=250$ value or rescaled with the window. Notation as in \cref{tab:rv-predict}.}
+\label{tab:rv-predict-robust}
+\small
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrccrr}
+\toprule
+variant & $\ztil$ & DM & CW & CC & CC $-$ DM & CC $-$ CW & pred. & actual \\
+\midrule
+half, penalty held (63-day blocks) & 0.1 & $0.378$ & $-0.145$ & $0.392$ & [$-0.062$, $0.065$] & [$0.285$, $0.508$] & $-0.132$ & $-0.122$ \\
+ & 1 & $0.416$ & $-0.227$ & $0.486$ & [$0.003$, $0.130$] & [$0.394$, $0.650$] & $-0.064$ & $-0.066$ \\
+ & 10 & $0.099$ & $-0.203$ & $0.277$ & [$0.066$, $0.161$] & [$0.208$, $0.380$] & $-0.005$ & $-0.004$ \\
+\addlinespace
+half, penalty held (126-day blocks) & 0.1 & $0.378$ & $-0.145$ & $0.392$ & [$-0.061$, $0.072$] & [$0.239$, $0.496$] & $-0.132$ & $-0.122$ \\
+ & 1 & $0.416$ & $-0.227$ & $0.486$ & [$0.004$, $0.126$] & [$0.383$, $0.648$] & $-0.064$ & $-0.066$ \\
+ & 10 & $0.099$ & $-0.203$ & $0.277$ & [$0.063$, $0.166$] & [$0.189$, $0.378$] & $-0.005$ & $-0.004$ \\
+\addlinespace
+last third, penalty held & 0.1 & $0.422$ & $-0.148$ & $0.378$ & [$-0.122$, $0.021$] & [$0.298$, $0.511$] & $-0.128$ & $-0.128$ \\
+ & 1 & $0.442$ & $-0.242$ & $0.492$ & [$-0.018$, $0.109$] & [$0.433$, $0.661$] & $-0.063$ & $-0.070$ \\
+ & 10 & $0.082$ & $-0.251$ & $0.264$ & [$0.033$, $0.181$] & [$0.228$, $0.397$] & $-0.004$ & $-0.006$ \\
+\addlinespace
+half, penalty rescaled with $T$ & 0.1 & $0.388$ & $-0.134$ & $0.385$ & [$-0.072$, $0.051$] & [$0.267$, $0.488$] & $-0.133$ & $-0.132$ \\
+ & 1 & $0.427$ & $-0.205$ & $0.477$ & [$-0.007$, $0.107$] & [$0.378$, $0.624$] & $-0.068$ & $-0.103$ \\
+ & 10 & $0.164$ & $-0.262$ & $0.290$ & [$0.048$, $0.131$] & [$0.290$, $0.452$] & $-0.014$ & $-0.038$ \\
+\bottomrule
+\end{tabular}}
+\end{table}

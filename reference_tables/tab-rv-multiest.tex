@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\caption{The cross-section, paired: what changes when the enlarging columns change. Both rows of each block use the HAR benchmark \eqref{eq:rv-har} on the same series, the same rolling window $T=250$, the same $P=25$ and the same penalties, all fixed before either panel was run. They differ in what the twenty-five columns are: lags $2,\dots,26$ of the target itself, or five lags each of five other Risk Lab estimators of the same latent variance \eqref{eq:rv-multiest}. Each cell uses the assets present in both panels that pass \eqref{eq:ratio} in both at that penalty, so the two rows of a block are the same series and differ in the alternative alone. Every entry after the median is a share of those assets, computed from each asset's own out-of-sample run: gap$<0$, the share whose mean squared error gap is negative; CW and CC, the shares on which each test rejects one-sided at $5\%$; only CW, the share on which CW rejects and the corrected statistic does not. The series share a common volatility factor and are not independent draws, so these are frequencies across series and not sizes.}
+\label{tab:rv-multiest}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{llrrrrrr}
+\toprule
+$\ztil$ & enlarging columns & assets & median $\Psihatn$ & gap$<0$ & CW & CC & only CW \\
+\midrule
+0.1 & own lags & 437 & 0.1019 & 1.000 & 0.309 & 0.112 & 0.199 \\
+ & five estimators & 437 & 0.2226 & 1.000 & 0.748 & 0.005 & 0.744 \\
+\addlinespace
+1.0 & own lags & 471 & 0.0750 & 1.000 & 0.293 & 0.119 & 0.174 \\
+ & five estimators & 471 & 0.1106 & 1.000 & 0.843 & 0.013 & 0.830 \\
+\addlinespace
+10.0 & own lags & 589 & 0.0166 & 0.988 & 0.212 & 0.107 & 0.105 \\
+ & five estimators & 589 & 0.0238 & 0.993 & 0.874 & 0.073 & 0.801 \\
+\bottomrule
+\end{tabular}
+\end{table}

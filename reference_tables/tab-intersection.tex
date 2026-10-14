@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{Size and power of the corrected test under three innovation-variance estimators and the intersection rule of \cref{cor:intersection}. Rolling-mean benchmark, $P=6$ AR(1) features with persistence $\rho_x$, dense signal, $T=12$, $n=4{,}000$, ridge penalty as in \cref{tab:window}. Boundary: the candidate forecast rescaled so that $\mu_{\mathrm{CC}}=0$, a point of $\Hcc$ carrying signal; alternative: the unscaled forecast, $\mu_{\mathrm{CC}}>0$. Oracle uses the true $\sigma^2$; difference uses $\hat\sigma^2_\Delta$ with the influence-function long-run variance of \cref{thm:feasible}; window uses $\hat\sigma^2_{w,t}$ with the long-run variance of $d^{\mathrm{CC},w}_t$ (\cref{thm:feasible-w}); both rejects only when the last two do. The two bias columns are $\E[(\hat\sigma^2-\sigma^2)\Psihat_t]$ for each estimator. One-sided $5\%$ rejection frequencies over $1{,}000$ replications (Monte Carlo s.e.\ $0.007$ at $0.05$). Bold marks a boundary-row rate outside the $95\%$ Monte Carlo band of an exact test, $0.0365$ to $0.0635$.}
+\label{tab:intersection}
+\small
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{rrlrrrrrrr}
+\toprule
+$\rho_x$ & $R^2$ & point & $\mu_{\mathrm{CC}}$ & bias, diff. & bias, window & oracle & difference & window & both \\
+\midrule
+0.3 & 0.02 & boundary & $0.0001$ & $0.0389$ & $0.0497$ & \textbf{0.064} & \textbf{0.098} & \textbf{0.166} & \textbf{0.085} \\
+ &  & alternative & $0.0167$ & $0.0063$ & $0.0084$ & 0.176 & 0.231 & 0.286 & 0.214 \\
+\addlinespace
+0.3 & 0.10 & boundary & $0.0006$ & $0.1883$ & $0.2482$ & \textbf{0.070} & \textbf{0.616} & \textbf{0.925} & \textbf{0.616} \\
+ &  & alternative & $0.0837$ & $0.0318$ & $0.0421$ & 0.928 & 0.995 & 1.000 & 0.995 \\
+\addlinespace
+0.95 & 0.02 & boundary & $0.0000$ & $0.0004$ & $0.0050$ & 0.063 & 0.055 & 0.052 & \textbf{0.030} \\
+ &  & alternative & $0.0052$ & $0.0005$ & $0.0007$ & 0.107 & 0.114 & 0.110 & 0.091 \\
+\addlinespace
+0.95 & 0.10 & boundary & $-0.0003$ & $0.0050$ & $0.0252$ & \textbf{0.084} & \textbf{0.069} & \textbf{0.182} & 0.061 \\
+ &  & alternative & $0.0258$ & $0.0011$ & $0.0037$ & 0.636 & 0.753 & 0.782 & 0.733 \\
+\bottomrule
+\end{tabular}
+\end{table}

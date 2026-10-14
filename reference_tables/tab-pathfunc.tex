@@ -1,0 +1,63 @@
+\begin{table}[htbp]
+\centering
+\caption{The scope condition reaches functionals of the target's own path.
+Entries are $\kldv=\E[(a_t'E_{t-1})^2]/(\sigma^2\E\|a_t\|^2)$, which
+\cref{lem:psi-t} forces to one. The benchmark is a correctly specified HAR and the
+target is exactly HAR with innovations that are i.i.d.\ across days but built from a
+within-day path, so the extra block carries no incremental signal by construction and
+$\kldv$ is identified. The extra block is a functional of that same path, at the same
+lag structure and the same $P$ as the lag-feature case, so the only thing varying
+across rows is which functional the features are. \emph{Level} functionals share the
+innovation's sign, \emph{magnitude} functionals only its scale. The first two rows are
+controls reproducing \cref{tab:kappa}'s HAR rows ($0.98$ with lag features,
+$2.18$ with exogenous ones); they are what validates the harness.
+Panel (b) varies the effective penalty, the window and the intraday grid; panel (c)
+adds a compound-Poisson jump component, so that $RV-BPV$ is genuinely non-zero, which
+is the configuration a jump decomposition exists for.}
+\label{tab:pathfunc}
+\small
+\begin{tabular}{llr}
+\toprule
+\multicolumn{3}{@{}l}{\emph{(a) base cell: $T=250$, $P=25$, $\ztil=1$, $M=78$}}\\
+\cmidrule(r){1-3}
+extra features & channel & $\kldv$ \\
+\midrule
+lags (control) & --- & 0.985 \\
+exogenous (control) & --- & 2.246 \\
+\addlinespace
+second estimator, same path & level & 0.981 \\
+realized quarticity & magnitude & 1.007 \\
+bipower variation & magnitude & 1.012 \\
+upside semivariance & magnitude & 0.981 \\
+\bottomrule
+\end{tabular}
+
+\vspace{6pt}
+\begin{tabular}{lrrrrrrrrrrr}
+\toprule
+\multicolumn{12}{@{}l}{\emph{(b) penalty, window length, intraday grid}}\\
+\cmidrule(r){1-12}
+ & \multicolumn{5}{c}{$\ztil$} & \multicolumn{3}{c}{$T$} & \multicolumn{3}{c}{$M$} \\
+\cmidrule(lr){2-6}\cmidrule(lr){7-9}\cmidrule(lr){10-12}
+ & 0.001 & 0.01 & 0.1 & 1.0 & 10.0 & 100 & 250 & 500 & 26 & 78 & 390 \\
+\midrule
+lags (control) & 0.984 & 0.984 & 0.986 & 1.011 & 1.050 & 1.047 & 1.011 & 1.015 & 0.955 & 1.011 & 0.974 \\
+second estimator, same path & 1.011 & 1.010 & 1.010 & 1.007 & 1.013 & 0.975 & 1.007 & 0.979 & 1.016 & 1.007 & 0.975 \\
+bipower variation & 1.019 & 1.019 & 1.019 & 1.020 & 1.030 & 0.994 & 1.020 & 0.995 & 1.038 & 1.020 & 0.968 \\
+realized quarticity & 1.055 & 1.055 & 1.055 & 1.054 & 1.054 & 1.016 & 1.054 & 1.017 & 0.965 & 1.054 & 0.959 \\
+\bottomrule
+\end{tabular}
+
+\vspace{6pt}
+\begin{tabular}{lrrrrr}
+\toprule
+\multicolumn{6}{@{}l}{\emph{(c) jump intensity}}\\
+\cmidrule(r){1-6}
+$\lambda$ & $(RV-BPV)/RV$ & lags & second est. & bipower & quarticity \\
+\midrule
+0 & 0.2\% & 0.948 & 1.011 & 0.991 & 0.977 \\
+0.005 & 2.5\% & 1.024 & 0.998 & 1.003 & 0.953 \\
+0.02 & 15.1\% & 0.934 & 0.943 & 1.019 & 0.978 \\
+\bottomrule
+\end{tabular}
+\end{table}

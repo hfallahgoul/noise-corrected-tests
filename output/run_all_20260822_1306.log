@@ -1,0 +1,353 @@
+# mc_study all  started 2026-08-22 13:06  -> output_fixed/
+====================================================================================================
+ARM A - size, power, and the 3x3 p-value grid
+====================================================================================================
+  resuming: 2 cells already complete
+
+--- T=8 n=2000 b=12 rho=0.0  T_eff=8.0 F1=True F2=False F3=True (INFEASIBLE) ---
+  [..............................] 2/80 Psi*=0.05 R2=0.02  elapsed   0.8m  eta  32.2m     Psi*=0.05 z=   0.947 P=  2 R2=0.02 | Psihat= 0.0521/ 0.0534 ratio= 1.07 zt/zt*=9.47e-02 | rej DM/CW = 0.000 0.361 | CC orc/diff/wtd = 0.258 0.289 0.307
+  [#.............................] 3/80 Psi*=0.05 R2=0.05  elapsed   1.7m  eta  42.4m     Psi*=0.05 z=   0.947 P=  2 R2=0.05 | Psihat= 0.0521/ 0.0556 ratio= 1.19 zt/zt*=2.37e-01 | rej DM/CW = 0.000 0.943 | CC orc/diff/wtd = 0.834 0.887 0.903
+  [#.............................] 4/80 Psi*=0.05 R2=0.1  elapsed   2.5m  eta  46.7m     Psi*=0.05 z=   0.947 P=  2 R2=0.10 | Psihat= 0.0521/ 0.0590 ratio= 1.38 zt/zt*=4.73e-01 | rej DM/CW = 0.218 1.000 | CC orc/diff/wtd = 0.999 0.999 0.999
+  [#.............................] 5/80 Psi*=0.05 R2=0.2  elapsed   3.3m  eta  48.8m     Psi*=0.05 z=   0.947 P=  2 R2=0.20 | Psihat= 0.0521/ 0.0656 ratio= 1.74 zt/zt*=9.47e-01 | rej DM/CW = 0.996 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [##............................] 6/80 Psi*=0.2 R2=0.0  elapsed   4.1m  eta  50.2m     Psi*=0.20 z=   0.265 P=  2 R2=0.00 | Psihat= 0.1461/ 0.1463 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.057 | CC orc/diff/wtd = 0.048 0.038 0.043
+  [##............................] 7/80 Psi*=0.2 R2=0.02  elapsed   4.9m  eta  51.0m     Psi*=0.20 z=   0.265 P=  2 R2=0.02 | Psihat= 0.1461/ 0.1498 ratio= 1.06 zt/zt*=1.77e-02 | rej DM/CW = 0.000 0.381 | CC orc/diff/wtd = 0.231 0.264 0.287
+  [###...........................] 8/80 Psi*=0.2 R2=0.05  elapsed   5.7m  eta  51.2m     Psi*=0.20 z=   0.265 P=  2 R2=0.05 | Psihat= 0.1461/ 0.1544 ratio= 1.15 zt/zt*=4.42e-02 | rej DM/CW = 0.000 0.917 | CC orc/diff/wtd = 0.700 0.793 0.817
+  [###...........................] 9/80 Psi*=0.2 R2=0.1  elapsed   6.5m  eta  51.2m     Psi*=0.20 z=   0.265 P=  2 R2=0.10 | Psihat= 0.1461/ 0.1636 ratio= 1.31 zt/zt*=8.84e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 0.985 0.997 0.996
+  [###...........................] 10/80 Psi*=0.2 R2=0.2  elapsed   7.3m  eta  51.4m     Psi*=0.20 z=   0.265 P=  2 R2=0.20 | Psihat= 0.1461/ 0.1810 ratio= 1.61 zt/zt*=1.77e-01 | rej DM/CW = 0.223 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [####..........................] 11/80 Psi*=0.5 R2=0.0  elapsed   8.2m  eta  51.6m     Psi*=0.50 z=   0.133 P=  4 R2=0.00 | Psihat= 0.4457/ 0.4455 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.056 | CC orc/diff/wtd = 0.062 0.045 0.049
+  [####..........................] 12/80 Psi*=0.5 R2=0.02  elapsed   9.1m  eta  51.3m     Psi*=0.50 z=   0.133 P=  4 R2=0.02 | Psihat= 0.4457/ 0.4549 ratio= 1.03 zt/zt*=5.32e-03 | rej DM/CW = 0.000 0.241 | CC orc/diff/wtd = 0.138 0.169 0.193
+  [####..........................] 13/80 Psi*=0.5 R2=0.05  elapsed   9.9m  eta  51.0m     Psi*=0.50 z=   0.133 P=  4 R2=0.05 | Psihat= 0.4457/ 0.4680 ratio= 1.06 zt/zt*=1.33e-02 | rej DM/CW = 0.000 0.659 | CC orc/diff/wtd = 0.312 0.510 0.549
+  [#####.........................] 14/80 Psi*=0.5 R2=0.1  elapsed  10.7m  eta  50.4m     Psi*=0.50 z=   0.133 P=  4 R2=0.10 | Psihat= 0.4453/ 0.4897 ratio= 1.13 zt/zt*=2.66e-02 | rej DM/CW = 0.000 0.989 | CC orc/diff/wtd = 0.704 0.944 0.962
+  [#####.........................] 15/80 Psi*=0.5 R2=0.2  elapsed  11.5m  eta  49.7m     Psi*=0.50 z=   0.133 P=  4 R2=0.20 | Psihat= 0.4454/ 0.5350 ratio= 1.25 zt/zt*=5.32e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 0.993 1.000 1.000
+  [######........................] 16/80 Psi*=1.0 R2=0.0  elapsed  12.3m  eta  49.1m     Psi*=1.00 z=  0.0748 P=  6 R2=0.00 | Psihat= 0.9577/ 0.9565 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.045 | CC orc/diff/wtd = 0.074 0.040 0.045
+  [######........................] 17/80 Psi*=1.0 R2=0.02  elapsed  13.1m  eta  48.4m     Psi*=1.00 z=  0.0748 P=  6 R2=0.02 | Psihat= 0.9590/ 0.9769 ratio= 1.01 zt/zt*=2.14e-03 | rej DM/CW = 0.000 0.151 | CC orc/diff/wtd = 0.117 0.136 0.156
+  [######........................] 18/80 Psi*=1.0 R2=0.05  elapsed  13.9m  eta  47.8m     Psi*=1.00 z=  0.0748 P=  6 R2=0.05 | Psihat= 0.9581/ 1.0052 ratio= 1.04 zt/zt*=5.34e-03 | rej DM/CW = 0.000 0.417 | CC orc/diff/wtd = 0.170 0.350 0.392
+  [#######.......................] 19/80 Psi*=1.0 R2=0.1  elapsed  14.7m  eta  47.2m     Psi*=1.00 z=  0.0748 P=  6 R2=0.10 | Psihat= 0.9582/ 1.0486 ratio= 1.07 zt/zt*=1.07e-02 | rej DM/CW = 0.000 0.856 | CC orc/diff/wtd = 0.343 0.807 0.822
+  [#######.......................] 20/80 Psi*=1.0 R2=0.2  elapsed  15.5m  eta  46.6m     Psi*=1.00 z=  0.0748 P=  6 R2=0.20 | Psihat= 0.9587/ 1.1402 ratio= 1.13 zt/zt*=2.14e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 0.710 0.999 0.998
+
+--- T=8 n=2000 b=12 rho=0.3  T_eff=4.3 F1=False F2=False F3=True (INFEASIBLE) ---
+  [#######.......................] 21/80 Psi*=0.05 R2=0.0  elapsed  16.5m  eta  46.3m     Psi*=0.05 z=   0.947 P=  2 R2=0.00 | Psihat= 0.0482/ 0.0483 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.044 | CC orc/diff/wtd = 0.040 0.040 0.043
+  [########......................] 22/80 Psi*=0.05 R2=0.02  elapsed  17.4m  eta  45.8m     Psi*=0.05 z=   0.947 P=  2 R2=0.02 | Psihat= 0.0482/ 0.0489 ratio= 1.07 zt/zt*=9.47e-02 | rej DM/CW = 0.000 0.374 | CC orc/diff/wtd = 0.291 0.304 0.309
+  [########......................] 23/80 Psi*=0.05 R2=0.05  elapsed  18.3m  eta  45.2m     Psi*=0.05 z=   0.947 P=  2 R2=0.05 | Psihat= 0.0482/ 0.0503 ratio= 1.18 zt/zt*=2.37e-01 | rej DM/CW = 0.000 0.906 | CC orc/diff/wtd = 0.776 0.822 0.837
+  [#########.....................] 24/80 Psi*=0.05 R2=0.1  elapsed  19.1m  eta  44.7m     Psi*=0.05 z=   0.947 P=  2 R2=0.10 | Psihat= 0.0482/ 0.0526 ratio= 1.36 zt/zt*=4.73e-01 | rej DM/CW = 0.151 1.000 | CC orc/diff/wtd = 0.994 1.000 1.000
+  [#########.....................] 25/80 Psi*=0.05 R2=0.2  elapsed  20.0m  eta  44.0m     Psi*=0.05 z=   0.947 P=  2 R2=0.20 | Psihat= 0.0482/ 0.0569 ratio= 1.71 zt/zt*=9.47e-01 | rej DM/CW = 0.990 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [#########.....................] 26/80 Psi*=0.2 R2=0.0  elapsed  21.0m  eta  43.5m     Psi*=0.20 z=   0.265 P=  2 R2=0.00 | Psihat= 0.1377/ 0.1380 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.050 | CC orc/diff/wtd = 0.043 0.040 0.042
+  [##########....................] 27/80 Psi*=0.2 R2=0.02  elapsed  21.9m  eta  42.9m     Psi*=0.20 z=   0.265 P=  2 R2=0.02 | Psihat= 0.1377/ 0.1402 ratio= 1.06 zt/zt*=1.77e-02 | rej DM/CW = 0.000 0.338 | CC orc/diff/wtd = 0.216 0.250 0.253
+  [##########....................] 28/80 Psi*=0.2 R2=0.05  elapsed  22.7m  eta  42.2m     Psi*=0.20 z=   0.265 P=  2 R2=0.05 | Psihat= 0.1376/ 0.1431 ratio= 1.14 zt/zt*=4.42e-02 | rej DM/CW = 0.000 0.891 | CC orc/diff/wtd = 0.647 0.743 0.761
+  [##########....................] 29/80 Psi*=0.2 R2=0.1  elapsed  23.6m  eta  41.6m     Psi*=0.20 z=   0.265 P=  2 R2=0.10 | Psihat= 0.1377/ 0.1490 ratio= 1.29 zt/zt*=8.84e-02 | rej DM/CW = 0.000 0.999 | CC orc/diff/wtd = 0.979 0.994 0.996
+  [###########...................] 30/80 Psi*=0.2 R2=0.2  elapsed  24.5m  eta  40.9m     Psi*=0.20 z=   0.265 P=  2 R2=0.20 | Psihat= 0.1378/ 0.1609 ratio= 1.59 zt/zt*=1.77e-01 | rej DM/CW = 0.141 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [###########...................] 31/80 Psi*=0.5 R2=0.0  elapsed  25.4m  eta  40.2m     Psi*=0.50 z=   0.133 P=  4 R2=0.00 | Psihat= 0.4356/ 0.4362 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.052 | CC orc/diff/wtd = 0.062 0.049 0.053
+  [############..................] 32/80 Psi*=0.5 R2=0.02  elapsed  26.4m  eta  39.6m     Psi*=0.50 z=   0.133 P=  4 R2=0.02 | Psihat= 0.4359/ 0.4418 ratio= 1.02 zt/zt*=5.32e-03 | rej DM/CW = 0.000 0.208 | CC orc/diff/wtd = 0.133 0.156 0.162
+  [############..................] 33/80 Psi*=0.5 R2=0.05  elapsed  27.3m  eta  38.9m     Psi*=0.50 z=   0.133 P=  4 R2=0.05 | Psihat= 0.4353/ 0.4511 ratio= 1.06 zt/zt*=1.33e-02 | rej DM/CW = 0.000 0.594 | CC orc/diff/wtd = 0.311 0.444 0.465
+  [############..................] 34/80 Psi*=0.5 R2=0.1  elapsed  28.2m  eta  38.2m     Psi*=0.50 z=   0.133 P=  4 R2=0.10 | Psihat= 0.4355/ 0.4669 ratio= 1.13 zt/zt*=2.66e-02 | rej DM/CW = 0.000 0.968 | CC orc/diff/wtd = 0.623 0.889 0.912
+  [#############.................] 35/80 Psi*=0.5 R2=0.2  elapsed  29.1m  eta  37.5m     Psi*=0.50 z=   0.133 P=  4 R2=0.20 | Psihat= 0.4357/ 0.4991 ratio= 1.25 zt/zt*=5.32e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 0.983 1.000 1.000
+  [#############.................] 36/80 Psi*=1.0 R2=0.0  elapsed  30.0m  eta  36.7m     Psi*=1.00 z=  0.0748 P=  6 R2=0.00 | Psihat= 0.9590/ 0.9585 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.035 | CC orc/diff/wtd = 0.067 0.041 0.053
+  [#############.................] 37/80 Psi*=1.0 R2=0.02  elapsed  30.9m  eta  35.9m     Psi*=1.00 z=  0.0748 P=  6 R2=0.02 | Psihat= 0.9598/ 0.9728 ratio= 1.01 zt/zt*=2.14e-03 | rej DM/CW = 0.000 0.156 | CC orc/diff/wtd = 0.090 0.100 0.133
+  [##############................] 38/80 Psi*=1.0 R2=0.05  elapsed  31.9m  eta  35.2m     Psi*=1.00 z=  0.0748 P=  6 R2=0.05 | Psihat= 0.9593/ 0.9910 ratio= 1.03 zt/zt*=5.34e-03 | rej DM/CW = 0.000 0.443 | CC orc/diff/wtd = 0.191 0.339 0.365
+  [##############................] 39/80 Psi*=1.0 R2=0.1  elapsed  32.9m  eta  34.6m     Psi*=1.00 z=  0.0748 P=  6 R2=0.10 | Psihat= 0.9595/ 1.0242 ratio= 1.07 zt/zt*=1.07e-02 | rej DM/CW = 0.000 0.859 | CC orc/diff/wtd = 0.313 0.720 0.740
+  [###############...............] 40/80 Psi*=1.0 R2=0.2  elapsed  33.8m  eta  33.8m     Psi*=1.00 z=  0.0748 P=  6 R2=0.20 | Psihat= 0.9590/ 1.0890 ratio= 1.13 zt/zt*=2.14e-02 | rej DM/CW = 0.000 0.998 | CC orc/diff/wtd = 0.688 0.988 0.990
+
+--- T=12 n=8000 b=18 rho=0.0  T_eff=12.0 F1=True F2=True F3=True (OK) ---
+  [###############...............] 41/80 Psi*=0.05 R2=0.0  elapsed  37.4m  eta  35.6m     Psi*=0.05 z=   0.947 P=  2 R2=0.00 | Psihat= 0.0377/ 0.0377 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.045 | CC orc/diff/wtd = 0.035 0.036 0.039
+  [###############...............] 42/80 Psi*=0.05 R2=0.02  elapsed  40.9m  eta  37.0m     Psi*=0.05 z=   0.947 P=  2 R2=0.02 | Psihat= 0.0377/ 0.0388 ratio= 1.11 zt/zt*=9.47e-02 | rej DM/CW = 0.000 0.965 | CC orc/diff/wtd = 0.903 0.938 0.942
+  [################..............] 43/80 Psi*=0.05 R2=0.05  elapsed  44.3m  eta  38.1m     Psi*=0.05 z=   0.947 P=  2 R2=0.05 | Psihat= 0.0377/ 0.0403 ratio= 1.28 zt/zt*=2.37e-01 | rej DM/CW = 0.005 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [################..............] 44/80 Psi*=0.05 R2=0.1  elapsed  47.8m  eta  39.1m     Psi*=0.05 z=   0.947 P=  2 R2=0.10 | Psihat= 0.0377/ 0.0429 ratio= 1.57 zt/zt*=4.73e-01 | rej DM/CW = 1.000 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [################..............] 45/80 Psi*=0.05 R2=0.2  elapsed  51.2m  eta  39.8m     Psi*=0.05 z=   0.947 P=  2 R2=0.20 | Psihat= 0.0377/ 0.0479 ratio= 2.13 zt/zt*=9.47e-01 | rej DM/CW = 1.000 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [#################.............] 46/80 Psi*=0.2 R2=0.0  elapsed  54.6m  eta  40.4m     Psi*=0.20 z=   0.265 P=  4 R2=0.00 | Psihat= 0.2048/ 0.2048 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.060 | CC orc/diff/wtd = 0.050 0.046 0.052
+  [#################.............] 47/80 Psi*=0.2 R2=0.02  elapsed  58.0m  eta  40.7m     Psi*=0.20 z=   0.265 P=  4 R2=0.02 | Psihat= 0.2049/ 0.2093 ratio= 1.05 zt/zt*=1.77e-02 | rej DM/CW = 0.000 0.789 | CC orc/diff/wtd = 0.500 0.617 0.656
+  [##################............] 48/80 Psi*=0.2 R2=0.05  elapsed  61.4m  eta  40.9m     Psi*=0.20 z=   0.265 P=  4 R2=0.05 | Psihat= 0.2049/ 0.2162 ratio= 1.12 zt/zt*=4.42e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 0.990 1.000 1.000
+  [##################............] 49/80 Psi*=0.2 R2=0.1  elapsed  64.7m  eta  40.9m     Psi*=0.20 z=   0.265 P=  4 R2=0.10 | Psihat= 0.2048/ 0.2271 ratio= 1.23 zt/zt*=8.84e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [##################............] 50/80 Psi*=0.2 R2=0.2  elapsed  68.0m  eta  40.8m     Psi*=0.20 z=   0.265 P=  4 R2=0.20 | Psihat= 0.2049/ 0.2494 ratio= 1.47 zt/zt*=1.77e-01 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [###################...........] 51/80 Psi*=0.5 R2=0.0  elapsed  71.4m  eta  40.6m     Psi*=0.50 z=   0.133 P=  6 R2=0.00 | Psihat= 0.4648/ 0.4647 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.052 | CC orc/diff/wtd = 0.055 0.047 0.060
+  [###################...........] 52/80 Psi*=0.5 R2=0.02  elapsed  74.8m  eta  40.3m     Psi*=0.50 z=   0.133 P=  6 R2=0.02 | Psihat= 0.4646/ 0.4742 ratio= 1.03 zt/zt*=5.32e-03 | rej DM/CW = 0.000 0.569 | CC orc/diff/wtd = 0.256 0.456 0.510
+  [###################...........] 53/80 Psi*=0.5 R2=0.05  elapsed  78.1m  eta  39.8m     Psi*=0.50 z=   0.133 P=  6 R2=0.05 | Psihat= 0.4648/ 0.4882 ratio= 1.06 zt/zt*=1.33e-02 | rej DM/CW = 0.000 0.995 | CC orc/diff/wtd = 0.747 0.983 0.987
+  [####################..........] 54/80 Psi*=0.5 R2=0.1  elapsed  81.5m  eta  39.2m     Psi*=0.50 z=   0.133 P=  6 R2=0.10 | Psihat= 0.4647/ 0.5111 ratio= 1.13 zt/zt*=2.66e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 0.995 1.000 1.000
+  [####################..........] 55/80 Psi*=0.5 R2=0.2  elapsed  84.8m  eta  38.6m     Psi*=0.50 z=   0.133 P=  6 R2=0.20 | Psihat= 0.4647/ 0.5588 ratio= 1.26 zt/zt*=5.32e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [#####################.........] 56/80 Psi*=1.0 R2=0.0  elapsed  88.2m  eta  37.8m     Psi*=1.00 z=  0.0748 P=  8 R2=0.00 | Psihat= 0.8753/ 0.8753 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.057 | CC orc/diff/wtd = 0.047 0.039 0.054
+  [#####################.........] 57/80 Psi*=1.0 R2=0.02  elapsed  91.5m  eta  36.9m     Psi*=1.00 z=  0.0748 P=  8 R2=0.02 | Psihat= 0.8750/ 0.8916 ratio= 1.01 zt/zt*=2.14e-03 | rej DM/CW = 0.000 0.391 | CC orc/diff/wtd = 0.165 0.300 0.356
+  [#####################.........] 58/80 Psi*=1.0 R2=0.05  elapsed  94.9m  eta  36.0m     Psi*=1.00 z=  0.0748 P=  8 R2=0.05 | Psihat= 0.8752/ 0.9187 ratio= 1.04 zt/zt*=5.34e-03 | rej DM/CW = 0.000 0.957 | CC orc/diff/wtd = 0.431 0.917 0.939
+  [######################........] 59/80 Psi*=1.0 R2=0.1  elapsed  98.2m  eta  35.0m     Psi*=1.00 z=  0.0748 P=  8 R2=0.10 | Psihat= 0.8751/ 0.9608 ratio= 1.08 zt/zt*=1.07e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 0.887 1.000 1.000
+  [######################........] 60/80 Psi*=1.0 R2=0.2  elapsed 101.6m  eta  33.9m     Psi*=1.00 z=  0.0748 P=  8 R2=0.20 | Psihat= 0.8749/ 1.0458 ratio= 1.16 zt/zt*=2.14e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+
+--- T=12 n=8000 b=18 rho=0.3  T_eff=6.5 F1=True F2=True F3=True (OK) ---
+  [######################........] 61/80 Psi*=0.05 R2=0.0  elapsed 105.3m  eta  32.8m     Psi*=0.05 z=   0.947 P=  2 R2=0.00 | Psihat= 0.0355/ 0.0355 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.047 | CC orc/diff/wtd = 0.040 0.037 0.037
+  [#######################.......] 62/80 Psi*=0.05 R2=0.02  elapsed 109.0m  eta  31.6m     Psi*=0.05 z=   0.947 P=  2 R2=0.02 | Psihat= 0.0355/ 0.0362 ratio= 1.11 zt/zt*=9.47e-02 | rej DM/CW = 0.000 0.957 | CC orc/diff/wtd = 0.878 0.905 0.919
+  [#######################.......] 63/80 Psi*=0.05 R2=0.05  elapsed 112.6m  eta  30.4m     Psi*=0.05 z=   0.947 P=  2 R2=0.05 | Psihat= 0.0355/ 0.0372 ratio= 1.28 zt/zt*=2.37e-01 | rej DM/CW = 0.006 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [########################......] 64/80 Psi*=0.05 R2=0.1  elapsed 116.2m  eta  29.1m     Psi*=0.05 z=   0.947 P=  2 R2=0.10 | Psihat= 0.0355/ 0.0388 ratio= 1.54 zt/zt*=4.73e-01 | rej DM/CW = 0.997 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [########################......] 65/80 Psi*=0.05 R2=0.2  elapsed 119.8m  eta  27.7m     Psi*=0.05 z=   0.947 P=  2 R2=0.20 | Psihat= 0.0355/ 0.0420 ratio= 2.09 zt/zt*=9.47e-01 | rej DM/CW = 1.000 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [########################......] 66/80 Psi*=0.2 R2=0.0  elapsed 123.5m  eta  26.2m     Psi*=0.20 z=   0.265 P=  4 R2=0.00 | Psihat= 0.1973/ 0.1970 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.049 | CC orc/diff/wtd = 0.063 0.045 0.046
+  [#########################.....] 67/80 Psi*=0.2 R2=0.02  elapsed 127.1m  eta  24.7m     Psi*=0.20 z=   0.265 P=  4 R2=0.02 | Psihat= 0.1974/ 0.2006 ratio= 1.05 zt/zt*=1.77e-02 | rej DM/CW = 0.000 0.736 | CC orc/diff/wtd = 0.461 0.572 0.604
+  [#########################.....] 68/80 Psi*=0.2 R2=0.05  elapsed 130.7m  eta  23.1m     Psi*=0.20 z=   0.265 P=  4 R2=0.05 | Psihat= 0.1974/ 0.2050 ratio= 1.11 zt/zt*=4.42e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 0.980 1.000 0.999
+  [#########################.....] 69/80 Psi*=0.2 R2=0.1  elapsed 134.3m  eta  21.4m     Psi*=0.20 z=   0.265 P=  4 R2=0.10 | Psihat= 0.1974/ 0.2129 ratio= 1.23 zt/zt*=8.84e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [##########################....] 70/80 Psi*=0.2 R2=0.2  elapsed 137.9m  eta  19.7m     Psi*=0.20 z=   0.265 P=  4 R2=0.20 | Psihat= 0.1974/ 0.2280 ratio= 1.46 zt/zt*=1.77e-01 | rej DM/CW = 0.001 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [##########################....] 71/80 Psi*=0.5 R2=0.0  elapsed 141.5m  eta  17.9m     Psi*=0.50 z=   0.133 P=  6 R2=0.00 | Psihat= 0.4570/ 0.4570 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.048 | CC orc/diff/wtd = 0.046 0.045 0.050
+  [###########################...] 72/80 Psi*=0.5 R2=0.02  elapsed 145.1m  eta  16.1m     Psi*=0.50 z=   0.133 P=  6 R2=0.02 | Psihat= 0.4571/ 0.4639 ratio= 1.03 zt/zt*=5.32e-03 | rej DM/CW = 0.000 0.553 | CC orc/diff/wtd = 0.253 0.381 0.405
+  [###########################...] 73/80 Psi*=0.5 R2=0.05  elapsed 148.8m  eta  14.3m     Psi*=0.50 z=   0.133 P=  6 R2=0.05 | Psihat= 0.4572/ 0.4736 ratio= 1.06 zt/zt*=1.33e-02 | rej DM/CW = 0.000 0.992 | CC orc/diff/wtd = 0.720 0.940 0.952
+  [###########################...] 74/80 Psi*=0.5 R2=0.1  elapsed 152.4m  eta  12.4m     Psi*=0.50 z=   0.133 P=  6 R2=0.10 | Psihat= 0.4571/ 0.4904 ratio= 1.13 zt/zt*=2.66e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 0.996 1.000 1.000
+  [############################..] 75/80 Psi*=0.5 R2=0.2  elapsed 156.0m  eta  10.4m     Psi*=0.50 z=   0.133 P=  6 R2=0.20 | Psihat= 0.4570/ 0.5228 ratio= 1.26 zt/zt*=5.32e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 1.000 1.000 1.000
+  [############################..] 76/80 Psi*=1.0 R2=0.0  elapsed 159.6m  eta   8.4m     Psi*=1.00 z=  0.0748 P=  8 R2=0.00 | Psihat= 0.8732/ 0.8739 ratio= 1.00 zt/zt*=     nan | rej DM/CW = 0.000 0.049 | CC orc/diff/wtd = 0.058 0.034 0.044
+  [############################..] 77/80 Psi*=1.0 R2=0.02  elapsed 163.2m  eta   6.4m     Psi*=1.00 z=  0.0748 P=  8 R2=0.02 | Psihat= 0.8735/ 0.8861 ratio= 1.02 zt/zt*=2.14e-03 | rej DM/CW = 0.000 0.368 | CC orc/diff/wtd = 0.141 0.245 0.274
+  [#############################.] 78/80 Psi*=1.0 R2=0.05  elapsed 166.9m  eta   4.3m     Psi*=1.00 z=  0.0748 P=  8 R2=0.05 | Psihat= 0.8734/ 0.9037 ratio= 1.04 zt/zt*=5.34e-03 | rej DM/CW = 0.000 0.948 | CC orc/diff/wtd = 0.437 0.841 0.855
+  [#############################.] 79/80 Psi*=1.0 R2=0.1  elapsed 170.5m  eta   2.2m     Psi*=1.00 z=  0.0748 P=  8 R2=0.10 | Psihat= 0.8734/ 0.9347 ratio= 1.08 zt/zt*=1.07e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 0.834 0.999 1.000
+  [##############################] 80/80 Psi*=1.0 R2=0.2  elapsed 174.1m  eta   0.0m   
+  Psi*=1.00 z=  0.0748 P=  8 R2=0.20 | Psihat= 0.8732/ 0.9951 ratio= 1.16 zt/zt*=2.14e-02 | rej DM/CW = 0.000 1.000 | CC orc/diff/wtd = 0.999 1.000 1.000
+  [saved] output_fixed/tab_size_power.tex
+====================================================================================================
+P-VALUE GRID  T=8 n=2000 b=12 rho=0.3 Psi*=0.2 R2=0.1 sigma2=oracle
+====================================================================================================
+T_eff=4.3 F1=False F2=False F3=True  c=0.3 z=0.2652 P=2
+pilot: E[fg]=0.05867 E[g2]=0.03962 E[v2]=0.13228
+       a_CC=2.9619  a_DM=0.6826   F4 = True
+
+H0-cov   mu_CC=+0.00000  mspe_gap=-0.13729  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.055      0.63  UNIFORM
+       CC    0.065      0.83  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.048      1.05  UNIFORM
+
+H0-CC    mu_CC=+0.00101  mspe_gap=-1.22398  ratio=1.30
+            rej 5%  sqrt(m)D  uniform?
+       CW    1.000     31.27  not uniform
+       CC    0.052      2.67  not uniform
+       DM    0.000     31.62  not uniform
+      CCw    0.317     14.80  not uniform
+
+H0-MSPE  mu_CC=+0.06258  mspe_gap=-0.00452  ratio=1.29
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.999     31.33  not uniform
+       CC    0.996     30.62  not uniform
+       DM    0.024      4.16  not uniform
+      CCw    0.999     30.95  not uniform
+  [saved] output_fixed/pgrid_psi0.2_oracle.pdf / .eps / .png
+  [saved] output_fixed/pgrid_psi0.2_oracle.json
+====================================================================================================
+P-VALUE GRID  T=8 n=2000 b=12 rho=0.3 Psi*=0.5 R2=0.1 sigma2=oracle
+====================================================================================================
+T_eff=4.3 F1=False F2=False F3=True  c=0.5 z=0.133 P=4
+pilot: E[fg]=0.06586 E[g2]=0.05333 E[v2]=0.43290
+       a_CC=2.4700  a_DM=0.2709   F4 = True
+
+H0-cov   mu_CC=+0.00000  mspe_gap=-0.43489  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.055      0.89  UNIFORM
+       CC    0.067      1.12  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.046      0.55  UNIFORM
+
+H0-CC    mu_CC=-0.00060  mspe_gap=-2.66576  ratio=1.12
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.974     29.37  not uniform
+       CC    0.064      0.77  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.456     18.28  not uniform
+
+H0-MSPE  mu_CC=+0.03192  mspe_gap=-0.00058  ratio=1.12
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.973     29.43  not uniform
+       CC    0.938     28.20  not uniform
+       DM    0.049      1.27  UNIFORM
+      CCw    0.964     29.04  not uniform
+  [saved] output_fixed/pgrid_psi0.5_oracle.pdf / .eps / .png
+  [saved] output_fixed/pgrid_psi0.5_oracle.json
+====================================================================================================
+P-VALUE GRID  T=8 n=2000 b=12 rho=0.3 Psi*=1.0 R2=0.1 sigma2=oracle
+====================================================================================================
+T_eff=4.3 F1=False F2=False F3=True  c=0.7 z=0.07482 P=6
+pilot: E[fg]=0.06889 E[g2]=0.06488 E[v2]=0.98437
+       a_CC=2.1236  a_DM=0.1313   F4 = True
+
+H0-cov   mu_CC=+0.00000  mspe_gap=-0.95985  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.051      0.53  UNIFORM
+       CC    0.062      0.93  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.060      1.41  not uniform
+
+H0-CC    mu_CC=+0.00099  mspe_gap=-4.33584  ratio=1.07
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.834     25.86  not uniform
+       CC    0.068      0.97  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.457     17.19  not uniform
+
+H0-MSPE  mu_CC=+0.01696  mspe_gap=+0.00042  ratio=1.07
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.839     25.74  not uniform
+       CC    0.795     24.44  not uniform
+       DM    0.060      1.17  UNIFORM
+      CCw    0.836     25.57  not uniform
+  [saved] output_fixed/pgrid_psi1.0_oracle.pdf / .eps / .png
+  [saved] output_fixed/pgrid_psi1.0_oracle.json
+====================================================================================================
+P-VALUE GRID  T=8 n=2000 b=12 rho=0.3 Psi*=0.2 R2=0.1 sigma2=diff
+====================================================================================================
+T_eff=4.3 F1=False F2=False F3=True  c=0.3 z=0.2652 P=2
+pilot: E[fg]=0.05867 E[g2]=0.03962 E[v2]=0.13228
+       a_CC=2.9619  a_DM=0.6826   F4 = True
+
+H0-cov   mu_CC=+0.00000  mspe_gap=-0.13729  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.055      0.63  UNIFORM
+       CC    0.048      0.97  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.048      1.05  UNIFORM
+
+H0-CC    mu_CC=+0.00101  mspe_gap=-1.22398  ratio=1.21
+            rej 5%  sqrt(m)D  uniform?
+       CW    1.000     31.27  not uniform
+       CC    0.213     11.99  not uniform
+       DM    0.000     31.62  not uniform
+      CCw    0.317     14.80  not uniform
+
+H0-MSPE  mu_CC=+0.06258  mspe_gap=-0.00452  ratio=1.21
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.999     31.33  not uniform
+       CC    0.999     30.92  not uniform
+       DM    0.024      4.16  not uniform
+      CCw    0.999     30.95  not uniform
+  [saved] output_fixed/pgrid_psi0.2_diff.pdf / .eps / .png
+  [saved] output_fixed/pgrid_psi0.2_diff.json
+====================================================================================================
+P-VALUE GRID  T=8 n=2000 b=12 rho=0.3 Psi*=0.5 R2=0.1 sigma2=diff
+====================================================================================================
+T_eff=4.3 F1=False F2=False F3=True  c=0.5 z=0.133 P=4
+pilot: E[fg]=0.06586 E[g2]=0.05333 E[v2]=0.43290
+       a_CC=2.4700  a_DM=0.2709   F4 = True
+
+H0-cov   mu_CC=+0.00000  mspe_gap=-0.43489  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.055      0.89  UNIFORM
+       CC    0.040      0.59  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.046      0.55  UNIFORM
+
+H0-CC    mu_CC=-0.00060  mspe_gap=-2.66576  ratio=1.05
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.974     29.37  not uniform
+       CC    0.374     16.31  not uniform
+       DM    0.000     31.62  not uniform
+      CCw    0.456     18.28  not uniform
+
+H0-MSPE  mu_CC=+0.03192  mspe_gap=-0.00058  ratio=1.05
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.973     29.43  not uniform
+       CC    0.964     29.01  not uniform
+       DM    0.049      1.27  UNIFORM
+      CCw    0.964     29.04  not uniform
+  [saved] output_fixed/pgrid_psi0.5_diff.pdf / .eps / .png
+  [saved] output_fixed/pgrid_psi0.5_diff.json
+====================================================================================================
+P-VALUE GRID  T=8 n=2000 b=12 rho=0.3 Psi*=1.0 R2=0.1 sigma2=diff
+====================================================================================================
+T_eff=4.3 F1=False F2=False F3=True  c=0.7 z=0.07482 P=6
+pilot: E[fg]=0.06889 E[g2]=0.06488 E[v2]=0.98437
+       a_CC=2.1236  a_DM=0.1313   F4 = True
+
+H0-cov   mu_CC=+0.00000  mspe_gap=-0.95985  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.051      0.53  UNIFORM
+       CC    0.049      0.95  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.060      1.41  not uniform
+
+H0-CC    mu_CC=+0.00099  mspe_gap=-4.33584  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.834     25.86  not uniform
+       CC    0.383     16.66  not uniform
+       DM    0.000     31.62  not uniform
+      CCw    0.457     17.19  not uniform
+
+H0-MSPE  mu_CC=+0.01696  mspe_gap=+0.00042  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.839     25.74  not uniform
+       CC    0.833     25.73  not uniform
+       DM    0.060      1.17  UNIFORM
+      CCw    0.836     25.57  not uniform
+  [saved] output_fixed/pgrid_psi1.0_diff.pdf / .eps / .png
+  [saved] output_fixed/pgrid_psi1.0_diff.json
+====================================================================================================
+ARM B - the feature map: c fixed, Psi varies
+====================================================================================================
+T=12 n=8000 z=0.5   (closed form knows only c = P/T)
+   d      P       c  gamma   Psi(c,z)    Psihat    ratio
+   5    200    16.7   0.05     0.0597    0.0900      1.5
+   5    200    16.7   0.10     0.0597    0.2946      4.9
+   5    200    16.7   0.30     0.0597    0.7597     12.7
+   5    200    16.7   1.00     0.0597    0.2039      3.4
+   5    200    16.7   3.00     0.0597    0.0561      0.9
+   5   2000   166.7   0.05     0.0060    0.5409     90.2
+   5   2000   166.7   0.10     0.0060    0.8726    145.4
+   5   2000   166.7   0.30     0.0060    1.8657    311.0
+   5   2000   166.7   1.00     0.0060    0.1627     27.1
+   5   2000   166.7   3.00     0.0060    0.0070      1.2
+  15    200    16.7   0.05     0.0597    0.1811      3.0
+  15    200    16.7   0.10     0.0597    0.4753      8.0
+  15    200    16.7   0.30     0.0597    0.2701      4.5
+  15    200    16.7   1.00     0.0597    0.0547      0.9
+  15    200    16.7   3.00     0.0597    0.0546      0.9
+  15   2000   166.7   0.05     0.0060    1.0124    168.7
+  15   2000   166.7   0.10     0.0060    1.1944    199.1
+  15   2000   166.7   0.30     0.0060    0.2401     40.0
+  15   2000   166.7   1.00     0.0060    0.0056      0.9
+  15   2000   166.7   3.00     0.0060    0.0055      0.9
+  50    200    16.7   0.05     0.0597    0.2165      3.6
+  50    200    16.7   0.10     0.0597    0.2354      3.9
+  50    200    16.7   0.30     0.0597    0.0590      1.0
+  50    200    16.7   1.00     0.0597    0.0546      0.9
+  50    200    16.7   3.00     0.0597    0.0546      0.9
+  50   2000   166.7   0.05     0.0060    0.3401     56.7
+  50   2000   166.7   0.10     0.0060    0.2211     36.9
+  50   2000   166.7   0.30     0.0060    0.0091      1.5
+  50   2000   166.7   1.00     0.0060    0.0055      0.9
+  50   2000   166.7   3.00     0.0060    0.0055      0.9
+  [saved] output_fixed/tab_features.tex
+====================================================================================================
+ARM C - where the approximations break
+====================================================================================================
+
+[C1] endogeneity sweep, with the shift diagnostic
+T=8 n=2000 c=0.5 z=0.133 P=4
+  delta    ratio  ratio shifted   rej CC                         diagnosis
+   0.00    0.998          1.001    0.057                        no problem
+   0.20    1.000          1.000    0.067                        no problem
+   0.50    1.001          1.001    0.098                        no problem
+   0.80    1.001          1.000    0.213                        no problem
+
+[C2] innovation distribution, and the volatility-feature interaction
+     feat_vol != 0 ties the dispersion of the features to the conditional
+     volatility of the target.  Heteroskedasticity ALONE costs nothing; what
+     the scalar correction cannot see is the within-window covariance between
+     a_s^2 and sigma_s^2, and that needs the interaction.
+   innov  featvol   Psihat   ratio  ratio_w   rej CC  rej CCw   rej CW
+   gauss        0   0.4356   1.000    1.000    0.057    0.045    0.037
+      t5        0   0.4353   0.998    0.999    0.092    0.049    0.053
+   garch        0   0.4356   1.000    1.001    0.045    0.051    0.053
+   garch        1   0.4352   1.078    0.999    0.004    0.057    0.051
+   garch       -1   0.4407   0.934    1.004    0.177    0.039    0.043
+
+[C3] outside F2: the empirical calibration, deliberately infeasible
+  T=  8 n= 2000 b= 12  T_eff=4.3 F2=False F3=True (INFEASIBLE)  size CC=0.062
+  T= 60 n=  600 b= 60  T_eff=32.3 F2=False F3=False (INFEASIBLE)  size CC=0.073
+====================================================================================================
+ARM S - signal structure: spiked, dense, omitted predictor
+====================================================================================================
+T=12 n=8000 b=18 rho=0.3 c=0.5 z=0.133 P=6  T_eff=6.5 F1=True F2=True F3=True
+  spiked   R2=0.00 | Psihat= 0.4571 mu_CC=+0.00000 gap=-0.45648 | rej DM/CW/CC = 0.000 0.053 0.057
+  spiked   R2=0.02 | Psihat= 0.4570 mu_CC=+0.01673 gap=-0.44069 | rej DM/CW/CC = 0.000 0.538 0.250
+  spiked   R2=0.05 | Psihat= 0.4571 mu_CC=+0.04182 gap=-0.41569 | rej DM/CW/CC = 0.000 0.993 0.743
+  spiked   R2=0.10 | Psihat= 0.4572 mu_CC=+0.08367 gap=-0.37553 | rej DM/CW/CC = 0.000 1.000 0.997
+  spiked   R2=0.20 | Psihat= 0.4571 mu_CC=+0.16717 gap=-0.29411 | rej DM/CW/CC = 0.000 1.000 1.000
+  dense    R2=0.00 | Psihat= 0.4571 mu_CC=+0.00000 gap=-0.45631 | rej DM/CW/CC = 0.000 0.061 0.066
+  dense    R2=0.02 | Psihat= 0.4571 mu_CC=+0.01673 gap=-0.44067 | rej DM/CW/CC = 0.000 0.543 0.258
+  dense    R2=0.05 | Psihat= 0.4570 mu_CC=+0.04182 gap=-0.41617 | rej DM/CW/CC = 0.000 0.986 0.746
+  dense    R2=0.10 | Psihat= 0.4572 mu_CC=+0.08367 gap=-0.37538 | rej DM/CW/CC = 0.000 1.000 0.996
+  dense    R2=0.20 | Psihat= 0.4571 mu_CC=+0.16739 gap=-0.29374 | rej DM/CW/CC = 0.000 1.000 1.000
+  omitted  R2=0.00 | Psihat= 0.4571 mu_CC=+0.00000 gap=-0.45741 | rej DM/CW/CC = 0.000 0.043 0.058
+  omitted  R2=0.02 | Psihat= 0.4572 mu_CC=-0.00268 gap=-0.46044 | rej DM/CW/CC = 0.000 0.111 0.041
+  omitted  R2=0.05 | Psihat= 0.4570 mu_CC=-0.00669 gap=-0.46429 | rej DM/CW/CC = 0.000 0.285 0.031
+  omitted  R2=0.10 | Psihat= 0.4572 mu_CC=-0.01348 gap=-0.47079 | rej DM/CW/CC = 0.000 0.633 0.007
+  omitted  R2=0.20 | Psihat= 0.4572 mu_CC=-0.02671 gap=-0.48519 | rej DM/CW/CC = 0.000 0.972 0.003
+  [saved] output_fixed/tab_signal.tex
+
+# finished in 313.8 min.  All output in output_fixed/

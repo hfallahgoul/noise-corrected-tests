@@ -1,0 +1,37 @@
+# har_size_power.py  seed=11  reps=300  n=700  T=250 P=25 ztil=1.0
+# CC  = scalar plug-in  sigmahat^2_w * Psihat_t   (paper default)
+# CCw = weighted        Psitilde_t = sum_s a_{t,s}^2 (1/2)(y_s-y_{s-1})^2
+====================================================================================================
+A. HAR benchmark vs ridge on P=25 LAGS of the target.  Nominal size 0.05 at lam=0.
+   This is the configuration the paper admits (Remark: no-ldv).
+====================================================================================================
+  lam=0.0   Psihat=0.0396 R=0.971 dMSPE=-0.00675 | rej  DM=0.000 CW=0.057 CC=0.023 | t_CC mean/sd = +0.09/0.78
+        correction size:  sig2*Psi=0.00699  w1(dy)=0.00471  w2(dr)=0.00683  w3(loc)=0.00711
+        rej:  CC=0.023  w1=0.000  w2=0.020  w3=0.030   mean t: +0.09 / -0.83 / +0.03 / +0.14
+  lam=0.05  Psihat=0.0397 R=1.004 dMSPE=-0.00643 | rej  DM=0.000 CW=0.093 CC=0.037 | t_CC mean/sd = +0.23/0.81
+        correction size:  sig2*Psi=0.00702  w1(dy)=0.00473  w2(dr)=0.00686  w3(loc)=0.00715
+        rej:  CC=0.037  w1=0.000  w2=0.027  w3=0.043   mean t: +0.23 / -0.69 / +0.16 / +0.27
+  lam=0.1   Psihat=0.0399 R=1.118 dMSPE=-0.00545 | rej  DM=0.000 CW=0.233 CC=0.103 | t_CC mean/sd = +0.61/0.88
+        correction size:  sig2*Psi=0.00712  w1(dy)=0.00479  w2(dr)=0.00696  w3(loc)=0.00725
+        rej:  CC=0.103  w1=0.020  w2=0.100  w3=0.117   mean t: +0.61 / -0.27 / +0.55 / +0.66
+  lam=0.2   Psihat=0.0411 R=1.646 dMSPE=-0.00125 | rej  DM=0.040 CW=0.857 CC=0.607 | t_CC mean/sd = +1.88/1.10
+        correction size:  sig2*Psi=0.00758  w1(dy)=0.00506  w2(dr)=0.00743  w3(loc)=0.00772
+        rej:  CC=0.607  w1=0.307  w2=0.587  w3=0.627   mean t: +1.88 / +1.12 / +1.84 / +1.93
+
+====================================================================================================
+B. HAR benchmark vs ridge on P=25 EXOGENOUS features -- the case that really fails.
+====================================================================================================
+  lam=0.0   Psihat=0.1144 R=2.195 dMSPE=-0.03759 | rej  DM=0.000 CW=0.237 CC=0.000 | t_CC mean/sd = -2.49/0.87
+        correction size:  sig2*Psi=0.02013  w1(dy)=0.01386  w2(dr)=0.01997  w3(loc)=0.02014
+        rej:  CC=0.000  w1=0.000  w2=0.000  w3=0.000   mean t: -2.49 / -3.45 / -2.53 / -2.49
+  lam=0.05  Psihat=0.1154 R=2.237 dMSPE=-0.03802 | rej  DM=0.000 CW=0.300 CC=0.000 | t_CC mean/sd = -2.41/0.93
+        correction size:  sig2*Psi=0.02059  w1(dy)=0.01401  w2(dr)=0.02043  w3(loc)=0.02060
+        rej:  CC=0.000  w1=0.000  w2=0.000  w3=0.000   mean t: -2.41 / -3.40 / -2.44 / -2.41
+  lam=0.1   Psihat=0.1170 R=2.372 dMSPE=-0.03840 | rej  DM=0.000 CW=0.557 CC=0.000 | t_CC mean/sd = -2.21/0.99
+        correction size:  sig2*Psi=0.02152  w1(dy)=0.01427  w2(dr)=0.02140  w3(loc)=0.02154
+        rej:  CC=0.000  w1=0.000  w2=0.000  w3=0.000   mean t: -2.21 / -3.25 / -2.24 / -2.21
+  lam=0.2   Psihat=0.1192 R=2.842 dMSPE=-0.04284 | rej  DM=0.000 CW=0.923 CC=0.000 | t_CC mean/sd = -2.14/1.01
+        correction size:  sig2*Psi=0.02356  w1(dy)=0.01483  w2(dr)=0.02359  w3(loc)=0.02359
+        rej:  CC=0.000  w1=0.000  w2=0.000  w3=0.000   mean t: -2.14 / -3.20 / -2.15 / -2.14
+
+[saved] <out>/har_size_power.json   (9.0 min)

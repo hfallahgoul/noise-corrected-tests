@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\caption{Signal structure, and whether CW is rejecting a true null. $T=12$, $n=8{,}000$, $b=18$, $\rho_x=0.3$, $\Psi^*=0.5$ ($c=0.5$, $z=0.133$, $P=6$), oracle $\sigma^2$, $1{,}000$ replications. Spiked: signal in one predictor. Dense: signal across all six. Omitted: signal from a variable outside the model, correlated $0.5$ with the first predictor. $\Hcov$ holds when $2\E[fg]\le0$, $\Hcc$ when $\mu_{CC}\le0$. MSPE gap: mean of $\ehat1^2-\ehat2^2$, negative when the enlarged model forecasts worse. One-sided $5\%$ rejection frequencies.}
+\label{tab:mc-signal}
+\small
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+signal & $R^2$ & $\hat\Psi_n$ & $2\E[fg]$ & $\E[g^2]$ & $\mu_{CC}$ & MSPE gap & DM & CW & CC \\
+\midrule
+spiked & 0.00 & 0.457 & 0.0000 & 0.0000 & 0.000 & $-0.456$ & 0.000 & 0.053 & 0.057 \\
+spiked & 0.02 & 0.457 & 0.0284 & 0.0117 & 0.017 & $-0.441$ & 0.000 & 0.538 & 0.250 \\
+spiked & 0.05 & 0.457 & 0.0710 & 0.0292 & 0.042 & $-0.416$ & 0.000 & 0.993 & 0.743 \\
+spiked & 0.10 & 0.457 & 0.1420 & 0.0583 & 0.084 & $-0.376$ & 0.000 & 1.000 & 0.997 \\
+spiked & 0.20 & 0.457 & 0.2837 & 0.1166 & 0.167 & $-0.294$ & 0.000 & 1.000 & 1.000 \\
+dense & 0.00 & 0.457 & 0.0000 & 0.0000 & 0.000 & $-0.456$ & 0.000 & 0.061 & 0.066 \\
+dense & 0.02 & 0.457 & 0.0284 & 0.0117 & 0.017 & $-0.441$ & 0.000 & 0.543 & 0.258 \\
+dense & 0.05 & 0.457 & 0.0710 & 0.0292 & 0.042 & $-0.416$ & 0.000 & 0.986 & 0.746 \\
+dense & 0.10 & 0.457 & 0.1420 & 0.0583 & 0.084 & $-0.375$ & 0.000 & 1.000 & 0.996 \\
+dense & 0.20 & 0.457 & 0.2841 & 0.1167 & 0.167 & $-0.294$ & 0.000 & 1.000 & 1.000 \\
+omitted & 0.00 & 0.457 & 0.0000 & 0.0000 & 0.000 & $-0.457$ & 0.000 & 0.043 & 0.058 \\
+omitted & 0.02 & 0.457 & 0.0071 & 0.0098 & $-0.003$ & $-0.460$ & 0.000 & 0.111 & 0.041 \\
+omitted & 0.05 & 0.457 & 0.0177 & 0.0244 & $-0.007$ & $-0.464$ & 0.000 & 0.285 & 0.031 \\
+omitted & 0.10 & 0.457 & 0.0354 & 0.0489 & $-0.013$ & $-0.471$ & 0.000 & 0.633 & 0.007 \\
+omitted & 0.20 & 0.457 & 0.0710 & 0.0977 & $-0.027$ & $-0.485$ & 0.000 & 0.972 & 0.003 \\
+\bottomrule
+\end{tabular}
+\end{table}

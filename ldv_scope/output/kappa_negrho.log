@@ -1,0 +1,29 @@
+================================================================================================================
+PANEL N1.  kappa_a against persistence, including rho < 0.  T=250, P=25, ztil=1, reps=120
+================================================================================================================
+                            design    status  -0.95  -0.85   -0.7   -0.5  -0.25    0.0   0.25    0.5   0.85   0.95
+------------------------------------------------------------------------------------------------------------------
+   A  lagged-y bench, lag features   passing  1.001  0.993  0.981  0.975  0.972  0.971  0.973  0.976  0.978  0.972
+                              (se)            0.019  0.013  0.012  0.011  0.011  0.011  0.012  0.012  0.013  0.017
+  B  lagged-y bench, exog features   failing  1.214  1.218  1.226  1.238  1.260  1.291  1.339  1.420  1.749  2.086
+                              (se)            0.017  0.017  0.017  0.017  0.018  0.018  0.019  0.020  0.024  0.032
+     C  const bench (MISSPECIFIED)   control218.035 53.072 16.567  5.379  1.745  0.983  1.702  5.234 50.677204.879
+                              (se)            3.617  0.617  0.184  0.060  0.019  0.011  0.023  0.065  0.636  3.506
+
+================================================================================================================
+PANEL N2.  Robustness at rho = -0.85 across window, feature count and penalty. reps=120
+================================================================================================================
+                            design     T    P     ztil             kappa   verdict
+----------------------------------------------------------------------------------------------------------------
+   A  lagged-y bench, lag features   250   25      1.0      0.960 +/-0.015   OK
+   A  lagged-y bench, lag features   125   25      0.1      0.948 +/-0.009   OK
+   A  lagged-y bench, lag features   125   60      0.1      1.075 +/-0.009   OK
+   A  lagged-y bench, lag features   500   60     0.01      0.946 +/-0.008   OK
+   A  lagged-y bench, lag features   250   25    0.001      0.958 +/-0.013   OK
+  B  lagged-y bench, exog features   250   25      1.0      1.214 +/-0.014   kappa>1 (conservative)
+  B  lagged-y bench, exog features   125   25      0.1      1.272 +/-0.018   kappa>1 (conservative)
+  B  lagged-y bench, exog features   125   60      0.1      1.317 +/-0.018   kappa>1 (conservative)
+  B  lagged-y bench, exog features   500   60     0.01      1.265 +/-0.014   kappa>1 (conservative)
+  B  lagged-y bench, exog features   250   25    0.001      1.248 +/-0.016   kappa>1 (conservative)
+
+[saved] <path>   (533.4s)

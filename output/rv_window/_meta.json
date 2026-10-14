@@ -1,0 +1,16 @@
+{
+ "panel": "output/rv_cross_multiest/panel_hac_check.json",
+ "hold": "z",
+ "T_dec": 250,
+ "T_out": [
+  250,
+  500,
+  1000
+ ],
+ "zt": [
+  0.1,
+  1.0,
+  10.0
+ ],
+ "n_ids": 994
+}

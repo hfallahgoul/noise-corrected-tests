@@ -1,0 +1,36 @@
+\begin{table}[htbp]
+\centering
+\caption{What \cref{lem:psi-t} costs in the one configuration that fails: a benchmark
+regressing on lags of the target against features drawn from outside the target's own past.
+The entries are $\kldv=\E[(a_t'\eps_t)^2]/(\sigma^2\E\|a_t\|^2)$, the ratio of the true null
+forecast variance to the plug-in correction; \cref{lem:psi-t} forces $\kldv=1$. Panel (a)
+varies the persistence of the target and the number of benchmark lags at $T=250$, $P=25$,
+$\ztil=1$; panel (b) varies the penalty and the feature count at $\rho=0.85$, $k=3$. The extra
+features are exogenous throughout and the benchmark is correctly specified, so nothing here is
+a misspecification effect. Read against panel (a) of \cref{tab:ldv-scope}, which shows that
+replacing those exogenous features by lags of the target returns $\kldv$ to one. The failure
+does not shrink in $T$: at $\rho=0.85$ a fourfold increase in the window moves $\kldv$ only
+from $1.92$ to $1.63$.}
+\label{tab:kappa}
+\small
+\begin{tabular}{lrrr}
+\toprule
+\multicolumn{4}{@{}l}{\emph{(a) target persistence $\rho$ and benchmark lags $k$}}\\
+\cmidrule(r){1-4}
+$\rho$ & $k=1$ & $k=3$ & $k=6$ \\
+\midrule
+0 & 1.12 & 1.37 & 1.54 \\
+0.5 & 1.32 & 1.56 & 1.66 \\
+0.85 & 1.88 & 2.03 & 2.05 \\
+0.95 & 2.35 & 2.38 & 2.33 \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{(b) effective penalty $\ztil$ and feature count $P$}}\\
+\cmidrule(r){1-4}
+$\ztil$ & $P=10$ & $P=25$ & $P=60$ \\
+\midrule
+0.1 & 1.49 & 1.71 & 1.91 \\
+1 & 1.46 & 1.68 & 2.02 \\
+10 & 1.33 & 1.43 & 1.60 \\
+\bottomrule
+\end{tabular}
+\end{table}

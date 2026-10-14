@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\caption{The remainder $\Delta$ of \eqref{eq:omega}, evaluated. Both
+constituents follow from \cref{lem:kernel} and Isserlis' theorem and are
+computed exactly from the weights \eqref{eq:w}; nothing here is estimated from
+a simulated loss differential. Gaussian i.i.d.\ design and innovations,
+$\sigma^2=1$, $n=400$, $24$ replications; Monte Carlo standard errors are
+below $0.005$ throughout. The last column is the standard deviation the
+CW-studentised corrected statistic would have if $\Delta$ were the
+only departure from $4\sigma^4\Psi$, that is
+$\sqrt{(4\sigma^4\Psi+\Delta)/(4\sigma^4\Psi)}$; the $(c,z)$ pairs in rows two,
+five and six are those of \cref{tab:size-check}, which reports $0.961$, $1.194$
+and $1.204$ against the $0.917$, $1.139$ and $1.159$ here. The residue is the
+finite-$T$ term of \cref{rem:omega-finite-T}, which enters with the opposite
+sign.}
+\label{tab:delta}
+\small
+\begin{tabular}{rrr rrr rr rr}
+\toprule
+$c$ & $z$ & $T$ & $\Psi$ & $4\sigma^4\Psi$ & $V_{\mathrm{off}}$ & $\Cov(\mathrm I,\mathrm{II})$ & $\Delta$ & $\Delta/4\sigma^4\Psi$ & implied s.d. \\
+\midrule
+0.25 & 0.1 & 80 & 0.2443 & 0.9771 & 0.2172 & 0.3321 & $-0.4471$ & $-0.458$ & 0.737 \\
+0.5 & 0.1 & 60 & 0.5690 & 2.2762 & 0.5019 & 0.4316 & $-0.3613$ & $-0.159$ & 0.917 \\
+0.5 & 0.1 & 120 & 0.5690 & 2.2762 & 0.5039 & 0.4410 & $-0.3781$ & $-0.166$ & 0.913 \\
+0.5 & 1 & 60 & 0.1063 & 0.4254 & 0.0259 & 0.0592 & $-0.0924$ & $-0.217$ & 0.885 \\
+0.9 & 0.2 & 80 & 0.6667 & 2.6667 & 0.7002 & $-0.0455$ & 0.7912 & 0.297 & 1.139 \\
+2 & 0.5 & 60 & 0.3489 & 1.3955 & 0.2557 & $-0.1112$ & 0.4781 & 0.343 & 1.159 \\
+\bottomrule
+\end{tabular}
+\end{table}

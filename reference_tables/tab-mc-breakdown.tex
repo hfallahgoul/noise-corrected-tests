@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\caption{Where the approximations break. All three panels run at $T=8$, $n=2{,}000$, $b=12$, $\rho_x=0.3$ and $c=0.5$ unless a row says otherwise, which is the $\Psi^*=0.5$ cell of \cref{tab:mc-size}. Panel (a) correlates innovations with $\eps_t$ at strength $\delta$, violating \cref{as:errors}; $\mathcal R$ is the sanity ratio and $\mathcal R^{\text{shift}}$ its value after a large circular shift. Panel (b) varies the innovation distribution and then, holding that distribution fixed at GARCH$(1,1)$, the sign of the coupling between the dispersion of the feature rows and the conditional volatility $\sigma_t$: independent, rising with $\sigma_t$, and falling with it. The three GARCH rows therefore share an innovation process and differ only in that coupling, which is the quantity \eqref{eq:psi-t-het} says a scalar correction cannot see. Panel (c) runs designs failing the bandwidth gates of \cref{tab:gates}, the second of which is a monthly-frequency design of the kind \cref{sec:empirics} works with. Entries headed ``size'' are one-sided $5\%$ rejection frequencies under the sharp null, so $0.05$ is correct. Panels (a) and (b) use $2{,}000$ replications and carry a Monte Carlo standard error of $0.005$ at that level; panel (c) uses $1{,}000$ and carries $0.007$. The $\Psitil_t$ column is the corrected test with the heteroskedasticity-weighted correction of \cref{prop:sigma-weighted} in place of the scalar one, studentised identically.}
+\label{tab:mc-breakdown}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+\multicolumn{6}{@{}l}{\emph{(a) Endogeneity}, violating \cref{as:errors}}\\
+\cmidrule(r){1-6}
+$\delta$ & $\mathcal R$ & $\mathcal R^{\text{shift}}$ & size CC & size $\Psitil_t$ & \\
+0.00 & 0.998 & 1.001 & 0.057 & 0.054 & \\
+0.20 & 1.000 & 1.000 & 0.067 & 0.057 & \\
+0.50 & 1.001 & 1.001 & 0.098 & 0.115 & \\
+0.80 & 1.001 & 1.000 & 0.213 & 0.284 & \\
+\addlinespace
+\multicolumn{6}{@{}l}{\emph{(b) Innovation distribution, and the feature--volatility coupling}}\\
+\cmidrule(r){1-6}
+innovations & $\Psihatn$ & $\mathcal R$ & size CC & size $\Psitil_t$ & size CW \\
+Gaussian & 0.4356 & 1.000 & 0.057 & 0.045 & 0.037 \\
+$t_5$ & 0.4353 & 0.998 & 0.092 & 0.049 & 0.053 \\
+GARCH$(1,1)$, features independent & 0.4356 & 1.000 & 0.045 & 0.051 & 0.053 \\
+GARCH$(1,1)$, dispersion $\uparrow$ with $\sigma_t$ & 0.4352 & 1.078 & 0.004 & 0.057 & 0.051 \\
+GARCH$(1,1)$, dispersion $\downarrow$ with $\sigma_t$ & 0.4407 & 0.934 & 0.177 & 0.039 & 0.043 \\
+\addlinespace
+\multicolumn{6}{@{}l}{\emph{(c) Outside the bandwidth gates}}\\
+\cmidrule(r){1-6}
+design & $T_{\mathrm{eff}}$ & F2 & F3 & size CC & size $\Psitil_t$ \\
+$T=8$, $n=2000$, $b=12$ & 4.3 & no & yes & 0.062 & 0.051 \\
+$T=60$, $n=600$, $b=60$ & 32.3 & no & no & 0.073 & 0.058 \\
+\bottomrule
+\end{tabular}
+\end{table}

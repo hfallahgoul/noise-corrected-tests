@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\caption{Each statistic against each null. Rejection frequencies of the one-sided $5\%$ tests at $(T,n,b)=(8,2000,12)$, $\rho_x=0.3$, $1{,}000$ replications. The $\Hcc$ and $\Hmspe$ rows carry $R^2=0.10$ and impose their null exactly by rescaling the forecast differential by a factor computed from an independent pilot sample. $\Hcov$ is not reachable that way, since a positive rescaling multiplies $\E[fg]$ by the same factor; that row is instead the $\theta=0$ design at scale one, which sets $\E[fg]$ and $\E[g^2]$ to zero together. It is therefore the degenerate point at which $\Hcov$ and $\Hcc$ share a boundary, and the only row in which the equality of $\Psihatn$ with $-\overline{\Delta\MSPE}$ is an exact prediction of \cref{lem:psi-t}. $\overline{\Delta\MSPE}$ is the realised mean squared prediction error gap, negative when the candidate forecasts worse, and $\Psihatn$ the realised plug-in correction. $D_{\mathrm{KS}}=\sup_u|F_n(u)-u|$ is the Kolmogorov--Smirnov statistic against uniformity of the $1{,}000$ $p$-values of that row's own statistic under the oracle $\sigma^2$: the largest error in the $p$-value distribution, measured in probability units rather than as a significance level, so that a reader can judge the size of a departure and not only its detectability. With $1{,}000$ draws, $D_{\mathrm{KS}}>0.043$ rejects uniformity at the $5\%$ level, which two of the nine cells do; two more sit just under the threshold, at $0.040$ and $0.037$. Shading marks each null's own statistic, and bold an own-statistic rate outside the $95\%$ Monte Carlo band of an exact test, $0.0365$ to $0.0635$. The Monte Carlo standard error of a rejection frequency is $0.007$ at a nominal $0.05$.}
+\label{tab:mc-grid}
+\small
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+& & & & & \multicolumn{3}{c}{oracle $\sigma^2$} & \multicolumn{2}{c}{$\hat\sigma^2_\Delta$} & \\
+\cmidrule(lr){6-8}\cmidrule(lr){9-10}
+$\Psi^*$ & null imposed & $\mu_{CC}$ & $\overline{\Delta\MSPE}$ & $\Psihatn$ & DM & CW & CC & CW & CC & $D_{\mathrm{KS}}$ \\
+\midrule
+0.2 & $\Hcov$ & 0.0000 & $-0.137$ & 0.138 & 0.000 & \cellcolor{black!10}0.055 & 0.065 & 0.055 & 0.048 & 0.020 \\
+ & $\Hcc$ & 0.0010 & $-1.224$ & 1.209 & 0.000 & 1.000 & \cellcolor{black!10}0.052 & 1.000 & 0.213 & 0.084 \\
+ & $\Hmspe$ & 0.0626 & $-0.005$ & 0.064 & \cellcolor{black!10}\textbf{0.024} & 0.999 & 0.996 & 0.999 & 0.999 & 0.132 \\
+\addlinespace
+0.5 & $\Hcov$ & 0.0000 & $-0.435$ & 0.436 & 0.000 & \cellcolor{black!10}0.055 & 0.067 & 0.055 & 0.040 & 0.028 \\
+ & $\Hcc$ & $-0.0006$ & $-2.666$ & 2.658 & 0.000 & 0.974 & \cellcolor{black!10}\textbf{0.064} & 0.974 & 0.373 & 0.024 \\
+ & $\Hmspe$ & 0.0319 & $-0.001$ & 0.032 & \cellcolor{black!10}0.049 & 0.973 & 0.938 & 0.973 & 0.964 & 0.040 \\
+\addlinespace
+1.0 & $\Hcov$ & 0.0000 & $-0.960$ & 0.959 & 0.000 & \cellcolor{black!10}0.051 & 0.062 & 0.051 & 0.049 & 0.017 \\
+ & $\Hcc$ & 0.0010 & $-4.336$ & 4.325 & 0.000 & 0.834 & \cellcolor{black!10}\textbf{0.068} & 0.834 & 0.382 & 0.031 \\
+ & $\Hmspe$ & 0.0170 & 0.000 & 0.017 & \cellcolor{black!10}0.060 & 0.839 & 0.795 & 0.839 & 0.833 & 0.037 \\
+\bottomrule
+\end{tabular}
+\end{table}

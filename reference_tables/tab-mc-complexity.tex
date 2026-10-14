@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\centering
+\caption{Through the interpolation threshold. $(T,n,b)=(12,8000,18)$, $\rho_x=0$, $1{,}000$ replications, one-sided at $5\%$. Complexity is swept directly and the scale-free penalty $\ztil=zT/P$ held fixed, rather than targeting $\Psi^*$ as in \cref{tab:mc-size}: a fixed $\Psi^*$ is unreachable as $c\to1$, which is why the other tables stop at $c=0.7$. $\Psi(c,z)$ is the closed form \eqref{eq:closed-main} and $\Psihatn$ the realised plug-in. The targets swept are $0.5$, $0.7$, $0.9$, $1$, $1.1$, $1.5$, $2$ and $3$; the column reports the \emph{realised} $c=P/T$ after integer rounding of $P$, at which both $\Psi(c,z)$ and $z=\ztil c$ are evaluated, so the two cells bracketing the threshold sit at $0.917$ and $1.083$ while the threshold cell itself is exact. $\vartheta_T$ is the dispersion diagnostic of \cref{prop:kurtosis}, whose boundedness is what \cref{thm:R2c} asserts, while ``sd'' and ``kurt'' are the standard deviation and standardised fourth moment of the studentised statistic itself, which is the quantity a user actually relies on. Size columns are at $R^2=0$, with CC$_\Delta$ replacing the oracle $\sigma^2$ by $\hat\sigma^2_\Delta$; power is at $R^2=0.05$. Monte Carlo standard error at a nominal $0.05$ is $0.007$.}
+\label{tab:mc-complexity}
+\small
+\begin{tabular}{rrrrrrrrrrrrr}
+\toprule
+& & & & & & & \multicolumn{2}{c}{studentised $t$} & \multicolumn{3}{c}{size} & power \\
+\cmidrule(lr){8-9}\cmidrule(lr){10-12}
+$c$ & $P$ & $\ztil$ & $\Psi(c,z)$ & $\Psihatn$ & ratio & $\vartheta_T$ & sd & kurt & CW & CC & CC$_\Delta$ & CC \\
+\midrule
+0.500 & 6 & 1.0 & 0.207 & 0.186 & 0.90 & 0.37 & 1.00 & 2.9 & 0.062 & 0.051 & 0.058 & 0.958 \\
+0.667 & 8 &  & 0.200 & 0.179 & 0.90 & 0.29 & 0.97 & 3.1 & 0.057 & 0.048 & 0.042 & 0.911 \\
+0.917 & 11 &  & 0.178 & 0.160 & 0.90 & 0.24 & 0.98 & 3.0 & 0.040 & 0.046 & 0.041 & 0.834 \\
+1.000 & 12 &  & 0.171 & 0.153 & 0.90 & 0.23 & 1.03 & 3.1 & 0.058 & 0.067 & 0.054 & 0.812 \\
+1.083 & 13 &  & 0.164 & 0.147 & 0.90 & 0.22 & 1.00 & 2.9 & 0.058 & 0.055 & 0.054 & 0.783 \\
+1.500 & 18 &  & 0.132 & 0.119 & 0.90 & 0.20 & 1.00 & 3.3 & 0.052 & 0.055 & 0.049 & 0.670 \\
+2.000 & 24 &  & 0.106 & 0.096 & 0.90 & 0.19 & 1.02 & 3.1 & 0.044 & 0.052 & 0.046 & 0.594 \\
+3.000 & 36 &  & 0.075 & 0.069 & 0.91 & 0.19 & 1.00 & 3.1 & 0.062 & 0.068 & 0.062 & 0.469 \\
+\addlinespace
+0.500 & 6 & 0.1 & 0.722 & 0.702 & 0.97 & 0.57 & 0.99 & 2.9 & 0.053 & 0.058 & 0.037 & 0.574 \\
+0.667 & 8 &  & 0.991 & 0.928 & 0.94 & 0.41 & 1.08 & 2.9 & 0.047 & 0.068 & 0.048 & 0.404 \\
+0.917 & 11 &  & 1.158 & 1.046 & 0.90 & 0.28 & 1.04 & 3.2 & 0.049 & 0.070 & 0.047 & 0.305 \\
+1.000 & 12 &  & 1.140 & 1.028 & 0.90 & 0.27 & 1.00 & 3.2 & 0.043 & 0.053 & 0.046 & 0.286 \\
+1.083 & 13 &  & 1.098 & 0.992 & 0.90 & 0.26 & 1.07 & 3.3 & 0.056 & 0.072 & 0.057 & 0.260 \\
+1.500 & 18 &  & 0.810 & 0.746 & 0.92 & 0.24 & 1.03 & 3.2 & 0.054 & 0.066 & 0.051 & 0.293 \\
+2.000 & 24 &  & 0.569 & 0.529 & 0.93 & 0.24 & 1.00 & 3.0 & 0.040 & 0.056 & 0.041 & 0.252 \\
+3.000 & 36 &  & 0.344 & 0.320 & 0.93 & 0.23 & 1.02 & 2.9 & 0.054 & 0.059 & 0.055 & 0.250 \\
+\bottomrule
+\end{tabular}
+\end{table}

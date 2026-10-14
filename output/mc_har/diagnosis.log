@@ -1,0 +1,30 @@
+# mc_har_diagnosis.py  20260818_194116
+
+==========================================================================
+1. Which designs satisfy Lemma 1?   R = 1 is required
+==========================================================================
+
+    target     benchmark   alt features               R   verdict
+--------------------------------------------------------------------------
+      exog          exog           exog     0.981 ±0.024   OK  (correctly specified, all exogenous)
+        ar            ar           exog     1.735 ±0.043   Lemma 1 FAILS  (correctly specified, AUTOREGRESSIVE)
+        ar            ar           lags     0.930 ±0.027   OK  (autoregressive, own-lag features)
+        ar          mean           exog    14.809 ±0.531   Lemma 1 FAILS  (MISSPECIFIED benchmark)
+
+==========================================================================
+2. Does the autoregressive failure shrink with T or with persistence?
+==========================================================================
+
+   rho           T=125           T=250           T=500
+--------------------------------------------------------
+   0.0     1.341 ±0.032     1.275 ±0.028     1.267 ±0.039
+   0.5     1.492 ±0.036     1.405 ±0.031     1.365 ±0.043
+  0.85     1.918 ±0.047     1.735 ±0.043     1.627 ±0.054
+  0.95     2.370 ±0.064     2.067 ±0.063     1.819 ±0.057
+
+Read the rho = 0.85 row: that is the first-order autocorrelation of log realized
+variance, so it is where the SPY design sits. R does not approach one as T grows -- a
+fourfold increase in the window moves it from 1.92 to 1.53 -- so this is an O(1) failure
+of Lemma 1, not a finite-sample effect that a longer window would cure.
+
+[saved] output/mc_har/diagnosis.json

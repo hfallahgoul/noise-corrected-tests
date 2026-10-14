@@ -1,0 +1,37 @@
+{
+ "A|exog|exog|exog": {
+  "kappa": 1.0365399527979648,
+  "se": 0.02509530301660844,
+  "label": "baseline: no lags anywhere"
+ },
+ "A|exog|const|lags": {
+  "kappa": 21.88511020885153,
+  "se": 0.5564212502802557,
+  "label": "CAUSAL lag features, NO lagged-y benchmark"
+ },
+ "A|ar|const|lags": {
+  "kappa": 52.14578045317337,
+  "se": 1.1421609826988566,
+  "label": "AR target, mean benchmark, lag features"
+ },
+ "A|ar|ar|exog": {
+  "kappa": 1.7762125287286943,
+  "se": 0.04424589503039501,
+  "label": "lagged-y BENCHMARK, exogenous features"
+ },
+ "A|ar|ar|lags": {
+  "kappa": 1.0005868753378848,
+  "se": 0.02091887264533628,
+  "label": "lagged-y benchmark AND lag features"
+ },
+ "A|har|har|lags": {
+  "kappa": 0.9755545148989156,
+  "se": 0.027842878810197893,
+  "label": "HAR benchmark, lag-ridge alternative"
+ },
+ "A|har|har|exog": {
+  "kappa": 2.1826325255771653,
+  "se": 0.047647776321129175,
+  "label": "HAR benchmark, exogenous features"
+ }
+}

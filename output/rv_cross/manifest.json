@@ -1,0 +1,8012 @@
+{
+ "seed": 20260823,
+ "id_min": 10000,
+ "id_max": 93500,
+ "min_days": 2500,
+ "end_after": 20200101,
+ "tried": 16393,
+ "target": 1000,
+ "generated": "2026-08-23 11:47:25",
+ "hits": {
+  "15231": {
+   "id": 15231,
+   "symbol": "NXRT",
+   "name": "NEXPOINT RESIDENTIAL TRUST INC",
+   "ndays": 2796,
+   "start": 20150401,
+   "end": 20260819
+  },
+  "15373": {
+   "id": 15373,
+   "symbol": "GLPG",
+   "name": "GALAPAGOS NV",
+   "ndays": 2756,
+   "start": 20150514,
+   "end": 20260820
+  },
+  "13387": {
+   "id": 13387,
+   "symbol": "GYLD",
+   "name": "ARROW E T F TRUST",
+   "ndays": 3481,
+   "start": 20120508,
+   "end": 20260820
+  },
+  "93371": {
+   "id": 93371,
+   "symbol": "CRMD",
+   "name": "CORMEDIX INC",
+   "ndays": 3615,
+   "start": 20100513,
+   "end": 20260817
+  },
+  "12355": {
+   "id": 12355,
+   "symbol": "HRZN",
+   "name": "HORIZON TECHNOLOGY FINANCE CORP",
+   "ndays": 3897,
+   "start": 20101029,
+   "end": 20260819
+  },
+  "84761": {
+   "id": 84761,
+   "symbol": "TTWO",
+   "name": "TAKE TWO INTERACTIVE SOFTWR INC",
+   "ndays": 7167,
+   "start": 19970415,
+   "end": 20260820
+  },
+  "12321": {
+   "id": 12321,
+   "symbol": "VTWV",
+   "name": "VANGUARD SCOTTSDALE FUNDS",
+   "ndays": 3406,
+   "start": 20100923,
+   "end": 20260820
+  },
+  "89289": {
+   "id": 89289,
+   "symbol": "SSI",
+   "name": "STAGE STORES INC",
+   "ndays": 4602,
+   "start": 20020108,
+   "end": 20200508
+  },
+  "93360": {
+   "id": 93360,
+   "symbol": "PSCE",
+   "name": "INVESCO E T F TRUST II",
+   "ndays": 3588,
+   "start": 20110323,
+   "end": 20260820
+  },
+  "89221": {
+   "id": 89221,
+   "symbol": "BHK",
+   "name": "BLACKROCK CORE BOND TRUST",
+   "ndays": 6143,
+   "start": 20011128,
+   "end": 20260817
+  },
+  "14556": {
+   "id": 14556,
+   "symbol": "WATT",
+   "name": "ENERGOUS CORP",
+   "ndays": 2735,
+   "start": 20140328,
+   "end": 20250808
+  },
+  "12049": {
+   "id": 12049,
+   "symbol": "GORO",
+   "name": "GOLD RESOURCE CORP",
+   "ndays": 3924,
+   "start": 20100830,
+   "end": 20260717
+  },
+  "15775": {
+   "id": 15775,
+   "symbol": "ACRS",
+   "name": "ACLARIS THERAPEUTICS INC",
+   "ndays": 2680,
+   "start": 20151007,
+   "end": 20260818
+  },
+  "83547": {
+   "id": 83547,
+   "symbol": "PFBI",
+   "name": "PREMIER FINANCIAL BANCORP INC",
+   "ndays": 3478,
+   "start": 19960517,
+   "end": 20210917
+  },
+  "91349": {
+   "id": 91349,
+   "symbol": "CLUB",
+   "name": "TOWN SPORTS INTL HOLDINGS INC",
+   "ndays": 3588,
+   "start": 20060602,
+   "end": 20200923
+  },
+  "13962": {
+   "id": 13962,
+   "symbol": "NSTG",
+   "name": "NANOSTRING TECHNOLOGIES INC",
+   "ndays": 2655,
+   "start": 20130626,
+   "end": 20240212
+  },
+  "88282": {
+   "id": 88282,
+   "symbol": "CHU",
+   "name": "CHINA UNICOM HONG KONG LTD",
+   "ndays": 5161,
+   "start": 20000621,
+   "end": 20210108
+  },
+  "47677": {
+   "id": 47677,
+   "symbol": "BRW",
+   "name": "BROADWING INC",
+   "ndays": 6459,
+   "start": 19960102,
+   "end": 20210903
+  },
+  "14711": {
+   "id": 14711,
+   "symbol": "LRMR",
+   "name": "LARIMAR THERAPEUTICS INC",
+   "ndays": 2968,
+   "start": 20140619,
+   "end": 20260819
+  },
+  "31500": {
+   "id": 31500,
+   "symbol": "EAVN",
+   "name": "EATON VANCE CORP",
+   "ndays": 6156,
+   "start": 19960102,
+   "end": 20210226
+  },
+  "11990": {
+   "id": 11990,
+   "symbol": "KKR",
+   "name": "K K R & CO INC",
+   "ndays": 4022,
+   "start": 20100715,
+   "end": 20260820
+  },
+  "89810": {
+   "id": 89810,
+   "symbol": "GPK",
+   "name": "GRAPHIC PACKAGING HOLDING CO",
+   "ndays": 5748,
+   "start": 20030811,
+   "end": 20260820
+  },
+  "91152": {
+   "id": 91152,
+   "symbol": "TDG",
+   "name": "TRANSDIGM GROUP INC",
+   "ndays": 5081,
+   "start": 20060315,
+   "end": 20260820
+  },
+  "22517": {
+   "id": 22517,
+   "symbol": "PPL",
+   "name": "P P L CORP",
+   "ndays": 7670,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "17667": {
+   "id": 17667,
+   "symbol": "ENOR",
+   "name": "ISHARES TRUST",
+   "ndays": 2979,
+   "start": 20131114,
+   "end": 20260819
+  },
+  "77629": {
+   "id": 77629,
+   "symbol": "USPH",
+   "name": "U S PHYSICAL THERAPY INC",
+   "ndays": 6518,
+   "start": 19960515,
+   "end": 20260820
+  },
+  "92477": {
+   "id": 92477,
+   "symbol": "ARR",
+   "name": "ARMOUR RESIDENTIAL REIT INC",
+   "ndays": 4074,
+   "start": 20071203,
+   "end": 20260819
+  },
+  "76274": {
+   "id": 76274,
+   "symbol": "CRD/A",
+   "name": "CRAWFORD & CO",
+   "ndays": 5573,
+   "start": 19960319,
+   "end": 20260819
+  },
+  "83822": {
+   "id": 83822,
+   "symbol": "GES",
+   "name": "GUESS INC",
+   "ndays": 7269,
+   "start": 19960808,
+   "end": 20260121
+  },
+  "90121": {
+   "id": 90121,
+   "symbol": "AINV",
+   "name": "APOLLO INVESTMENT CORP",
+   "ndays": 2546,
+   "start": 20040406,
+   "end": 20260819
+  },
+  "13973": {
+   "id": 13973,
+   "symbol": "BFOR",
+   "name": "ALPS E T F TRUST",
+   "ndays": 3181,
+   "start": 20130604,
+   "end": 20260818
+  },
+  "91537": {
+   "id": 91537,
+   "symbol": "PTF",
+   "name": "INVESCO E T F TRUST",
+   "ndays": 4243,
+   "start": 20061012,
+   "end": 20260820
+  },
+  "93423": {
+   "id": 93423,
+   "symbol": "SIX",
+   "name": "SIX FLAGS ENTERTAINMENT CORP",
+   "ndays": 3490,
+   "start": 20100621,
+   "end": 20240701
+  },
+  "86384": {
+   "id": 86384,
+   "symbol": "CCNE",
+   "name": "C N B FINANCIAL CORP PA",
+   "ndays": 4789,
+   "start": 19990405,
+   "end": 20260819
+  },
+  "75033": {
+   "id": 75033,
+   "symbol": "VOX",
+   "name": "AUDIOVOX CORP",
+   "ndays": 7125,
+   "start": 19960103,
+   "end": 20250331
+  },
+  "60986": {
+   "id": 60986,
+   "symbol": "NWL",
+   "name": "NEWELL BRANDS INC",
+   "ndays": 7667,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "90499": {
+   "id": 90499,
+   "symbol": "FMO",
+   "name": "FIDUCIARY CLAYMORE ENERGY INF FD",
+   "ndays": 4315,
+   "start": 20041223,
+   "end": 20220304
+  },
+  "13908": {
+   "id": 13908,
+   "symbol": "PFSI",
+   "name": "PENNYMAC FINANCIAL SVCS INC NEW",
+   "ndays": 3287,
+   "start": 20130509,
+   "end": 20260820
+  },
+  "85340": {
+   "id": 85340,
+   "symbol": "MFL",
+   "name": "BLACKROCK MUNIHLDGS INV QLTY FD",
+   "ndays": 5742,
+   "start": 19971030,
+   "end": 20220408
+  },
+  "13732": {
+   "id": 13732,
+   "symbol": "GHY",
+   "name": "P G I M GLOBAL HIGH YIELD FD INC",
+   "ndays": 3373,
+   "start": 20121221,
+   "end": 20260820
+  },
+  "87837": {
+   "id": 87837,
+   "symbol": "GBC",
+   "name": "G B I CAPITAL MANAGEMENT CORP",
+   "ndays": 4184,
+   "start": 20010119,
+   "end": 20200213
+  },
+  "14531": {
+   "id": 14531,
+   "symbol": "AKBA",
+   "name": "AKEBIA THERAPEUTICS INC",
+   "ndays": 3075,
+   "start": 20140320,
+   "end": 20260820
+  },
+  "88203": {
+   "id": 88203,
+   "symbol": "OSPN",
+   "name": "ONESPAN INC",
+   "ndays": 6449,
+   "start": 20000407,
+   "end": 20260819
+  },
+  "89988": {
+   "id": 89988,
+   "symbol": "ISI",
+   "name": "ISHARES TRUST",
+   "ndays": 3972,
+   "start": 20040127,
+   "end": 20260820
+  },
+  "79611": {
+   "id": 79611,
+   "symbol": "MOV",
+   "name": "MOVADO GROUP INC",
+   "ndays": 7157,
+   "start": 19960528,
+   "end": 20260820
+  },
+  "86313": {
+   "id": 86313,
+   "symbol": "UBA",
+   "name": "URSTADT BIDDLE PROPERTIES INC",
+   "ndays": 4524,
+   "start": 20030501,
+   "end": 20230817
+  },
+  "93267": {
+   "id": 93267,
+   "symbol": "SLRC",
+   "name": "S L R INVESTMENT CORP",
+   "ndays": 4080,
+   "start": 20100209,
+   "end": 20260820
+  },
+  "12527": {
+   "id": 12527,
+   "symbol": "IBIO",
+   "name": "IBIO INC",
+   "ndays": 3745,
+   "start": 20110104,
+   "end": 20260820
+  },
+  "66739": {
+   "id": 66739,
+   "symbol": "SBOW",
+   "name": "SILVERBOW RESOURCES INC",
+   "ndays": 6797,
+   "start": 19960102,
+   "end": 20240729
+  },
+  "90744": {
+   "id": 90744,
+   "symbol": "SIMO",
+   "name": "SILICON MOTION TECHNOLOGY CORP",
+   "ndays": 5242,
+   "start": 20050630,
+   "end": 20260820
+  },
+  "75461": {
+   "id": 75461,
+   "symbol": "PMM",
+   "name": "PUTNAM MANAGED MUNI INCOME TR",
+   "ndays": 7579,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "92648": {
+   "id": 92648,
+   "symbol": "CFX",
+   "name": "COLFAX CORP",
+   "ndays": 4465,
+   "start": 20080508,
+   "end": 20260819
+  },
+  "10397": {
+   "id": 10397,
+   "symbol": "WERN",
+   "name": "WERNER ENTERPRISES INC",
+   "ndays": 7595,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "76224": {
+   "id": 76224,
+   "symbol": "BHE",
+   "name": "BENCHMARK ELECTRONICS INC",
+   "ndays": 7318,
+   "start": 19960201,
+   "end": 20260819
+  },
+  "14541": {
+   "id": 14541,
+   "symbol": "CHV",
+   "name": "CHEVRON CORP",
+   "ndays": 7686,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "72231": {
+   "id": 72231,
+   "symbol": "MMT",
+   "name": "M F S MULTIMARKET INCOME TRUST",
+   "ndays": 7641,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "53074": {
+   "id": 53074,
+   "symbol": "MLAB",
+   "name": "MESA LABORATORIES INC",
+   "ndays": 4444,
+   "start": 19960110,
+   "end": 20260820
+  },
+  "10026": {
+   "id": 10026,
+   "symbol": "JJSF",
+   "name": "J & J SNACK FOODS CORP",
+   "ndays": 7108,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "13612": {
+   "id": 13612,
+   "symbol": "ISTB",
+   "name": "ISHARES TRUST",
+   "ndays": 3302,
+   "start": 20121129,
+   "end": 20260819
+  },
+  "83390": {
+   "id": 83390,
+   "symbol": "KVHI",
+   "name": "K V H INDUSTRIES INC",
+   "ndays": 6825,
+   "start": 19960402,
+   "end": 20260820
+  },
+  "81278": {
+   "id": 81278,
+   "symbol": "STRT",
+   "name": "STRATTEC SECURITY CORP",
+   "ndays": 5474,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "75714": {
+   "id": 75714,
+   "symbol": "CLRO",
+   "name": "CLEARONE INC",
+   "ndays": 5100,
+   "start": 19960102,
+   "end": 20250609
+  },
+  "36768": {
+   "id": 36768,
+   "symbol": "FLXS",
+   "name": "FLEXSTEEL INDUSTRIES INC",
+   "ndays": 5113,
+   "start": 19960104,
+   "end": 20260819
+  },
+  "90430": {
+   "id": 90430,
+   "symbol": "ADH",
+   "name": "ADHEREX TECHNOLOGIES INC",
+   "ndays": 2580,
+   "start": 20041123,
+   "end": 20260820
+  },
+  "34817": {
+   "id": 34817,
+   "symbol": "NUE",
+   "name": "NUCOR CORP",
+   "ndays": 7673,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "12461": {
+   "id": 12461,
+   "symbol": "KBWD",
+   "name": "INVESCO E T F TRUST II",
+   "ndays": 3834,
+   "start": 20101203,
+   "end": 20260819
+  },
+  "14358": {
+   "id": 14358,
+   "symbol": "MMAT",
+   "name": "META MATERIALS INC",
+   "ndays": 2554,
+   "start": 20131216,
+   "end": 20240820
+  },
+  "92577": {
+   "id": 92577,
+   "symbol": "DWX",
+   "name": "SPDR INDEX SHARES FUNDS",
+   "ndays": 4505,
+   "start": 20080225,
+   "end": 20260820
+  },
+  "12462": {
+   "id": 12462,
+   "symbol": "KBWY",
+   "name": "INVESCO E T F TRUST II",
+   "ndays": 3591,
+   "start": 20101214,
+   "end": 20260820
+  },
+  "13379": {
+   "id": 13379,
+   "symbol": "SPLK",
+   "name": "SPLUNK INC",
+   "ndays": 2970,
+   "start": 20120419,
+   "end": 20240315
+  },
+  "81067": {
+   "id": 81067,
+   "symbol": "TGS",
+   "name": "TRANSPORTADORA DE GAS DEL SUR SA",
+   "ndays": 5908,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "92229": {
+   "id": 92229,
+   "symbol": "VRTU",
+   "name": "VIRTUSA CORP",
+   "ndays": 3372,
+   "start": 20070803,
+   "end": 20210210
+  },
+  "79036": {
+   "id": 79036,
+   "symbol": "DDF",
+   "name": "DELAWARE INVESTMENTS DIV & INCM",
+   "ndays": 6693,
+   "start": 19960102,
+   "end": 20230310
+  },
+  "12226": {
+   "id": 12226,
+   "symbol": "MGPI",
+   "name": "M G P INGREDIENTS INC",
+   "ndays": 6063,
+   "start": 19960117,
+   "end": 20260820
+  },
+  "32803": {
+   "id": 32803,
+   "symbol": "HFC",
+   "name": "HOLLYFRONTIER CORP",
+   "ndays": 6700,
+   "start": 19960109,
+   "end": 20260820
+  },
+  "49154": {
+   "id": 49154,
+   "symbol": "DH",
+   "name": "DAYTON HUDSON CORP",
+   "ndays": 7670,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "13324": {
+   "id": 13324,
+   "symbol": "GALT",
+   "name": "GALECTIN THERAPEUTICS INC",
+   "ndays": 3548,
+   "start": 20120323,
+   "end": 20260819
+  },
+  "80784": {
+   "id": 80784,
+   "symbol": "BTO",
+   "name": "HANCOCK JOHN FINANCIAL OPPTS FD",
+   "ndays": 7623,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "88534": {
+   "id": 88534,
+   "symbol": "ISSC",
+   "name": "INNOVATIVE SOLUTIONS & SUPRT INC",
+   "ndays": 6158,
+   "start": 20000804,
+   "end": 20260819
+  },
+  "92102": {
+   "id": 92102,
+   "symbol": "SCOR",
+   "name": "COMSCORE INC",
+   "ndays": 4395,
+   "start": 20070627,
+   "end": 20260817
+  },
+  "89547": {
+   "id": 89547,
+   "symbol": "NRP",
+   "name": "NATURAL RESOURCE PARTNERS L P",
+   "ndays": 5924,
+   "start": 20021011,
+   "end": 20260820
+  },
+  "13750": {
+   "id": 13750,
+   "symbol": "ACST",
+   "name": "ACASTI PHARMA INC",
+   "ndays": 3096,
+   "start": 20130107,
+   "end": 20260819
+  },
+  "86048": {
+   "id": 86048,
+   "symbol": "ANSR",
+   "name": "HACKETT GROUP INC",
+   "ndays": 7024,
+   "start": 19980528,
+   "end": 20260820
+  },
+  "90063": {
+   "id": 90063,
+   "symbol": "CSQ",
+   "name": "CALAMOS STRATEGIC TOT RETURN FD",
+   "ndays": 5566,
+   "start": 20040326,
+   "end": 20260819
+  },
+  "92188": {
+   "id": 92188,
+   "symbol": "WBC",
+   "name": "WABCO HOLDINGS INC",
+   "ndays": 3198,
+   "start": 20070801,
+   "end": 20200528
+  },
+  "89946": {
+   "id": 89946,
+   "symbol": "AEL",
+   "name": "AMERICAN EQUITY INVT LIFE HLDG C",
+   "ndays": 5112,
+   "start": 20031204,
+   "end": 20240502
+  },
+  "93166": {
+   "id": 93166,
+   "symbol": "CHIQ",
+   "name": "GLOBAL X FUNDS",
+   "ndays": 4110,
+   "start": 20091201,
+   "end": 20260819
+  },
+  "84052": {
+   "id": 84052,
+   "symbol": "ARQL",
+   "name": "ARQULE INC",
+   "ndays": 5791,
+   "start": 19961016,
+   "end": 20200115
+  },
+  "88664": {
+   "id": 88664,
+   "symbol": "JKHY",
+   "name": "HENRY JACK & ASSOC INC",
+   "ndays": 7644,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "89736": {
+   "id": 89736,
+   "symbol": "HTLF",
+   "name": "HEARTLAND FINANCIAL USA INC",
+   "ndays": 5362,
+   "start": 20030515,
+   "end": 20250131
+  },
+  "85593": {
+   "id": 85593,
+   "symbol": "AMG",
+   "name": "AFFILIATED MANAGERS GROUP INC",
+   "ndays": 7131,
+   "start": 19971121,
+   "end": 20260820
+  },
+  "90829": {
+   "id": 90829,
+   "symbol": "CF",
+   "name": "C F INDUSTRIES HOLDINGS INC",
+   "ndays": 5254,
+   "start": 20050811,
+   "end": 20260820
+  },
+  "84438": {
+   "id": 84438,
+   "symbol": "HLIO",
+   "name": "HELIOS TECHNOLOGIES INC",
+   "ndays": 5789,
+   "start": 19970109,
+   "end": 20260819
+  },
+  "91194": {
+   "id": 91194,
+   "symbol": "GLO",
+   "name": "CLOUGH GLOBAL OPPORTUNITIES FUND",
+   "ndays": 5034,
+   "start": 20060426,
+   "end": 20260819
+  },
+  "84042": {
+   "id": 84042,
+   "symbol": "PAG",
+   "name": "PENSKE AUTOMOTIVE GROUP INC",
+   "ndays": 7246,
+   "start": 19961023,
+   "end": 20260819
+  },
+  "15694": {
+   "id": 15694,
+   "symbol": "PEN",
+   "name": "PENUMBRA INC",
+   "ndays": 2694,
+   "start": 20150918,
+   "end": 20260819
+  },
+  "79586": {
+   "id": 79586,
+   "symbol": "FTEK",
+   "name": "FUEL TECH INC",
+   "ndays": 6579,
+   "start": 19960116,
+   "end": 20260820
+  },
+  "80401": {
+   "id": 80401,
+   "symbol": "RCS",
+   "name": "P I M C O STRATEGIC INCOME FD IN",
+   "ndays": 7629,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "17478": {
+   "id": 17478,
+   "symbol": "MHFI",
+   "name": "MCGRAW HILL FINANCIAL INC",
+   "ndays": 7666,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "89134": {
+   "id": 89134,
+   "symbol": "ECA",
+   "name": "ENCANA CORP",
+   "ndays": 6227,
+   "start": 20011003,
+   "end": 20260820
+  },
+  "89916": {
+   "id": 89916,
+   "symbol": "NXST",
+   "name": "NEXSTAR MEDIA GROUP INC",
+   "ndays": 5597,
+   "start": 20031124,
+   "end": 20260820
+  },
+  "87293": {
+   "id": 87293,
+   "symbol": "UGP",
+   "name": "ULTRAPAR PARTICIPACOES S A",
+   "ndays": 5903,
+   "start": 19991007,
+   "end": 20260819
+  },
+  "82634": {
+   "id": 82634,
+   "symbol": "SAM",
+   "name": "BOSTON BEER INC",
+   "ndays": 7477,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "78947": {
+   "id": 78947,
+   "symbol": "ELS",
+   "name": "EQUITY LIFESTYLE PROPERTIES INC",
+   "ndays": 7501,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "92123": {
+   "id": 92123,
+   "symbol": "GRX",
+   "name": "GABELLI HEALTHCARE & WELLNESS TR",
+   "ndays": 4716,
+   "start": 20070629,
+   "end": 20260820
+  },
+  "85419": {
+   "id": 85419,
+   "symbol": "CSU",
+   "name": "CAPITAL SENIOR LIVING CORP",
+   "ndays": 6467,
+   "start": 19971031,
+   "end": 20260819
+  },
+  "10363": {
+   "id": 10363,
+   "symbol": "AMAG",
+   "name": "A M A G PHARMACEUTICALS INC",
+   "ndays": 4541,
+   "start": 19960104,
+   "end": 20201113
+  },
+  "78854": {
+   "id": 78854,
+   "symbol": "MNP",
+   "name": "WESTERN ASSET MUNI PARTNERS FUND",
+   "ndays": 4309,
+   "start": 19960201,
+   "end": 20231013
+  },
+  "69796": {
+   "id": 69796,
+   "symbol": "CBRNA",
+   "name": "CANANDAIGUA BRANDS INC",
+   "ndays": 7245,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "88439": {
+   "id": 88439,
+   "symbol": "ENTG",
+   "name": "ENTEGRIS INC",
+   "ndays": 6525,
+   "start": 20000711,
+   "end": 20260820
+  },
+  "12316": {
+   "id": 12316,
+   "symbol": "VTHR",
+   "name": "VANGUARD SCOTTSDALE FUNDS",
+   "ndays": 3337,
+   "start": 20101008,
+   "end": 20260819
+  },
+  "14777": {
+   "id": 14777,
+   "symbol": "THQ",
+   "name": "TEKLA HEALTHCARE OPPS FD",
+   "ndays": 2958,
+   "start": 20140729,
+   "end": 20260820
+  },
+  "12623": {
+   "id": 12623,
+   "symbol": "HII",
+   "name": "HUNTINGTON INGALLS INDS INC",
+   "ndays": 3819,
+   "start": 20110331,
+   "end": 20260820
+  },
+  "12333": {
+   "id": 12333,
+   "symbol": "REMX",
+   "name": "VANECK E T F TRUST",
+   "ndays": 3907,
+   "start": 20101028,
+   "end": 20260820
+  },
+  "13572": {
+   "id": 13572,
+   "symbol": "TLTE",
+   "name": "FLEXSHARES TRUST",
+   "ndays": 3299,
+   "start": 20121005,
+   "end": 20260820
+  },
+  "48347": {
+   "id": 48347,
+   "symbol": "LZB",
+   "name": "LA Z BOY INC",
+   "ndays": 7444,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "85035": {
+   "id": 85035,
+   "symbol": "QRVO",
+   "name": "QORVO INC",
+   "ndays": 7307,
+   "start": 19970603,
+   "end": 20260820
+  },
+  "72304": {
+   "id": 72304,
+   "symbol": "STAA",
+   "name": "STAAR SURGICAL CO",
+   "ndays": 7574,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "90383": {
+   "id": 90383,
+   "symbol": "FXI",
+   "name": "ISHARES TRUST",
+   "ndays": 5469,
+   "start": 20041008,
+   "end": 20260820
+  },
+  "16140": {
+   "id": 16140,
+   "symbol": "TWLO",
+   "name": "TWILIO INC",
+   "ndays": 2506,
+   "start": 20160623,
+   "end": 20260820
+  },
+  "85966": {
+   "id": 85966,
+   "symbol": "CBAN",
+   "name": "COLONY BANKCORP INC",
+   "ndays": 3377,
+   "start": 19980603,
+   "end": 20260819
+  },
+  "88368": {
+   "id": 88368,
+   "symbol": "PMBC",
+   "name": "PACIFIC MERCANTILE BANCORP",
+   "ndays": 4524,
+   "start": 20000615,
+   "end": 20211018
+  },
+  "92246": {
+   "id": 92246,
+   "symbol": "FDD",
+   "name": "FIRST TRUST E T F II",
+   "ndays": 3832,
+   "start": 20070920,
+   "end": 20260817
+  },
+  "81040": {
+   "id": 81040,
+   "symbol": "KEP",
+   "name": "KOREA ELECTRIC POWER CO",
+   "ndays": 7599,
+   "start": 19960102,
+   "end": 20260817
+  },
+  "77730": {
+   "id": 77730,
+   "symbol": "TSN",
+   "name": "TYSON FOODS INC",
+   "ndays": 7655,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "14102": {
+   "id": 14102,
+   "symbol": "SFM",
+   "name": "SPROUTS FARMERS MARKET INC",
+   "ndays": 3247,
+   "start": 20130801,
+   "end": 20260820
+  },
+  "92976": {
+   "id": 92976,
+   "symbol": "PMT",
+   "name": "PENNYMAC MORTGAGE INV TR",
+   "ndays": 4220,
+   "start": 20090730,
+   "end": 20260820
+  },
+  "79734": {
+   "id": 79734,
+   "symbol": "RVSB",
+   "name": "RIVERVIEW BANCORP INC",
+   "ndays": 5135,
+   "start": 19970711,
+   "end": 20260820
+  },
+  "89211": {
+   "id": 89211,
+   "symbol": "PWOD",
+   "name": "PENNS WOODS BANCORP INC",
+   "ndays": 4302,
+   "start": 20011115,
+   "end": 20250725
+  },
+  "85285": {
+   "id": 85285,
+   "symbol": "EDAP",
+   "name": "EDAP T M S S A",
+   "ndays": 6009,
+   "start": 19970801,
+   "end": 20260820
+  },
+  "83217": {
+   "id": 83217,
+   "symbol": "EWI",
+   "name": "ISHARES INC",
+   "ndays": 5810,
+   "start": 19960409,
+   "end": 20260819
+  },
+  "91836": {
+   "id": 91836,
+   "symbol": "AVNW",
+   "name": "AVIAT NETWORKS INC",
+   "ndays": 4828,
+   "start": 20070129,
+   "end": 20260819
+  },
+  "82702": {
+   "id": 82702,
+   "symbol": "AMRX",
+   "name": "AMNEAL PHARMACEUTICALS INC",
+   "ndays": 5738,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "91317": {
+   "id": 91317,
+   "symbol": "XPH",
+   "name": "SPDR SERIES TRUST",
+   "ndays": 4527,
+   "start": 20060622,
+   "end": 20260820
+  },
+  "15537": {
+   "id": 15537,
+   "symbol": "ALOT",
+   "name": "ASTRONOVA INC",
+   "ndays": 4517,
+   "start": 19960201,
+   "end": 20260820
+  },
+  "15534": {
+   "id": 15534,
+   "symbol": "NTRA",
+   "name": "NATERA INC",
+   "ndays": 2758,
+   "start": 20150702,
+   "end": 20260820
+  },
+  "13240": {
+   "id": 13240,
+   "symbol": "GOVT",
+   "name": "ISHARES TRUST",
+   "ndays": 3569,
+   "start": 20120308,
+   "end": 20260820
+  },
+  "14551": {
+   "id": 14551,
+   "symbol": "PULM",
+   "name": "PULMATRIX INC",
+   "ndays": 2933,
+   "start": 20140321,
+   "end": 20260820
+  },
+  "88865": {
+   "id": 88865,
+   "symbol": "HAFC",
+   "name": "HANMI FINANCIAL CORP",
+   "ndays": 6156,
+   "start": 20010130,
+   "end": 20260819
+  },
+  "12622": {
+   "id": 12622,
+   "symbol": "HCA",
+   "name": "H C A HEALTHCARE INC",
+   "ndays": 3842,
+   "start": 20110310,
+   "end": 20260820
+  },
+  "90734": {
+   "id": 90734,
+   "symbol": "LHCG",
+   "name": "L H C GROUP",
+   "ndays": 4436,
+   "start": 20050609,
+   "end": 20230221
+  },
+  "76504": {
+   "id": 76504,
+   "symbol": "CATY",
+   "name": "CATHAY GENERAL BANCORP",
+   "ndays": 6757,
+   "start": 19960318,
+   "end": 20260820
+  },
+  "91642": {
+   "id": 91642,
+   "symbol": "PGF",
+   "name": "INVESCO E T F TRUST",
+   "ndays": 4894,
+   "start": 20061201,
+   "end": 20260820
+  },
+  "77693": {
+   "id": 77693,
+   "symbol": "NXN",
+   "name": "NUVEEN INSU NY SELE TF INC PORT",
+   "ndays": 3564,
+   "start": 19970804,
+   "end": 20260109
+  },
+  "79066": {
+   "id": 79066,
+   "symbol": "GBR",
+   "name": "NEW CONCEPT ENERGY INC",
+   "ndays": 3728,
+   "start": 19960126,
+   "end": 20260820
+  },
+  "10892": {
+   "id": 10892,
+   "symbol": "WSFS",
+   "name": "WSFS FINANCIAL CORP",
+   "ndays": 7247,
+   "start": 19960103,
+   "end": 20260820
+  },
+  "93145": {
+   "id": 93145,
+   "symbol": "VGIT",
+   "name": "VANGUARD SCOTTSDALE FUNDS",
+   "ndays": 3865,
+   "start": 20100114,
+   "end": 20260819
+  },
+  "13555": {
+   "id": 13555,
+   "symbol": "MDIV",
+   "name": "FIRST TRUST E T F VI",
+   "ndays": 3450,
+   "start": 20120814,
+   "end": 20260820
+  },
+  "14663": {
+   "id": 14663,
+   "symbol": "QRHC",
+   "name": "QUEST RESOURCE HOLDING CORP",
+   "ndays": 2987,
+   "start": 20140519,
+   "end": 20260819
+  },
+  "13847": {
+   "id": 13847,
+   "symbol": "SIZE",
+   "name": "ISHARES TRUST",
+   "ndays": 2620,
+   "start": 20130429,
+   "end": 20260819
+  },
+  "18403": {
+   "id": 18403,
+   "symbol": "JCP",
+   "name": "PENNEY J C CO INC",
+   "ndays": 6136,
+   "start": 19960102,
+   "end": 20200518
+  },
+  "55597": {
+   "id": 55597,
+   "symbol": "BW",
+   "name": "BRUSH ENGINEERED MATERIALS INC",
+   "ndays": 7465,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "86444": {
+   "id": 86444,
+   "symbol": "GEB",
+   "name": "GENETRONICS BIOMEDICAL CORP",
+   "ndays": 6267,
+   "start": 19981208,
+   "end": 20260820
+  },
+  "14338": {
+   "id": 14338,
+   "symbol": "HLT",
+   "name": "HILTON WORLDWIDE HOLDINGS INC",
+   "ndays": 3159,
+   "start": 20131212,
+   "end": 20260820
+  },
+  "83222": {
+   "id": 83222,
+   "symbol": "EWN",
+   "name": "ISHARES INC",
+   "ndays": 5558,
+   "start": 19980427,
+   "end": 20260820
+  },
+  "90042": {
+   "id": 90042,
+   "symbol": "IGR",
+   "name": "CBRE CLARION GLOB RL EST INC FD",
+   "ndays": 5588,
+   "start": 20040225,
+   "end": 20260819
+  },
+  "81021": {
+   "id": 81021,
+   "symbol": "USX",
+   "name": "U S XPRESS ENTERPRISES INC NEW",
+   "ndays": 3451,
+   "start": 19960111,
+   "end": 20230630
+  },
+  "80375": {
+   "id": 80375,
+   "symbol": "ZEUS",
+   "name": "OLYMPIC STEEL INC",
+   "ndays": 7128,
+   "start": 19960102,
+   "end": 20260212
+  },
+  "13284": {
+   "id": 13284,
+   "symbol": "ALSN",
+   "name": "ALLISON TRANSMISSION HLDGS INC",
+   "ndays": 3587,
+   "start": 20120315,
+   "end": 20260820
+  },
+  "85349": {
+   "id": 85349,
+   "symbol": "ARM",
+   "name": "ARVINMERITOR INC",
+   "ndays": 6241,
+   "start": 19971001,
+   "end": 20220802
+  },
+  "88340": {
+   "id": 88340,
+   "symbol": "EXFO",
+   "name": "E X F O INC",
+   "ndays": 5046,
+   "start": 20000630,
+   "end": 20210827
+  },
+  "86128": {
+   "id": 86128,
+   "symbol": "HZO",
+   "name": "MARINEMAX INC",
+   "ndays": 6415,
+   "start": 19980603,
+   "end": 20260817
+  },
+  "87006": {
+   "id": 87006,
+   "symbol": "UTHR",
+   "name": "UNITED THERAPEUTICS CORP",
+   "ndays": 6763,
+   "start": 19990617,
+   "end": 20260819
+  },
+  "70092": {
+   "id": 70092,
+   "symbol": "KBH",
+   "name": "K B HOME",
+   "ndays": 7663,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "45911": {
+   "id": 45911,
+   "symbol": "AHA",
+   "name": "ALPHA INDUSTRIES INC",
+   "ndays": 7539,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "92001": {
+   "id": 92001,
+   "symbol": "FXZ",
+   "name": "FIRST TRUST E T F II",
+   "ndays": 4432,
+   "start": 20070515,
+   "end": 20260820
+  },
+  "14925": {
+   "id": 14925,
+   "symbol": "BCLI",
+   "name": "BRAINSTORM CELL THERAPEUTICS INC",
+   "ndays": 2629,
+   "start": 20140930,
+   "end": 20250717
+  },
+  "89999": {
+   "id": 89999,
+   "symbol": "VBK",
+   "name": "VANGUARD INDEX FUNDS",
+   "ndays": 5304,
+   "start": 20040406,
+   "end": 20260818
+  },
+  "89049": {
+   "id": 89049,
+   "symbol": "BFZ",
+   "name": "BLACKROCK CALIF MUN INCOME TR",
+   "ndays": 5881,
+   "start": 20010727,
+   "end": 20260206
+  },
+  "69586": {
+   "id": 69586,
+   "symbol": "SBCF",
+   "name": "SEACOAST BANKING CORP FLA",
+   "ndays": 6509,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "91208": {
+   "id": 91208,
+   "symbol": "USO",
+   "name": "UNITED STATES OIL FUND L P",
+   "ndays": 5073,
+   "start": 20060410,
+   "end": 20260820
+  },
+  "71722": {
+   "id": 71722,
+   "symbol": "CMU",
+   "name": "M F S HIGH YIELD MUNICIPAL TRUST",
+   "ndays": 6957,
+   "start": 19960102,
+   "end": 20260603
+  },
+  "12089": {
+   "id": 12089,
+   "symbol": "RP",
+   "name": "REALPAGE INC",
+   "ndays": 2675,
+   "start": 20100812,
+   "end": 20210421
+  },
+  "89898": {
+   "id": 89898,
+   "symbol": "OMEX",
+   "name": "ODYSSEY MARINE EXPLORATION INC",
+   "ndays": 5654,
+   "start": 20031119,
+   "end": 20260820
+  },
+  "78418": {
+   "id": 78418,
+   "symbol": "STKL",
+   "name": "SUNOPTA INC",
+   "ndays": 6968,
+   "start": 19960102,
+   "end": 20260501
+  },
+  "12886": {
+   "id": 12886,
+   "symbol": "GRFS",
+   "name": "GRIFOLS S A",
+   "ndays": 3759,
+   "start": 20110602,
+   "end": 20260819
+  },
+  "84010": {
+   "id": 84010,
+   "symbol": "USNA",
+   "name": "USANA HEALTH SCIENCES INC",
+   "ndays": 7059,
+   "start": 19960725,
+   "end": 20260820
+  },
+  "77515": {
+   "id": 77515,
+   "symbol": "KOPN",
+   "name": "KOPIN CORP",
+   "ndays": 7574,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "90346": {
+   "id": 90346,
+   "symbol": "TTM",
+   "name": "TATA MOTORS LTD",
+   "ndays": 4583,
+   "start": 20040927,
+   "end": 20230123
+  },
+  "92967": {
+   "id": 92967,
+   "symbol": "IGI",
+   "name": "WESTERN ASST INV GR DEF OP TR IN",
+   "ndays": 4234,
+   "start": 20090626,
+   "end": 20260819
+  },
+  "83148": {
+   "id": 83148,
+   "symbol": "LNDC",
+   "name": "LANDEC CORP",
+   "ndays": 6634,
+   "start": 19960215,
+   "end": 20260820
+  },
+  "91095": {
+   "id": 91095,
+   "symbol": "LQDT",
+   "name": "LIQUIDITY SERVICES INC",
+   "ndays": 5093,
+   "start": 20060223,
+   "end": 20260820
+  },
+  "24766": {
+   "id": 24766,
+   "symbol": "NOC",
+   "name": "NORTHROP GRUMMAN CORP",
+   "ndays": 7667,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "44768": {
+   "id": 44768,
+   "symbol": "IFSIA",
+   "name": "INTERFACE INC",
+   "ndays": 6087,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "41574": {
+   "id": 41574,
+   "symbol": "IIN",
+   "name": "INTRICON CORP",
+   "ndays": 3269,
+   "start": 19960220,
+   "end": 20220524
+  },
+  "14258": {
+   "id": 14258,
+   "symbol": "PBPB",
+   "name": "POTBELLY CORP",
+   "ndays": 2983,
+   "start": 20131004,
+   "end": 20251022
+  },
+  "79770": {
+   "id": 79770,
+   "symbol": "LXP",
+   "name": "LEXINGTON REALTY TRUST",
+   "ndays": 7196,
+   "start": 19960103,
+   "end": 20251110
+  },
+  "91742": {
+   "id": 91742,
+   "symbol": "OCLS",
+   "name": "OCULUS INNOVATIVE SCIENCES INC",
+   "ndays": 4792,
+   "start": 20070125,
+   "end": 20260820
+  },
+  "20395": {
+   "id": 20395,
+   "symbol": "CVB",
+   "name": "C V B FINANCIAL CORP",
+   "ndays": 6626,
+   "start": 19960429,
+   "end": 20260819
+  },
+  "15853": {
+   "id": 15853,
+   "symbol": "RMR",
+   "name": "R M R GROUP INC",
+   "ndays": 2614,
+   "start": 20151215,
+   "end": 20260819
+  },
+  "92820": {
+   "id": 92820,
+   "symbol": "ERX",
+   "name": "DIREXION SHARES E T F TRUST",
+   "ndays": 4408,
+   "start": 20081106,
+   "end": 20260820
+  },
+  "91342": {
+   "id": 91342,
+   "symbol": "DXJ",
+   "name": "WISDOMTREE TRUST",
+   "ndays": 4380,
+   "start": 20060816,
+   "end": 20260820
+  },
+  "86822": {
+   "id": 86822,
+   "symbol": "EXTR",
+   "name": "EXTREME NETWORKS INC",
+   "ndays": 6830,
+   "start": 19990409,
+   "end": 20260818
+  },
+  "91386": {
+   "id": 91386,
+   "symbol": "QID",
+   "name": "PROSHARES TRUST",
+   "ndays": 4866,
+   "start": 20060713,
+   "end": 20260820
+  },
+  "85763": {
+   "id": 85763,
+   "symbol": "CDC",
+   "name": "CAREY DIVERSIFIED L L C",
+   "ndays": 7042,
+   "start": 19980121,
+   "end": 20260817
+  },
+  "12521": {
+   "id": 12521,
+   "symbol": "DMD",
+   "name": "DEMAND MEDIA INC",
+   "ndays": 2604,
+   "start": 20110126,
+   "end": 20210611
+  },
+  "92917": {
+   "id": 92917,
+   "symbol": "BWEN",
+   "name": "BROADWIND INC",
+   "ndays": 4307,
+   "start": 20090409,
+   "end": 20260819
+  },
+  "14705": {
+   "id": 14705,
+   "symbol": "MTLS",
+   "name": "MATERIALISE NV",
+   "ndays": 2993,
+   "start": 20140625,
+   "end": 20260819
+  },
+  "12631": {
+   "id": 12631,
+   "symbol": "BKLN",
+   "name": "INVESCO E T F TRUST II",
+   "ndays": 3833,
+   "start": 20110303,
+   "end": 20260820
+  },
+  "10550": {
+   "id": 10550,
+   "symbol": "PDEX",
+   "name": "PRO DEX INC COLO",
+   "ndays": 4975,
+   "start": 19960105,
+   "end": 20260819
+  },
+  "55862": {
+   "id": 55862,
+   "symbol": "BMRA",
+   "name": "BIOMERICA INC",
+   "ndays": 2912,
+   "start": 19960115,
+   "end": 20250417
+  },
+  "16082": {
+   "id": 16082,
+   "symbol": "SITE",
+   "name": "SITEONE LANDSCAPE SUPPLY INC",
+   "ndays": 2517,
+   "start": 20160512,
+   "end": 20260819
+  },
+  "92240": {
+   "id": 92240,
+   "symbol": "SRV",
+   "name": "CUSHING MLP & INFRA TOT RET FD",
+   "ndays": 4690,
+   "start": 20070827,
+   "end": 20260819
+  },
+  "15398": {
+   "id": 15398,
+   "symbol": "CC",
+   "name": "CHEMOURS CO",
+   "ndays": 2762,
+   "start": 20150701,
+   "end": 20260819
+  },
+  "13956": {
+   "id": 13956,
+   "symbol": "GOGO",
+   "name": "GOGO INC",
+   "ndays": 3257,
+   "start": 20130621,
+   "end": 20260820
+  },
+  "76614": {
+   "id": 76614,
+   "symbol": "REGN",
+   "name": "REGENERON PHARMACEUTICALS INC",
+   "ndays": 7663,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "91123": {
+   "id": 91123,
+   "symbol": "XHB",
+   "name": "SPDR SERIES TRUST",
+   "ndays": 5081,
+   "start": 20060206,
+   "end": 20260820
+  },
+  "31691": {
+   "id": 31691,
+   "symbol": "ESP",
+   "name": "ESPEY MANUFACTURING & ELCTRS COR",
+   "ndays": 3621,
+   "start": 19960510,
+   "end": 20260819
+  },
+  "15136": {
+   "id": 15136,
+   "symbol": "QQQX",
+   "name": "NUVEEN NASDAQ 100 DYN OVERWR FD",
+   "ndays": 2858,
+   "start": 20141219,
+   "end": 20260820
+  },
+  "79636": {
+   "id": 79636,
+   "symbol": "GSR",
+   "name": "GOLDEN STAR RESOURCES LTD",
+   "ndays": 2975,
+   "start": 19960103,
+   "end": 20220127
+  },
+  "13641": {
+   "id": 13641,
+   "symbol": "FANG",
+   "name": "DIAMONDBACK ENERGY INC",
+   "ndays": 3447,
+   "start": 20121012,
+   "end": 20260820
+  },
+  "93126": {
+   "id": 93126,
+   "symbol": "CADC",
+   "name": "CHINA ADV CONST MAT GRP INC NEW",
+   "ndays": 3127,
+   "start": 20091201,
+   "end": 20250821
+  },
+  "43757": {
+   "id": 43757,
+   "symbol": "IMMU",
+   "name": "IMMUNOMEDICS INC",
+   "ndays": 6243,
+   "start": 19960102,
+   "end": 20201022
+  },
+  "80210": {
+   "id": 80210,
+   "symbol": "RYN",
+   "name": "RAYONIER INC NEW",
+   "ndays": 7641,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "91297": {
+   "id": 91297,
+   "symbol": "FBT",
+   "name": "FIRST TRUST EXCHANGE TRADED FUND",
+   "ndays": 4898,
+   "start": 20060630,
+   "end": 20260819
+  },
+  "13545": {
+   "id": 13545,
+   "symbol": "SAND",
+   "name": "SANDSTORM GOLD LTD",
+   "ndays": 3268,
+   "start": 20120820,
+   "end": 20251017
+  },
+  "75346": {
+   "id": 75346,
+   "symbol": "FT",
+   "name": "FRANKLIN UNIVERSAL TRUST",
+   "ndays": 7568,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "13657": {
+   "id": 13657,
+   "symbol": "VTIP",
+   "name": "VANGUARD MALVERN FUNDS",
+   "ndays": 3384,
+   "start": 20121016,
+   "end": 20260819
+  },
+  "90434": {
+   "id": 90434,
+   "symbol": "FAM",
+   "name": "FIRST TRUST ABERDEEN GLB OPP INC",
+   "ndays": 4942,
+   "start": 20041124,
+   "end": 20240920
+  },
+  "78018": {
+   "id": 78018,
+   "symbol": "CPSS",
+   "name": "CONSUMER PORTFOLIO SVCS INC",
+   "ndays": 6877,
+   "start": 19960115,
+   "end": 20260819
+  },
+  "77501": {
+   "id": 77501,
+   "symbol": "BLDG",
+   "name": "N C I BUILDING SYSTEMS INC",
+   "ndays": 6624,
+   "start": 19960102,
+   "end": 20220722
+  },
+  "76573": {
+   "id": 76573,
+   "symbol": "MLI",
+   "name": "MUELLER INDUSTRIES INC",
+   "ndays": 7640,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "12078": {
+   "id": 12078,
+   "symbol": "ELMD",
+   "name": "ELECTROMED INC",
+   "ndays": 3323,
+   "start": 20100813,
+   "end": 20260820
+  },
+  "92600": {
+   "id": 92600,
+   "symbol": "TUR",
+   "name": "ISHARES INC",
+   "ndays": 4548,
+   "start": 20080328,
+   "end": 20260819
+  },
+  "14816": {
+   "id": 14816,
+   "symbol": "TR",
+   "name": "TOOTSIE ROLL INDS INC",
+   "ndays": 7574,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "82567": {
+   "id": 82567,
+   "symbol": "CYPH",
+   "name": "CYTOCLONAL PHARMACEUTICS INC",
+   "ndays": 6563,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "35107": {
+   "id": 35107,
+   "symbol": "PKE",
+   "name": "PARK AEROSPACE CORP",
+   "ndays": 7599,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "86989": {
+   "id": 86989,
+   "symbol": "MEET",
+   "name": "MEET GROUP INC",
+   "ndays": 3443,
+   "start": 19990624,
+   "end": 20200903
+  },
+  "92952": {
+   "id": 92952,
+   "symbol": "EPU",
+   "name": "ISHARES TRUST",
+   "ndays": 4245,
+   "start": 20090623,
+   "end": 20260818
+  },
+  "90542": {
+   "id": 90542,
+   "symbol": "EYPT",
+   "name": "EYEPOINT PHARMACEUTICALS INC",
+   "ndays": 4584,
+   "start": 20050127,
+   "end": 20260820
+  },
+  "15346": {
+   "id": 15346,
+   "symbol": "GUSH",
+   "name": "DIREXION SHARES E T F TRUST",
+   "ndays": 2723,
+   "start": 20150616,
+   "end": 20260820
+  },
+  "90227": {
+   "id": 90227,
+   "symbol": "LBTYA",
+   "name": "LIBERTY GLOBAL PLC",
+   "ndays": 3015,
+   "start": 20040608,
+   "end": 20260820
+  },
+  "88208": {
+   "id": 88208,
+   "symbol": "CLN",
+   "name": "CELSION CORP",
+   "ndays": 6124,
+   "start": 20000531,
+   "end": 20250724
+  },
+  "81912": {
+   "id": 81912,
+   "symbol": "AVX",
+   "name": "A V X CORP NEW",
+   "ndays": 6098,
+   "start": 19960102,
+   "end": 20200327
+  },
+  "89855": {
+   "id": 89855,
+   "symbol": "WIA",
+   "name": "WESTERN ASSET INFLTN-LNKD INC FD",
+   "ndays": 5650,
+   "start": 20030929,
+   "end": 20260820
+  },
+  "60506": {
+   "id": 60506,
+   "symbol": "PCAR",
+   "name": "PACCAR INC",
+   "ndays": 7674,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "27043": {
+   "id": 27043,
+   "symbol": "VAR",
+   "name": "VARIAN MEDICAL SYSTEMS INC",
+   "ndays": 6343,
+   "start": 19960102,
+   "end": 20210414
+  },
+  "85259": {
+   "id": 85259,
+   "symbol": "BAM",
+   "name": "BROOKFIELD ASSET MANAGEMENT INC",
+   "ndays": 6004,
+   "start": 19970815,
+   "end": 20260820
+  },
+  "68145": {
+   "id": 68145,
+   "symbol": "NEON",
+   "name": "NEONODE INC",
+   "ndays": 5560,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "88965": {
+   "id": 88965,
+   "symbol": "CIVB",
+   "name": "CIVISTA BANCSHARES INC",
+   "ndays": 4101,
+   "start": 20010604,
+   "end": 20260819
+  },
+  "92050": {
+   "id": 92050,
+   "symbol": "PODD",
+   "name": "INSULET CORP",
+   "ndays": 4794,
+   "start": 20070515,
+   "end": 20260819
+  },
+  "88719": {
+   "id": 88719,
+   "symbol": "AMRB",
+   "name": "AMERICAN RIVER BANKSHARES",
+   "ndays": 2682,
+   "start": 20001101,
+   "end": 20210806
+  },
+  "14953": {
+   "id": 14953,
+   "symbol": "BOOT",
+   "name": "BOOT BARN HOLDINGS INC",
+   "ndays": 2913,
+   "start": 20141030,
+   "end": 20260820
+  },
+  "89826": {
+   "id": 89826,
+   "symbol": "TCBI",
+   "name": "TEXAS CAPITAL BANCSHARES INC",
+   "ndays": 5723,
+   "start": 20030813,
+   "end": 20260820
+  },
+  "14300": {
+   "id": 14300,
+   "symbol": "EVGN",
+   "name": "EVOGENE LTD",
+   "ndays": 2534,
+   "start": 20131121,
+   "end": 20260820
+  },
+  "12536": {
+   "id": 12536,
+   "symbol": "SCHH",
+   "name": "SCHWAB STRATEGIC TRUST",
+   "ndays": 3863,
+   "start": 20110118,
+   "end": 20260819
+  },
+  "15284": {
+   "id": 15284,
+   "symbol": "BPMC",
+   "name": "BLUEPRINT MEDICINES CORP",
+   "ndays": 2541,
+   "start": 20150430,
+   "end": 20250717
+  },
+  "77316": {
+   "id": 77316,
+   "symbol": "VGM",
+   "name": "INVESCO TRUST INVESTMENT GR MUNS",
+   "ndays": 7304,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "88228": {
+   "id": 88228,
+   "symbol": "IYF",
+   "name": "ISHARES TRUST",
+   "ndays": 6386,
+   "start": 20000615,
+   "end": 20260819
+  },
+  "75039": {
+   "id": 75039,
+   "symbol": "BHP",
+   "name": "B H P GROUP LTD",
+   "ndays": 7490,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "93345": {
+   "id": 93345,
+   "symbol": "CDXS",
+   "name": "CODEXIS INC",
+   "ndays": 4046,
+   "start": 20100422,
+   "end": 20260820
+  },
+  "92898": {
+   "id": 92898,
+   "symbol": "QAI",
+   "name": "INDEXIQ E T F TRUST",
+   "ndays": 4286,
+   "start": 20090325,
+   "end": 20260819
+  },
+  "90401": {
+   "id": 90401,
+   "symbol": "ARCC",
+   "name": "ARES CAPITAL CORP",
+   "ndays": 5457,
+   "start": 20041005,
+   "end": 20260820
+  },
+  "11701": {
+   "id": 11701,
+   "symbol": "IMKTA",
+   "name": "INGLES MARKETS INC",
+   "ndays": 5051,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "92400": {
+   "id": 92400,
+   "symbol": "LL",
+   "name": "LUMBER LIQUIDATORS HOLDINGS INC",
+   "ndays": 4183,
+   "start": 20071109,
+   "end": 20240809
+  },
+  "87447": {
+   "id": 87447,
+   "symbol": "UPS",
+   "name": "UNITED PARCEL SERVICE INC",
+   "ndays": 6685,
+   "start": 19991110,
+   "end": 20260820
+  },
+  "12166": {
+   "id": 12166,
+   "symbol": "FRBK",
+   "name": "REPUBLIC FIRST BANCORP INC",
+   "ndays": 5354,
+   "start": 19960301,
+   "end": 20230822
+  },
+  "50286": {
+   "id": 50286,
+   "symbol": "LEE",
+   "name": "LEE ENTERPRISES INC",
+   "ndays": 7587,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "93183": {
+   "id": 93183,
+   "symbol": "SCHV",
+   "name": "SCHWAB STRATEGIC TRUST",
+   "ndays": 4115,
+   "start": 20091211,
+   "end": 20260820
+  },
+  "77124": {
+   "id": 77124,
+   "symbol": "DTF",
+   "name": "D T F TAX FREE INCOME INC",
+   "ndays": 4941,
+   "start": 19960109,
+   "end": 20260820
+  },
+  "10517": {
+   "id": 10517,
+   "symbol": "AAN",
+   "name": "AARONS HOLDINGS CO INC",
+   "ndays": 4006,
+   "start": 19960105,
+   "end": 20260820
+  },
+  "75233": {
+   "id": 75233,
+   "symbol": "BGL",
+   "name": "BROOKE GROUP LTD",
+   "ndays": 6882,
+   "start": 19960102,
+   "end": 20241004
+  },
+  "91018": {
+   "id": 91018,
+   "symbol": "CORE",
+   "name": "CORE MARK HOLDING CO INC",
+   "ndays": 3923,
+   "start": 20051202,
+   "end": 20210901
+  },
+  "82573": {
+   "id": 82573,
+   "symbol": "FFIC",
+   "name": "FLUSHING FINANCIAL CORP",
+   "ndays": 7133,
+   "start": 19960102,
+   "end": 20260601
+  },
+  "14928": {
+   "id": 14928,
+   "symbol": "CYBR",
+   "name": "CYBERARK SOFTWARE LTD",
+   "ndays": 2823,
+   "start": 20140924,
+   "end": 20260210
+  },
+  "79048": {
+   "id": 79048,
+   "symbol": "NMY",
+   "name": "NUVEEN MD QUALITY MUNI INCOME FD",
+   "ndays": 4264,
+   "start": 19960102,
+   "end": 20210409
+  },
+  "12927": {
+   "id": 12927,
+   "symbol": "Z",
+   "name": "ZILLOW GROUP INC",
+   "ndays": 3704,
+   "start": 20110720,
+   "end": 20260820
+  },
+  "87055": {
+   "id": 87055,
+   "symbol": "COST",
+   "name": "COSTCO WHOLESALE CORP NEW",
+   "ndays": 7681,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "83950": {
+   "id": 83950,
+   "symbol": "NEOT",
+   "name": "NEOTHERAPEUTICS INC",
+   "ndays": 6594,
+   "start": 19960926,
+   "end": 20230731
+  },
+  "76081": {
+   "id": 76081,
+   "symbol": "THO",
+   "name": "THOR INDUSTRIES INC",
+   "ndays": 6969,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "81116": {
+   "id": 81116,
+   "symbol": "VECO",
+   "name": "VEECO INSTRUMENTS INC DEL",
+   "ndays": 7617,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "14731": {
+   "id": 14731,
+   "symbol": "IEUR",
+   "name": "ISHARES TRUST",
+   "ndays": 2990,
+   "start": 20140618,
+   "end": 20260820
+  },
+  "90648": {
+   "id": 90648,
+   "symbol": "ETB",
+   "name": "EATON VANCE TAX MNGD BUY WR INC",
+   "ndays": 5286,
+   "start": 20050427,
+   "end": 20260819
+  },
+  "92409": {
+   "id": 92409,
+   "symbol": "FXP",
+   "name": "PROSHARES TRUST",
+   "ndays": 4479,
+   "start": 20071108,
+   "end": 20251119
+  },
+  "92291": {
+   "id": 92291,
+   "symbol": "TFI",
+   "name": "SPDR SERIES TRUST",
+   "ndays": 4673,
+   "start": 20070914,
+   "end": 20260820
+  },
+  "90512": {
+   "id": 90512,
+   "symbol": "PGJ",
+   "name": "INVESCO E T F TRUST",
+   "ndays": 5376,
+   "start": 20041209,
+   "end": 20260819
+  },
+  "75313": {
+   "id": 75313,
+   "symbol": "PIM",
+   "name": "PUTNAM MASTER INTER INCOME TR",
+   "ndays": 7634,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "14611": {
+   "id": 14611,
+   "symbol": "TEDU",
+   "name": "TARENA INTERNATIONAL INC",
+   "ndays": 2844,
+   "start": 20140403,
+   "end": 20251219
+  },
+  "89506": {
+   "id": 89506,
+   "symbol": "SAIA",
+   "name": "SAIA INC",
+   "ndays": 5945,
+   "start": 20021001,
+   "end": 20260817
+  },
+  "89009": {
+   "id": 89009,
+   "symbol": "PCQ",
+   "name": "PIMCO CALIFORNIA MUNI INC FD",
+   "ndays": 6084,
+   "start": 20010627,
+   "end": 20260818
+  },
+  "88260": {
+   "id": 88260,
+   "symbol": "PXLW",
+   "name": "PIXELWORKS INC",
+   "ndays": 6181,
+   "start": 20000519,
+   "end": 20250606
+  },
+  "15365": {
+   "id": 15365,
+   "symbol": "BZUN",
+   "name": "BAOZUN INC",
+   "ndays": 2756,
+   "start": 20150521,
+   "end": 20260819
+  },
+  "12103": {
+   "id": 12103,
+   "symbol": "FSD",
+   "name": "FIRST TRUST HIGH INC LNG SHRT FD",
+   "ndays": 3438,
+   "start": 20100928,
+   "end": 20240719
+  },
+  "89952": {
+   "id": 89952,
+   "symbol": "CMP",
+   "name": "COMPASS MINERALS INTL INC",
+   "ndays": 5652,
+   "start": 20031212,
+   "end": 20260819
+  },
+  "38703": {
+   "id": 38703,
+   "symbol": "NOB",
+   "name": "NORWEST CORP",
+   "ndays": 7634,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "14626": {
+   "id": 14626,
+   "symbol": "HYGH",
+   "name": "ISHARES U S ETF TRUST",
+   "ndays": 2708,
+   "start": 20140613,
+   "end": 20260820
+  },
+  "47941": {
+   "id": 47941,
+   "symbol": "GCI",
+   "name": "GANNETT CO INC",
+   "ndays": 7542,
+   "start": 19960102,
+   "end": 20260319
+  },
+  "91607": {
+   "id": 91607,
+   "symbol": "CSIQ",
+   "name": "CANADIAN SOLAR INC",
+   "ndays": 4920,
+   "start": 20061109,
+   "end": 20260820
+  },
+  "78137": {
+   "id": 78137,
+   "symbol": "CKH",
+   "name": "SEACOR HOLDINGS INC",
+   "ndays": 6331,
+   "start": 19960104,
+   "end": 20210415
+  },
+  "79490": {
+   "id": 79490,
+   "symbol": "FHRI",
+   "name": "FULL HOUSE RESORTS INC",
+   "ndays": 5170,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "92089": {
+   "id": 92089,
+   "symbol": "BIOF",
+   "name": "BIOFUEL ENERGY CORP",
+   "ndays": 4758,
+   "start": 20070614,
+   "end": 20260819
+  },
+  "17506": {
+   "id": 17506,
+   "symbol": "IAGG",
+   "name": "ISHARES TRUST",
+   "ndays": 2594,
+   "start": 20151124,
+   "end": 20260819
+  },
+  "12583": {
+   "id": 12583,
+   "symbol": "PCRX",
+   "name": "PACIRA BIOSCIENCES INC",
+   "ndays": 3845,
+   "start": 20110203,
+   "end": 20260817
+  },
+  "78045": {
+   "id": 78045,
+   "symbol": "MGA",
+   "name": "MAGNA INTERNATIONAL INC",
+   "ndays": 5608,
+   "start": 20020102,
+   "end": 20260817
+  },
+  "83188": {
+   "id": 83188,
+   "symbol": "CCJ",
+   "name": "CAMECO CORP",
+   "ndays": 6675,
+   "start": 19960314,
+   "end": 20260820
+  },
+  "80223": {
+   "id": 80223,
+   "symbol": "BPBC",
+   "name": "BOSTON PRIVATE BANCORP INC",
+   "ndays": 5448,
+   "start": 19960117,
+   "end": 20210630
+  },
+  "88296": {
+   "id": 88296,
+   "symbol": "IYH",
+   "name": "ISHARES TRUST",
+   "ndays": 6487,
+   "start": 20000630,
+   "end": 20260820
+  },
+  "88406": {
+   "id": 88406,
+   "symbol": "IJS",
+   "name": "ISHARES TRUST",
+   "ndays": 6384,
+   "start": 20000731,
+   "end": 20260820
+  },
+  "89053": {
+   "id": 89053,
+   "symbol": "BNY",
+   "name": "BLACKROCK N Y MUN INCOME TR",
+   "ndays": 5834,
+   "start": 20010727,
+   "end": 20260206
+  },
+  "13168": {
+   "id": 13168,
+   "symbol": "TRIP",
+   "name": "TRIPADVISOR INC",
+   "ndays": 3634,
+   "start": 20111221,
+   "end": 20260820
+  },
+  "93370": {
+   "id": 93370,
+   "symbol": "BSL",
+   "name": "BLACKSTONE SR FLTG RT TRM FD",
+   "ndays": 4012,
+   "start": 20100526,
+   "end": 20260820
+  },
+  "14135": {
+   "id": 14135,
+   "symbol": "PED",
+   "name": "PEDEVCO CORP",
+   "ndays": 3027,
+   "start": 20130910,
+   "end": 20260312
+  },
+  "12490": {
+   "id": 12490,
+   "symbol": "IBM",
+   "name": "INTERNATIONAL BUSINESS MACHS COR",
+   "ndays": 7678,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "57809": {
+   "id": 57809,
+   "symbol": "NDSN",
+   "name": "NORDSON CORP",
+   "ndays": 7541,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "87532": {
+   "id": 87532,
+   "symbol": "RDI",
+   "name": "READING INTERNATIONAL INC",
+   "ndays": 4675,
+   "start": 20000229,
+   "end": 20260820
+  },
+  "50623": {
+   "id": 50623,
+   "symbol": "MTSC",
+   "name": "M T S SYSTEMS CORP",
+   "ndays": 6055,
+   "start": 19960103,
+   "end": 20210406
+  },
+  "83534": {
+   "id": 83534,
+   "symbol": "NBIX",
+   "name": "NEUROCRINE BIOSCIENCES INC",
+   "ndays": 7546,
+   "start": 19960523,
+   "end": 20260820
+  },
+  "84734": {
+   "id": 84734,
+   "symbol": "FBC",
+   "name": "FLAGSTAR BANCORP INC",
+   "ndays": 6404,
+   "start": 19970430,
+   "end": 20221130
+  },
+  "89395": {
+   "id": 89395,
+   "symbol": "PNFP",
+   "name": "PINNACLE FINANCIAL PARTNERS INC",
+   "ndays": 5580,
+   "start": 20020611,
+   "end": 20251231
+  },
+  "92795": {
+   "id": 92795,
+   "symbol": "OEF",
+   "name": "ISHARES TRUST",
+   "ndays": 4443,
+   "start": 20080923,
+   "end": 20260820
+  },
+  "76613": {
+   "id": 76613,
+   "symbol": "IO",
+   "name": "ION GEOPHYSICAL CORP",
+   "ndays": 6632,
+   "start": 19960102,
+   "end": 20220518
+  },
+  "15058": {
+   "id": 15058,
+   "symbol": "CAPN",
+   "name": "CAPNIA INC",
+   "ndays": 2741,
+   "start": 20141113,
+   "end": 20260515
+  },
+  "84207": {
+   "id": 84207,
+   "symbol": "ESLT",
+   "name": "ELBIT SYSTEMS LTD",
+   "ndays": 6695,
+   "start": 19961129,
+   "end": 20260820
+  },
+  "89635": {
+   "id": 89635,
+   "symbol": "PTY",
+   "name": "PIMCO CORPORATE & INCOME OPP FD",
+   "ndays": 5876,
+   "start": 20021224,
+   "end": 20260820
+  },
+  "84398": {
+   "id": 84398,
+   "symbol": "SPY",
+   "name": "SPDR S & P 500 E T F TRUST",
+   "ndays": 7679,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "57074": {
+   "id": 57074,
+   "symbol": "PAI",
+   "name": "WESTERN ASSET INCOME FUND",
+   "ndays": 5912,
+   "start": 19960109,
+   "end": 20260820
+  },
+  "52708": {
+   "id": 52708,
+   "symbol": "LEN",
+   "name": "LENNAR CORP",
+   "ndays": 7214,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "15132": {
+   "id": 15132,
+   "symbol": "HSGX",
+   "name": "HISTOGENICS CORP",
+   "ndays": 2871,
+   "start": 20141203,
+   "end": 20260819
+  },
+  "13693": {
+   "id": 13693,
+   "symbol": "ATOS",
+   "name": "ATOSSA THERAPEUTICS INC",
+   "ndays": 3258,
+   "start": 20121108,
+   "end": 20260130
+  },
+  "13771": {
+   "id": 13771,
+   "symbol": "FPE",
+   "name": "FIRST TRUST E T F III",
+   "ndays": 3326,
+   "start": 20130213,
+   "end": 20260818
+  },
+  "84725": {
+   "id": 84725,
+   "symbol": "CVLY",
+   "name": "CODORUS VALLEY BANCORP INC",
+   "ndays": 3036,
+   "start": 19980319,
+   "end": 20240628
+  },
+  "55993": {
+   "id": 55993,
+   "symbol": "NSSC",
+   "name": "NAPCO SECURITY TECHNOLOGIES INC",
+   "ndays": 5729,
+   "start": 19960501,
+   "end": 20260820
+  },
+  "80399": {
+   "id": 80399,
+   "symbol": "MAC",
+   "name": "MACERICH CO",
+   "ndays": 7588,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "90056": {
+   "id": 90056,
+   "symbol": "TYG",
+   "name": "TORTOISE ENERGY INFRASTRUCT CORP",
+   "ndays": 5559,
+   "start": 20040225,
+   "end": 20260819
+  },
+  "92594": {
+   "id": 92594,
+   "symbol": "GALE",
+   "name": "GALENA BIOPHARMA INC",
+   "ndays": 4564,
+   "start": 20080312,
+   "end": 20260820
+  },
+  "90120": {
+   "id": 90120,
+   "symbol": "AGO",
+   "name": "ASSURED GUARANTY LTD",
+   "ndays": 5553,
+   "start": 20040423,
+   "end": 20260820
+  },
+  "90753": {
+   "id": 90753,
+   "symbol": "ETV",
+   "name": "EATON VANCE TAX MAN BUY WR OPP F",
+   "ndays": 5249,
+   "start": 20050628,
+   "end": 20260819
+  },
+  "90423": {
+   "id": 90423,
+   "symbol": "INVA",
+   "name": "THERAVANCE INC",
+   "ndays": 5439,
+   "start": 20041005,
+   "end": 20260820
+  },
+  "55511": {
+   "id": 55511,
+   "symbol": "PNM",
+   "name": "P N M RESOURCES INC",
+   "ndays": 7654,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "22293": {
+   "id": 22293,
+   "symbol": "GLW",
+   "name": "CORNING INC",
+   "ndays": 7681,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "21020": {
+   "id": 21020,
+   "symbol": "AAL",
+   "name": "AMERICAN AIRLINES GROUP INC",
+   "ndays": 7195,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "91715": {
+   "id": 91715,
+   "symbol": "DBB",
+   "name": "INVESCO DB MULTI SECT COM TR",
+   "ndays": 4857,
+   "start": 20070105,
+   "end": 20260820
+  },
+  "91314": {
+   "id": 91314,
+   "symbol": "MYY",
+   "name": "PROSHARES TRUST",
+   "ndays": 4587,
+   "start": 20060622,
+   "end": 20260820
+  },
+  "46077": {
+   "id": 46077,
+   "symbol": "AXE",
+   "name": "ANIXTER INTERNATIONAL INC",
+   "ndays": 6119,
+   "start": 19960102,
+   "end": 20200619
+  },
+  "21207": {
+   "id": 21207,
+   "symbol": "NEM",
+   "name": "NEWMONT CORP",
+   "ndays": 7684,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "13959": {
+   "id": 13959,
+   "symbol": "NDLS",
+   "name": "NOODLES & CO",
+   "ndays": 3127,
+   "start": 20130628,
+   "end": 20260217
+  },
+  "11264": {
+   "id": 11264,
+   "symbol": "RETL",
+   "name": "DIREXION SHARES E T F TRUST",
+   "ndays": 3498,
+   "start": 20100714,
+   "end": 20260817
+  },
+  "77925": {
+   "id": 77925,
+   "symbol": "MQT",
+   "name": "BLACKROCK MUNIYIELD QLTY FUND II",
+   "ndays": 7005,
+   "start": 19960102,
+   "end": 20260219
+  },
+  "26710": {
+   "id": 26710,
+   "symbol": "L",
+   "name": "LOEWS CORP",
+   "ndays": 7646,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "64961": {
+   "id": 64961,
+   "symbol": "NXGN",
+   "name": "NEXTGEN HEALTHCARE INC",
+   "ndays": 6273,
+   "start": 19960102,
+   "end": 20231108
+  },
+  "90302": {
+   "id": 90302,
+   "symbol": "BGT",
+   "name": "BLACKROCK FLOATING RATE INC TR",
+   "ndays": 5458,
+   "start": 20040826,
+   "end": 20260820
+  },
+  "78211": {
+   "id": 78211,
+   "symbol": "UHTS",
+   "name": "UNIVERSAL HEIGHTS INC",
+   "ndays": 4805,
+   "start": 19960103,
+   "end": 20260817
+  },
+  "89468": {
+   "id": 89468,
+   "symbol": "TLT",
+   "name": "ISHARES TRUST",
+   "ndays": 6009,
+   "start": 20020726,
+   "end": 20260820
+  },
+  "14187": {
+   "id": 14187,
+   "symbol": "DBEU",
+   "name": "D B X ETF TRUST",
+   "ndays": 3128,
+   "start": 20131009,
+   "end": 20260817
+  },
+  "89348": {
+   "id": 89348,
+   "symbol": "WEA",
+   "name": "WESTERN ASSET PREMIER",
+   "ndays": 6019,
+   "start": 20020326,
+   "end": 20260819
+  },
+  "85168": {
+   "id": 85168,
+   "symbol": "CDIS",
+   "name": "CAL DIVE INTERNATIONAL INC",
+   "ndays": 7235,
+   "start": 19970701,
+   "end": 20260817
+  },
+  "88462": {
+   "id": 88462,
+   "symbol": "PTIE",
+   "name": "PAIN THERAPEUTICS INC",
+   "ndays": 6451,
+   "start": 20000714,
+   "end": 20260820
+  },
+  "91656": {
+   "id": 91656,
+   "symbol": "TOO",
+   "name": "TEEKAY OFFSHORE PARTNERS LP",
+   "ndays": 3279,
+   "start": 20061214,
+   "end": 20200122
+  },
+  "77282": {
+   "id": 77282,
+   "symbol": "MSON",
+   "name": "MISONIX INC",
+   "ndays": 5418,
+   "start": 19960222,
+   "end": 20211028
+  },
+  "27618": {
+   "id": 27618,
+   "symbol": "CRD/B",
+   "name": "CRAWFORD & CO",
+   "ndays": 6482,
+   "start": 19960129,
+   "end": 20260820
+  },
+  "90790": {
+   "id": 90790,
+   "symbol": "MPW",
+   "name": "MEDICAL PROPERTIES TRUST INC",
+   "ndays": 5266,
+   "start": 20050711,
+   "end": 20260820
+  },
+  "13586": {
+   "id": 13586,
+   "symbol": "PNR",
+   "name": "PENTAIR PLC",
+   "ndays": 3448,
+   "start": 20120928,
+   "end": 20260820
+  },
+  "89190": {
+   "id": 89190,
+   "symbol": "ILF",
+   "name": "ISHARES TRUST",
+   "ndays": 5685,
+   "start": 20020411,
+   "end": 20260820
+  },
+  "20204": {
+   "id": 20204,
+   "symbol": "CR",
+   "name": "CRANE CO",
+   "ndays": 7598,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "12530": {
+   "id": 12530,
+   "symbol": "VIXM",
+   "name": "PROSHARES TRUST II",
+   "ndays": 3805,
+   "start": 20110112,
+   "end": 20260820
+  },
+  "57904": {
+   "id": 57904,
+   "symbol": "AFL",
+   "name": "AFLAC INC",
+   "ndays": 7674,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "85768": {
+   "id": 85768,
+   "symbol": "IEE",
+   "name": "INTEGRATED ELECTRICAL SRVCS INC",
+   "ndays": 6624,
+   "start": 19980127,
+   "end": 20260820
+  },
+  "13403": {
+   "id": 13403,
+   "symbol": "TGLS",
+   "name": "TECNOGLASS INC",
+   "ndays": 2903,
+   "start": 20131226,
+   "end": 20260707
+  },
+  "83856": {
+   "id": 83856,
+   "symbol": "CRSV",
+   "name": "CARRIAGE SERVICES INC",
+   "ndays": 6935,
+   "start": 19960809,
+   "end": 20260820
+  },
+  "93128": {
+   "id": 93128,
+   "symbol": "COWN",
+   "name": "COWEN INC",
+   "ndays": 3310,
+   "start": 20091201,
+   "end": 20230228
+  },
+  "13570": {
+   "id": 13570,
+   "symbol": "BGB",
+   "name": "BLACKSTONE STRATEGIC CREDIT FUND",
+   "ndays": 3432,
+   "start": 20120926,
+   "end": 20260820
+  },
+  "43334": {
+   "id": 43334,
+   "symbol": "SYNC",
+   "name": "SYNALLOY CORP",
+   "ndays": 5428,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "13769": {
+   "id": 13769,
+   "symbol": "AMS",
+   "name": "AMERICAN SHARED HOSPITAL SVCS",
+   "ndays": 4027,
+   "start": 19960105,
+   "end": 20260820
+  },
+  "19393": {
+   "id": 19393,
+   "symbol": "BMY",
+   "name": "BRISTOL MYERS SQUIBB CO",
+   "ndays": 7684,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "91978": {
+   "id": 91978,
+   "symbol": "BGY",
+   "name": "BLACKROCK ENHANCED INTL DIV TR",
+   "ndays": 4771,
+   "start": 20070525,
+   "end": 20260820
+  },
+  "13303": {
+   "id": 13303,
+   "symbol": "NL",
+   "name": "N L INDUSTRIES INC",
+   "ndays": 7449,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "89976": {
+   "id": 89976,
+   "symbol": "AUY",
+   "name": "YAMANA GOLD INC",
+   "ndays": 4845,
+   "start": 20031205,
+   "end": 20230331
+  },
+  "14520": {
+   "id": 14520,
+   "symbol": "TSLX",
+   "name": "SIXTH ST SPECIALTY LENDING INC",
+   "ndays": 3046,
+   "start": 20140321,
+   "end": 20260818
+  },
+  "42439": {
+   "id": 42439,
+   "symbol": "HNI",
+   "name": "H N I CORP",
+   "ndays": 7587,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "15396": {
+   "id": 15396,
+   "symbol": "BW",
+   "name": "BABCOCK & WILCOX ENTERPRISES INC",
+   "ndays": 2751,
+   "start": 20150701,
+   "end": 20260820
+  },
+  "77191": {
+   "id": 77191,
+   "symbol": "TTEK",
+   "name": "TETRA TECH INC",
+   "ndays": 7473,
+   "start": 19960103,
+   "end": 20260820
+  },
+  "81501": {
+   "id": 81501,
+   "symbol": "NATI",
+   "name": "NATIONAL INSTRUMENTS CORP",
+   "ndays": 6759,
+   "start": 19960102,
+   "end": 20231010
+  },
+  "15429": {
+   "id": 15429,
+   "symbol": "LNTH",
+   "name": "LANTHEUS HOLDINGS INC",
+   "ndays": 2753,
+   "start": 20150625,
+   "end": 20260820
+  },
+  "77488": {
+   "id": 77488,
+   "symbol": "NTI",
+   "name": "NORTHERN TECHNOLOGIES INTL CORP",
+   "ndays": 3694,
+   "start": 19960104,
+   "end": 20260820
+  },
+  "85570": {
+   "id": 85570,
+   "symbol": "CDZI",
+   "name": "CADIZ INC",
+   "ndays": 6662,
+   "start": 19960110,
+   "end": 20260820
+  },
+  "84129": {
+   "id": 84129,
+   "symbol": "ZION",
+   "name": "ZIONS BANCORPORATION N A",
+   "ndays": 7609,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "90082": {
+   "id": 90082,
+   "symbol": "CVCY",
+   "name": "CENTRAL VALLEY COMM BANCORP",
+   "ndays": 3544,
+   "start": 20040315,
+   "end": 20260820
+  },
+  "83414": {
+   "id": 83414,
+   "symbol": "SASR",
+   "name": "SANDY SPRING BANCORP INC",
+   "ndays": 6339,
+   "start": 19970106,
+   "end": 20250331
+  },
+  "76752": {
+   "id": 76752,
+   "symbol": "PRGS",
+   "name": "PROGRESS SOFTWARE CORP",
+   "ndays": 7639,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "91733": {
+   "id": 91733,
+   "symbol": "AVAV",
+   "name": "AEROVIRONMENT INC",
+   "ndays": 4869,
+   "start": 20070123,
+   "end": 20260820
+  },
+  "12036": {
+   "id": 12036,
+   "symbol": "GATX",
+   "name": "G A T X CORP",
+   "ndays": 7641,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "89525": {
+   "id": 89525,
+   "symbol": "CMCSA",
+   "name": "COMCAST CORP NEW",
+   "ndays": 3468,
+   "start": 20021119,
+   "end": 20260820
+  },
+  "90927": {
+   "id": 90927,
+   "symbol": "IGA",
+   "name": "VOYA GLOBAL ADV & PREM OPP FUND",
+   "ndays": 5154,
+   "start": 20051031,
+   "end": 20260819
+  },
+  "92538": {
+   "id": 92538,
+   "symbol": "KOL",
+   "name": "VANECK VECTORS E T F TRUST",
+   "ndays": 3248,
+   "start": 20080114,
+   "end": 20201214
+  },
+  "89741": {
+   "id": 89741,
+   "symbol": "OPBK",
+   "name": "OPTIMUMBANK COM",
+   "ndays": 2835,
+   "start": 20030521,
+   "end": 20260814
+  },
+  "78447": {
+   "id": 78447,
+   "symbol": "TARO",
+   "name": "TARO PHARM INDUSTRIES LTD",
+   "ndays": 5431,
+   "start": 19960103,
+   "end": 20240621
+  },
+  "14655": {
+   "id": 14655,
+   "symbol": "JD",
+   "name": "J D COM INC",
+   "ndays": 3050,
+   "start": 20140522,
+   "end": 20260820
+  },
+  "92453": {
+   "id": 92453,
+   "symbol": "SES",
+   "name": "SYNTHESIS ENERGY SYSTEMS INC",
+   "ndays": 3063,
+   "start": 20071102,
+   "end": 20200515
+  },
+  "51263": {
+   "id": 51263,
+   "symbol": "MTW",
+   "name": "MANITOWOC CO INC",
+   "ndays": 7558,
+   "start": 19960220,
+   "end": 20260820
+  },
+  "89606": {
+   "id": 89606,
+   "symbol": "AOBC",
+   "name": "AMERICAN OUTDOOR BRANDS CORP",
+   "ndays": 5799,
+   "start": 20021129,
+   "end": 20260820
+  },
+  "51625": {
+   "id": 51625,
+   "symbol": "SCI",
+   "name": "SERVICE CORP INTERNATIONAL",
+   "ndays": 7657,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "85346": {
+   "id": 85346,
+   "symbol": "NAT",
+   "name": "NORDIC AMERICAN TANKERS LTD",
+   "ndays": 6544,
+   "start": 19971015,
+   "end": 20260819
+  },
+  "75985": {
+   "id": 75985,
+   "symbol": "HAF",
+   "name": "HALLMARK FINANCIAL SERVICES INC",
+   "ndays": 4270,
+   "start": 19960520,
+   "end": 20240104
+  },
+  "89598": {
+   "id": 89598,
+   "symbol": "HPF",
+   "name": "JOHN HANCOCK PREFERRED INC FD II",
+   "ndays": 5895,
+   "start": 20021126,
+   "end": 20260820
+  },
+  "14632": {
+   "id": 14632,
+   "symbol": "DNOW",
+   "name": "NOW INC",
+   "ndays": 3026,
+   "start": 20140602,
+   "end": 20260819
+  },
+  "47861": {
+   "id": 47861,
+   "symbol": "SGC",
+   "name": "SUPERIOR GROUP OF COMPANIES INC",
+   "ndays": 4336,
+   "start": 19960125,
+   "end": 20260817
+  },
+  "11547": {
+   "id": 11547,
+   "symbol": "CNMD",
+   "name": "CONMED CORP",
+   "ndays": 7639,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "89992": {
+   "id": 89992,
+   "symbol": "VCR",
+   "name": "VANGUARD SECTOR INDEX FUNDS",
+   "ndays": 5100,
+   "start": 20040701,
+   "end": 20260820
+  },
+  "13242": {
+   "id": 13242,
+   "symbol": "CMBS",
+   "name": "ISHARES TRUST",
+   "ndays": 3427,
+   "start": 20120224,
+   "end": 20260820
+  },
+  "83520": {
+   "id": 83520,
+   "symbol": "JAKK",
+   "name": "JAKKS PACIFIC INC",
+   "ndays": 7459,
+   "start": 19960502,
+   "end": 20260820
+  },
+  "14544": {
+   "id": 14544,
+   "symbol": "LE",
+   "name": "LANDS END INC",
+   "ndays": 3051,
+   "start": 20140407,
+   "end": 20260820
+  },
+  "89068": {
+   "id": 89068,
+   "symbol": "TAC",
+   "name": "TRANSALTA CORP",
+   "ndays": 6017,
+   "start": 20010731,
+   "end": 20260820
+  },
+  "12360": {
+   "id": 12360,
+   "symbol": "PACB",
+   "name": "PACIFIC BIOSCIENCES CALIF INC",
+   "ndays": 3927,
+   "start": 20101027,
+   "end": 20260820
+  },
+  "91446": {
+   "id": 91446,
+   "symbol": "BTC",
+   "name": "COMMUNITY BANKERS TRUST CORP",
+   "ndays": 2778,
+   "start": 20060918,
+   "end": 20211203
+  },
+  "92843": {
+   "id": 92843,
+   "symbol": "SCO",
+   "name": "PROSHARES TRUST II",
+   "ndays": 4256,
+   "start": 20081128,
+   "end": 20260527
+  },
+  "83827": {
+   "id": 83827,
+   "symbol": "MMA",
+   "name": "MUNICIPAL MORTGAGE & EQUITY LLC",
+   "ndays": 4188,
+   "start": 19960830,
+   "end": 20210812
+  },
+  "83989": {
+   "id": 83989,
+   "symbol": "GCS",
+   "name": "GRAY COMMUNICATIONS SYSTEMS INC",
+   "ndays": 6356,
+   "start": 19960924,
+   "end": 20260820
+  },
+  "78763": {
+   "id": 78763,
+   "symbol": "COT",
+   "name": "COTT CORP QUEBEC",
+   "ndays": 7233,
+   "start": 19960102,
+   "end": 20241108
+  },
+  "80415": {
+   "id": 80415,
+   "symbol": "CXP",
+   "name": "CENTEX CONSTRUCTION PRODUCTS INC",
+   "ndays": 7050,
+   "start": 19960105,
+   "end": 20260820
+  },
+  "81284": {
+   "id": 81284,
+   "symbol": "BMO",
+   "name": "BANK MONTREAL QUE",
+   "ndays": 7374,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "15371": {
+   "id": 15371,
+   "symbol": "COLL",
+   "name": "COLLEGIUM PHARMACEUTICAL INC",
+   "ndays": 2783,
+   "start": 20150507,
+   "end": 20260819
+  },
+  "91328": {
+   "id": 91328,
+   "symbol": "DON",
+   "name": "WISDOMTREE TRUST",
+   "ndays": 4903,
+   "start": 20060710,
+   "end": 20260819
+  },
+  "13410": {
+   "id": 13410,
+   "symbol": "SUPN",
+   "name": "SUPERNUS PHARMACEUTICALS INC",
+   "ndays": 3538,
+   "start": 20120501,
+   "end": 20260820
+  },
+  "79491": {
+   "id": 79491,
+   "symbol": "GBIZ",
+   "name": "GROW BIZ INTERNATIONAL INC",
+   "ndays": 4713,
+   "start": 19960103,
+   "end": 20260819
+  },
+  "80072": {
+   "id": 80072,
+   "symbol": "VLY",
+   "name": "VALLEY NATIONAL BANCORP",
+   "ndays": 7474,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "77071": {
+   "id": 77071,
+   "symbol": "NUO",
+   "name": "NUVEEN OH QUALITY MUNI INCOME FD",
+   "ndays": 4428,
+   "start": 19960102,
+   "end": 20230413
+  },
+  "47706": {
+   "id": 47706,
+   "symbol": "FSS",
+   "name": "FEDERAL SIGNAL CORP",
+   "ndays": 7634,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "92506": {
+   "id": 92506,
+   "symbol": "GTS",
+   "name": "TRIPLE S MANAGEMENT CORP",
+   "ndays": 3546,
+   "start": 20071207,
+   "end": 20220131
+  },
+  "13613": {
+   "id": 13613,
+   "symbol": "IEMG",
+   "name": "ISHARES INC",
+   "ndays": 3436,
+   "start": 20121022,
+   "end": 20260820
+  },
+  "78971": {
+   "id": 78971,
+   "symbol": "GILT",
+   "name": "GILAT SATELLITE NETWORKS LTD",
+   "ndays": 7531,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "75240": {
+   "id": 75240,
+   "symbol": "NNY",
+   "name": "NUVEEN NEW YORK MUN VALUE FUND",
+   "ndays": 5928,
+   "start": 19960102,
+   "end": 20260818
+  },
+  "92716": {
+   "id": 92716,
+   "symbol": "BDGE",
+   "name": "BRIDGE BANCORP INC",
+   "ndays": 4191,
+   "start": 20080613,
+   "end": 20260819
+  },
+  "46690": {
+   "id": 46690,
+   "symbol": "CBT",
+   "name": "CABOT CORP",
+   "ndays": 7651,
+   "start": 19960102,
+   "end": 20260818
+  },
+  "12535": {
+   "id": 12535,
+   "symbol": "SCHM",
+   "name": "SCHWAB STRATEGIC TRUST",
+   "ndays": 3849,
+   "start": 20110120,
+   "end": 20260820
+  },
+  "12307": {
+   "id": 12307,
+   "symbol": "AMRS",
+   "name": "AMYRIS INC",
+   "ndays": 3222,
+   "start": 20100928,
+   "end": 20230818
+  },
+  "62930": {
+   "id": 62930,
+   "symbol": "MXF",
+   "name": "MEXICO FUND INC",
+   "ndays": 7569,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "14923": {
+   "id": 14923,
+   "symbol": "AFMD",
+   "name": "AFFIMED N V",
+   "ndays": 2611,
+   "start": 20140912,
+   "end": 20250519
+  },
+  "14536": {
+   "id": 14536,
+   "symbol": "BPTH",
+   "name": "BIO PATH HOLDINGS INC",
+   "ndays": 2675,
+   "start": 20140310,
+   "end": 20250218
+  },
+  "12039": {
+   "id": 12039,
+   "symbol": "BBN",
+   "name": "BLACKROCK TAXABLE MUNI BOND TR",
+   "ndays": 3947,
+   "start": 20100827,
+   "end": 20260817
+  },
+  "77239": {
+   "id": 77239,
+   "symbol": "COPT",
+   "name": "CORPORATE OFFICE PROPERTIES TR",
+   "ndays": 6902,
+   "start": 19961230,
+   "end": 20260820
+  },
+  "92213": {
+   "id": 92213,
+   "symbol": "APPY",
+   "name": "VENAXIS INC",
+   "ndays": 4682,
+   "start": 20070828,
+   "end": 20260820
+  },
+  "86799": {
+   "id": 86799,
+   "symbol": "CNX",
+   "name": "C N X RESOURCES CORP",
+   "ndays": 6831,
+   "start": 19990430,
+   "end": 20260820
+  },
+  "82298": {
+   "id": 82298,
+   "symbol": "DO",
+   "name": "DIAMOND OFFSHORE DRILLING INC",
+   "ndays": 6115,
+   "start": 19960102,
+   "end": 20200424
+  },
+  "93257": {
+   "id": 93257,
+   "symbol": "SRTY",
+   "name": "PROSHARES TRUST",
+   "ndays": 3784,
+   "start": 20100211,
+   "end": 20251119
+  },
+  "14467": {
+   "id": 14467,
+   "symbol": "RVNC",
+   "name": "REVANCE THERAPEUTICS INC",
+   "ndays": 2736,
+   "start": 20140206,
+   "end": 20250205
+  },
+  "92537": {
+   "id": 92537,
+   "symbol": "BJK",
+   "name": "VANECK E T F TRUST",
+   "ndays": 4164,
+   "start": 20080130,
+   "end": 20260820
+  },
+  "52337": {
+   "id": 52337,
+   "symbol": "THC",
+   "name": "TENET HEALTHCARE CORP",
+   "ndays": 7653,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "85926": {
+   "id": 85926,
+   "symbol": "SEE",
+   "name": "SEALED AIR CORP NEW",
+   "ndays": 6996,
+   "start": 19980408,
+   "end": 20260408
+  },
+  "92913": {
+   "id": 92913,
+   "symbol": "RST",
+   "name": "ROSETTA STONE INC",
+   "ndays": 2884,
+   "start": 20090416,
+   "end": 20201014
+  },
+  "77338": {
+   "id": 77338,
+   "symbol": "ROP",
+   "name": "ROPER TECHNOLOGIES INC",
+   "ndays": 7622,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "88953": {
+   "id": 88953,
+   "symbol": "ABB",
+   "name": "A B B LTD",
+   "ndays": 5488,
+   "start": 20010406,
+   "end": 20230522
+  },
+  "91854": {
+   "id": 91854,
+   "symbol": "UFS",
+   "name": "DOMTAR CORP",
+   "ndays": 3688,
+   "start": 20070307,
+   "end": 20211129
+  },
+  "23835": {
+   "id": 23835,
+   "symbol": "MDU",
+   "name": "M D U RESOURCES GROUP INC",
+   "ndays": 7604,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "79878": {
+   "id": 79878,
+   "symbol": "UFPI",
+   "name": "U F P INDUSTRIES INC",
+   "ndays": 7509,
+   "start": 19960102,
+   "end": 20260817
+  },
+  "15506": {
+   "id": 15506,
+   "symbol": "CYRX",
+   "name": "CRYOPORT INC",
+   "ndays": 2700,
+   "start": 20150724,
+   "end": 20260820
+  },
+  "56223": {
+   "id": 56223,
+   "symbol": "LPX",
+   "name": "LOUISIANA PACIFIC CORP",
+   "ndays": 7655,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "75591": {
+   "id": 75591,
+   "symbol": "IEX",
+   "name": "IDEX CORP",
+   "ndays": 7579,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "91720": {
+   "id": 91720,
+   "symbol": "RWM",
+   "name": "PROSHARES TRUST",
+   "ndays": 4822,
+   "start": 20070126,
+   "end": 20260820
+  },
+  "93177": {
+   "id": 93177,
+   "symbol": "ITP",
+   "name": "I T TECH PACKAGING INC",
+   "ndays": 3805,
+   "start": 20091217,
+   "end": 20260820
+  },
+  "89029": {
+   "id": 89029,
+   "symbol": "MOSY",
+   "name": "MOSYS INC",
+   "ndays": 6170,
+   "start": 20010628,
+   "end": 20260820
+  },
+  "86369": {
+   "id": 86369,
+   "symbol": "EVF",
+   "name": "EATON VANCE SENIOR INCOME TR",
+   "ndays": 6910,
+   "start": 19981028,
+   "end": 20260819
+  },
+  "76856": {
+   "id": 76856,
+   "symbol": "FCFS",
+   "name": "FIRSTCASH INC",
+   "ndays": 7077,
+   "start": 19960104,
+   "end": 20260820
+  },
+  "10032": {
+   "id": 10032,
+   "symbol": "PLXS",
+   "name": "PLEXUS CORP",
+   "ndays": 7548,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "11775": {
+   "id": 11775,
+   "symbol": "JOUT",
+   "name": "JOHNSON OUTDOORS INC",
+   "ndays": 5793,
+   "start": 19960207,
+   "end": 20260820
+  },
+  "34936": {
+   "id": 34936,
+   "symbol": "NSSI",
+   "name": "NETWORK1 SECURITY SOLUTIONS",
+   "ndays": 3559,
+   "start": 19981112,
+   "end": 20260820
+  },
+  "12728": {
+   "id": 12728,
+   "symbol": "RUSL",
+   "name": "DIREXION SHARES E T F TRUST",
+   "ndays": 2679,
+   "start": 20110527,
+   "end": 20220303
+  },
+  "13760": {
+   "id": 13760,
+   "symbol": "NCLH",
+   "name": "NORWEGIAN CRUISE LINE HLDGS LTD",
+   "ndays": 3388,
+   "start": 20130118,
+   "end": 20260820
+  },
+  "91790": {
+   "id": 91790,
+   "symbol": "ROM",
+   "name": "PROSHARES TRUST",
+   "ndays": 4747,
+   "start": 20070208,
+   "end": 20260819
+  },
+  "87445": {
+   "id": 87445,
+   "symbol": "TDY",
+   "name": "TELEDYNE TECHNOLOGIES",
+   "ndays": 6649,
+   "start": 19991130,
+   "end": 20260820
+  },
+  "90114": {
+   "id": 90114,
+   "symbol": "LGI",
+   "name": "LAZARD GLOB TOT RET & INC FD INC",
+   "ndays": 5513,
+   "start": 20040428,
+   "end": 20260820
+  },
+  "38746": {
+   "id": 38746,
+   "symbol": "AXR",
+   "name": "AMREP CORP",
+   "ndays": 4474,
+   "start": 19960213,
+   "end": 20260820
+  },
+  "42796": {
+   "id": 42796,
+   "symbol": "MDP",
+   "name": "MEREDITH CORP",
+   "ndays": 6521,
+   "start": 19960102,
+   "end": 20211201
+  },
+  "67467": {
+   "id": 67467,
+   "symbol": "BIG",
+   "name": "BIG LOTS INC",
+   "ndays": 7195,
+   "start": 19960102,
+   "end": 20240906
+  },
+  "30648": {
+   "id": 30648,
+   "symbol": "COHU",
+   "name": "COHU INC",
+   "ndays": 7641,
+   "start": 19960103,
+   "end": 20260819
+  },
+  "15092": {
+   "id": 15092,
+   "symbol": "LC",
+   "name": "LENDINGCLUB CORP",
+   "ndays": 2892,
+   "start": 20141211,
+   "end": 20260820
+  },
+  "87430": {
+   "id": 87430,
+   "symbol": "KTOS",
+   "name": "KRATOS DEFENSE & SECUR SOLS INC",
+   "ndays": 6666,
+   "start": 19991105,
+   "end": 20260820
+  },
+  "11884": {
+   "id": 11884,
+   "symbol": "IPAR",
+   "name": "INTERMEDIATE PARFUMS INC",
+   "ndays": 6286,
+   "start": 19960103,
+   "end": 20260819
+  },
+  "75622": {
+   "id": 75622,
+   "symbol": "BPT",
+   "name": "B P PRUDHOE BAY ROYALTY TRUST",
+   "ndays": 7369,
+   "start": 19960102,
+   "end": 20250630
+  },
+  "33770": {
+   "id": 33770,
+   "symbol": "DCAP",
+   "name": "D C A P GROUP INC",
+   "ndays": 3400,
+   "start": 20041007,
+   "end": 20260819
+  },
+  "93063": {
+   "id": 93063,
+   "symbol": "GRES",
+   "name": "INDEXIQ E T F TRUST",
+   "ndays": 3167,
+   "start": 20091027,
+   "end": 20231212
+  },
+  "79448": {
+   "id": 79448,
+   "symbol": "MUA",
+   "name": "BLACKROCK MUNIASSETS FUND INC",
+   "ndays": 6526,
+   "start": 19960105,
+   "end": 20260818
+  },
+  "92239": {
+   "id": 92239,
+   "symbol": "CXO",
+   "name": "CONCHO RESOURCES INC",
+   "ndays": 3387,
+   "start": 20070803,
+   "end": 20210115
+  },
+  "90794": {
+   "id": 90794,
+   "symbol": "RDS/A",
+   "name": "ROYAL DUTCH SHELL PLC",
+   "ndays": 5213,
+   "start": 20050725,
+   "end": 20260820
+  },
+  "14668": {
+   "id": 14668,
+   "symbol": "SCYX",
+   "name": "SCYNEXIS INC",
+   "ndays": 2903,
+   "start": 20140502,
+   "end": 20260529
+  },
+  "91128": {
+   "id": 91128,
+   "symbol": "GPOR",
+   "name": "GULFPORT ENERGY CORP",
+   "ndays": 3711,
+   "start": 20060228,
+   "end": 20201125
+  },
+  "14037": {
+   "id": 14037,
+   "symbol": "REXR",
+   "name": "REXFORD INDUSTRIAL REALTY INC",
+   "ndays": 3249,
+   "start": 20130719,
+   "end": 20260820
+  },
+  "83212": {
+   "id": 83212,
+   "symbol": "EWQ",
+   "name": "ISHARES INC",
+   "ndays": 6048,
+   "start": 19960903,
+   "end": 20260820
+  },
+  "91413": {
+   "id": 91413,
+   "symbol": "EVR",
+   "name": "EVERCORE INC",
+   "ndays": 4971,
+   "start": 20060811,
+   "end": 20260820
+  },
+  "91651": {
+   "id": 91651,
+   "symbol": "RWX",
+   "name": "SPDR INDEX SHARES FUNDS",
+   "ndays": 4862,
+   "start": 20061219,
+   "end": 20260819
+  },
+  "24272": {
+   "id": 24272,
+   "symbol": "ASH",
+   "name": "ASHLAND GLOBAL HOLDINGS INC",
+   "ndays": 7649,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "87356": {
+   "id": 87356,
+   "symbol": "WWE",
+   "name": "WORLD WRESTLING ENTMT INC",
+   "ndays": 6628,
+   "start": 19991019,
+   "end": 20260819
+  },
+  "89786": {
+   "id": 89786,
+   "symbol": "MHI",
+   "name": "PIONEER MUNI HIGH INCOME FD INC",
+   "ndays": 5496,
+   "start": 20030718,
+   "end": 20250822
+  },
+  "78059": {
+   "id": 78059,
+   "symbol": "MIY",
+   "name": "BLACKROCK MUNIYLD MI QLTY FD INC",
+   "ndays": 6290,
+   "start": 19960306,
+   "end": 20260820
+  },
+  "86092": {
+   "id": 86092,
+   "symbol": "BDE",
+   "name": "BLACK DIAMOND INC",
+   "ndays": 5545,
+   "start": 19980527,
+   "end": 20260820
+  },
+  "13301": {
+   "id": 13301,
+   "symbol": "TTT",
+   "name": "PROSHARES TRUST",
+   "ndays": 3544,
+   "start": 20120330,
+   "end": 20260819
+  },
+  "14097": {
+   "id": 14097,
+   "symbol": "FOXF",
+   "name": "FOX FACTORY HOLDING CORP",
+   "ndays": 3223,
+   "start": 20130808,
+   "end": 20260819
+  },
+  "13840": {
+   "id": 13840,
+   "symbol": "IQDF",
+   "name": "FLEXSHARES TRUST",
+   "ndays": 3187,
+   "start": 20130513,
+   "end": 20260819
+  },
+  "84656": {
+   "id": 84656,
+   "symbol": "ALV",
+   "name": "AUTOLIV INC",
+   "ndays": 7313,
+   "start": 19970428,
+   "end": 20260818
+  },
+  "39220": {
+   "id": 39220,
+   "symbol": "SMP",
+   "name": "STANDARD MOTOR PRODUCTS INC",
+   "ndays": 6986,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "13837": {
+   "id": 13837,
+   "symbol": "EVTC",
+   "name": "EVERTEC INC",
+   "ndays": 3306,
+   "start": 20130412,
+   "end": 20260820
+  },
+  "89649": {
+   "id": 89649,
+   "symbol": "FFC",
+   "name": "FLAHERTY & CRUMRINE PFD INC SECS",
+   "ndays": 5847,
+   "start": 20030129,
+   "end": 20260819
+  },
+  "90325": {
+   "id": 90325,
+   "symbol": "STXS",
+   "name": "STEREOTAXIS INC",
+   "ndays": 4699,
+   "start": 20040812,
+   "end": 20260817
+  },
+  "93122": {
+   "id": 93122,
+   "symbol": "GDO",
+   "name": "WESTERN ASSET GL CP DEF OP FD IN",
+   "ndays": 4122,
+   "start": 20091124,
+   "end": 20260820
+  },
+  "12009": {
+   "id": 12009,
+   "symbol": "QUAD",
+   "name": "QUAD GRAPHICS INC",
+   "ndays": 3977,
+   "start": 20100706,
+   "end": 20260818
+  },
+  "85939": {
+   "id": 85939,
+   "symbol": "CVH",
+   "name": "CAVANAUGHS HOSPITALITY CORP",
+   "ndays": 4173,
+   "start": 19980403,
+   "end": 20210317
+  },
+  "92136": {
+   "id": 92136,
+   "symbol": "PIO",
+   "name": "INVESCO E T F TRUST II",
+   "ndays": 4740,
+   "start": 20070613,
+   "end": 20260820
+  },
+  "92999": {
+   "id": 92999,
+   "symbol": "STWD",
+   "name": "STARWOOD PROPERTY TRUST INC",
+   "ndays": 4225,
+   "start": 20090812,
+   "end": 20260820
+  },
+  "92149": {
+   "id": 92149,
+   "symbol": "VTA",
+   "name": "INVESCO DYNAMIC CREDIT OPRTY FD",
+   "ndays": 3573,
+   "start": 20070627,
+   "end": 20211028
+  },
+  "92780": {
+   "id": 92780,
+   "symbol": "HCI",
+   "name": "H C I GROUP INC",
+   "ndays": 4193,
+   "start": 20080916,
+   "end": 20260819
+  },
+  "15840": {
+   "id": 15840,
+   "symbol": "FGBI",
+   "name": "FIRST GUARANTY BANCSHARES INC",
+   "ndays": 2511,
+   "start": 20151105,
+   "end": 20260820
+  },
+  "15121": {
+   "id": 15121,
+   "symbol": "BBC",
+   "name": "ETFIS SERIES TRUST I",
+   "ndays": 2732,
+   "start": 20141217,
+   "end": 20260819
+  },
+  "15048": {
+   "id": 15048,
+   "symbol": "PGRE",
+   "name": "PARAMOUNT GROUP INC",
+   "ndays": 2746,
+   "start": 20141119,
+   "end": 20251218
+  },
+  "13438": {
+   "id": 13438,
+   "symbol": "GSV",
+   "name": "GOLD STANDARD VENTURES CORP",
+   "ndays": 2551,
+   "start": 20120612,
+   "end": 20220811
+  },
+  "91184": {
+   "id": 91184,
+   "symbol": "CBIO",
+   "name": "CATALYST BIOSCIENCES INC",
+   "ndays": 4886,
+   "start": 20060412,
+   "end": 20260820
+  },
+  "14310": {
+   "id": 14310,
+   "symbol": "FRBA",
+   "name": "FIRST BANK",
+   "ndays": 2817,
+   "start": 20131115,
+   "end": 20260817
+  },
+  "91293": {
+   "id": 91293,
+   "symbol": "FXF",
+   "name": "INVESCO CURRENCYSHARES SWISS FR",
+   "ndays": 4925,
+   "start": 20060629,
+   "end": 20260820
+  },
+  "11267": {
+   "id": 11267,
+   "symbol": "CACOA",
+   "name": "CATO CORP NEW",
+   "ndays": 7563,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "15275": {
+   "id": 15275,
+   "symbol": "SRET",
+   "name": "GLOBAL X FUNDS",
+   "ndays": 2704,
+   "start": 20150317,
+   "end": 20260820
+  },
+  "50789": {
+   "id": 50789,
+   "symbol": "MDSN",
+   "name": "MADISON GAS & ELECTRIC CO",
+   "ndays": 7431,
+   "start": 19960102,
+   "end": 20260817
+  },
+  "83651": {
+   "id": 83651,
+   "symbol": "CASI",
+   "name": "CASI PHARMACEUTICALS INC",
+   "ndays": 7215,
+   "start": 19960612,
+   "end": 20260225
+  },
+  "79841": {
+   "id": 79841,
+   "symbol": "FWRD",
+   "name": "FORWARD AIR CORP",
+   "ndays": 6949,
+   "start": 19960109,
+   "end": 20250613
+  },
+  "87541": {
+   "id": 87541,
+   "symbol": "PKG",
+   "name": "PACKAGING CORP AMERICA",
+   "ndays": 6636,
+   "start": 20000128,
+   "end": 20260820
+  },
+  "81087": {
+   "id": 81087,
+   "symbol": "CDOR",
+   "name": "CONDOR HOSPITALITY TRUST INC",
+   "ndays": 2677,
+   "start": 19961206,
+   "end": 20211230
+  },
+  "90288": {
+   "id": 90288,
+   "symbol": "NURO",
+   "name": "NEUROMETRIX INC",
+   "ndays": 4982,
+   "start": 20040722,
+   "end": 20250501
+  },
+  "15542": {
+   "id": 15542,
+   "symbol": "VTVT",
+   "name": "V T V THERAPEUTICS INC",
+   "ndays": 2646,
+   "start": 20150730,
+   "end": 20260819
+  },
+  "52329": {
+   "id": 52329,
+   "symbol": "J",
+   "name": "JACOBS ENGINEERING GROUP INC",
+   "ndays": 7597,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "90455": {
+   "id": 90455,
+   "symbol": "MPWR",
+   "name": "MONOLITHIC PWR SYS INC",
+   "ndays": 5423,
+   "start": 20041119,
+   "end": 20260820
+  },
+  "14725": {
+   "id": 14725,
+   "symbol": "DGRO",
+   "name": "ISHARES TRUST",
+   "ndays": 3008,
+   "start": 20140612,
+   "end": 20260819
+  },
+  "83774": {
+   "id": 83774,
+   "symbol": "OCFC",
+   "name": "OCEANFIRST FINANCIAL CORP",
+   "ndays": 7409,
+   "start": 19960703,
+   "end": 20260819
+  },
+  "89062": {
+   "id": 89062,
+   "symbol": "IGN",
+   "name": "ISHARES TRUST",
+   "ndays": 5988,
+   "start": 20011004,
+   "end": 20260819
+  },
+  "80563": {
+   "id": 80563,
+   "symbol": "PENN",
+   "name": "PENN NATIONAL GAMING INC",
+   "ndays": 7626,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "14466": {
+   "id": 14466,
+   "symbol": "QURE",
+   "name": "UNIQURE N V",
+   "ndays": 3106,
+   "start": 20140205,
+   "end": 20260820
+  },
+  "93174": {
+   "id": 93174,
+   "symbol": "KAR",
+   "name": "KAR AUCTION SERVICES INC",
+   "ndays": 4135,
+   "start": 20091211,
+   "end": 20260820
+  },
+  "80719": {
+   "id": 80719,
+   "symbol": "GBX",
+   "name": "GREENBRIER COMPANIES INC",
+   "ndays": 6322,
+   "start": 19960104,
+   "end": 20260820
+  },
+  "77069": {
+   "id": 77069,
+   "symbol": "NUM",
+   "name": "NUVEEN MI QUALITY MUNI INCOME FD",
+   "ndays": 4145,
+   "start": 19960103,
+   "end": 20210205
+  },
+  "14983": {
+   "id": 14983,
+   "symbol": "W",
+   "name": "WAYFAIR INC",
+   "ndays": 2927,
+   "start": 20141002,
+   "end": 20260820
+  },
+  "15535": {
+   "id": 15535,
+   "symbol": "OLLI",
+   "name": "OLLIES BARGAIN OUTLET HLD INC",
+   "ndays": 2744,
+   "start": 20150716,
+   "end": 20260820
+  },
+  "91876": {
+   "id": 91876,
+   "symbol": "PDP",
+   "name": "INVESCO E T F TRUST",
+   "ndays": 4823,
+   "start": 20070301,
+   "end": 20260819
+  },
+  "92514": {
+   "id": 92514,
+   "symbol": "MGC",
+   "name": "VANGUARD WORLD FUND",
+   "ndays": 4599,
+   "start": 20071228,
+   "end": 20260820
+  },
+  "39490": {
+   "id": 39490,
+   "symbol": "APA",
+   "name": "A P A CORP",
+   "ndays": 7637,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "89240": {
+   "id": 89240,
+   "symbol": "JRS",
+   "name": "NUVEEN REAL ESTATE INC FD",
+   "ndays": 6161,
+   "start": 20011116,
+   "end": 20260820
+  },
+  "88957": {
+   "id": 88957,
+   "symbol": "RDY",
+   "name": "DR REDDYS LABORATORIES LTD",
+   "ndays": 6312,
+   "start": 20010411,
+   "end": 20260818
+  },
+  "31668": {
+   "id": 31668,
+   "symbol": "EDUC",
+   "name": "EDUCATIONAL DEVELOPMENT CORP",
+   "ndays": 4267,
+   "start": 19960102,
+   "end": 20260817
+  },
+  "12308": {
+   "id": 12308,
+   "symbol": "CHTR",
+   "name": "CHARTER COMMUNICATIONS INC NEW",
+   "ndays": 3970,
+   "start": 20100914,
+   "end": 20260820
+  },
+  "92007": {
+   "id": 92007,
+   "symbol": "FTA",
+   "name": "FIRST TR EXCH TRD ALPHADEX FD",
+   "ndays": 4334,
+   "start": 20070706,
+   "end": 20260820
+  },
+  "84397": {
+   "id": 84397,
+   "symbol": "UBI",
+   "name": "UNITY BANCORP INC",
+   "ndays": 4066,
+   "start": 19971201,
+   "end": 20260820
+  },
+  "13949": {
+   "id": 13949,
+   "symbol": "CDW",
+   "name": "C D W CORP NEW",
+   "ndays": 3265,
+   "start": 20130627,
+   "end": 20260820
+  },
+  "14000": {
+   "id": 14000,
+   "symbol": "ISRA",
+   "name": "VANECK E T F TRUST",
+   "ndays": 2991,
+   "start": 20130626,
+   "end": 20260819
+  },
+  "65429": {
+   "id": 65429,
+   "symbol": "SYM",
+   "name": "SYMS CORP",
+   "ndays": 4391,
+   "start": 19960620,
+   "end": 20240730
+  },
+  "13305": {
+   "id": 13305,
+   "symbol": "RXN",
+   "name": "REXNORD CORP NEW",
+   "ndays": 3510,
+   "start": 20120329,
+   "end": 20260820
+  },
+  "80837": {
+   "id": 80837,
+   "symbol": "PNBK",
+   "name": "PATRIOT NATIONAL BANCORP INC",
+   "ndays": 2564,
+   "start": 19961108,
+   "end": 20260819
+  },
+  "93416": {
+   "id": 93416,
+   "symbol": "EXD",
+   "name": "EATON VANCE TAX MAN BUY WR ST FD",
+   "ndays": 3193,
+   "start": 20100625,
+   "end": 20230414
+  },
+  "89842": {
+   "id": 89842,
+   "symbol": "EVT",
+   "name": "EATON VANCE TAX ADVAN DIV IN FD",
+   "ndays": 5688,
+   "start": 20030926,
+   "end": 20260819
+  },
+  "15936": {
+   "id": 15936,
+   "symbol": "BGNE",
+   "name": "BEIGENE LTD",
+   "ndays": 2586,
+   "start": 20160203,
+   "end": 20260820
+  },
+  "15015": {
+   "id": 15015,
+   "symbol": "PRTO",
+   "name": "PROTEON THERAPEUTICS INC",
+   "ndays": 2896,
+   "start": 20141022,
+   "end": 20260820
+  },
+  "14479": {
+   "id": 14479,
+   "symbol": "IBP",
+   "name": "INSTALLED BUILDING PRODUCTS INC",
+   "ndays": 3100,
+   "start": 20140213,
+   "end": 20260820
+  },
+  "26403": {
+   "id": 26403,
+   "symbol": "DIS",
+   "name": "DISNEY WALT CO",
+   "ndays": 7678,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "92834": {
+   "id": 92834,
+   "symbol": "AOA",
+   "name": "ISHARES TRUST",
+   "ndays": 4226,
+   "start": 20081119,
+   "end": 20260820
+  },
+  "52231": {
+   "id": 52231,
+   "symbol": "MKTY",
+   "name": "MECHANICAL TECHNOLOGY INC",
+   "ndays": 3640,
+   "start": 19990416,
+   "end": 20260819
+  },
+  "85913": {
+   "id": 85913,
+   "symbol": "MAR",
+   "name": "MARRIOTT INTERNATIONAL INC NEW",
+   "ndays": 7145,
+   "start": 19980330,
+   "end": 20260820
+  },
+  "13332": {
+   "id": 13332,
+   "symbol": "ACRE",
+   "name": "ARES COMMERCIAL REAL ESTATE CORP",
+   "ndays": 3529,
+   "start": 20120426,
+   "end": 20260819
+  },
+  "15303": {
+   "id": 15303,
+   "symbol": "VKTX",
+   "name": "VIKING THERAPEUTICS INC",
+   "ndays": 2768,
+   "start": 20150429,
+   "end": 20260819
+  },
+  "12368": {
+   "id": 12368,
+   "symbol": "PSF",
+   "name": "COHEN & STEERS SLT PFD & INC FD",
+   "ndays": 3874,
+   "start": 20101124,
+   "end": 20260820
+  },
+  "85741": {
+   "id": 85741,
+   "symbol": "BBCN",
+   "name": "BBCN BANCORP INC",
+   "ndays": 6296,
+   "start": 19980219,
+   "end": 20260817
+  },
+  "82824": {
+   "id": 82824,
+   "symbol": "HBY",
+   "name": "HYBRIDON INC",
+   "ndays": 5084,
+   "start": 19960125,
+   "end": 20230821
+  },
+  "90448": {
+   "id": 90448,
+   "symbol": "GLD",
+   "name": "SPDR GOLD TRUST",
+   "ndays": 5444,
+   "start": 20041118,
+   "end": 20260820
+  },
+  "79644": {
+   "id": 79644,
+   "symbol": "KOF",
+   "name": "COCA COLA FEMSA S A B DE C V",
+   "ndays": 7619,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "15477": {
+   "id": 15477,
+   "symbol": "THW",
+   "name": "TEKLA WORLD HEALTHCARE FUND",
+   "ndays": 2730,
+   "start": 20150626,
+   "end": 20260819
+  },
+  "89436": {
+   "id": 89436,
+   "symbol": "PCK",
+   "name": "PIMCO CALIFORNIA MUNI INC FD II",
+   "ndays": 5740,
+   "start": 20020626,
+   "end": 20250731
+  },
+  "92994": {
+   "id": 92994,
+   "symbol": "VNM",
+   "name": "VANECK E T F TRUST",
+   "ndays": 4189,
+   "start": 20090814,
+   "end": 20260820
+  },
+  "63263": {
+   "id": 63263,
+   "symbol": "NVO",
+   "name": "NOVO NORDISK A S",
+   "ndays": 7270,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "13599": {
+   "id": 13599,
+   "symbol": "LFVN",
+   "name": "LIFEVANTAGE CORP",
+   "ndays": 3439,
+   "start": 20120912,
+   "end": 20260820
+  },
+  "91086": {
+   "id": 91086,
+   "symbol": "ACOR",
+   "name": "ACORDA THERAPEUTICS INC",
+   "ndays": 4426,
+   "start": 20060210,
+   "end": 20240411
+  },
+  "79785": {
+   "id": 79785,
+   "symbol": "NVR",
+   "name": "N V R INC",
+   "ndays": 7343,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "88217": {
+   "id": 88217,
+   "symbol": "IVE",
+   "name": "ISHARES TRUST",
+   "ndays": 6477,
+   "start": 20000531,
+   "end": 20260819
+  },
+  "12385": {
+   "id": 12385,
+   "symbol": "SMFG",
+   "name": "SUMITOMO MITSUI FINANCIAL GP INC",
+   "ndays": 3910,
+   "start": 20101101,
+   "end": 20260817
+  },
+  "13169": {
+   "id": 13169,
+   "symbol": "ZNGA",
+   "name": "ZYNGA INC",
+   "ndays": 2573,
+   "start": 20111216,
+   "end": 20220520
+  },
+  "90349": {
+   "id": 90349,
+   "symbol": "VOX",
+   "name": "VANGUARD SECTOR INDEX FUNDS",
+   "ndays": 5084,
+   "start": 20041102,
+   "end": 20260819
+  },
+  "12317": {
+   "id": 12317,
+   "symbol": "VTWG",
+   "name": "VANGUARD SCOTTSDALE FUNDS",
+   "ndays": 3705,
+   "start": 20100928,
+   "end": 20260820
+  },
+  "14966": {
+   "id": 14966,
+   "symbol": "FBND",
+   "name": "FIDELITY MERRIMACK STREET TRUST",
+   "ndays": 2925,
+   "start": 20141009,
+   "end": 20260818
+  },
+  "13575": {
+   "id": 13575,
+   "symbol": "TLTD",
+   "name": "FLEXSHARES TRUST",
+   "ndays": 3308,
+   "start": 20121003,
+   "end": 20260820
+  },
+  "91975": {
+   "id": 91975,
+   "symbol": "ACM",
+   "name": "A E C O M",
+   "ndays": 4805,
+   "start": 20070510,
+   "end": 20260820
+  },
+  "88742": {
+   "id": 88742,
+   "symbol": "SHEN",
+   "name": "SHENANDOAH TELECOM COMPANY",
+   "ndays": 5764,
+   "start": 20001023,
+   "end": 20260819
+  },
+  "93079": {
+   "id": 93079,
+   "symbol": "ECHO",
+   "name": "ECHO GLOBAL LOGISTICS INC",
+   "ndays": 3044,
+   "start": 20091002,
+   "end": 20211122
+  },
+  "89252": {
+   "id": 89252,
+   "symbol": "FVE",
+   "name": "FIVE STAR SENIOR LIVING INC",
+   "ndays": 5177,
+   "start": 20020102,
+   "end": 20230317
+  },
+  "37402": {
+   "id": 37402,
+   "symbol": "FSTR",
+   "name": "FOSTER L B CO",
+   "ndays": 6118,
+   "start": 19960109,
+   "end": 20260820
+  },
+  "92986": {
+   "id": 92986,
+   "symbol": "RCON",
+   "name": "RECON TECHNOLOGY LTD",
+   "ndays": 3934,
+   "start": 20090730,
+   "end": 20260817
+  },
+  "12681": {
+   "id": 12681,
+   "symbol": "STAG",
+   "name": "STAG INDUSTRIAL INC",
+   "ndays": 3759,
+   "start": 20110613,
+   "end": 20260820
+  },
+  "91223": {
+   "id": 91223,
+   "symbol": "IAK",
+   "name": "ISHARES TRUST",
+   "ndays": 4596,
+   "start": 20060803,
+   "end": 20260819
+  },
+  "12093": {
+   "id": 12093,
+   "symbol": "COR",
+   "name": "CORESITE REALTY CORP",
+   "ndays": 2824,
+   "start": 20100923,
+   "end": 20211223
+  },
+  "14650": {
+   "id": 14650,
+   "symbol": "BWFG",
+   "name": "BANKWELL FINANCIAL GROUP INC",
+   "ndays": 2902,
+   "start": 20140515,
+   "end": 20260819
+  },
+  "85757": {
+   "id": 85757,
+   "symbol": "ACY",
+   "name": "AEROCENTURY CORP",
+   "ndays": 3786,
+   "start": 19980116,
+   "end": 20260819
+  },
+  "92865": {
+   "id": 92865,
+   "symbol": "AGQ",
+   "name": "PROSHARES TRUST II",
+   "ndays": 4401,
+   "start": 20081205,
+   "end": 20260820
+  },
+  "13217": {
+   "id": 13217,
+   "symbol": "FSZ",
+   "name": "FIRST TR EXCH TRD ALPHADEX FD II",
+   "ndays": 3139,
+   "start": 20120301,
+   "end": 20260820
+  },
+  "83011": {
+   "id": 83011,
+   "symbol": "WSGC",
+   "name": "WILLIAMS SONOMA INC",
+   "ndays": 7624,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "90735": {
+   "id": 90735,
+   "symbol": "LINC",
+   "name": "LINCOLN EDUCATIONAL SVCS CORP",
+   "ndays": 5226,
+   "start": 20050623,
+   "end": 20260820
+  },
+  "14604": {
+   "id": 14604,
+   "symbol": "PFIS",
+   "name": "PEOPLES FINANCIAL SERVICES CORP",
+   "ndays": 3042,
+   "start": 20140402,
+   "end": 20260817
+  },
+  "91414": {
+   "id": 91414,
+   "symbol": "FEO",
+   "name": "FIRST TRUST ABERDEEN EMERG OP FD",
+   "ndays": 4031,
+   "start": 20060829,
+   "end": 20221201
+  },
+  "16119": {
+   "id": 16119,
+   "symbol": "ATKR",
+   "name": "ATKORE INC",
+   "ndays": 2516,
+   "start": 20160610,
+   "end": 20260820
+  },
+  "91359": {
+   "id": 91359,
+   "symbol": "LUNA",
+   "name": "LUNA INNOVATIONS INC",
+   "ndays": 4339,
+   "start": 20060602,
+   "end": 20250106
+  },
+  "12304": {
+   "id": 12304,
+   "symbol": "IVOO",
+   "name": "VANGUARD ADMIRAL FUNDS INC",
+   "ndays": 3662,
+   "start": 20101025,
+   "end": 20260819
+  },
+  "22752": {
+   "id": 22752,
+   "symbol": "MRK",
+   "name": "MERCK & CO INC NEW",
+   "ndays": 7682,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "85972": {
+   "id": 85972,
+   "symbol": "CRAI",
+   "name": "C R A INTERNATIONAL INC",
+   "ndays": 6635,
+   "start": 19980424,
+   "end": 20260820
+  },
+  "85744": {
+   "id": 85744,
+   "symbol": "RMTI",
+   "name": "ROCKWELL MEDICAL INC DE",
+   "ndays": 6322,
+   "start": 19980127,
+   "end": 20260630
+  },
+  "75837": {
+   "id": 75837,
+   "symbol": "DSM",
+   "name": "B N Y MELLON STRAT MUNI BOND FUN",
+   "ndays": 4468,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "92753": {
+   "id": 92753,
+   "symbol": "ERII",
+   "name": "ENERGY RECOVERY INC",
+   "ndays": 4503,
+   "start": 20080702,
+   "end": 20260820
+  },
+  "58318": {
+   "id": 58318,
+   "symbol": "TEX",
+   "name": "TEREX CORP NEW",
+   "ndays": 7492,
+   "start": 19960104,
+   "end": 20260820
+  },
+  "89618": {
+   "id": 89618,
+   "symbol": "GLNG",
+   "name": "GOLAR L N G LTD",
+   "ndays": 5789,
+   "start": 20030416,
+   "end": 20260820
+  },
+  "13963": {
+   "id": 13963,
+   "symbol": "NWSA",
+   "name": "NEWS CORP NEW",
+   "ndays": 3261,
+   "start": 20130628,
+   "end": 20260820
+  },
+  "92572": {
+   "id": 92572,
+   "symbol": "SMB",
+   "name": "VANECK E T F TRUST",
+   "ndays": 4346,
+   "start": 20080410,
+   "end": 20260820
+  },
+  "13786": {
+   "id": 13786,
+   "symbol": "TU",
+   "name": "TELUS CORP",
+   "ndays": 3346,
+   "start": 20130201,
+   "end": 20260819
+  },
+  "83642": {
+   "id": 83642,
+   "symbol": "CNBC",
+   "name": "CENTER BANCORP INC",
+   "ndays": 5771,
+   "start": 19970513,
+   "end": 20260820
+  },
+  "86218": {
+   "id": 86218,
+   "symbol": "SJR",
+   "name": "SHAW COMMUNICATIONS INC",
+   "ndays": 5608,
+   "start": 19980701,
+   "end": 20230403
+  },
+  "15584": {
+   "id": 15584,
+   "symbol": "SRG",
+   "name": "SERITAGE GROWTH PROPERTIES",
+   "ndays": 2733,
+   "start": 20150706,
+   "end": 20260820
+  },
+  "57154": {
+   "id": 57154,
+   "symbol": "GLT",
+   "name": "GLATFELTER CORP",
+   "ndays": 7546,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "13031": {
+   "id": 13031,
+   "symbol": "KOLD",
+   "name": "PROSHARES TRUST II",
+   "ndays": 3547,
+   "start": 20111011,
+   "end": 20260820
+  },
+  "11995": {
+   "id": 11995,
+   "symbol": "COKE",
+   "name": "COCA COLA CONSOLIDATED INC",
+   "ndays": 7099,
+   "start": 19960103,
+   "end": 20260820
+  },
+  "25487": {
+   "id": 25487,
+   "symbol": "CAR",
+   "name": "AVIS BUDGET GROUP INC",
+   "ndays": 7658,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "14439": {
+   "id": 14439,
+   "symbol": "RDVY",
+   "name": "FIRST TRUST E T F VI",
+   "ndays": 2846,
+   "start": 20140113,
+   "end": 20260819
+  },
+  "89232": {
+   "id": 89232,
+   "symbol": "IXN",
+   "name": "ISHARES TRUST",
+   "ndays": 5351,
+   "start": 20020227,
+   "end": 20260820
+  },
+  "13129": {
+   "id": 13129,
+   "symbol": "OIH",
+   "name": "VANECK E T F TRUST",
+   "ndays": 3629,
+   "start": 20111220,
+   "end": 20260820
+  },
+  "92664": {
+   "id": 92664,
+   "symbol": "PST",
+   "name": "PROSHARES TRUST",
+   "ndays": 4505,
+   "start": 20080502,
+   "end": 20260820
+  },
+  "88903": {
+   "id": 88903,
+   "symbol": "AMOV",
+   "name": "AMERICA MOVIL S A B DE C V",
+   "ndays": 3627,
+   "start": 20010212,
+   "end": 20230315
+  },
+  "15361": {
+   "id": 15361,
+   "symbol": "ADAP",
+   "name": "ADAPTIMMUNE THERAPEUTICS PLC",
+   "ndays": 2590,
+   "start": 20150506,
+   "end": 20251027
+  },
+  "78908": {
+   "id": 78908,
+   "symbol": "RCKY",
+   "name": "ROCKY BRANDS INC",
+   "ndays": 6525,
+   "start": 19960111,
+   "end": 20260820
+  },
+  "86755": {
+   "id": 86755,
+   "symbol": "QQQ",
+   "name": "INVESCO QQQ TRUST",
+   "ndays": 3342,
+   "start": 19990310,
+   "end": 20260820
+  },
+  "82272": {
+   "id": 82272,
+   "symbol": "MD",
+   "name": "MEDNAX INC",
+   "ndays": 7604,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "88031": {
+   "id": 88031,
+   "symbol": "HANS",
+   "name": "HANSEN NATURAL CORP",
+   "ndays": 6773,
+   "start": 19960111,
+   "end": 20260820
+  },
+  "93380": {
+   "id": 93380,
+   "symbol": "JKS",
+   "name": "JINKOSOLAR HOLDING CO LTD",
+   "ndays": 4041,
+   "start": 20100514,
+   "end": 20260820
+  },
+  "83272": {
+   "id": 83272,
+   "symbol": "HUBG",
+   "name": "HUB GROUP INC",
+   "ndays": 6632,
+   "start": 19960313,
+   "end": 20260820
+  },
+  "90770": {
+   "id": 90770,
+   "symbol": "PBS",
+   "name": "INVESCO E T F TRUST",
+   "ndays": 4856,
+   "start": 20050720,
+   "end": 20260820
+  },
+  "64995": {
+   "id": 64995,
+   "symbol": "KEY",
+   "name": "KEYCORP NEW",
+   "ndays": 7678,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "12073": {
+   "id": 12073,
+   "symbol": "PBCT",
+   "name": "PEOPLES UNITED FINANCIAL INC",
+   "ndays": 6578,
+   "start": 19960102,
+   "end": 20220401
+  },
+  "36898": {
+   "id": 36898,
+   "symbol": "SCL",
+   "name": "STEPAN CO",
+   "ndays": 6248,
+   "start": 19960122,
+   "end": 20260820
+  },
+  "89626": {
+   "id": 89626,
+   "symbol": "CME",
+   "name": "C M E GROUP INC",
+   "ndays": 5928,
+   "start": 20021206,
+   "end": 20260820
+  },
+  "82833": {
+   "id": 82833,
+   "symbol": "OTEX",
+   "name": "OPEN TEXT CORP",
+   "ndays": 7617,
+   "start": 19960124,
+   "end": 20260819
+  },
+  "90595": {
+   "id": 90595,
+   "symbol": "GRVY",
+   "name": "GRAVITY CO LTD",
+   "ndays": 4566,
+   "start": 20050208,
+   "end": 20260820
+  },
+  "13921": {
+   "id": 13921,
+   "symbol": "CUBI",
+   "name": "CUSTOMERS BANCORP INC",
+   "ndays": 3271,
+   "start": 20130516,
+   "end": 20260817
+  },
+  "15383": {
+   "id": 15383,
+   "symbol": "STKS",
+   "name": "ONE GROUP HOSPITALITY INC",
+   "ndays": 2589,
+   "start": 20150508,
+   "end": 20260820
+  },
+  "21152": {
+   "id": 21152,
+   "symbol": "CAJ",
+   "name": "CANON INC",
+   "ndays": 6576,
+   "start": 19960104,
+   "end": 20230306
+  },
+  "93096": {
+   "id": 93096,
+   "symbol": "DG",
+   "name": "DOLLAR GENERAL CORP NEW",
+   "ndays": 4185,
+   "start": 20091113,
+   "end": 20260820
+  },
+  "91612": {
+   "id": 91612,
+   "symbol": "GSAT",
+   "name": "GLOBALSTAR INC",
+   "ndays": 4227,
+   "start": 20061102,
+   "end": 20250210
+  },
+  "91274": {
+   "id": 91274,
+   "symbol": "FBMS",
+   "name": "FIRST BANCSHARES INC MS",
+   "ndays": 2599,
+   "start": 20060605,
+   "end": 20250331
+  },
+  "85246": {
+   "id": 85246,
+   "symbol": "JLL",
+   "name": "JONES LANG LASALLE INC",
+   "ndays": 7069,
+   "start": 19970717,
+   "end": 20260820
+  },
+  "91325": {
+   "id": 91325,
+   "symbol": "DHS",
+   "name": "WISDOMTREE TRUST",
+   "ndays": 4976,
+   "start": 20060616,
+   "end": 20260820
+  },
+  "89965": {
+   "id": 89965,
+   "symbol": "NG",
+   "name": "NOVAGOLD RESOURCES INC",
+   "ndays": 5668,
+   "start": 20031202,
+   "end": 20260818
+  },
+  "89551": {
+   "id": 89551,
+   "symbol": "PZC",
+   "name": "PIMCO CA MUNICIPAL INCOME FD III",
+   "ndays": 5630,
+   "start": 20021030,
+   "end": 20250731
+  },
+  "13729": {
+   "id": 13729,
+   "symbol": "NID",
+   "name": "NUVEEN INTER DURAT MUNI TERM FD",
+   "ndays": 2577,
+   "start": 20121206,
+   "end": 20230324
+  },
+  "76839": {
+   "id": 76839,
+   "symbol": "FIZ",
+   "name": "NATIONAL BEVERAGE CORP",
+   "ndays": 5978,
+   "start": 19960112,
+   "end": 20260819
+  },
+  "83779": {
+   "id": 83779,
+   "symbol": "PEGA",
+   "name": "PEGASYSTEMS INC",
+   "ndays": 7450,
+   "start": 19960719,
+   "end": 20260817
+  },
+  "91298": {
+   "id": 91298,
+   "symbol": "FDN",
+   "name": "FIRST TRUST EXCHANGE TRADED FUND",
+   "ndays": 4866,
+   "start": 20060915,
+   "end": 20260819
+  },
+  "79315": {
+   "id": 79315,
+   "symbol": "APEX",
+   "name": "APEX GLOBAL BRANDS INC",
+   "ndays": 5382,
+   "start": 19960116,
+   "end": 20201104
+  },
+  "86072": {
+   "id": 86072,
+   "symbol": "ICLR",
+   "name": "ICON PLC NEW",
+   "ndays": 6687,
+   "start": 19980515,
+   "end": 20260820
+  },
+  "75047": {
+   "id": 75047,
+   "symbol": "CLM",
+   "name": "CORNERSTONE STRATEGIC VAL FD INC",
+   "ndays": 6232,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "91232": {
+   "id": 91232,
+   "symbol": "GDX",
+   "name": "VANECK E T F TRUST",
+   "ndays": 5067,
+   "start": 20060522,
+   "end": 20260820
+  },
+  "43553": {
+   "id": 43553,
+   "symbol": "VFC",
+   "name": "V F CORP",
+   "ndays": 7656,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "90907": {
+   "id": 90907,
+   "symbol": "SNSS",
+   "name": "SUNESIS PHARMACEUTICALS INC",
+   "ndays": 4670,
+   "start": 20050927,
+   "end": 20250203
+  },
+  "14178": {
+   "id": 14178,
+   "symbol": "RIGS",
+   "name": "ALPS E T F TRUST",
+   "ndays": 3151,
+   "start": 20131014,
+   "end": 20260819
+  },
+  "86536": {
+   "id": 86536,
+   "symbol": "DFFN",
+   "name": "DIFFUSION PHARMACEUTICALS INC",
+   "ndays": 2687,
+   "start": 19981222,
+   "end": 20260819
+  },
+  "12758": {
+   "id": 12758,
+   "symbol": "ECOL",
+   "name": "U S ECOLOGY INC NEW",
+   "ndays": 5462,
+   "start": 19960311,
+   "end": 20220429
+  },
+  "90511": {
+   "id": 90511,
+   "symbol": "PEY",
+   "name": "INVESCO E T F TRUST",
+   "ndays": 5381,
+   "start": 20041209,
+   "end": 20260820
+  },
+  "89908": {
+   "id": 89908,
+   "symbol": "CONN",
+   "name": "CONNS INC",
+   "ndays": 5171,
+   "start": 20031125,
+   "end": 20240805
+  },
+  "79049": {
+   "id": 79049,
+   "symbol": "NMT",
+   "name": "NUVEEN MA QUALITY MUNI INCOME FD",
+   "ndays": 4037,
+   "start": 19960208,
+   "end": 20260820
+  },
+  "11992": {
+   "id": 11992,
+   "symbol": "CHFC",
+   "name": "CHEMICAL FINANCIAL CORP",
+   "ndays": 5552,
+   "start": 19961125,
+   "end": 20210608
+  },
+  "79019": {
+   "id": 79019,
+   "symbol": "UBCP",
+   "name": "UNITED BANCORP INC OH",
+   "ndays": 3192,
+   "start": 19960419,
+   "end": 20260818
+  },
+  "38682": {
+   "id": 38682,
+   "symbol": "DNY",
+   "name": "DONNELLEY R R & SONS CO",
+   "ndays": 6576,
+   "start": 19960102,
+   "end": 20220225
+  },
+  "13894": {
+   "id": 13894,
+   "symbol": "EARN",
+   "name": "ELLINGTON RESIDENTIAL MTG REIT",
+   "ndays": 3275,
+   "start": 20130501,
+   "end": 20260820
+  },
+  "13620": {
+   "id": 13620,
+   "symbol": "SPHD",
+   "name": "INVESCO E T F TRUST II",
+   "ndays": 3412,
+   "start": 20121018,
+   "end": 20260820
+  },
+  "11636": {
+   "id": 11636,
+   "symbol": "APOS",
+   "name": "ADVANCED POLYMER SYSTEMS INC",
+   "ndays": 6700,
+   "start": 19960102,
+   "end": 20260818
+  },
+  "13578": {
+   "id": 13578,
+   "symbol": "FM",
+   "name": "ISHARES INC",
+   "ndays": 3044,
+   "start": 20120913,
+   "end": 20250106
+  },
+  "41355": {
+   "id": 41355,
+   "symbol": "PH",
+   "name": "PARKER HANNIFIN CORP",
+   "ndays": 7664,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "14444": {
+   "id": 14444,
+   "symbol": "AMDA",
+   "name": "AMEDICA CORP",
+   "ndays": 3022,
+   "start": 20140213,
+   "end": 20260819
+  },
+  "84072": {
+   "id": 84072,
+   "symbol": "DRD",
+   "name": "DRDGOLD LTD",
+   "ndays": 6060,
+   "start": 19961108,
+   "end": 20260820
+  },
+  "15177": {
+   "id": 15177,
+   "symbol": "FLKS",
+   "name": "FLEX PHARMA INC",
+   "ndays": 2518,
+   "start": 20150129,
+   "end": 20250815
+  },
+  "92360": {
+   "id": 92360,
+   "symbol": "BWX",
+   "name": "SPDR SERIES TRUST",
+   "ndays": 4668,
+   "start": 20071008,
+   "end": 20260819
+  },
+  "89764": {
+   "id": 89764,
+   "symbol": "ERC",
+   "name": "WELLS FARGO MULTI SEC INC FD",
+   "ndays": 5748,
+   "start": 20030625,
+   "end": 20260820
+  },
+  "82587": {
+   "id": 82587,
+   "symbol": "IVAC",
+   "name": "INTEVAC INC",
+   "ndays": 6467,
+   "start": 19960102,
+   "end": 20250328
+  },
+  "88167": {
+   "id": 88167,
+   "symbol": "HSTM",
+   "name": "HEALTHSTREAM INC",
+   "ndays": 5791,
+   "start": 20000411,
+   "end": 20260820
+  },
+  "13985": {
+   "id": 13985,
+   "symbol": "RVNU",
+   "name": "D B X ETF TRUST",
+   "ndays": 2769,
+   "start": 20130614,
+   "end": 20260820
+  },
+  "89012": {
+   "id": 89012,
+   "symbol": "PNF",
+   "name": "PIMCO NEW YORK MUNICIPAL INC FD",
+   "ndays": 4994,
+   "start": 20010627,
+   "end": 20250730
+  },
+  "75285": {
+   "id": 75285,
+   "symbol": "MAN",
+   "name": "MANPOWERGROUP",
+   "ndays": 7657,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "90353": {
+   "id": 90353,
+   "symbol": "BECN",
+   "name": "BEACON ROOFING SUPPLY INC",
+   "ndays": 5150,
+   "start": 20040923,
+   "end": 20250428
+  },
+  "84032": {
+   "id": 84032,
+   "symbol": "NOI",
+   "name": "NATIONAL OILWELL INC",
+   "ndays": 7363,
+   "start": 19961029,
+   "end": 20260820
+  },
+  "90835": {
+   "id": 90835,
+   "symbol": "EFV",
+   "name": "ISHARES TRUST",
+   "ndays": 5221,
+   "start": 20050808,
+   "end": 20260820
+  },
+  "92140": {
+   "id": 92140,
+   "symbol": "PXF",
+   "name": "INVESCO E T F TRUST II",
+   "ndays": 4624,
+   "start": 20070702,
+   "end": 20260819
+  },
+  "86143": {
+   "id": 86143,
+   "symbol": "VVR",
+   "name": "INVESCO SENIOR INCOME TRUST",
+   "ndays": 6988,
+   "start": 19980624,
+   "end": 20260820
+  },
+  "91907": {
+   "id": 91907,
+   "symbol": "SMCI",
+   "name": "SUPER MICRO COMPUTER INC",
+   "ndays": 4445,
+   "start": 20070329,
+   "end": 20260820
+  },
+  "79065": {
+   "id": 79065,
+   "symbol": "RELV",
+   "name": "RELIV INTERNATIONAL INC",
+   "ndays": 4514,
+   "start": 19960115,
+   "end": 20201221
+  },
+  "90004": {
+   "id": 90004,
+   "symbol": "VTV",
+   "name": "VANGUARD INDEX FUNDS",
+   "ndays": 5503,
+   "start": 20040204,
+   "end": 20260819
+  },
+  "14145": {
+   "id": 14145,
+   "symbol": "AAOI",
+   "name": "APPLIED OPTOELECTRONICS INC",
+   "ndays": 3212,
+   "start": 20130926,
+   "end": 20260820
+  },
+  "90708": {
+   "id": 90708,
+   "symbol": "MORN",
+   "name": "MORNINGSTAR INC",
+   "ndays": 5287,
+   "start": 20050503,
+   "end": 20260820
+  },
+  "89059": {
+   "id": 89059,
+   "symbol": "IWR",
+   "name": "ISHARES TRUST",
+   "ndays": 6054,
+   "start": 20011101,
+   "end": 20260820
+  },
+  "87842": {
+   "id": 87842,
+   "symbol": "MET",
+   "name": "METLIFE INC",
+   "ndays": 6599,
+   "start": 20000405,
+   "end": 20260820
+  },
+  "85237": {
+   "id": 85237,
+   "symbol": "ELP",
+   "name": "COMPANHIA PARANAENSE DE ENERGIA",
+   "ndays": 5370,
+   "start": 19970730,
+   "end": 20210427
+  },
+  "91727": {
+   "id": 91727,
+   "symbol": "TA",
+   "name": "TRAVELCENTERS AMERICA INC",
+   "ndays": 4060,
+   "start": 20070201,
+   "end": 20230512
+  },
+  "81678": {
+   "id": 81678,
+   "symbol": "LECO",
+   "name": "LINCOLN ELECTRIC HOLDINGS INC",
+   "ndays": 7233,
+   "start": 19960109,
+   "end": 20260819
+  },
+  "90377": {
+   "id": 90377,
+   "symbol": "NANO",
+   "name": "NANOMETRICS INC",
+   "ndays": 7421,
+   "start": 19960103,
+   "end": 20260820
+  },
+  "77860": {
+   "id": 77860,
+   "symbol": "JEQ",
+   "name": "ABERDEEN JAPAN EQUITY FUND INC",
+   "ndays": 7194,
+   "start": 19960102,
+   "end": 20251008
+  },
+  "93083": {
+   "id": 93083,
+   "symbol": "LTBR",
+   "name": "LIGHTBRIDGE CORP",
+   "ndays": 4156,
+   "start": 20091009,
+   "end": 20260820
+  },
+  "66157": {
+   "id": 66157,
+   "symbol": "FBS",
+   "name": "FIRST BANK SYSTEM INC",
+   "ndays": 7665,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "84372": {
+   "id": 84372,
+   "symbol": "NCR",
+   "name": "N C R CORP NEW",
+   "ndays": 7406,
+   "start": 19970102,
+   "end": 20260818
+  },
+  "13851": {
+   "id": 13851,
+   "symbol": "MTUM",
+   "name": "ISHARES TRUST",
+   "ndays": 3236,
+   "start": 20130429,
+   "end": 20260820
+  },
+  "76515": {
+   "id": 76515,
+   "symbol": "CVA",
+   "name": "COVANTA HOLDING CORP",
+   "ndays": 4921,
+   "start": 19960226,
+   "end": 20211129
+  },
+  "90961": {
+   "id": 90961,
+   "symbol": "WAUW",
+   "name": "WAUWATOSA HOLDINGS INC",
+   "ndays": 5041,
+   "start": 20051005,
+   "end": 20260820
+  },
+  "64282": {
+   "id": 64282,
+   "symbol": "LB",
+   "name": "L BRANDS INC",
+   "ndays": 7615,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "17563": {
+   "id": 17563,
+   "symbol": "PTNQ",
+   "name": "PACER FUNDS TRUST",
+   "ndays": 2737,
+   "start": 20150612,
+   "end": 20260819
+  },
+  "92854": {
+   "id": 92854,
+   "symbol": "CLW",
+   "name": "CLEARWATER PAPER CORP",
+   "ndays": 4376,
+   "start": 20081217,
+   "end": 20260820
+  },
+  "15546": {
+   "id": 15546,
+   "symbol": "Z",
+   "name": "ZILLOW GROUP INC",
+   "ndays": 2694,
+   "start": 20150814,
+   "end": 20260820
+  },
+  "83411": {
+   "id": 83411,
+   "symbol": "EPM",
+   "name": "EVOLUTION PETROLEUM CORP",
+   "ndays": 4933,
+   "start": 19960411,
+   "end": 20260819
+  },
+  "13007": {
+   "id": 13007,
+   "symbol": "LCNB",
+   "name": "L C N B CORP",
+   "ndays": 3311,
+   "start": 20110912,
+   "end": 20260817
+  },
+  "12189": {
+   "id": 12189,
+   "symbol": "HIFS",
+   "name": "HINGHAM INSTITUTION FOR SVGS MA",
+   "ndays": 3404,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "13260": {
+   "id": 13260,
+   "symbol": "BCOV",
+   "name": "BRIGHTCOVE INC",
+   "ndays": 3231,
+   "start": 20120217,
+   "end": 20250203
+  },
+  "80054": {
+   "id": 80054,
+   "symbol": "HLRT",
+   "name": "HEALTHRITE INC",
+   "ndays": 6027,
+   "start": 19960212,
+   "end": 20260819
+  },
+  "16064": {
+   "id": 16064,
+   "symbol": "NTLA",
+   "name": "INTELLIA THERAPEUTICS INC",
+   "ndays": 2551,
+   "start": 20160506,
+   "end": 20260820
+  },
+  "80070": {
+   "id": 80070,
+   "symbol": "SU",
+   "name": "SUNCOR ENERGY INC NEW",
+   "ndays": 7099,
+   "start": 19960717,
+   "end": 20260819
+  },
+  "76572": {
+   "id": 76572,
+   "symbol": "NQP",
+   "name": "NUVEEN PA QUALITY MUNI INCOME FD",
+   "ndays": 6254,
+   "start": 19960104,
+   "end": 20260424
+  },
+  "86449": {
+   "id": 86449,
+   "symbol": "XLB",
+   "name": "SELECT SECTOR SPDR TRUST",
+   "ndays": 6791,
+   "start": 19990104,
+   "end": 20260820
+  },
+  "44206": {
+   "id": 44206,
+   "symbol": "ES",
+   "name": "EVERSOURCE ENERGY",
+   "ndays": 7660,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "14769": {
+   "id": 14769,
+   "symbol": "HEZU",
+   "name": "ISHARES TRUST",
+   "ndays": 2911,
+   "start": 20140910,
+   "end": 20260819
+  },
+  "86949": {
+   "id": 86949,
+   "symbol": "SKX",
+   "name": "SKECHERS U S A INC",
+   "ndays": 6572,
+   "start": 19990609,
+   "end": 20250911
+  },
+  "49330": {
+   "id": 49330,
+   "symbol": "ALX",
+   "name": "ALEXANDERS INC",
+   "ndays": 5516,
+   "start": 19960229,
+   "end": 20260820
+  },
+  "14434": {
+   "id": 14434,
+   "symbol": "MBUU",
+   "name": "MALIBU BOATS INC",
+   "ndays": 3113,
+   "start": 20140131,
+   "end": 20260820
+  },
+  "90350": {
+   "id": 90350,
+   "symbol": "VNQ",
+   "name": "VANGUARD INDEX FUNDS",
+   "ndays": 5438,
+   "start": 20040929,
+   "end": 20260820
+  },
+  "91307": {
+   "id": 91307,
+   "symbol": "SSO",
+   "name": "PROSHARES TRUST",
+   "ndays": 5023,
+   "start": 20060621,
+   "end": 20260820
+  },
+  "79338": {
+   "id": 79338,
+   "symbol": "SGM",
+   "name": "SCIENTIFIC GAMES CORP",
+   "ndays": 7320,
+   "start": 19960102,
+   "end": 20251112
+  },
+  "84636": {
+   "id": 84636,
+   "symbol": "WTFC",
+   "name": "WINTRUST FINANCIAL CORPORATION",
+   "ndays": 6761,
+   "start": 19970313,
+   "end": 20260819
+  },
+  "17750": {
+   "id": 17750,
+   "symbol": "KMB",
+   "name": "KIMBERLY CLARK CORP",
+   "ndays": 7671,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "15272": {
+   "id": 15272,
+   "symbol": "SEDG",
+   "name": "SOLAREDGE TECHNOLOGIES INC",
+   "ndays": 2832,
+   "start": 20150326,
+   "end": 20260820
+  },
+  "91182": {
+   "id": 91182,
+   "symbol": "QTEC",
+   "name": "FIRST TRUST EXCHANGE TRADED FUND",
+   "ndays": 4745,
+   "start": 20060428,
+   "end": 20260820
+  },
+  "85418": {
+   "id": 85418,
+   "symbol": "CAC",
+   "name": "CAMDEN NATIONAL CORP",
+   "ndays": 5851,
+   "start": 19971007,
+   "end": 20260819
+  },
+  "88504": {
+   "id": 88504,
+   "symbol": "BDAL",
+   "name": "BRUKER DALTONICS INC",
+   "ndays": 6505,
+   "start": 20000804,
+   "end": 20260820
+  },
+  "89534": {
+   "id": 89534,
+   "symbol": "BYM",
+   "name": "BLACKROCK INSURED MUN INC TR",
+   "ndays": 5782,
+   "start": 20021029,
+   "end": 20260206
+  },
+  "86818": {
+   "id": 86818,
+   "symbol": "BSGK",
+   "name": "BANC STOCK GROUP INC",
+   "ndays": 4973,
+   "start": 19990413,
+   "end": 20260421
+  },
+  "89784": {
+   "id": 89784,
+   "symbol": "NCZ",
+   "name": "VIRTUS ALLIANZGI CON & INC FD II",
+   "ndays": 5321,
+   "start": 20030729,
+   "end": 20250207
+  },
+  "90105": {
+   "id": 90105,
+   "symbol": "ETO",
+   "name": "EATON VANCE TAX ADV GLOB DIV OPP",
+   "ndays": 5533,
+   "start": 20040428,
+   "end": 20260820
+  },
+  "91795": {
+   "id": 91795,
+   "symbol": "UYG",
+   "name": "PROSHARES TRUST",
+   "ndays": 4736,
+   "start": 20070227,
+   "end": 20260819
+  },
+  "13084": {
+   "id": 13084,
+   "symbol": "MN",
+   "name": "MANNING & NAPIER INC",
+   "ndays": 2737,
+   "start": 20111118,
+   "end": 20221020
+  },
+  "89234": {
+   "id": 89234,
+   "symbol": "IXG",
+   "name": "ISHARES TRUST",
+   "ndays": 5344,
+   "start": 20030918,
+   "end": 20260820
+  },
+  "48486": {
+   "id": 48486,
+   "symbol": "LRCX",
+   "name": "LAM RESH CORP",
+   "ndays": 7642,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "85706": {
+   "id": 85706,
+   "symbol": "NYMX",
+   "name": "NYMOX PHARMACEUTICAL CORP",
+   "ndays": 6123,
+   "start": 19971202,
+   "end": 20230706
+  },
+  "13159": {
+   "id": 13159,
+   "symbol": "CNDO",
+   "name": "CORONADO BIOSCIENCES INC",
+   "ndays": 3537,
+   "start": 20111219,
+   "end": 20260820
+  },
+  "77917": {
+   "id": 77917,
+   "symbol": "ASGN",
+   "name": "ASGN INC",
+   "ndays": 7486,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "14919": {
+   "id": 14919,
+   "symbol": "ICL",
+   "name": "I C L GROUP LTD",
+   "ndays": 2929,
+   "start": 20140924,
+   "end": 20260820
+  },
+  "14313": {
+   "id": 14313,
+   "symbol": "IPWR",
+   "name": "IDEAL POWER INC",
+   "ndays": 3131,
+   "start": 20131122,
+   "end": 20260820
+  },
+  "82581": {
+   "id": 82581,
+   "symbol": "HSIC",
+   "name": "SCHEIN HENRY INC",
+   "ndays": 7648,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "55029": {
+   "id": 55029,
+   "symbol": "MNR",
+   "name": "MONMOUTH REAL ESTATE INVT CORP",
+   "ndays": 4565,
+   "start": 19960122,
+   "end": 20220225
+  },
+  "90506": {
+   "id": 90506,
+   "symbol": "MDH",
+   "name": "M H I HOSPITALITY CORP",
+   "ndays": 3512,
+   "start": 20041217,
+   "end": 20260212
+  },
+  "81133": {
+   "id": 81133,
+   "symbol": "TEO",
+   "name": "TELECOM ARGENTINA S A",
+   "ndays": 7088,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "90164": {
+   "id": 90164,
+   "symbol": "GHL",
+   "name": "GREENHILL & CO INC",
+   "ndays": 4908,
+   "start": 20040506,
+   "end": 20231130
+  },
+  "80485": {
+   "id": 80485,
+   "symbol": "VVUS",
+   "name": "VIVUS INC",
+   "ndays": 6145,
+   "start": 19960102,
+   "end": 20200716
+  },
+  "76721": {
+   "id": 76721,
+   "symbol": "CRVL",
+   "name": "CORVEL CORP",
+   "ndays": 6800,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "29102": {
+   "id": 29102,
+   "symbol": "NBR",
+   "name": "NABORS INDUSTRIES LTD",
+   "ndays": 7654,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "89416": {
+   "id": 89416,
+   "symbol": "HOFT",
+   "name": "HOOKER FURNISHINGS CORP",
+   "ndays": 5879,
+   "start": 20020627,
+   "end": 20260819
+  },
+  "89889": {
+   "id": 89889,
+   "symbol": "AIX",
+   "name": "ACCESS INTEGRATED TECHNLGS INC",
+   "ndays": 5269,
+   "start": 20031110,
+   "end": 20260819
+  },
+  "82694": {
+   "id": 82694,
+   "symbol": "EMCG",
+   "name": "EMCOR GROUP INC",
+   "ndays": 7213,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "89011": {
+   "id": 89011,
+   "symbol": "PMF",
+   "name": "PIMCO MUNICIPAL INC FD",
+   "ndays": 5972,
+   "start": 20010627,
+   "end": 20250730
+  },
+  "89959": {
+   "id": 89959,
+   "symbol": "TIP",
+   "name": "ISHARES TRUST",
+   "ndays": 5653,
+   "start": 20031205,
+   "end": 20260820
+  },
+  "77470": {
+   "id": 77470,
+   "symbol": "NXP",
+   "name": "NUVEEN SELECT TAX FREE INC PORT",
+   "ndays": 6484,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "77458": {
+   "id": 77458,
+   "symbol": "FCO",
+   "name": "ABERDEEN GLOBAL INCOME FD INC",
+   "ndays": 6660,
+   "start": 19960102,
+   "end": 20260515
+  },
+  "81472": {
+   "id": 81472,
+   "symbol": "ASML",
+   "name": "A S M L HOLDING N V",
+   "ndays": 7623,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "83213": {
+   "id": 83213,
+   "symbol": "EWG",
+   "name": "ISHARES INC",
+   "ndays": 6994,
+   "start": 19960402,
+   "end": 20260817
+  },
+  "14450": {
+   "id": 14450,
+   "symbol": "CMFN",
+   "name": "C M FINANCE INC",
+   "ndays": 3085,
+   "start": 20140206,
+   "end": 20260820
+  },
+  "87444": {
+   "id": 87444,
+   "symbol": "SNN",
+   "name": "SMITH & NEPHEW P L C",
+   "ndays": 6098,
+   "start": 19991116,
+   "end": 20260820
+  },
+  "14798": {
+   "id": 14798,
+   "symbol": "CFA",
+   "name": "VICTORY PORTFOLIOS II",
+   "ndays": 2637,
+   "start": 20140724,
+   "end": 20260819
+  },
+  "11407": {
+   "id": 11407,
+   "symbol": "LIT",
+   "name": "GLOBAL X FUNDS",
+   "ndays": 3972,
+   "start": 20100723,
+   "end": 20260820
+  },
+  "91760": {
+   "id": 91760,
+   "symbol": "UDN",
+   "name": "INVESCO DB US DOLLAR IND TR",
+   "ndays": 4801,
+   "start": 20070220,
+   "end": 20260820
+  },
+  "87016": {
+   "id": 87016,
+   "symbol": "IDSY",
+   "name": "I D SYSTEMS INC",
+   "ndays": 6262,
+   "start": 19990630,
+   "end": 20260818
+  },
+  "13897": {
+   "id": 13897,
+   "symbol": "FPF",
+   "name": "FIRST TRUST INT DUR PFD & INC FD",
+   "ndays": 3271,
+   "start": 20130524,
+   "end": 20260820
+  },
+  "12442": {
+   "id": 12442,
+   "symbol": "DUST",
+   "name": "DIREXION SHARES E T F TRUST",
+   "ndays": 3752,
+   "start": 20101208,
+   "end": 20260304
+  },
+  "82547": {
+   "id": 82547,
+   "symbol": "AEIS",
+   "name": "ADVANCED ENERGY INDUSTRIES INC",
+   "ndays": 7581,
+   "start": 19960104,
+   "end": 20260820
+  },
+  "92091": {
+   "id": 92091,
+   "symbol": "BLIN",
+   "name": "BRIDGELINE DIGITAL INC",
+   "ndays": 3858,
+   "start": 20070629,
+   "end": 20260819
+  },
+  "14208": {
+   "id": 14208,
+   "symbol": "FMAT",
+   "name": "FIDELITY COVINGTON TRUST",
+   "ndays": 3163,
+   "start": 20131024,
+   "end": 20260820
+  },
+  "91197": {
+   "id": 91197,
+   "symbol": "FPX",
+   "name": "FIRST TRUST E T F",
+   "ndays": 4123,
+   "start": 20060413,
+   "end": 20260819
+  },
+  "13618": {
+   "id": 13618,
+   "symbol": "MPLX",
+   "name": "M P L X L P",
+   "ndays": 3419,
+   "start": 20121026,
+   "end": 20260820
+  },
+  "87812": {
+   "id": 87812,
+   "symbol": "SLAB",
+   "name": "SILICON LABORATORIES INC",
+   "ndays": 6586,
+   "start": 20000324,
+   "end": 20260819
+  },
+  "92918": {
+   "id": 92918,
+   "symbol": "CYOU",
+   "name": "CHANGYOU COM LTD",
+   "ndays": 2772,
+   "start": 20090402,
+   "end": 20200417
+  },
+  "92064": {
+   "id": 92064,
+   "symbol": "REZ",
+   "name": "ISHARES TRUST",
+   "ndays": 4473,
+   "start": 20070529,
+   "end": 20260820
+  },
+  "13834": {
+   "id": 13834,
+   "symbol": "BRZU",
+   "name": "DIREXION SHARES E T F TRUST",
+   "ndays": 3265,
+   "start": 20130429,
+   "end": 20260820
+  },
+  "92557": {
+   "id": 92557,
+   "symbol": "LIVE",
+   "name": "LIVE VENTURES INC",
+   "ndays": 3805,
+   "start": 20080207,
+   "end": 20260817
+  },
+  "93289": {
+   "id": 93289,
+   "symbol": "MXL",
+   "name": "MAXLINEAR INC",
+   "ndays": 4078,
+   "start": 20100324,
+   "end": 20260820
+  },
+  "92349": {
+   "id": 92349,
+   "symbol": "PZA",
+   "name": "INVESCO E T F TRUST II",
+   "ndays": 4636,
+   "start": 20071011,
+   "end": 20260820
+  },
+  "85875": {
+   "id": 85875,
+   "symbol": "IBOC",
+   "name": "INTERNATIONAL BANCSHARES CORP",
+   "ndays": 6733,
+   "start": 19980317,
+   "end": 20260820
+  },
+  "92008": {
+   "id": 92008,
+   "symbol": "FTC",
+   "name": "FIRST TR EXCH TRD ALPHADEX FD",
+   "ndays": 4309,
+   "start": 20070727,
+   "end": 20260819
+  },
+  "14221": {
+   "id": 14221,
+   "symbol": "RMAX",
+   "name": "RE MAX HOLDINGS INC",
+   "ndays": 3172,
+   "start": 20131002,
+   "end": 20260819
+  },
+  "92528": {
+   "id": 92528,
+   "symbol": "AHC",
+   "name": "A H BELO CORP",
+   "ndays": 4344,
+   "start": 20080211,
+   "end": 20250924
+  },
+  "12948": {
+   "id": 12948,
+   "symbol": "INCO",
+   "name": "COLUMBIA E T F TRUST II",
+   "ndays": 3183,
+   "start": 20110816,
+   "end": 20260819
+  },
+  "86136": {
+   "id": 86136,
+   "symbol": "SRE",
+   "name": "SEMPRA ENERGY",
+   "ndays": 7039,
+   "start": 19980629,
+   "end": 20260820
+  },
+  "15337": {
+   "id": 15337,
+   "symbol": "ACV",
+   "name": "VIRTUS ALLIANZGI DIV IN & CON FD",
+   "ndays": 2695,
+   "start": 20150522,
+   "end": 20260817
+  },
+  "92581": {
+   "id": 92581,
+   "symbol": "EPI",
+   "name": "WISDOMTREE TRUST",
+   "ndays": 4599,
+   "start": 20080222,
+   "end": 20260819
+  },
+  "88511": {
+   "id": 88511,
+   "symbol": "CRIS",
+   "name": "CURIS INC",
+   "ndays": 6429,
+   "start": 20000801,
+   "end": 20260702
+  },
+  "88264": {
+   "id": 88264,
+   "symbol": "RBBN",
+   "name": "RIBBON COMMUNICATIONS INC",
+   "ndays": 6513,
+   "start": 20000525,
+   "end": 20260820
+  },
+  "12588": {
+   "id": 12588,
+   "symbol": "USCR",
+   "name": "U S CONCRETE INC",
+   "ndays": 2504,
+   "start": 20110201,
+   "end": 20210825
+  },
+  "77090": {
+   "id": 77090,
+   "symbol": "ANK",
+   "name": "ATLANTIC TELE NETWORK INC",
+   "ndays": 5616,
+   "start": 19960103,
+   "end": 20260820
+  },
+  "77057": {
+   "id": 77057,
+   "symbol": "NHI",
+   "name": "NATIONAL HEALTH INVESTORS INC",
+   "ndays": 7629,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "79248": {
+   "id": 79248,
+   "symbol": "ARGN",
+   "name": "AMERIGON INC",
+   "ndays": 6662,
+   "start": 19960103,
+   "end": 20260820
+  },
+  "53225": {
+   "id": 53225,
+   "symbol": "GHC",
+   "name": "GRAHAM HOLDINGS CO",
+   "ndays": 7522,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "87299": {
+   "id": 87299,
+   "symbol": "AKAM",
+   "name": "AKAMAI TECHNOLOGIES INC",
+   "ndays": 6706,
+   "start": 19991029,
+   "end": 20260820
+  },
+  "79698": {
+   "id": 79698,
+   "symbol": "GART",
+   "name": "GARTNER GROUP INC NEW",
+   "ndays": 7899,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "80633": {
+   "id": 80633,
+   "symbol": "HMNF",
+   "name": "H M N FINANCIAL INC",
+   "ndays": 3126,
+   "start": 19960110,
+   "end": 20241009
+  },
+  "83120": {
+   "id": 83120,
+   "symbol": "CMCO",
+   "name": "COLUMBUS MCKINNON CORP NY",
+   "ndays": 7065,
+   "start": 19960223,
+   "end": 20260819
+  },
+  "60038": {
+   "id": 60038,
+   "symbol": "ACU",
+   "name": "ACME UNITED CORP",
+   "ndays": 4131,
+   "start": 19960516,
+   "end": 20260820
+  },
+  "90389": {
+   "id": 90389,
+   "symbol": "BXMX",
+   "name": "NUVEEN S P 500 BUY WRITE INC FD",
+   "ndays": 3325,
+   "start": 20041027,
+   "end": 20260327
+  },
+  "16548": {
+   "id": 16548,
+   "symbol": "BOH",
+   "name": "BANK OF HAWAII CORP",
+   "ndays": 7652,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "82599": {
+   "id": 82599,
+   "symbol": "NWPX",
+   "name": "NORTHWEST PIPE CO",
+   "ndays": 6587,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "18649": {
+   "id": 18649,
+   "symbol": "BCO",
+   "name": "BRINKS CO",
+   "ndays": 7647,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "15195": {
+   "id": 15195,
+   "symbol": "FREL",
+   "name": "FIDELITY COVINGTON TRUST",
+   "ndays": 2832,
+   "start": 20150205,
+   "end": 20260820
+  },
+  "90765": {
+   "id": 90765,
+   "symbol": "PEJ",
+   "name": "INVESCO E T F TRUST",
+   "ndays": 4940,
+   "start": 20050623,
+   "end": 20260819
+  },
+  "88436": {
+   "id": 88436,
+   "symbol": "ENDP",
+   "name": "ENDO INTERNATIONAL PLC",
+   "ndays": 5495,
+   "start": 20000718,
+   "end": 20220825
+  },
+  "78985": {
+   "id": 78985,
+   "symbol": "MAGS",
+   "name": "MAGAL SECURITY SYSTEMS LTD",
+   "ndays": 6415,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "39571": {
+   "id": 39571,
+   "symbol": "GGG",
+   "name": "GRACO INC",
+   "ndays": 7543,
+   "start": 19960102,
+   "end": 20260818
+  },
+  "13189": {
+   "id": 13189,
+   "symbol": "EELV",
+   "name": "INVESCO E T F TRUST II",
+   "ndays": 3463,
+   "start": 20120113,
+   "end": 20260819
+  },
+  "92953": {
+   "id": 92953,
+   "symbol": "EET",
+   "name": "PROSHARES TRUST",
+   "ndays": 4095,
+   "start": 20090605,
+   "end": 20260820
+  },
+  "92390": {
+   "id": 92390,
+   "symbol": "FGD",
+   "name": "FIRST TRUST E T F II",
+   "ndays": 4312,
+   "start": 20071203,
+   "end": 20260817
+  },
+  "85265": {
+   "id": 85265,
+   "symbol": "SLG",
+   "name": "S L GREEN REALTY CORP",
+   "ndays": 7072,
+   "start": 19970815,
+   "end": 20260819
+  },
+  "42358": {
+   "id": 42358,
+   "symbol": "BRN",
+   "name": "BARNWELL INDUSTRIES INC",
+   "ndays": 4042,
+   "start": 19990930,
+   "end": 20260819
+  },
+  "38093": {
+   "id": 38093,
+   "symbol": "AJG",
+   "name": "GALLAGHER ARTHUR J & CO",
+   "ndays": 7473,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "80306": {
+   "id": 80306,
+   "symbol": "BCRX",
+   "name": "BIOCRYST PHARMACEUTICALS INC",
+   "ndays": 7425,
+   "start": 19960104,
+   "end": 20260820
+  },
+  "92686": {
+   "id": 92686,
+   "symbol": "CAPR",
+   "name": "CAPRICOR THERAPEUTICS INC",
+   "ndays": 3259,
+   "start": 20080513,
+   "end": 20260820
+  },
+  "12366": {
+   "id": 12366,
+   "symbol": "BAH",
+   "name": "BOOZ ALLEN HAMILTON HOLDING CORP",
+   "ndays": 3918,
+   "start": 20101117,
+   "end": 20260820
+  },
+  "14084": {
+   "id": 14084,
+   "symbol": "FNDX",
+   "name": "SCHWAB STRATEGIC TRUST",
+   "ndays": 3208,
+   "start": 20130815,
+   "end": 20260820
+  },
+  "87198": {
+   "id": 87198,
+   "symbol": "ARLP",
+   "name": "ALLIANCE RESOURCE PARTNERS",
+   "ndays": 6712,
+   "start": 19990817,
+   "end": 20260819
+  },
+  "12363": {
+   "id": 12363,
+   "symbol": "VRA",
+   "name": "VERA BRADLEY INC",
+   "ndays": 3882,
+   "start": 20101021,
+   "end": 20260819
+  },
+  "15287": {
+   "id": 15287,
+   "symbol": "CRBP",
+   "name": "CORBUS PHARMACEUTICALS HLD INC",
+   "ndays": 2754,
+   "start": 20150416,
+   "end": 20260819
+  },
+  "92410": {
+   "id": 92410,
+   "symbol": "EWV",
+   "name": "PROSHARES TRUST",
+   "ndays": 3945,
+   "start": 20071108,
+   "end": 20260820
+  },
+  "86810": {
+   "id": 86810,
+   "symbol": "TREX",
+   "name": "TREX COMPANY INC",
+   "ndays": 6799,
+   "start": 19990408,
+   "end": 20260818
+  },
+  "12615": {
+   "id": 12615,
+   "symbol": "FF",
+   "name": "FUTUREFUEL CORP",
+   "ndays": 3808,
+   "start": 20110323,
+   "end": 20260820
+  },
+  "11174": {
+   "id": 11174,
+   "symbol": "CNGR",
+   "name": "CROWN GROUP INC",
+   "ndays": 7051,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "84255": {
+   "id": 84255,
+   "symbol": "SEAC",
+   "name": "SEACHANGE INTERNATIONAL INC",
+   "ndays": 6606,
+   "start": 19961105,
+   "end": 20230825
+  },
+  "93023": {
+   "id": 93023,
+   "symbol": "IWY",
+   "name": "ISHARES TRUST",
+   "ndays": 4041,
+   "start": 20091014,
+   "end": 20260819
+  },
+  "93022": {
+   "id": 93022,
+   "symbol": "IWX",
+   "name": "ISHARES TRUST",
+   "ndays": 3921,
+   "start": 20091016,
+   "end": 20260819
+  },
+  "85765": {
+   "id": 85765,
+   "symbol": "DIA",
+   "name": "SPDR DOW JONES IND AVG ETF TRUST",
+   "ndays": 7157,
+   "start": 19980120,
+   "end": 20260820
+  },
+  "90564": {
+   "id": 90564,
+   "symbol": "PBH",
+   "name": "PRESTIGE CONSUMER HEALTHCARE INC",
+   "ndays": 5347,
+   "start": 20050210,
+   "end": 20260819
+  },
+  "85883": {
+   "id": 85883,
+   "symbol": "NWFL",
+   "name": "NORWOOD FINANCIAL CORP",
+   "ndays": 3235,
+   "start": 19980304,
+   "end": 20260819
+  },
+  "84606": {
+   "id": 84606,
+   "symbol": "EEFT",
+   "name": "EURONET WORLDWIDE INC",
+   "ndays": 6954,
+   "start": 19970307,
+   "end": 20260820
+  },
+  "92206": {
+   "id": 92206,
+   "symbol": "BKEP",
+   "name": "BLUEKNIGHT ENERGY PARTNERS L P",
+   "ndays": 2782,
+   "start": 20110516,
+   "end": 20220817
+  },
+  "76711": {
+   "id": 76711,
+   "symbol": "RGIS",
+   "name": "REGIS CORP MINN",
+   "ndays": 7564,
+   "start": 19960111,
+   "end": 20260820
+  },
+  "14631": {
+   "id": 14631,
+   "symbol": "OUNZ",
+   "name": "VAN ECK MERK GOLD TRUST",
+   "ndays": 3004,
+   "start": 20140516,
+   "end": 20260820
+  },
+  "92675": {
+   "id": 92675,
+   "symbol": "CYB",
+   "name": "WISDOMTREE TRUST",
+   "ndays": 3711,
+   "start": 20080514,
+   "end": 20231020
+  },
+  "15837": {
+   "id": 15837,
+   "symbol": "DLTH",
+   "name": "DULUTH HOLDINGS INC",
+   "ndays": 2634,
+   "start": 20151120,
+   "end": 20260820
+  },
+  "52695": {
+   "id": 52695,
+   "symbol": "GWW",
+   "name": "GRAINGER W W INC",
+   "ndays": 7657,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "14098": {
+   "id": 14098,
+   "symbol": "KWEB",
+   "name": "KRANESHARES TRUST",
+   "ndays": 3194,
+   "start": 20130926,
+   "end": 20260820
+  },
+  "15139": {
+   "id": 15139,
+   "symbol": "VNOM",
+   "name": "VIPER ENERGY PARTNERS LP",
+   "ndays": 2702,
+   "start": 20140618,
+   "end": 20250818
+  },
+  "14797": {
+   "id": 14797,
+   "symbol": "CDNA",
+   "name": "CAREDX INC",
+   "ndays": 2956,
+   "start": 20140717,
+   "end": 20260819
+  },
+  "77595": {
+   "id": 77595,
+   "symbol": "ABFS",
+   "name": "ARKANSAS BEST CORP DEL",
+   "ndays": 7620,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "78054": {
+   "id": 78054,
+   "symbol": "QUMU",
+   "name": "QUMU CORP",
+   "ndays": 5869,
+   "start": 19960110,
+   "end": 20230208
+  },
+  "77806": {
+   "id": 77806,
+   "symbol": "MQY",
+   "name": "BLACKROCK MUNIYIELD QUALITY FUND",
+   "ndays": 7438,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "48506": {
+   "id": 48506,
+   "symbol": "DNB",
+   "name": "DUN & BRADSTREET CORP DEL",
+   "ndays": 7667,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "27430": {
+   "id": 27430,
+   "symbol": "CTB",
+   "name": "COOPER TIRE & RUBBER CO",
+   "ndays": 6395,
+   "start": 19960102,
+   "end": 20210604
+  },
+  "79561": {
+   "id": 79561,
+   "symbol": "PCM",
+   "name": "P C M FUND INC",
+   "ndays": 7043,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "90092": {
+   "id": 90092,
+   "symbol": "SBRA",
+   "name": "SABRA HEALTHCARE REIT INC",
+   "ndays": 5577,
+   "start": 20040310,
+   "end": 20260820
+  },
+  "23393": {
+   "id": 23393,
+   "symbol": "CHD",
+   "name": "CHURCH & DWIGHT INC",
+   "ndays": 7605,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "90768": {
+   "id": 90768,
+   "symbol": "PJP",
+   "name": "INVESCO E T F TRUST",
+   "ndays": 5204,
+   "start": 20050623,
+   "end": 20260819
+  },
+  "76709": {
+   "id": 76709,
+   "symbol": "IDXX",
+   "name": "I D E X X LABORATORIES INC",
+   "ndays": 7660,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "75113": {
+   "id": 75113,
+   "symbol": "ACP",
+   "name": "AMERICAN REAL ESTATE PARTNERS LP",
+   "ndays": 5916,
+   "start": 19960103,
+   "end": 20260820
+  },
+  "11691": {
+   "id": 11691,
+   "symbol": "ALEX",
+   "name": "ALEXANDER & BALDWIN HLDGS INC",
+   "ndays": 7644,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "89968": {
+   "id": 89968,
+   "symbol": "PIPR",
+   "name": "PIPER SANDLER COMPANIES",
+   "ndays": 5525,
+   "start": 20040102,
+   "end": 20260323
+  },
+  "88220": {
+   "id": 88220,
+   "symbol": "IWF",
+   "name": "ISHARES TRUST",
+   "ndays": 6487,
+   "start": 20000605,
+   "end": 20260820
+  },
+  "60468": {
+   "id": 60468,
+   "symbol": "GHM",
+   "name": "GRAHAM CORP",
+   "ndays": 5394,
+   "start": 19960223,
+   "end": 20260820
+  },
+  "86745": {
+   "id": 86745,
+   "symbol": "BB",
+   "name": "BLACKBERRY LTD",
+   "ndays": 4165,
+   "start": 19990204,
+   "end": 20260820
+  },
+  "92061": {
+   "id": 92061,
+   "symbol": "REM",
+   "name": "ISHARES TRUST",
+   "ndays": 4719,
+   "start": 20070507,
+   "end": 20260820
+  },
+  "12488": {
+   "id": 12488,
+   "symbol": "LEDS",
+   "name": "SEMILEDS CORP",
+   "ndays": 3797,
+   "start": 20101209,
+   "end": 20260819
+  },
+  "93347": {
+   "id": 93347,
+   "symbol": "CJJD",
+   "name": "CHINA JO JO DRUGSTORES INC",
+   "ndays": 3497,
+   "start": 20100512,
+   "end": 20260407
+  },
+  "13241": {
+   "id": 13241,
+   "symbol": "QLTA",
+   "name": "ISHARES TRUST",
+   "ndays": 3451,
+   "start": 20120229,
+   "end": 20260819
+  },
+  "78089": {
+   "id": 78089,
+   "symbol": "TCO",
+   "name": "TAUBMAN CENTERS INC",
+   "ndays": 6030,
+   "start": 19960102,
+   "end": 20201228
+  },
+  "15315": {
+   "id": 15315,
+   "symbol": "GDDY",
+   "name": "GODADDY INC",
+   "ndays": 2823,
+   "start": 20150401,
+   "end": 20260819
+  },
+  "81593": {
+   "id": 81593,
+   "symbol": "COOP",
+   "name": "MR COOPER GROUP INC",
+   "ndays": 5652,
+   "start": 19960102,
+   "end": 20250930
+  },
+  "12751": {
+   "id": 12751,
+   "symbol": "FENG",
+   "name": "PHOENIX NEW MEDIA LTD",
+   "ndays": 3697,
+   "start": 20110512,
+   "end": 20260817
+  },
+  "90011": {
+   "id": 90011,
+   "symbol": "MGLN",
+   "name": "MAGELLAN HEALTH INC",
+   "ndays": 4518,
+   "start": 20040106,
+   "end": 20220103
+  },
+  "77309": {
+   "id": 77309,
+   "symbol": "PFO",
+   "name": "FLAHERTY & CRUMRINE PFD INC OPP",
+   "ndays": 6585,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "12543": {
+   "id": 12543,
+   "symbol": "AFT",
+   "name": "APOLLO SENIOR FLTG RATE FUND INC",
+   "ndays": 3342,
+   "start": 20110224,
+   "end": 20240719
+  },
+  "59256": {
+   "id": 59256,
+   "symbol": "CRW",
+   "name": "CROWN CRAFTS INC",
+   "ndays": 4434,
+   "start": 19960103,
+   "end": 20260819
+  },
+  "91065": {
+   "id": 91065,
+   "symbol": "CPA",
+   "name": "COPA HOLDINGS SA",
+   "ndays": 4590,
+   "start": 20051215,
+   "end": 20260820
+  },
+  "91277": {
+   "id": 91277,
+   "symbol": "LINTA",
+   "name": "LIBERTY INTERACTIVE CORP",
+   "ndays": 2797,
+   "start": 20060510,
+   "end": 20250522
+  },
+  "27975": {
+   "id": 27975,
+   "symbol": "MSB",
+   "name": "MESABI TRUST",
+   "ndays": 6316,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "14072": {
+   "id": 14072,
+   "symbol": "PGEN",
+   "name": "PRECIGEN INC",
+   "ndays": 3188,
+   "start": 20130808,
+   "end": 20260820
+  },
+  "76788": {
+   "id": 76788,
+   "symbol": "AMHC",
+   "name": "AMERICAN HEALTHWAYS INC",
+   "ndays": 6041,
+   "start": 19960105,
+   "end": 20220627
+  },
+  "93376": {
+   "id": 93376,
+   "symbol": "EUSA",
+   "name": "ISHARES INC",
+   "ndays": 3059,
+   "start": 20101102,
+   "end": 20260819
+  },
+  "10661": {
+   "id": 10661,
+   "symbol": "CYAN",
+   "name": "CYANOTECH CORP",
+   "ndays": 5570,
+   "start": 19960102,
+   "end": 20240216
+  },
+  "13268": {
+   "id": 13268,
+   "symbol": "EEMA",
+   "name": "ISHARES INC",
+   "ndays": 3291,
+   "start": 20120223,
+   "end": 20260820
+  },
+  "15254": {
+   "id": 15254,
+   "symbol": "ENSV",
+   "name": "ENSERVCO CORP",
+   "ndays": 2600,
+   "start": 20140310,
+   "end": 20241101
+  },
+  "86372": {
+   "id": 86372,
+   "symbol": "GIB",
+   "name": "C G I INC",
+   "ndays": 3658,
+   "start": 19981007,
+   "end": 20260820
+  },
+  "14522": {
+   "id": 14522,
+   "symbol": "TPVG",
+   "name": "TRIPLEPOINT VENTURE GR BDC CORP",
+   "ndays": 3058,
+   "start": 20140306,
+   "end": 20260820
+  },
+  "88626": {
+   "id": 88626,
+   "symbol": "DRRX",
+   "name": "DURECT CORP",
+   "ndays": 6198,
+   "start": 20000928,
+   "end": 20250910
+  },
+  "65947": {
+   "id": 65947,
+   "symbol": "HCN",
+   "name": "WELLTOWER INC",
+   "ndays": 4838,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "13196": {
+   "id": 13196,
+   "symbol": "RLGT",
+   "name": "RADIANT LOGISTICS INC",
+   "ndays": 3517,
+   "start": 20120111,
+   "end": 20260819
+  },
+  "12369": {
+   "id": 12369,
+   "symbol": "GM",
+   "name": "GENERAL MOTORS CO",
+   "ndays": 3931,
+   "start": 20101118,
+   "end": 20260820
+  },
+  "78038": {
+   "id": 78038,
+   "symbol": "CMT",
+   "name": "C M A C INVESTMENT CORP",
+   "ndays": 7639,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "77114": {
+   "id": 77114,
+   "symbol": "WRLD",
+   "name": "WORLD ACCEPTANCE CORP",
+   "ndays": 7116,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "49680": {
+   "id": 49680,
+   "symbol": "DHR",
+   "name": "DANAHER CORP",
+   "ndays": 7672,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "14901": {
+   "id": 14901,
+   "symbol": "FTLS",
+   "name": "FIRST TR EXCHANGE TRADED FD III",
+   "ndays": 2798,
+   "start": 20140910,
+   "end": 20260820
+  },
+  "14545": {
+   "id": 14545,
+   "symbol": "LPCN",
+   "name": "LIPOCINE INC",
+   "ndays": 2968,
+   "start": 20140321,
+   "end": 20260818
+  },
+  "88442": {
+   "id": 88442,
+   "symbol": "GGAL",
+   "name": "GRUPO FINANCIERO GALICIA S A",
+   "ndays": 6470,
+   "start": 20000724,
+   "end": 20260820
+  },
+  "14301": {
+   "id": 14301,
+   "symbol": "NVGS",
+   "name": "NAVIGATOR HOLDINGS LTD",
+   "ndays": 3152,
+   "start": 20131121,
+   "end": 20260820
+  },
+  "12753": {
+   "id": 12753,
+   "symbol": "SPLV",
+   "name": "INVESCO E T F TRUST II",
+   "ndays": 3776,
+   "start": 20110505,
+   "end": 20260820
+  },
+  "90272": {
+   "id": 90272,
+   "symbol": "WCG",
+   "name": "WELLCARE HEALTH PLANS INC",
+   "ndays": 3887,
+   "start": 20040701,
+   "end": 20200123
+  },
+  "78629": {
+   "id": 78629,
+   "symbol": "TATT",
+   "name": "TAT TECHNOLOGIES LTD",
+   "ndays": 3510,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "75401": {
+   "id": 75401,
+   "symbol": "KTF",
+   "name": "D W S MUNICIPAL INCOME TRUST NEW",
+   "ndays": 7460,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "15892": {
+   "id": 15892,
+   "symbol": "SPYX",
+   "name": "SPDR SERIES TRUST",
+   "ndays": 2519,
+   "start": 20151201,
+   "end": 20260817
+  },
+  "88233": {
+   "id": 88233,
+   "symbol": "NVS",
+   "name": "NOVARTIS A G",
+   "ndays": 6563,
+   "start": 20000511,
+   "end": 20260820
+  },
+  "46886": {
+   "id": 46886,
+   "symbol": "KLAC",
+   "name": "K L A CORP",
+   "ndays": 7670,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "89866": {
+   "id": 89866,
+   "symbol": "LKQ",
+   "name": "L K Q CORP",
+   "ndays": 5716,
+   "start": 20031003,
+   "end": 20260820
+  },
+  "34032": {
+   "id": 34032,
+   "symbol": "MAS",
+   "name": "MASCO CORP",
+   "ndays": 7671,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "92927": {
+   "id": 92927,
+   "symbol": "EOT",
+   "name": "EATON VANCE NATIONAL MUN OPP TR",
+   "ndays": 4258,
+   "start": 20090527,
+   "end": 20260820
+  },
+  "91793": {
+   "id": 91793,
+   "symbol": "UXI",
+   "name": "PROSHARES TRUST",
+   "ndays": 3751,
+   "start": 20070227,
+   "end": 20260820
+  },
+  "83633": {
+   "id": 83633,
+   "symbol": "CCVD",
+   "name": "CARDIOVASCULAR DYNAMICS INC",
+   "ndays": 5550,
+   "start": 19960620,
+   "end": 20200715
+  },
+  "91500": {
+   "id": 91500,
+   "symbol": "EXLS",
+   "name": "EXLSERVICE HOLDINGS INC",
+   "ndays": 4933,
+   "start": 20061020,
+   "end": 20260820
+  },
+  "14970": {
+   "id": 14970,
+   "symbol": "HUBS",
+   "name": "HUBSPOT INC",
+   "ndays": 2945,
+   "start": 20141009,
+   "end": 20260820
+  },
+  "90773": {
+   "id": 90773,
+   "symbol": "PBE",
+   "name": "INVESCO E T F TRUST",
+   "ndays": 5248,
+   "start": 20050623,
+   "end": 20260819
+  },
+  "91723": {
+   "id": 91723,
+   "symbol": "CWI",
+   "name": "SPDR INDEX SHARES FUNDS",
+   "ndays": 4847,
+   "start": 20070117,
+   "end": 20260820
+  },
+  "14855": {
+   "id": 14855,
+   "symbol": "RYI",
+   "name": "RYERSON HOLDING CORP",
+   "ndays": 2966,
+   "start": 20140808,
+   "end": 20260820
+  },
+  "92536": {
+   "id": 92536,
+   "symbol": "AKG",
+   "name": "ASANKO GOLD INC",
+   "ndays": 3329,
+   "start": 20130301,
+   "end": 20260820
+  },
+  "79767": {
+   "id": 79767,
+   "symbol": "ENI",
+   "name": "ENERSIS AMERICAS S A",
+   "ndays": 4147,
+   "start": 19960102,
+   "end": 20220617
+  },
+  "76215": {
+   "id": 76215,
+   "symbol": "CAND",
+   "name": "CANDIES INC",
+   "ndays": 6198,
+   "start": 19960102,
+   "end": 20210803
+  },
+  "81564": {
+   "id": 81564,
+   "symbol": "IBKC",
+   "name": "IBERIABANK CORP",
+   "ndays": 5377,
+   "start": 19960103,
+   "end": 20200701
+  },
+  "33532": {
+   "id": 33532,
+   "symbol": "ESCA",
+   "name": "ESCALADE INC",
+   "ndays": 5354,
+   "start": 19960129,
+   "end": 20260819
+  },
+  "14263": {
+   "id": 14263,
+   "symbol": "VCYT",
+   "name": "VERACYTE INC",
+   "ndays": 3158,
+   "start": 20131030,
+   "end": 20260820
+  },
+  "12448": {
+   "id": 12448,
+   "symbol": "FRC",
+   "name": "FIRST REPUBLIC BANK S F NEW",
+   "ndays": 3101,
+   "start": 20101209,
+   "end": 20230501
+  },
+  "56573": {
+   "id": 56573,
+   "symbol": "ITW",
+   "name": "ILLINOIS TOOL WORKS INC",
+   "ndays": 7662,
+   "start": 19960102,
+   "end": 20260818
+  },
+  "91809": {
+   "id": 91809,
+   "symbol": "EZM",
+   "name": "WISDOMTREE TRUST",
+   "ndays": 4278,
+   "start": 20070330,
+   "end": 20260819
+  },
+  "89922": {
+   "id": 89922,
+   "symbol": "TSRA",
+   "name": "TESSERA HOLDING CORP",
+   "ndays": 5568,
+   "start": 20031113,
+   "end": 20260819
+  },
+  "88490": {
+   "id": 88490,
+   "symbol": "PBR",
+   "name": "PETROLEO BRASILEIRO SA PETROBRAS",
+   "ndays": 6504,
+   "start": 20000810,
+   "end": 20260820
+  },
+  "77637": {
+   "id": 77637,
+   "symbol": "FC",
+   "name": "FRANKLIN COVEY CO",
+   "ndays": 7241,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "93312": {
+   "id": 93312,
+   "symbol": "SSNC",
+   "name": "S S & C TECHNOLOGIES HLDGS INC",
+   "ndays": 4067,
+   "start": 20100331,
+   "end": 20260819
+  },
+  "80336": {
+   "id": 80336,
+   "symbol": "LARK",
+   "name": "LANDMARK BANCORP INC",
+   "ndays": 2929,
+   "start": 19960131,
+   "end": 20260819
+  },
+  "92110": {
+   "id": 92110,
+   "symbol": "CHW",
+   "name": "CALAMOS GLOBAL DYNAMIC INCOME FD",
+   "ndays": 4750,
+   "start": 20070627,
+   "end": 20260819
+  },
+  "39642": {
+   "id": 39642,
+   "symbol": "BDX",
+   "name": "BECTON DICKINSON & CO",
+   "ndays": 7669,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "91797": {
+   "id": 91797,
+   "symbol": "UGE",
+   "name": "PROSHARES TRUST",
+   "ndays": 2698,
+   "start": 20070718,
+   "end": 20260819
+  },
+  "89858": {
+   "id": 89858,
+   "symbol": "PAA",
+   "name": "PLAINS ALL AMERN PIPELINE L P",
+   "ndays": 6912,
+   "start": 19981118,
+   "end": 20260819
+  },
+  "76558": {
+   "id": 76558,
+   "symbol": "PFD",
+   "name": "FLAHERTY & CRUMRINE PFD INC FD",
+   "ndays": 6739,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "37584": {
+   "id": 37584,
+   "symbol": "BEN",
+   "name": "FRANKLIN RESOURCES INC",
+   "ndays": 7674,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "14128": {
+   "id": 14128,
+   "symbol": "CEN",
+   "name": "CENTER COAST BRF MLP & EN INF FD",
+   "ndays": 2506,
+   "start": 20130926,
+   "end": 20231006
+  },
+  "20117": {
+   "id": 20117,
+   "symbol": "ACXM",
+   "name": "ACXIOM HOLDINGS INC",
+   "ndays": 7657,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "92725": {
+   "id": 92725,
+   "symbol": "PNQI",
+   "name": "INVESCO E T F TRUST",
+   "ndays": 4095,
+   "start": 20080613,
+   "end": 20260819
+  },
+  "91948": {
+   "id": 91948,
+   "symbol": "BLV",
+   "name": "VANGUARD BOND INDEX FUNDS",
+   "ndays": 4718,
+   "start": 20070411,
+   "end": 20260820
+  },
+  "10308": {
+   "id": 10308,
+   "symbol": "TCTC",
+   "name": "TOMPKINS COUNTY TRUSTCO INC",
+   "ndays": 5972,
+   "start": 19960625,
+   "end": 20260819
+  },
+  "88173": {
+   "id": 88173,
+   "symbol": "LEXG",
+   "name": "LEXICON GENETICS INC",
+   "ndays": 6567,
+   "start": 20000407,
+   "end": 20260819
+  },
+  "13322": {
+   "id": 13322,
+   "symbol": "EMCB",
+   "name": "WISDOMTREE TRUST",
+   "ndays": 3162,
+   "start": 20120308,
+   "end": 20260820
+  },
+  "91754": {
+   "id": 91754,
+   "symbol": "III",
+   "name": "INFORMATION SERVICES GROUP INC",
+   "ndays": 4794,
+   "start": 20070212,
+   "end": 20260820
+  },
+  "92876": {
+   "id": 92876,
+   "symbol": "IGOV",
+   "name": "ISHARES TRUST",
+   "ndays": 4214,
+   "start": 20090217,
+   "end": 20260820
+  },
+  "91787": {
+   "id": 91787,
+   "symbol": "USD",
+   "name": "PROSHARES TRUST",
+   "ndays": 4719,
+   "start": 20070216,
+   "end": 20260819
+  },
+  "91780": {
+   "id": 91780,
+   "symbol": "SIJ",
+   "name": "PROSHARES TRUST",
+   "ndays": 2988,
+   "start": 20070227,
+   "end": 20250611
+  },
+  "85254": {
+   "id": 85254,
+   "symbol": "ABEV",
+   "name": "AMBEV SA",
+   "ndays": 5920,
+   "start": 19970604,
+   "end": 20260820
+  },
+  "10333": {
+   "id": 10333,
+   "symbol": "XOMA",
+   "name": "XOMA CORP",
+   "ndays": 7552,
+   "start": 19960102,
+   "end": 20260713
+  },
+  "79839": {
+   "id": 79839,
+   "symbol": "ITRI",
+   "name": "ITRON INC",
+   "ndays": 7647,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "89336": {
+   "id": 89336,
+   "symbol": "NVG",
+   "name": "NUVEEN AMT FREE MUNI CRED INC FD",
+   "ndays": 6031,
+   "start": 20020326,
+   "end": 20260819
+  },
+  "14720": {
+   "id": 14720,
+   "symbol": "ENRJ",
+   "name": "ENERJEX RESOURCES INC",
+   "ndays": 2823,
+   "start": 20140617,
+   "end": 20260819
+  },
+  "86728": {
+   "id": 86728,
+   "symbol": "MTEX",
+   "name": "MANNATECH INC",
+   "ndays": 6345,
+   "start": 19990216,
+   "end": 20260820
+  },
+  "14185": {
+   "id": 14185,
+   "symbol": "CPS",
+   "name": "COOPER STANDARD HOLDINGS INC",
+   "ndays": 3142,
+   "start": 20131017,
+   "end": 20260820
+  },
+  "28629": {
+   "id": 28629,
+   "symbol": "DAIO",
+   "name": "DATA I O CORP",
+   "ndays": 5887,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "16678": {
+   "id": 16678,
+   "symbol": "KR",
+   "name": "KROGER COMPANY",
+   "ndays": 7681,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "85235": {
+   "id": 85235,
+   "symbol": "ZNH",
+   "name": "CHINA SOUTHERN AIRLINES CO LTD",
+   "ndays": 5419,
+   "start": 19970730,
+   "end": 20230202
+  },
+  "77129": {
+   "id": 77129,
+   "symbol": "KIM",
+   "name": "KIMCO REALTY CORP",
+   "ndays": 7618,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "92614": {
+   "id": 92614,
+   "symbol": "AWK",
+   "name": "AMERICAN WATER WORKS CO INC",
+   "ndays": 4564,
+   "start": 20080423,
+   "end": 20260820
+  },
+  "91461": {
+   "id": 91461,
+   "symbol": "WU",
+   "name": "WESTERN UNION CO",
+   "ndays": 4932,
+   "start": 20060921,
+   "end": 20260820
+  },
+  "86302": {
+   "id": 86302,
+   "symbol": "HTBK",
+   "name": "HERITAGE COMMERCE CORP",
+   "ndays": 5889,
+   "start": 19981027,
+   "end": 20260417
+  },
+  "80204": {
+   "id": 80204,
+   "symbol": "MLM",
+   "name": "MARTIN MARIETTA MATERIALS INC",
+   "ndays": 7509,
+   "start": 19960109,
+   "end": 20260819
+  },
+  "14224": {
+   "id": 14224,
+   "symbol": "RGT",
+   "name": "ROYCE GLOBAL VALUE TRUST INC",
+   "ndays": 3136,
+   "start": 20131018,
+   "end": 20260820
+  },
+  "82830": {
+   "id": 82830,
+   "symbol": "NICE",
+   "name": "NICE LTD",
+   "ndays": 7582,
+   "start": 19960125,
+   "end": 20260819
+  },
+  "33209": {
+   "id": 33209,
+   "symbol": "ENZ",
+   "name": "ENZO BIOCHEM INC",
+   "ndays": 7333,
+   "start": 19960102,
+   "end": 20250417
+  },
+  "91570": {
+   "id": 91570,
+   "symbol": "ETY",
+   "name": "EATON VANCE TAX MAN DIV EQ IN FD",
+   "ndays": 4890,
+   "start": 20061128,
+   "end": 20260819
+  },
+  "76602": {
+   "id": 76602,
+   "symbol": "PSB",
+   "name": "P S BUSINESS PARKS INC CA",
+   "ndays": 5797,
+   "start": 19970710,
+   "end": 20220719
+  },
+  "37568": {
+   "id": 37568,
+   "symbol": "FELE",
+   "name": "FRANKLIN ELECTRIC INC",
+   "ndays": 6598,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "12629": {
+   "id": 12629,
+   "symbol": "MX",
+   "name": "MAGNACHIP SEMICONDUCTOR CORP",
+   "ndays": 3821,
+   "start": 20110311,
+   "end": 20260819
+  },
+  "10180": {
+   "id": 10180,
+   "symbol": "AKN",
+   "name": "AKORN INC",
+   "ndays": 5090,
+   "start": 19960102,
+   "end": 20200529
+  },
+  "13369": {
+   "id": 13369,
+   "symbol": "CLIR",
+   "name": "CLEARSIGN TECHNOLOGIES CORP",
+   "ndays": 3425,
+   "start": 20120425,
+   "end": 20260313
+  },
+  "92272": {
+   "id": 92272,
+   "symbol": "IID",
+   "name": "VOYA INTL HIGH DIV EQT INC FD",
+   "ndays": 3375,
+   "start": 20070926,
+   "end": 20210331
+  },
+  "14495": {
+   "id": 14495,
+   "symbol": "ATEN",
+   "name": "A10 NETWORKS INC",
+   "ndays": 3065,
+   "start": 20140321,
+   "end": 20260819
+  },
+  "92819": {
+   "id": 92819,
+   "symbol": "ERY",
+   "name": "DIREXION SHARES E T F TRUST",
+   "ndays": 4374,
+   "start": 20081106,
+   "end": 20260820
+  },
+  "90300": {
+   "id": 90300,
+   "symbol": "ACC",
+   "name": "AMERICAN CAMPUS COMMUNITIES INC",
+   "ndays": 4520,
+   "start": 20040812,
+   "end": 20220809
+  },
+  "13634": {
+   "id": 13634,
+   "symbol": "AMBA",
+   "name": "AMBARELLA INC",
+   "ndays": 3439,
+   "start": 20121010,
+   "end": 20260820
+  },
+  "11891": {
+   "id": 11891,
+   "symbol": "MGG",
+   "name": "M G M MIRAGE",
+   "ndays": 7654,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "77165": {
+   "id": 77165,
+   "symbol": "JBSS",
+   "name": "SANFILIPPO JOHN B & SON",
+   "ndays": 6349,
+   "start": 19960104,
+   "end": 20260819
+  },
+  "86558": {
+   "id": 86558,
+   "symbol": "EVY",
+   "name": "EATON VANCE NEW YORK MUN INC TR",
+   "ndays": 3655,
+   "start": 19990216,
+   "end": 20210820
+  },
+  "88893": {
+   "id": 88893,
+   "symbol": "IBB",
+   "name": "ISHARES TRUST",
+   "ndays": 6370,
+   "start": 20010209,
+   "end": 20260820
+  },
+  "84519": {
+   "id": 84519,
+   "symbol": "CIEN",
+   "name": "CIENA CORP",
+   "ndays": 7394,
+   "start": 19970207,
+   "end": 20260820
+  },
+  "13356": {
+   "id": 13356,
+   "symbol": "PSX",
+   "name": "PHILLIPS 66",
+   "ndays": 3564,
+   "start": 20120501,
+   "end": 20260820
+  },
+  "12570": {
+   "id": 12570,
+   "symbol": "IIN",
+   "name": "I T T INDUSTRIES INC IND",
+   "ndays": 7658,
+   "start": 19960102,
+   "end": 20260818
+  },
+  "92490": {
+   "id": 92490,
+   "symbol": "SCZ",
+   "name": "ISHARES TRUST",
+   "ndays": 4624,
+   "start": 20071214,
+   "end": 20260819
+  },
+  "83987": {
+   "id": 83987,
+   "symbol": "FMS",
+   "name": "FRESENIUS MED CARE AG & CO KGAA",
+   "ndays": 7414,
+   "start": 19961001,
+   "end": 20260819
+  },
+  "33452": {
+   "id": 33452,
+   "symbol": "ERIC",
+   "name": "ERICSSON",
+   "ndays": 7120,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "10220": {
+   "id": 10220,
+   "symbol": "BWC",
+   "name": "BABCOCK & WILCOX CO NEW",
+   "ndays": 3985,
+   "start": 20100802,
+   "end": 20260820
+  },
+  "80200": {
+   "id": 80200,
+   "symbol": "IFN",
+   "name": "INDIA FUND INC",
+   "ndays": 7519,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "47002": {
+   "id": 47002,
+   "symbol": "KAMN",
+   "name": "KAMAN CORP",
+   "ndays": 7018,
+   "start": 19960102,
+   "end": 20240418
+  },
+  "91711": {
+   "id": 91711,
+   "symbol": "DBS",
+   "name": "INVESCO DB MULTI SECT COM TR",
+   "ndays": 2994,
+   "start": 20070108,
+   "end": 20230303
+  },
+  "91047": {
+   "id": 91047,
+   "symbol": "FXE",
+   "name": "INVESCO CURRENCYSHARES EURO TR",
+   "ndays": 5137,
+   "start": 20051212,
+   "end": 20260819
+  },
+  "90384": {
+   "id": 90384,
+   "symbol": "MTL",
+   "name": "MECHEL P A O",
+   "ndays": 4353,
+   "start": 20041029,
+   "end": 20220225
+  },
+  "89445": {
+   "id": 89445,
+   "symbol": "BDSI",
+   "name": "BIODELIVERY SCIENCES INTL INC",
+   "ndays": 4525,
+   "start": 20020725,
+   "end": 20220322
+  },
+  "90729": {
+   "id": 90729,
+   "symbol": "GAIN",
+   "name": "GLADSTONE INVESTMENT CORP",
+   "ndays": 5245,
+   "start": 20050623,
+   "end": 20260820
+  },
+  "53065": {
+   "id": 53065,
+   "symbol": "IPG",
+   "name": "INTERPUBLIC GROUP COS INC",
+   "ndays": 7502,
+   "start": 19960102,
+   "end": 20251126
+  },
+  "75846": {
+   "id": 75846,
+   "symbol": "APT",
+   "name": "STARWOOD FINANCIAL TRUST MD",
+   "ndays": 5030,
+   "start": 19970131,
+   "end": 20260820
+  },
+  "90603": {
+   "id": 90603,
+   "symbol": "PFBC",
+   "name": "PREFERRED BANK LOS ANGELES",
+   "ndays": 5198,
+   "start": 20050215,
+   "end": 20260820
+  },
+  "85464": {
+   "id": 85464,
+   "symbol": "CWST",
+   "name": "CASELLA WASTE SYSTEMS INC",
+   "ndays": 7093,
+   "start": 19971029,
+   "end": 20260819
+  },
+  "88609": {
+   "id": 88609,
+   "symbol": "DGT",
+   "name": "SPDR SERIES TRUST",
+   "ndays": 4042,
+   "start": 20001026,
+   "end": 20260819
+  },
+  "12655": {
+   "id": 12655,
+   "symbol": "FEM",
+   "name": "FIRST TR EXCH TRD ALPHADEX FD II",
+   "ndays": 3747,
+   "start": 20110420,
+   "end": 20260817
+  },
+  "15278": {
+   "id": 15278,
+   "symbol": "PZG",
+   "name": "PARAMOUNT GOLD NEVADA CORP",
+   "ndays": 2782,
+   "start": 20150417,
+   "end": 20260819
+  },
+  "85653": {
+   "id": 85653,
+   "symbol": "AAIC",
+   "name": "ARLINGTON ASSET INVESTMENT CORP",
+   "ndays": 5984,
+   "start": 19971223,
+   "end": 20231213
+  },
+  "10890": {
+   "id": 10890,
+   "symbol": "UIS",
+   "name": "UNISYS CORP",
+   "ndays": 7641,
+   "start": 19960102,
+   "end": 20260819
+  },
+  "85299": {
+   "id": 85299,
+   "symbol": "LKFN",
+   "name": "LAKELAND FINANCIAL CORP",
+   "ndays": 6005,
+   "start": 19970819,
+   "end": 20260819
+  },
+  "91233": {
+   "id": 91233,
+   "symbol": "MA",
+   "name": "MASTERCARD INC",
+   "ndays": 5062,
+   "start": 20060525,
+   "end": 20260820
+  },
+  "90963": {
+   "id": 90963,
+   "symbol": "AMSF",
+   "name": "AMERISAFE INC",
+   "ndays": 5123,
+   "start": 20051118,
+   "end": 20260820
+  },
+  "15069": {
+   "id": 15069,
+   "symbol": "MRO",
+   "name": "MARATHON OIL CORP",
+   "ndays": 7250,
+   "start": 19960102,
+   "end": 20241121
+  },
+  "90605": {
+   "id": 90605,
+   "symbol": "UACL",
+   "name": "UNIVERSAL TRUCKLOAD SERVICES INC",
+   "ndays": 5278,
+   "start": 20050211,
+   "end": 20260819
+  },
+  "88610": {
+   "id": 88610,
+   "symbol": "MTK",
+   "name": "SPDR SERIES TRUST",
+   "ndays": 2719,
+   "start": 20000929,
+   "end": 20260820
+  },
+  "89852": {
+   "id": 89852,
+   "symbol": "JDD",
+   "name": "NUVEEN DIVERSIFIED DIV & INC FD",
+   "ndays": 4549,
+   "start": 20030926,
+   "end": 20211119
+  },
+  "89297": {
+   "id": 89297,
+   "symbol": "CCOI",
+   "name": "COGENT COMMUNICATIONS HLDS INC",
+   "ndays": 5697,
+   "start": 20020205,
+   "end": 20260819
+  },
+  "55976": {
+   "id": 55976,
+   "symbol": "WMT",
+   "name": "WALMART INC",
+   "ndays": 7648,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "15896": {
+   "id": 15896,
+   "symbol": "YRD",
+   "name": "YIREN DIGITAL LTD",
+   "ndays": 2570,
+   "start": 20151218,
+   "end": 20260820
+  },
+  "11581": {
+   "id": 11581,
+   "symbol": "APW",
+   "name": "APPLIED POWER INC",
+   "ndays": 7490,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "46703": {
+   "id": 46703,
+   "symbol": "HMT",
+   "name": "HOST MARRIOTT CORP NEW",
+   "ndays": 7671,
+   "start": 19960102,
+   "end": 20260820
+  },
+  "89051": {
+   "id": 89051,
+   "symbol": "BBF",
+   "name": "BLACKROCK MUNI INCOME INVSTMT FD",
+   "ndays": 3810,
+   "start": 20010727,
+   "end": 20210409
+  }
+ }
+}

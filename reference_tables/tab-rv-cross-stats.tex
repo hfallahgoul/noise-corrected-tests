@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\caption{The cross-section: the three statistics. Same panel and same penalties as \cref{tab:rv-cross-psi}. $\overline{\Delta\MSPE}$ is the median out-of-sample deterioration of the enlarged model as a share of the benchmark's own mean squared error, and the next column counts how many of the 1{,}000 series have a negative gap. Means and standard deviations are taken across series; they are not sizes, because each series is its own data-generating process. $\#$CW is the number of CW rejections, one-sided at $5\%$, and \emph{only CW} counts those the corrected statistic declines to make. $\mathcal R\ge1$ counts the series passing the diagnostic \eqref{eq:ratio}, and the last column counts those whose realised ordering of $\tCW$ and $\tCC$ agrees with what \cref{tab:three-nulls} predicts from that diagnostic. The series share a common volatility factor and are not independent draws.}
+\label{tab:rv-cross-stats}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{rrrrrrrrrr}
+\toprule
+$\ztil$ & $\overline{\Delta\MSPE}$ & gap$<0$ & $t_{DM}$ & $\tCW$ & $\tCC$ & \#CW & only CW & $\mathcal R\ge1$ & ordering \\
+ & median & count & mean & mean (sd) & mean (sd) & & & & agrees \\
+\midrule
+0.1 & $-0.093$ & 1000 & $-8.62$ & $0.61$ (1.09) & $0.63$ (0.84) & 164 & \textbf{93} & 458 & 984 \\
+1.0 & $-0.068$ & 1000 & $-7.39$ & $0.59$ (1.09) & $0.59$ (0.85) & 153 & \textbf{83} & 474 & 982 \\
+10.0 & $-0.015$ & 993 & $-3.41$ & $0.48$ (1.10) & $0.36$ (0.90) & 134 & \textbf{62} & 598 & 964 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,42 @@
+# mc_study D  started 2026-08-30 22:47  -> output/
+====================================================================================================
+ARM D - complexity sweep through the interpolation threshold
+====================================================================================================
+  design T=12 n=8000 b=18 rho=0.0  T_eff=12.0 F1=True F2=True F3=True
+  [..............................] 1/32 c=0.5 zt=1.0 R2=0.0  elapsed   3.3m  eta 103.1m     c= 0.5 (P= 6) zt= 1.0 R2=0.00 | Psi=   0.207 Psihat=   0.186 ratio= 0.90 theta_T= 0.37 | rej DM/CW/CC = 0.000 0.062 0.051 (mc se 0.007) sd(t_CC)=1.00
+  [#.............................] 2/32 c=0.5 zt=1.0 R2=0.05  elapsed   6.6m  eta  99.7m     c= 0.5 (P= 6) zt= 1.0 R2=0.05 | Psi=   0.207 Psihat=   0.186 ratio= 0.90 theta_T= 0.37 | rej DM/CW/CC = 0.000 0.998 0.958 (mc se 0.006) sd(t_CC)=0.99
+  [##............................] 3/32 c=0.5 zt=0.1 R2=0.0  elapsed  10.0m  eta  96.5m     c= 0.5 (P= 6) zt= 0.1 R2=0.00 | Psi=   0.722 Psihat=   0.702 ratio= 0.97 theta_T= 0.57 | rej DM/CW/CC = 0.000 0.053 0.058 (mc se 0.007) sd(t_CC)=0.99
+  [###...........................] 4/32 c=0.5 zt=0.1 R2=0.05  elapsed  13.3m  eta  93.4m     c= 0.5 (P= 6) zt= 0.1 R2=0.05 | Psi=   0.722 Psihat=   0.702 ratio= 0.97 theta_T= 0.58 | rej DM/CW/CC = 0.000 0.983 0.574 (mc se 0.016) sd(t_CC)=1.03
+  [####..........................] 5/32 c=0.7 zt=1.0 R2=0.0  elapsed  16.7m  eta  90.0m     c= 0.7 (P= 8) zt= 1.0 R2=0.00 | Psi=   0.200 Psihat=   0.179 ratio= 0.90 theta_T= 0.29 | rej DM/CW/CC = 0.000 0.057 0.048 (mc se 0.007) sd(t_CC)=0.97
+  [#####.........................] 6/32 c=0.7 zt=1.0 R2=0.05  elapsed  20.0m  eta  86.8m     c= 0.7 (P= 8) zt= 1.0 R2=0.05 | Psi=   0.200 Psihat=   0.179 ratio= 0.90 theta_T= 0.29 | rej DM/CW/CC = 0.000 0.996 0.911 (mc se 0.009) sd(t_CC)=1.06
+  [######........................] 7/32 c=0.7 zt=0.1 R2=0.0  elapsed  23.4m  eta  83.5m     c= 0.7 (P= 8) zt= 0.1 R2=0.00 | Psi=   0.991 Psihat=   0.928 ratio= 0.94 theta_T= 0.41 | rej DM/CW/CC = 0.000 0.047 0.068 (mc se 0.008) sd(t_CC)=1.08
+  [#######.......................] 8/32 c=0.7 zt=0.1 R2=0.05  elapsed  26.7m  eta  80.2m     c= 0.7 (P= 8) zt= 0.1 R2=0.05 | Psi=   0.991 Psihat=   0.928 ratio= 0.94 theta_T= 0.41 | rej DM/CW/CC = 0.000 0.941 0.404 (mc se 0.016) sd(t_CC)=1.07
+  [########......................] 9/32 c=0.9 zt=1.0 R2=0.0  elapsed  30.1m  eta  76.9m     c= 0.9 (P=11) zt= 1.0 R2=0.00 | Psi=   0.178 Psihat=   0.160 ratio= 0.90 theta_T= 0.24 | rej DM/CW/CC = 0.000 0.040 0.046 (mc se 0.007) sd(t_CC)=0.98
+  [#########.....................] 10/32 c=0.9 zt=1.0 R2=0.05  elapsed  33.5m  eta  73.7m     c= 0.9 (P=11) zt= 1.0 R2=0.05 | Psi=   0.178 Psihat=   0.160 ratio= 0.90 theta_T= 0.24 | rej DM/CW/CC = 0.000 0.971 0.834 (mc se 0.012) sd(t_CC)=1.04
+  [##########....................] 11/32 c=0.9 zt=0.1 R2=0.0  elapsed  36.8m  eta  70.3m     c= 0.9 (P=11) zt= 0.1 R2=0.00 | Psi=   1.158 Psihat=   1.046 ratio= 0.90 theta_T= 0.28 | rej DM/CW/CC = 0.000 0.049 0.070 (mc se 0.008) sd(t_CC)=1.04
+  [###########...................] 12/32 c=0.9 zt=0.1 R2=0.05  elapsed  40.2m  eta  67.0m     c= 0.9 (P=11) zt= 0.1 R2=0.05 | Psi=   1.158 Psihat=   1.046 ratio= 0.90 theta_T= 0.28 | rej DM/CW/CC = 0.000 0.860 0.305 (mc se 0.015) sd(t_CC)=1.10
+  [############..................] 13/32 c=1.0 zt=1.0 R2=0.0  elapsed  43.6m  eta  63.7m     c= 1.0 (P=12) zt= 1.0 R2=0.00 | Psi=   0.171 Psihat=   0.153 ratio= 0.90 theta_T= 0.23 | rej DM/CW/CC = 0.000 0.058 0.067 (mc se 0.008) sd(t_CC)=1.03
+  [#############.................] 14/32 c=1.0 zt=1.0 R2=0.05  elapsed  47.0m  eta  60.4m     c= 1.0 (P=12) zt= 1.0 R2=0.05 | Psi=   0.171 Psihat=   0.153 ratio= 0.90 theta_T= 0.23 | rej DM/CW/CC = 0.000 0.972 0.812 (mc se 0.012) sd(t_CC)=1.02
+  [##############................] 15/32 c=1.0 zt=0.1 R2=0.0  elapsed  50.3m  eta  57.0m     c= 1.0 (P=12) zt= 0.1 R2=0.00 | Psi=   1.140 Psihat=   1.028 ratio= 0.90 theta_T= 0.27 | rej DM/CW/CC = 0.000 0.043 0.053 (mc se 0.007) sd(t_CC)=1.00
+  [###############...............] 16/32 c=1.0 zt=0.1 R2=0.05  elapsed  53.7m  eta  53.7m     c= 1.0 (P=12) zt= 0.1 R2=0.05 | Psi=   1.140 Psihat=   1.028 ratio= 0.90 theta_T= 0.27 | rej DM/CW/CC = 0.000 0.862 0.286 (mc se 0.014) sd(t_CC)=1.03
+  [###############...............] 17/32 c=1.1 zt=1.0 R2=0.0  elapsed  57.1m  eta  50.3m     c= 1.1 (P=13) zt= 1.0 R2=0.00 | Psi=   0.164 Psihat=   0.147 ratio= 0.90 theta_T= 0.22 | rej DM/CW/CC = 0.000 0.058 0.055 (mc se 0.007) sd(t_CC)=1.00
+  [################..............] 18/32 c=1.1 zt=1.0 R2=0.05  elapsed  60.4m  eta  47.0m     c= 1.1 (P=13) zt= 1.0 R2=0.05 | Psi=   0.164 Psihat=   0.147 ratio= 0.90 theta_T= 0.22 | rej DM/CW/CC = 0.000 0.966 0.783 (mc se 0.013) sd(t_CC)=1.04
+  [#################.............] 19/32 c=1.1 zt=0.1 R2=0.0  elapsed  63.8m  eta  43.7m     c= 1.1 (P=13) zt= 0.1 R2=0.00 | Psi=   1.098 Psihat=   0.992 ratio= 0.90 theta_T= 0.26 | rej DM/CW/CC = 0.000 0.056 0.072 (mc se 0.008) sd(t_CC)=1.07
+  [##################............] 20/32 c=1.1 zt=0.1 R2=0.05  elapsed  67.4m  eta  40.4m     c= 1.1 (P=13) zt= 0.1 R2=0.05 | Psi=   1.098 Psihat=   0.992 ratio= 0.90 theta_T= 0.26 | rej DM/CW/CC = 0.000 0.828 0.260 (mc se 0.014) sd(t_CC)=1.01
+  [###################...........] 21/32 c=1.5 zt=1.0 R2=0.0  elapsed  70.8m  eta  37.1m     c= 1.5 (P=18) zt= 1.0 R2=0.00 | Psi=   0.132 Psihat=   0.119 ratio= 0.90 theta_T= 0.20 | rej DM/CW/CC = 0.000 0.052 0.055 (mc se 0.007) sd(t_CC)=1.00
+  [####################..........] 22/32 c=1.5 zt=1.0 R2=0.05  elapsed  74.2m  eta  33.7m     c= 1.5 (P=18) zt= 1.0 R2=0.05 | Psi=   0.132 Psihat=   0.119 ratio= 0.90 theta_T= 0.20 | rej DM/CW/CC = 0.000 0.896 0.670 (mc se 0.015) sd(t_CC)=1.06
+  [#####################.........] 23/32 c=1.5 zt=0.1 R2=0.0  elapsed  77.7m  eta  30.4m     c= 1.5 (P=18) zt= 0.1 R2=0.00 | Psi=   0.810 Psihat=   0.746 ratio= 0.92 theta_T= 0.24 | rej DM/CW/CC = 0.000 0.054 0.066 (mc se 0.008) sd(t_CC)=1.03
+  [######################........] 24/32 c=1.5 zt=0.1 R2=0.05  elapsed  81.2m  eta  27.1m     c= 1.5 (P=18) zt= 0.1 R2=0.05 | Psi=   0.810 Psihat=   0.746 ratio= 0.92 theta_T= 0.24 | rej DM/CW/CC = 0.000 0.782 0.293 (mc se 0.014) sd(t_CC)=1.07
+  [#######################.......] 25/32 c=2.0 zt=1.0 R2=0.0  elapsed  84.6m  eta  23.7m     c= 2.0 (P=24) zt= 1.0 R2=0.00 | Psi=   0.106 Psihat=   0.096 ratio= 0.90 theta_T= 0.19 | rej DM/CW/CC = 0.000 0.044 0.052 (mc se 0.007) sd(t_CC)=1.02
+  [########################......] 26/32 c=2.0 zt=1.0 R2=0.05  elapsed  88.1m  eta  20.3m     c= 2.0 (P=24) zt= 1.0 R2=0.05 | Psi=   0.106 Psihat=   0.096 ratio= 0.91 theta_T= 0.19 | rej DM/CW/CC = 0.000 0.817 0.594 (mc se 0.016) sd(t_CC)=1.02
+  [#########################.....] 27/32 c=2.0 zt=0.1 R2=0.0  elapsed  91.5m  eta  16.9m     c= 2.0 (P=24) zt= 0.1 R2=0.00 | Psi=   0.569 Psihat=   0.529 ratio= 0.93 theta_T= 0.24 | rej DM/CW/CC = 0.000 0.040 0.056 (mc se 0.007) sd(t_CC)=1.00
+  [##########################....] 28/32 c=2.0 zt=0.1 R2=0.05  elapsed  94.9m  eta  13.6m     c= 2.0 (P=24) zt= 0.1 R2=0.05 | Psi=   0.569 Psihat=   0.529 ratio= 0.93 theta_T= 0.24 | rej DM/CW/CC = 0.000 0.719 0.252 (mc se 0.014) sd(t_CC)=1.04
+  [###########################...] 29/32 c=3.0 zt=1.0 R2=0.0  elapsed  98.5m  eta  10.2m     c= 3.0 (P=36) zt= 1.0 R2=0.00 | Psi=   0.075 Psihat=   0.069 ratio= 0.91 theta_T= 0.19 | rej DM/CW/CC = 0.000 0.062 0.068 (mc se 0.008) sd(t_CC)=1.00
+  [############################..] 30/32 c=3.0 zt=1.0 R2=0.05  elapsed 102.0m  eta   6.8m     c= 3.0 (P=36) zt= 1.0 R2=0.05 | Psi=   0.075 Psihat=   0.069 ratio= 0.91 theta_T= 0.18 | rej DM/CW/CC = 0.000 0.686 0.469 (mc se 0.016) sd(t_CC)=1.02
+  [#############################.] 31/32 c=3.0 zt=0.1 R2=0.0  elapsed 105.5m  eta   3.4m     c= 3.0 (P=36) zt= 0.1 R2=0.00 | Psi=   0.344 Psihat=   0.320 ratio= 0.93 theta_T= 0.23 | rej DM/CW/CC = 0.000 0.054 0.059 (mc se 0.007) sd(t_CC)=1.02
+  [##############################] 32/32 c=3.0 zt=0.1 R2=0.05  elapsed 109.0m  eta   0.0m   
+  c= 3.0 (P=36) zt= 0.1 R2=0.05 | Psi=   0.344 Psihat=   0.320 ratio= 0.93 theta_T= 0.23 | rej DM/CW/CC = 0.000 0.613 0.250 (mc se 0.014) sd(t_CC)=1.02
+
+  arm D complete: 64 rows -> output/armD.json
+
+# finished in 109.0 min.  All output in output/

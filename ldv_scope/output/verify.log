@@ -1,0 +1,18 @@
+========================================================================================
+V1. Clark-West size under a rolling HAR benchmark, SHARP NULL, independent seeds
+========================================================================================
+  seed=13579 HAR scale=1.0 (srad=0.9891) T= 250: CW size = 0.253 +/-0.025   mean t = +1.03
+  seed=13579 HAR scale=1.0 (srad=0.9891) T=1000: CW size = 0.067 +/-0.014   mean t = +0.09
+  seed=13579 HAR scale=0.4 (srad=0.8768) T= 250: CW size = 0.113 +/-0.018   mean t = +0.45
+  seed=24680 HAR scale=1.0 (srad=0.9891) T= 250: CW size = 0.227 +/-0.024   mean t = +0.94
+  seed=24680 HAR scale=1.0 (srad=0.9891) T=1000: CW size = 0.060 +/-0.014   mean t = +0.13
+  seed=24680 HAR scale=0.4 (srad=0.8768) T= 250: CW size = 0.067 +/-0.014   mean t = +0.36
+
+========================================================================================
+V2. HAR bench vs lag-ridge: size and power of CC, independent seed
+========================================================================================
+  lam=0.0   Psihat=0.0399 R=0.971 dMSPE=-0.00708 | rej  DM=0.000 CW=0.033 CC=0.030 | t_CC mean/sd = -0.00/0.84
+  lam=0.1   Psihat=0.0401 R=1.125 dMSPE=-0.00580 | rej  DM=0.000 CW=0.210 CC=0.107 | t_CC mean/sd = +0.50/0.90
+  lam=0.2   Psihat=0.0410 R=1.618 dMSPE=-0.00158 | rej  DM=0.023 CW=0.837 CC=0.547 | t_CC mean/sd = +1.80/1.07
+
+[saved] <out>/verify.json

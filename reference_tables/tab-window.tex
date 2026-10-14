@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+\centering
+\caption{The window at which the enlarged model starts to pay. The design of \cref{tab:mc-signal} (spiked signal, $P=6$ AR(1) predictors with $\rho_x=0.3$, rolling-mean benchmark, oracle $\sigma^2=1$, $n=8{,}000$, $1{,}000$ replications per cell) with the ridge penalty held at its $T=12$ value, $z=0.133$ ($\Psi=0.5$ at $c=0.5$), and only the window $T$ varied. gap is the mean-square gap (positive when the enlarged model is more accurate). $T^*$ solves $\sigma^2\Psi(P/T^*,z)=\mu_{\mathrm{CC}}$ with $\mu_{\mathrm{CC}}$ taken at $T=12$, the value a user has. One-sided $5\%$ rejection frequencies. Dense signal, run at $R^2=0.20$ and $0.10$, gives the same crossovers to the second decimal of the gap.}
+\label{tab:window}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{rrrrrrrrr}
+\toprule
+$R^2$ & $T^*$ & $T$ & $c$ & $\Psihatn$ & $\mu_{\mathrm{CC}}$ & gap & DM & CC \\
+\midrule
+0.20 & 32 & 12 & 0.500 & 0.457 & 0.167 & $-0.293$ & 0.000 & 1.000 \\
+ &  & 18 & 0.333 & 0.295 & 0.181 & $-0.118$ & 0.000 & 1.000 \\
+ &  & 24 & 0.250 & 0.216 & 0.186 & $-0.033$ & 0.000 & 1.000 \\
+ &  & 36 & 0.167 & 0.139 & 0.191 & $0.049$ & 0.992 & 1.000 \\
+ &  & 48 & 0.125 & 0.103 & 0.193 & $0.088$ & 1.000 & 1.000 \\
+\addlinespace
+0.10 & 60 & 12 & 0.500 & 0.457 & 0.084 & $-0.375$ & 0.000 & 0.998 \\
+ &  & 18 & 0.333 & 0.295 & 0.090 & $-0.206$ & 0.000 & 1.000 \\
+ &  & 24 & 0.250 & 0.216 & 0.093 & $-0.124$ & 0.000 & 1.000 \\
+ &  & 36 & 0.167 & 0.139 & 0.095 & $-0.045$ & 0.000 & 1.000 \\
+ &  & 48 & 0.125 & 0.103 & 0.097 & $-0.007$ & 0.005 & 1.000 \\
+ &  & 60 & 0.100 & 0.081 & 0.097 & $0.015$ & 0.539 & 1.000 \\
+ &  & 72 & 0.083 & 0.067 & 0.097 & $0.029$ & 0.980 & 1.000 \\
+ &  & 96 & 0.062 & 0.050 & 0.098 & $0.047$ & 1.000 & 1.000 \\
+\addlinespace
+0.05 & 116 & 12 & 0.500 & 0.457 & 0.042 & $-0.416$ & 0.000 & 0.735 \\
+ &  & 24 & 0.250 & 0.216 & 0.047 & $-0.169$ & 0.000 & 0.998 \\
+ &  & 48 & 0.125 & 0.103 & 0.048 & $-0.055$ & 0.000 & 1.000 \\
+ &  & 96 & 0.062 & 0.050 & 0.049 & $-0.001$ & 0.023 & 1.000 \\
+ &  & 144 & 0.042 & 0.033 & 0.049 & $0.016$ & 0.889 & 1.000 \\
+\addlinespace
+0.02 & 283 & 12 & 0.500 & 0.457 & 0.017 & $-0.441$ & 0.000 & 0.238 \\
+ &  & 48 & 0.125 & 0.103 & 0.019 & $-0.083$ & 0.000 & 0.915 \\
+ &  & 144 & 0.042 & 0.033 & 0.020 & $-0.013$ & 0.000 & 1.000 \\
+ &  & 300 & 0.020 & 0.016 & 0.020 & $0.004$ & 0.259 & 1.000 \\
+ &  & 600 & 0.010 & 0.008 & 0.020 & $0.012$ & 0.989 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

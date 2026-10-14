@@ -1,0 +1,38 @@
+\begin{table}[htbp]
+\centering
+\caption{Size and power with a HAR benchmark. The benchmark regresses on
+$\{1,\,y_{t-1},\,\overline y_{t-5:t-1},\,\overline y_{t-22:t-1}\}$ and the data are generated
+by that HAR, so at $\lambda=0$ the extra features carry no incremental signal and the
+nominal size is $0.05$. Under $\lambda>0$ a zero-sum combination of lags $7$--$25$ enters the
+conditional mean, which HAR cannot span. $T=250$, $P=25$, $\ztil=1$, $n=700$, $300$
+replications, one-sided at $5\%$. $\mathcal R$ is the sanity ratio \eqref{eq:ratio}, which
+equals $\kldv$ at $\lambda=0$ and exceeds it thereafter because the realised squared
+differential contains the systematic component. The mean-squared-error gap is reported only in panel (a), where the corrected test
+rejects, and the mean corrected statistic only in panel (b), where it never does.
+Two independent seeds give $0.030$, $0.107$,
+$0.547$ and $0.037$, $0.133$, $0.653$ for the corrected test in panel (a) at $\lambda=0$,
+$0.10$ and $0.20$, and $0.203$ for CW in panel (b) at $\lambda=0$. Under the sharp
+null the mean and standard deviation of $t_{\mathrm{CW}}$ are $-0.05$ and $1.00$ in panel
+(a) against $1.00$ and $0.88$ in panel (b).}
+\label{tab:har-power}
+\small
+\begin{tabular}{lccrcccr}
+\toprule
+\multicolumn{8}{@{}l}{\emph{(a) alternative is ridge on the $P=25$ individual lags of $y$}}\\
+\cmidrule(r){1-8}
+$\lambda$ & $\Psihatn$ & $\mathcal R$ & $\MSPE_1-\MSPE_2$ & DM & CW & CC & mean $t_{\mathrm{CC}}$ \\
+\midrule
+0.00 & 0.040 & 0.97 & $-0.0067$ & 0.000 & 0.057 & \textbf{0.023} & \\
+0.05 & 0.040 & 1.00 & $-0.0064$ & 0.000 & 0.093 & 0.037 & \\
+0.10 & 0.040 & 1.12 & $-0.0054$ & 0.000 & 0.233 & 0.103 & \\
+0.20 & 0.041 & 1.65 & $-0.0013$ & 0.040 & 0.857 & \textbf{0.607} & \\
+\addlinespace
+\multicolumn{8}{@{}l}{\emph{(b) alternative is ridge on $P=25$ exogenous features}}\\
+\cmidrule(r){1-8}
+0.00 & 0.114 & 2.20 & & 0.000 & \textbf{0.237} & 0.000 & $-2.49$ \\
+0.05 & 0.115 & 2.24 & & 0.000 & 0.300 & 0.000 & $-2.41$ \\
+0.10 & 0.117 & 2.37 & & 0.000 & 0.557 & 0.000 & $-2.21$ \\
+0.20 & 0.119 & 2.84 & & 0.000 & 0.923 & 0.000 & $-2.14$ \\
+\bottomrule
+\end{tabular}
+\end{table}

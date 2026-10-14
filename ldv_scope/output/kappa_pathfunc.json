@@ -1,0 +1,38 @@
+{
+ "lags": {
+  "kappa_a": 0.9849067711620527,
+  "se": 0.02438329616669039,
+  "channel": "control",
+  "label": "CONTROL: must reproduce tab:ldv-scope's admissible row"
+ },
+ "exog": {
+  "kappa_a": 2.2464715459274744,
+  "se": 0.0647009129348395,
+  "channel": "control",
+  "label": "CONTROL: must reproduce the excluded row"
+ },
+ "subsamp": {
+  "kappa_a": 0.9809039775878723,
+  "se": 0.018931906559597898,
+  "channel": "level",
+  "label": "second estimator of the same latent quantity"
+ },
+ "quartic": {
+  "kappa_a": 1.0070250725346734,
+  "se": 0.018502564741491374,
+  "channel": "magnitude",
+  "label": "realized quarticity (HARQ input)"
+ },
+ "bipower": {
+  "kappa_a": 1.011958454052328,
+  "se": 0.017956783167093645,
+  "channel": "magnitude",
+  "label": "bipower variation (Corsi jump input)"
+ },
+ "semivar": {
+  "kappa_a": 0.9812408228150961,
+  "se": 0.02040890673190014,
+  "channel": "magnitude",
+  "label": "upside semivariance"
+ }
+}

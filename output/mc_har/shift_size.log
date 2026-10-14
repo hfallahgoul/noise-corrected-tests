@@ -1,0 +1,50 @@
+# mc_shift_size.py  2026-08-18 21:11:34
+
+============================================================================================
+A. Benchmark regressors EXOGENOUS -- Lemma 1 holds, both corrections valid
+============================================================================================
+   lam = 0 is the sharp null; nominal size is 0.05.
+  lam=0.0   Psihat=0.1104 | R plug/shift = 1.04/1.04 | rej CW=0.067 CC-plug=0.017 CC-shift=0.050 | sd(t) 0.84/1.01
+  lam=0.02  Psihat=0.1104 | R plug/shift = 1.06/1.05 | rej CW=0.083 CC-plug=0.033 CC-shift=0.050 | sd(t) 0.86/1.03
+  lam=0.05  Psihat=0.1104 | R plug/shift = 1.13/1.07 | rej CW=0.250 CC-plug=0.150 CC-shift=0.200 | sd(t) 0.94/1.10
+
+============================================================================================
+B. Benchmark = lags of the target, rho = 0.85 -- the plug-in fails here
+============================================================================================
+  lam=0.0   Psihat=0.1050 | R plug/shift = 1.73/1.02 | rej CW=0.033 CC-plug=0.000 CC-shift=0.117 | sd(t) 0.79/1.07
+  lam=0.02  Psihat=0.1051 | R plug/shift = 1.77/1.04 | rej CW=0.033 CC-plug=0.000 CC-shift=0.117 | sd(t) 0.81/1.09
+  lam=0.05  Psihat=0.1055 | R plug/shift = 1.91/1.08 | rej CW=0.067 CC-plug=0.000 CC-shift=0.150 | sd(t) 0.85/1.14
+
+[saved] output/mc_har/shift_size.json
+# finished in 1.1 min
+# mc_shift_size.py  2026-08-18 21:13:11
+
+============================================================================================
+A. Benchmark regressors EXOGENOUS -- Lemma 1 holds, both corrections valid
+============================================================================================
+   lam = 0 is the sharp null; nominal size is 0.05.
+  lam=0.0   Psihat=0.1098 | R plug/shift = 1.00/1.02 | rej CW=0.073 CC-plug=0.053 CC-shift=0.060 | sd(t) 0.95/1.09
+  lam=0.01  Psihat=0.1098 | R plug/shift = 1.01/1.03 | rej CW=0.080 CC-plug=0.060 CC-shift=0.080 | sd(t) 0.95/1.09
+# mc_shift_size.py  2026-08-18 21:36:38
+
+============================================================================================
+A. Benchmark regressors EXOGENOUS -- Lemma 1 holds, both corrections valid
+============================================================================================
+   lam = 0 is the sharp null; nominal size is 0.05.
+  lam=0.0   Psihat=0.1097 | R plug/shift = 1.00/1.01 | rej CW=0.040 CC-plug=0.036 CC-shift=0.048 | sd(t) 0.84/0.99
+  lam=0.01  Psihat=0.1097 | R plug/shift = 1.01/1.01 | rej CW=0.044 CC-plug=0.040 CC-shift=0.052 | sd(t) 0.85/1.01
+  lam=0.02  Psihat=0.1097 | R plug/shift = 1.01/1.02 | rej CW=0.064 CC-plug=0.040 CC-shift=0.052 | sd(t) 0.86/1.03
+  lam=0.04  Psihat=0.1097 | R plug/shift = 1.05/1.03 | rej CW=0.132 CC-plug=0.056 CC-shift=0.092 | sd(t) 0.90/1.07
+  lam=0.08  Psihat=0.1097 | R plug/shift = 1.19/1.06 | rej CW=0.540 CC-plug=0.288 CC-shift=0.436 | sd(t) 0.98/1.15
+
+============================================================================================
+B. Benchmark = lags of the target, rho = 0.85 -- the plug-in fails here
+============================================================================================
+  lam=0.0   Psihat=0.1046 | R plug/shift = 1.75/1.00 | rej CW=0.044 CC-plug=0.000 CC-shift=0.084 | sd(t) 0.73/0.95
+  lam=0.01  Psihat=0.1046 | R plug/shift = 1.75/1.00 | rej CW=0.048 CC-plug=0.000 CC-shift=0.084 | sd(t) 0.73/0.96
+  lam=0.02  Psihat=0.1046 | R plug/shift = 1.77/1.01 | rej CW=0.052 CC-plug=0.000 CC-shift=0.096 | sd(t) 0.73/0.98
+  lam=0.04  Psihat=0.1048 | R plug/shift = 1.85/1.03 | rej CW=0.072 CC-plug=0.000 CC-shift=0.116 | sd(t) 0.73/1.01
+  lam=0.08  Psihat=0.1054 | R plug/shift = 2.09/1.10 | rej CW=0.204 CC-plug=0.000 CC-shift=0.148 | sd(t) 0.77/1.09
+
+[saved] <repo>/output/mc_har/shift_size.json
+# finished in 20.6 min

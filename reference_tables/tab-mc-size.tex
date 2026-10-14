@@ -1,0 +1,33 @@
+\begin{table}[htbp]
+\centering
+\caption{Size under the sharp null, and the choice among studentisations. Rejection frequencies of the one-sided $5\%$ tests at $R^2=0$, $1{,}000$ replications. $\hat\omega^2_n$ is the influence-function-corrected HAC of \cref{prop:hac-main}; ``samp'' is the sample variance of $\dCC$; ``s.e.$_{\mathrm{CW}}$'' is the CW standard error applied to the corrected numerator, which is a studentisation of the corrected statistic and not the CW test; the CW test is the $\tCW$ column. The four $\tCC$ columns differ only in the standard error, except $\Psitil_t$, which changes the correction term. The $\Psitil_t$ column replaces the scalar correction by the heteroskedasticity-weighted one of \cref{prop:sigma-weighted}, studentised by $\hat\omega^2_n$; it is reported here because the design is homoskedastic, so any difference from the $\hat\omega^2_n$ column is an efficiency cost of the weighting rather than a bias it removes. $\vartheta_T=\Var(\Psihat_t)/(\E\Psihat_t)^2$ is the dispersion diagnostic of \cref{prop:kurtosis}. A row is fixed by $(T,\rho_x,\Psi^*)$ alone: the target selects the complexity ratio at which it is reachable and the penalty that attains it, giving $(\Psi^*,c,z)=(0.05,0.2,0.947)$, $(0.20,0.3,0.265)$, $(0.50,0.5,0.133)$ and $(1.00,0.7,0.0748)$ in the four rows of every block, with $P=\mathrm{round}(cT)$, so $P$ runs $2,2,4,6$ at $T=8$ and $2,4,6,8$ at $T=12$. The Monte Carlo standard error of any entry is at most $0.016$. Bold marks a rejection frequency outside the $95\%$ Monte Carlo band for an exact test, $0.05\pm1.96\sqrt{0.05\cdot0.95/1{,}000}$, that is, below $0.0365$ or above $0.0635$. With $80$ such entries, about four would fall outside the band by chance even if every test were exact.}
+\label{tab:mc-size}
+\small
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+& & & & \multicolumn{4}{c}{$\tCC$} & $\tCW$ & \\
+\cmidrule(lr){5-8}\cmidrule(lr){9-9}
+$T$ & $\rho_x$ & $\Psi^*$ & $\Psihatn$ & $\hat\omega^2_n$ & samp & s.e.$_{\mathrm{CW}}$ & $\Psitil_t$ & & $\vartheta_T$ \\
+\midrule
+8 & 0.0 & 0.05 & 0.052 & 0.054 & 0.039 & 0.042 & 0.048 & 0.052 & 1.08 \\
+ &  & 0.20 & 0.146 & 0.048 & \textbf{0.031} & 0.038 & 0.043 & 0.057 & 1.16 \\
+ &  & 0.50 & 0.446 & 0.062 & 0.058 & \textbf{0.079} & 0.049 & 0.056 & 0.69 \\
+ &  & 1.00 & 0.958 & \textbf{0.074} & \textbf{0.082} & \textbf{0.141} & 0.045 & 0.045 & 0.55 \\
+\addlinespace
+8 & 0.3 & 0.05 & 0.048 & 0.040 & \textbf{0.027} & \textbf{0.029} & 0.043 & 0.044 & 1.14 \\
+ &  & 0.20 & 0.138 & 0.043 & \textbf{0.026} & \textbf{0.029} & 0.042 & 0.050 & 1.20 \\
+ &  & 0.50 & 0.436 & 0.062 & 0.055 & \textbf{0.069} & 0.053 & 0.052 & 0.68 \\
+ &  & 1.00 & 0.959 & \textbf{0.067} & \textbf{0.074} & \textbf{0.121} & 0.053 & \textbf{0.035} & 0.52 \\
+\midrule
+12 & 0.0 & 0.05 & 0.038 & \textbf{0.035} & \textbf{0.025} & \textbf{0.026} & 0.039 & 0.045 & 1.04 \\
+ &  & 0.20 & 0.205 & 0.050 & 0.037 & 0.044 & 0.052 & 0.060 & 0.57 \\
+ &  & 0.50 & 0.465 & 0.055 & 0.047 & \textbf{0.068} & 0.060 & 0.052 & 0.44 \\
+ &  & 1.00 & 0.875 & 0.047 & 0.052 & \textbf{0.099} & 0.054 & 0.057 & 0.39 \\
+\addlinespace
+12 & 0.3 & 0.05 & 0.036 & 0.040 & \textbf{0.022} & \textbf{0.024} & 0.037 & 0.047 & 1.07 \\
+ &  & 0.20 & 0.197 & 0.063 & \textbf{0.035} & 0.050 & 0.046 & 0.049 & 0.58 \\
+ &  & 0.50 & 0.457 & 0.046 & 0.042 & 0.059 & 0.050 & 0.048 & 0.44 \\
+ &  & 1.00 & 0.873 & 0.058 & 0.063 & \textbf{0.093} & 0.044 & 0.049 & 0.38 \\
+\bottomrule
+\end{tabular}
+\end{table}

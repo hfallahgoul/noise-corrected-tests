@@ -1,0 +1,286 @@
+{
+ "meta": {
+  "seed": 20260910,
+  "reps": 120,
+  "script": "kappa_negrho.py",
+  "elapsed_sec": 533.4
+ },
+ "N1|ar|ar|lags": {
+  "label": "A  lagged-y bench, lag features",
+  "status": "passing",
+  "by_rho": {
+   "-0.95": {
+    "kappa": 1.0013789323618019,
+    "se": 0.019463472802879547,
+    "verdict": "OK"
+   },
+   "-0.85": {
+    "kappa": 0.992899230340351,
+    "se": 0.013266328305032401,
+    "verdict": "OK"
+   },
+   "-0.7": {
+    "kappa": 0.9813639369882485,
+    "se": 0.011656343372347779,
+    "verdict": "OK"
+   },
+   "-0.5": {
+    "kappa": 0.9746664407829347,
+    "se": 0.01104578704309324,
+    "verdict": "OK"
+   },
+   "-0.25": {
+    "kappa": 0.971976554272129,
+    "se": 0.010764266493348898,
+    "verdict": "OK"
+   },
+   "0.0": {
+    "kappa": 0.9714444677589185,
+    "se": 0.010949433313234136,
+    "verdict": "OK"
+   },
+   "0.25": {
+    "kappa": 0.9727073424900706,
+    "se": 0.011520097272972943,
+    "verdict": "OK"
+   },
+   "0.5": {
+    "kappa": 0.9758576736239907,
+    "se": 0.012147191142898578,
+    "verdict": "OK"
+   },
+   "0.85": {
+    "kappa": 0.9781310818281578,
+    "se": 0.013038247102891642,
+    "verdict": "OK"
+   },
+   "0.95": {
+    "kappa": 0.9720056622447995,
+    "se": 0.017396048743460877,
+    "verdict": "OK"
+   }
+  }
+ },
+ "N1|ar|ar|exog": {
+  "label": "B  lagged-y bench, exog features",
+  "status": "failing",
+  "by_rho": {
+   "-0.95": {
+    "kappa": 1.2136175521750483,
+    "se": 0.016814023514285445,
+    "verdict": "kappa>1 (conservative)"
+   },
+   "-0.85": {
+    "kappa": 1.2184869269021685,
+    "se": 0.01692704845084751,
+    "verdict": "kappa>1 (conservative)"
+   },
+   "-0.7": {
+    "kappa": 1.2257848622063652,
+    "se": 0.017133734349940716,
+    "verdict": "kappa>1 (conservative)"
+   },
+   "-0.5": {
+    "kappa": 1.2379427005283452,
+    "se": 0.01736912859034755,
+    "verdict": "kappa>1 (conservative)"
+   },
+   "-0.25": {
+    "kappa": 1.2596640567791397,
+    "se": 0.017682141026545965,
+    "verdict": "kappa>1 (conservative)"
+   },
+   "0.0": {
+    "kappa": 1.2914699382930015,
+    "se": 0.01808702335487425,
+    "verdict": "kappa>1 (conservative)"
+   },
+   "0.25": {
+    "kappa": 1.3394027843516865,
+    "se": 0.018654800598190063,
+    "verdict": "kappa>1 (conservative)"
+   },
+   "0.5": {
+    "kappa": 1.4199337327473005,
+    "se": 0.019630182332143566,
+    "verdict": "kappa>1 (conservative)"
+   },
+   "0.85": {
+    "kappa": 1.7491877213961027,
+    "se": 0.0242024733314162,
+    "verdict": "kappa>1 (conservative)"
+   },
+   "0.95": {
+    "kappa": 2.085790004451741,
+    "se": 0.032189437123831814,
+    "verdict": "kappa>1 (conservative)"
+   }
+  }
+ },
+ "N1|ar|const|lags": {
+  "label": "C  const bench (MISSPECIFIED)",
+  "status": "control",
+  "by_rho": {
+   "-0.95": {
+    "kappa": 218.03480227724856,
+    "se": 3.6170967734030484,
+    "verdict": "signal, not cancellation"
+   },
+   "-0.85": {
+    "kappa": 53.07184528693085,
+    "se": 0.6167923731744976,
+    "verdict": "signal, not cancellation"
+   },
+   "-0.7": {
+    "kappa": 16.567382921541665,
+    "se": 0.1841862807132024,
+    "verdict": "signal, not cancellation"
+   },
+   "-0.5": {
+    "kappa": 5.378805093667323,
+    "se": 0.05980331279314622,
+    "verdict": "signal, not cancellation"
+   },
+   "-0.25": {
+    "kappa": 1.745224556791968,
+    "se": 0.019193026376231163,
+    "verdict": "signal, not cancellation"
+   },
+   "0.0": {
+    "kappa": 0.9830393495845783,
+    "se": 0.010520336908395744,
+    "verdict": "signal, not cancellation"
+   },
+   "0.25": {
+    "kappa": 1.7021617481605813,
+    "se": 0.022547015995232515,
+    "verdict": "signal, not cancellation"
+   },
+   "0.5": {
+    "kappa": 5.234308278843182,
+    "se": 0.06501149213437601,
+    "verdict": "signal, not cancellation"
+   },
+   "0.85": {
+    "kappa": 50.67724723001505,
+    "se": 0.6361016333648009,
+    "verdict": "signal, not cancellation"
+   },
+   "0.95": {
+    "kappa": 204.87894859348378,
+    "se": 3.505906128872064,
+    "verdict": "signal, not cancellation"
+   }
+  }
+ },
+ "N2|ar|ar|lags|T250|P25|z1.0": {
+  "label": "A  lagged-y bench, lag features",
+  "status": "passing",
+  "rho": -0.85,
+  "kappa": 0.9602563632140627,
+  "se": 0.014591106832323668,
+  "verdict": "OK",
+  "T": 250,
+  "P": 25,
+  "zt": 1.0
+ },
+ "N2|ar|ar|lags|T125|P25|z0.1": {
+  "label": "A  lagged-y bench, lag features",
+  "status": "passing",
+  "rho": -0.85,
+  "kappa": 0.9481570645600733,
+  "se": 0.008565685954425311,
+  "verdict": "OK",
+  "T": 125,
+  "P": 25,
+  "zt": 0.1
+ },
+ "N2|ar|ar|lags|T125|P60|z0.1": {
+  "label": "A  lagged-y bench, lag features",
+  "status": "passing",
+  "rho": -0.85,
+  "kappa": 1.07463805738344,
+  "se": 0.008523962481996899,
+  "verdict": "OK",
+  "T": 125,
+  "P": 60,
+  "zt": 0.1
+ },
+ "N2|ar|ar|lags|T500|P60|z0.01": {
+  "label": "A  lagged-y bench, lag features",
+  "status": "passing",
+  "rho": -0.85,
+  "kappa": 0.9457840958219035,
+  "se": 0.008232370788273324,
+  "verdict": "OK",
+  "T": 500,
+  "P": 60,
+  "zt": 0.01
+ },
+ "N2|ar|ar|lags|T250|P25|z0.001": {
+  "label": "A  lagged-y bench, lag features",
+  "status": "passing",
+  "rho": -0.85,
+  "kappa": 0.958102489830037,
+  "se": 0.012689325764968507,
+  "verdict": "OK",
+  "T": 250,
+  "P": 25,
+  "zt": 0.001
+ },
+ "N2|ar|ar|exog|T250|P25|z1.0": {
+  "label": "B  lagged-y bench, exog features",
+  "status": "failing",
+  "rho": -0.85,
+  "kappa": 1.214293476689598,
+  "se": 0.014298878217299532,
+  "verdict": "kappa>1 (conservative)",
+  "T": 250,
+  "P": 25,
+  "zt": 1.0
+ },
+ "N2|ar|ar|exog|T125|P25|z0.1": {
+  "label": "B  lagged-y bench, exog features",
+  "status": "failing",
+  "rho": -0.85,
+  "kappa": 1.2719705051619183,
+  "se": 0.018112475840648325,
+  "verdict": "kappa>1 (conservative)",
+  "T": 125,
+  "P": 25,
+  "zt": 0.1
+ },
+ "N2|ar|ar|exog|T125|P60|z0.1": {
+  "label": "B  lagged-y bench, exog features",
+  "status": "failing",
+  "rho": -0.85,
+  "kappa": 1.3165603958848175,
+  "se": 0.017551890835347434,
+  "verdict": "kappa>1 (conservative)",
+  "T": 125,
+  "P": 60,
+  "zt": 0.1
+ },
+ "N2|ar|ar|exog|T500|P60|z0.01": {
+  "label": "B  lagged-y bench, exog features",
+  "status": "failing",
+  "rho": -0.85,
+  "kappa": 1.265488368560218,
+  "se": 0.013917688647725704,
+  "verdict": "kappa>1 (conservative)",
+  "T": 500,
+  "P": 60,
+  "zt": 0.01
+ },
+ "N2|ar|ar|exog|T250|P25|z0.001": {
+  "label": "B  lagged-y bench, exog features",
+  "status": "failing",
+  "rho": -0.85,
+  "kappa": 1.248034627689645,
+  "se": 0.01562407029210285,
+  "verdict": "kappa>1 (conservative)",
+  "T": 250,
+  "P": 25,
+  "zt": 0.001
+ }
+}

@@ -1,0 +1,9 @@
+# Python 3.9.7. The realized-variance results of Section 6 were produced on 14 October 2026
+# with exactly these versions; environment-rerun.txt records the full environment.
+# The Monte Carlo output was produced earlier; build_tables.py --check rebuilds every table
+# from it byte for byte under these versions' successors as well (numpy 2.2.6, scipy 1.15.3).
+numpy==2.0.2
+pandas==2.2.3
+matplotlib==3.9.4
+scipy==1.13.1
+requests==2.32.5

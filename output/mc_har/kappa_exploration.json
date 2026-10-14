@@ -1,0 +1,70 @@
+{
+ "what": "contamination factor kappa = E[(a.eps)^2]/(sigma^2 E||a||^2) when the benchmark regresses on lags of the target",
+ "lemma1_requires": "kappa = 1",
+ "signal_invariance_T250_rho085_P25_zt1_k3": {
+  "lam0": 1.728,
+  "lam0.02": 1.724,
+  "lam0.05": 1.715,
+  "lam0.10": 1.689,
+  "lam0.20": 1.587,
+  "lam0.40": 1.344
+ },
+ "by_penalty_and_P_T250_rho085_k3": {
+  "zt0.1": {
+   "P10": 1.49,
+   "P25": 1.706,
+   "P60": 1.91
+  },
+  "zt1.0": {
+   "P10": 1.46,
+   "P25": 1.681,
+   "P60": 2.015
+  },
+  "zt10": {
+   "P10": 1.327,
+   "P25": 1.433,
+   "P60": 1.598
+  }
+ },
+ "by_rho_and_k_T250_P25_zt1": {
+  "rho0": {
+   "k1": 1.122,
+   "k3": 1.369,
+   "k6": 1.544
+  },
+  "rho0.5": {
+   "k1": 1.316,
+   "k3": 1.559,
+   "k6": 1.658
+  },
+  "rho0.85": {
+   "k1": 1.875,
+   "k3": 2.034,
+   "k6": 2.048
+  },
+  "rho0.95": {
+   "k1": 2.355,
+   "k3": 2.378,
+   "k6": 2.327
+  }
+ },
+ "composite_null_size_n600_nominal_005": {
+  "plain_plugin": {
+   "lam0.02": 0.0,
+   "lam0.05": 0.0,
+   "lam0.10": 0.0
+  },
+  "kappa_corrected": {
+   "lam0.02": 0.155,
+   "lam0.05": 0.1,
+   "lam0.10": 0.055
+  },
+  "shift": {
+   "lam0.02": 0.1,
+   "lam0.05": 0.142,
+   "lam0.10": 0.175
+  }
+ },
+ "sd_of_t_in_all_failing_cases": "1.1 to 1.6 -- over-dispersion, not mis-centring",
+ "conclusion": "no closed form for kappa (5-dim); kappa estimable by bootstrap but correcting the level does not fix the test; the binding problem is studentisation under (T-1)-dependence with small n/T"
+}

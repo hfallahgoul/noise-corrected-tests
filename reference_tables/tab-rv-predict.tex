@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{Which statistic, computed at a short window, predicts the gap a long window delivers later. The five-estimator design of \cref{tab:rv-multiest}; series passing \eqref{eq:ratio} in the decision period ($920$, $972$ and $973$ at the three penalties). Decision statistics use a $T=250$ window on dates before the outcome period; the outcome is the relative mean-square gap (benchmark minus enlarged, over the benchmark's MSE; positive when the enlarged model is more accurate) of the same procedure with the penalty held fixed, at $T=250$ or $T=1000$, over the second half of the dates a $T=1000$ window can forecast (here 2024--2026). $\rho$ is the Spearman rank correlation, across series, between each statistic computed in the decision period and the gap realised later. Intervals are $90\%$ moving-block bootstrap intervals over calendar dates ($63$-day blocks, the same blocks for every series, $300$ draws), so common volatility shocks are resampled jointly. The last two columns compare the median outcome gap with its prediction from the $T=250$ decision period and the closed form, $\overline{\mathrm{gap}}_{250}+\Psihatn\,[1-\Psi(P/T,z)/\Psi(P/250,z)]$. Robustness to the outcome split, the penalty rule and the block length is in \cref{app:rv-predict}.}
+\label{tab:rv-predict}
+\small
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{rrrrrccrr}
+\toprule
+& & \multicolumn{3}{c}{$\rho$ with the later gap} & \multicolumn{2}{c}{difference in $\rho$} & \multicolumn{2}{c}{median gap} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+$\ztil$ & outcome $T$ & DM & CW & CC & CC $-$ DM & CC $-$ CW & predicted & actual \\
+\midrule
+0.1 & 250 & $0.421$ & $-0.036$ & $0.286$ & [$-0.148$, $-0.043$] & [$0.120$, $0.354$] & --- & --- \\
+ & 1000 & $0.378$ & $-0.145$ & $0.392$ & [$-0.062$, $0.065$] & [$0.285$, $0.508$] & $-0.132$ & $-0.122$ \\
+\addlinespace
+1 & 250 & $0.397$ & $-0.123$ & $0.367$ & [$-0.055$, $0.042$] & [$0.222$, $0.465$] & --- & --- \\
+ & 1000 & $0.416$ & $-0.227$ & $0.486$ & [$0.003$, $0.130$] & [$0.394$, $0.650$] & $-0.064$ & $-0.066$ \\
+\addlinespace
+10 & 250 & $0.061$ & $-0.137$ & $0.110$ & [$-0.014$, $0.081$] & [$0.061$, $0.198$] & --- & --- \\
+ & 1000 & $0.099$ & $-0.203$ & $0.277$ & [$0.066$, $0.161$] & [$0.208$, $0.380$] & $-0.005$ & $-0.004$ \\
+\bottomrule
+\end{tabular}}
+\end{table}
