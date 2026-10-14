@@ -82,7 +82,7 @@ Labels are the paper's `\label`s, which do not move when sections are renumbered
 | `tab:window` | `mc_window.py` | `output/mc_window/` | yes |
 | `tab:intersection` | `mc_intersection.py` | `output/mc_intersection/` | yes |
 | `tab:kernel-check`, `tab:delta` | `mc_kernel_delta.py` | `output/mc_kernel/` | yes |
-| `tab:kappa` | `mc_har_diagnosis.py` | `output/mc_har/` | yes |
+| `tab:kappa` | `mc_kappa_tables.py` (panels), `mc_har_diagnosis.py` (window sweep in the caption) | `output/mc_har/` | yes |
 | `tab:cw-har` | `ldv_scope/cw_under_har.py`, `ldv_scope/verify.py` | `ldv_scope/output/` | yes |
 | `tab:har-power` | `ldv_scope/har_size_power.py`, `ldv_scope/verify.py` | `ldv_scope/output/` | yes |
 | `tab:har-omitted` | `ldv_scope/har_omitted.py` | `ldv_scope/output/` | yes |

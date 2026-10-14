@@ -25,12 +25,13 @@ class Tee:
     def flush(self): self.o.flush(); self.f.flush()
 
 
-def ratio(bench, target, feat, T=250, rho=0.85, P=25, zt=1.0, reps=25, n=1500, seed=1):
+def ratio(bench, target, feat, T=250, rho=0.85, P=25, zt=1.0, reps=25, n=1500, seed=1, k=3):
     """R = mean(D^2)/mean(sigma^2 Psihat) under the sharp null.
 
     bench  : 'exog' | 'ar' | 'mean'     what the benchmark regresses on
     target : 'exog' | 'ar'              how the target is generated
     feat   : 'exog' | 'lags'            what the alternative adds
+    k      : number of own lags in the 'ar' benchmark (3 everywhere in this script)
     """
     g = np.random.default_rng(seed); z = zt * P / T; per = []
     for _ in range(reps):
@@ -48,12 +49,12 @@ def ratio(bench, target, feat, T=250, rho=0.85, P=25, zt=1.0, reps=25, n=1500, s
                 y[t] = rho * y[t-1] + eps[t]
         else:
             y = Z @ np.array([0.5, 0.3, 0.2]) + eps
-        L = P + 4
+        L = max(P, k) + 4
         Y = y[L:]
         M_ = len(Y)
         if bench == "exog":   H = np.column_stack([np.ones(M_), Z[L:]])
-        elif bench == "ar":   H = np.column_stack([np.ones(M_), y[L-1:L-1+M_],
-                                                   y[L-2:L-2+M_], y[L-3:L-3+M_]])
+        elif bench == "ar":   H = np.column_stack([np.ones(M_)] +
+                                                  [y[L-j:L-j+M_] for j in range(1, k + 1)])
         else:                 H = np.ones((M_, 1))
         XE = (np.column_stack([y[L-1-k:L-1-k+M_] for k in range(P)])
               if feat == "lags" else Xex[L:L+M_])

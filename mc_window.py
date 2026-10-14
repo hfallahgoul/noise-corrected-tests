@@ -167,10 +167,12 @@ def latex(path):
     L = [r"\begin{table}[htbp]", r"\centering",
          r"\caption{The window at which the enlarged model starts to pay. The design of "
          r"\cref{tab:mc-signal} (spiked signal, $P=6$ AR(1) predictors with $\rho_x=0.3$, rolling-mean "
-         r"benchmark, oracle $\sigma^2=1$, $n=8{,}000$, $1{,}000$ replications per cell) with the ridge "
+         r"benchmark, oracle $\sigma^2=1$, $n=8{,}000$, $1{,}000$ replications per cell, drawn independently of "
+         r"\cref{tab:mc-signal}) with the ridge "
          r"penalty held at its $T=12$ value, $z=0.133$ ($\Psi=0.5$ at $c=0.5$), and only the window $T$ "
          r"varied. gap is the mean-square gap (positive when the enlarged model is more accurate). "
-         r"$T^*$ solves $\sigma^2\Psi(P/T^*,z)=\mu_{\mathrm{CC}}$ with $\mu_{\mathrm{CC}}$ taken at $T=12$, "
+         r"Bartlett bandwidth $b=\max(18,\lceil1.5T\rceil)$. $T^*$ is the smallest window with "
+         r"$\sigma^2\Psi(P/T^*,z)\le\mu_{\mathrm{CC}}$, with $\mu_{\mathrm{CC}}$ taken at $T=12$, "
          r"the value a user has. One-sided $5\%$ rejection frequencies. Dense signal, run at $R^2=0.20$ "
          r"and $0.10$, gives the same crossovers to the second decimal of the gap.}",
          r"\label{tab:window}", r"\small", r"\setlength{\tabcolsep}{5pt}",

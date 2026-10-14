@@ -1,6 +1,6 @@
 \begin{table}[htbp]
 \centering
-\caption{Finite-window accuracy of the closed form. $\Psi(c,z)$ is evaluated at the \emph{realised} $c=P/T$ after integer rounding of $P$. The last column is the relative error scaled by the window length. It sits near $-1$ over most of the table, which is \cref{prop:dof}: every design here uses a rolling-mean benchmark, so $q=1$ and the closed form must be multiplied by $1-1/T$. After that correction the block is within $1$ to $2$ percent at $T=12$ and within half a percent at $T=60$. The two cells at the smallest complexity ratio under persistence sit near $-1.8$; that excess is not explained by degrees of freedom.}
+\caption{Finite-window accuracy of the closed form. $\Psi(c,z)$ is evaluated at the \emph{realised} $c=P/T$ after integer rounding of $P$. The last column is the relative error scaled by the window length. It sits near $-1$ over most of the table, which is \cref{prop:dof}: every design here uses a rolling-mean benchmark, so $q=1$ and the closed form must be multiplied by $1-1/T$. After that correction the cells with $c\ge0.5$ are within $2$ percent at both window lengths. At smaller $c$ the error grows, to about $-3$ percent without persistence and $-10$ percent with it, and the two cells at the smallest complexity ratio under persistence sit near $-1.8$; that excess is not explained by degrees of freedom. $\Psihatn$ is averaged over the $1{,}000$ replications of \cref{tab:mc-size}.}
 \label{tab:mc-closedform}
 \small
 \begin{tabular}{lrrrrrrr}

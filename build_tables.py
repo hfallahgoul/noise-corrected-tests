@@ -121,7 +121,7 @@ def tab_size(A):
     L = [r"\begin{table}[htbp]", r"\centering",
          r"\caption{Size under the sharp null, and the choice among studentisations."
          r" Rejection frequencies of the one-sided $5\%$ tests at $R^2=0$, $1{,}000$"
-         r" replications. $\hat\omega^2_n$ is the influence-function-corrected HAC of"
+         r" replications, $(n,b)=(2{,}000,12)$ at $T=8$ and $(8{,}000,18)$ at $T=12$. $\hat\omega^2_n$ is the influence-function-corrected HAC of"
          r" \cref{prop:hac-main}; ``samp'' is the sample variance of $\dCC$;"
          r" ``s.e.$_{\mathrm{CW}}$'' is the CW standard error applied to the"
          r" corrected numerator, which is a studentisation of the corrected statistic and"
@@ -172,7 +172,9 @@ def tab_power(A):
          r" fraction of the MSE-optimal one of \cref{prop:optimal-z}. $\mathcal R$: the"
          r" sanity ratio of \cref{eq:ratio} under $\hat\sigma^2_\Delta$. $\Delta$CC: power"
          r" under $\hat\sigma^2_\Delta$ less power under the oracle $\sigma^2$. The Monte"
-         r" Carlo standard error of any entry is at most $0.016$.}"
+         r" Carlo standard error of any entry is at most $0.016$. Bold marks a CW or"
+         r" corrected-test rejection frequency in an $R^2=0$ row outside the $95\%$ Monte"
+         r" Carlo band of an exact test, $0.0365$ to $0.0635$.}"
          r"\label{tab:mc-power}", r"\small",
          r"\begin{tabular}{lrrrrrrrr}", r"\toprule",
          r"& & & \multicolumn{3}{c}{oracle $\sigma^2$} & \multicolumn{2}{c}{$\hat\sigma^2_\Delta$} & \\",
@@ -188,8 +190,10 @@ def tab_power(A):
             dcc = "$0.000$" if dv == 0 else f"${dv:.3f}$"
             flag = r"\,$^\dagger$" if d["ratio"] < 0.995 else ""
             pp = format(p,'.2f') if j==0 else ''
+            bb = (lambda x: (r"\textbf{%.3f}" % x) if (R2 == 0 and abs(x - 0.05) > 0.0135)
+                  else "%.3f" % x)
             L.append(f"{pp} & {R2:.2f} & {zr} & {o['rej_DM']:.3f} & "
-                     f"{o['rej_CW']:.3f} & {o['rej_CC']:.3f} & {d['rej_CC']:.3f} & "
+                     f"{bb(o['rej_CW'])} & {bb(o['rej_CC'])} & {bb(d['rej_CC'])} & "
                      f"{d['ratio']:.3f}{flag} & {dcc} \\\\")
         if p != 1.0:
             L.append(r"\addlinespace")
@@ -207,10 +211,12 @@ def tab_closedform(A):
          r" the relative error scaled by the window length. It sits near $-1$ over most of"
          r" the table, which is \cref{prop:dof}: every design here uses a rolling-mean"
          r" benchmark, so $q=1$ and the closed form must be multiplied by $1-1/T$. After"
-         r" that correction the block is within $1$ to $2$ percent at $T=12$ and within"
-         r" half a percent at $T=60$. The two cells at the smallest complexity ratio under"
+         r" that correction the cells with $c\ge0.5$ are within $2$ percent at both window"
+         r" lengths. At smaller $c$ the error grows, to about $-3$ percent without persistence"
+         r" and $-10$ percent with it, and the two cells at the smallest complexity ratio under"
          r" persistence sit near $-1.8$; that excess is not explained by degrees of"
-         r" freedom.}",
+         r" freedom. $\Psihatn$ is averaged over the $1{,}000$ replications of"
+         r" \cref{tab:mc-size}.}",
          r"\label{tab:mc-closedform}", r"\small",
          r"\begin{tabular}{lrrrrrrr}", r"\toprule",
          r"$T$ & $\rho_x$ & $P$ & $c=P/T$ & $z$ & $\Psi(c,z)$ & $\Psihatn$"
@@ -224,7 +230,7 @@ def tab_closedform(A):
                 rr = format(rho,'.1f') if i==0 else ''
                 L.append(f"{T if i==0 else ''} & {rr} & {r['P']} & "
                          f"{cr:.3f} & {r['z']:.4f} & {pr:.4f} & {r['Psihat']:.4f} & "
-                         f"${T*(r['Psihat']/pr-1):+.2f}$ \\\\")
+                         f"${T*(r['Psihat']/pr-1):.2f}$ \\\\")
             if not (T == 12 and rho == 0.3):
                 L.append(r"\addlinespace")
     L += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
@@ -238,7 +244,9 @@ def tab_grid():
     L = [r"\begin{table}[htbp]", r"\centering",
          r"\caption{Each statistic against each null. Rejection frequencies of the"
          r" one-sided $5\%$ tests at $(T,n,b)=(8,2000,12)$, $\rho_x=0.3$,"
-         r" $1{,}000$ replications. The $\Hcc$ and $\Hmspe$ rows carry $R^2=0.10$ and"
+         r" $1{,}000$ replications. The corrected statistic is studentised by"
+         r" $\hat\omega^2_n$, as in \cref{tab:mc-size}, and the replications are drawn"
+         r" independently of that table. The $\Hcc$ and $\Hmspe$ rows carry $R^2=0.10$ and"
          r" impose their null exactly by rescaling the forecast differential by a factor"
          r" computed from an independent pilot sample. $\Hcov$ is not reachable that way,"
          r" since a positive rescaling multiplies $\E[fg]$ by the same factor; that row is"
@@ -300,7 +308,7 @@ def tab_grid():
 def tab_features(B):
     L = [r"\begin{table}[htbp]", r"\centering",
          r"\caption{Nominal complexity does not determine the wedge. $T=12$, $n=8{,}000$,"
-         r" $z=0.5$, targets pure noise, so the measured object is exactly the null forecast"
+         r" $b=18$, $z=0.5$, $200$ replications per cell, targets pure noise, so the measured object is exactly the null forecast"
          r" variance. Within each block $c=P/T$ is constant and the closed form predicts the"
          r" single value in the $\Psi(c,z)$ column; only the bandwidth of the feature map"
          r" varies. The last column is $\Psihatn/\Psi(c,z)$.}",
@@ -331,7 +339,8 @@ def tab_breakdown(C):
          r" innovations with $\eps_t$ at strength $\delta$, violating \cref{as:errors};"
          r" $\mathcal R$ is the sanity ratio and $\mathcal R^{\text{shift}}$ its value after"
          r" a large circular shift. Panel (b) varies the innovation distribution and then,"
-         r" holding that distribution fixed at GARCH$(1,1)$, the sign of the coupling"
+         r" holding that distribution fixed at GARCH$(1,1)$ with $h_t=0.05+0.90h_{t-1}+0.05u_{t-1}^2$,"
+         r" standardised to unit variance, the sign of the coupling"
          r" between the dispersion of the feature rows and the conditional volatility"
          r" $\sigma_t$: independent, rising with $\sigma_t$, and falling with it. The three"
          r" GARCH rows therefore share an innovation process and differ only in that"
@@ -344,16 +353,23 @@ def tab_breakdown(C):
          r" replications and carry a Monte Carlo standard error of $0.005$ at that level;"
          r" panel (c) uses $1{,}000$ and carries $0.007$. The $\Psitil_t$ column is the corrected test with the"
          r" heteroskedasticity-weighted correction of \cref{prop:sigma-weighted} in place of"
-         r" the scalar one, studentised identically.}",
+         r" the scalar one, studentised identically. The panels draw independent"
+         r" replications, so the $\delta=0$ row of panel (a) and the Gaussian row of panel"
+         r" (b) repeat one design on different draws. Bold marks a size entry outside the"
+         r" $95\%$ Monte Carlo band of an exact test, $0.040$ to $0.060$ in panels (a) and"
+         r" (b) and $0.0365$ to $0.0635$ in panel (c).}",
          r"\label{tab:mc-breakdown}", r"\small",
          r"\begin{tabular}{lrrrrr}", r"\toprule",
          r"\multicolumn{6}{@{}l}{\emph{(a) Endogeneity}, violating \cref{as:errors}}\\",
          r"\cmidrule(r){1-6}",
          r"$\delta$ & $\mathcal R$ & $\mathcal R^{\text{shift}}$ & size CC"
          r" & size $\Psitil_t$ & \\"]
+    def bz(x, h):
+        return (r"\textbf{%.3f}" % x) if abs(x - 0.05) > h else "%.3f" % x
+    h2, h1 = 1.96 * math.sqrt(0.0475 / 2000), 1.96 * math.sqrt(0.0475 / 1000)
     for r in C["C1"]:
         L.append(f"{r['delta']:.2f} & {r['ratio']:.3f} & {r['ratio_shift']:.3f} & "
-                 f"{r['rej_CC']:.3f} & {r['rej_CC_w']:.3f} & \\\\")
+                 f"{bz(r['rej_CC'], h2)} & {bz(r['rej_CC_w'], h2)} & \\\\")
     L += [r"\addlinespace",
           r"\multicolumn{6}{@{}l}{\emph{(b) Innovation distribution, and the"
           r" feature--volatility coupling}}\\",
@@ -367,8 +383,8 @@ def tab_breakdown(C):
           ("garch", -1.0): r"GARCH$(1,1)$, dispersion $\downarrow$ with $\sigma_t$"}
     for r in C["C2"]:
         L.append(f"{NM[(r['innov'], r['feat_vol'])]} & {r['Psihat']:.4f} & "
-                 f"{r['ratio']:.3f} & {r['rej_CC']:.3f} & {r['rej_CC_w']:.3f} & "
-                 f"{r['rej_CW']:.3f} \\\\")
+                 f"{r['ratio']:.3f} & {bz(r['rej_CC'], h2)} & {bz(r['rej_CC_w'], h2)} & "
+                 f"{bz(r['rej_CW'], h2)} \\\\")
     L += [r"\addlinespace",
           r"\multicolumn{6}{@{}l}{\emph{(c) Outside the bandwidth gates}}\\",
           r"\cmidrule(r){1-6}",
@@ -376,7 +392,7 @@ def tab_breakdown(C):
     for r in C["C3"]:
         L.append(f"$T={r['T']}$, $n={r['n']}$, $b={r['b']}$ & {r['T_eff']:.1f} & "
                  f"{'yes' if r['F2'] else 'no'} & {'yes' if r['F3'] else 'no'} & "
-                 f"{r['size_CC']:.3f} & {r['size_CC_w']:.3f} \\\\")
+                 f"{bz(r['size_CC'], h1)} & {bz(r['size_CC_w'], h1)} \\\\")
     L += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
     w("tab-mc-breakdown.tex", L)
 
@@ -535,10 +551,11 @@ def tab_rv_multiest():
     L = [r"\begin{table}[htbp]", r"\centering",
          r"\caption{The cross-section, paired: what changes when the enlarging columns"
          r" change. Both rows of each block use the HAR benchmark \eqref{eq:rv-har} on the"
-         r" same series, the same rolling window $T=250$, the same $P=25$ and the same"
+         r" same series, the same rolling window $T=250$ and the same"
          r" penalties, all fixed before either panel was run. They differ in what the"
-         r" twenty-five columns are: lags $2,\dots,26$ of the target itself, or five lags each"
-         r" of five other Risk Lab estimators of the same latent variance \eqref{eq:rv-multiest}."
+         r" extra columns are: lags $2,\dots,25$ of the target itself ($P=24$), or five lags each"
+         r" of five other Risk Lab estimators of the same latent variance \eqref{eq:rv-multiest}"
+         r" ($P=25$)."
          r" Each cell uses the assets present in both panels that pass \eqref{eq:ratio} in"
          r" both at that penalty, so the two rows of a block are the same series and differ"
          r" in the alternative alone. Every entry after the median is a share of those"
@@ -703,7 +720,10 @@ def tab_har_power():
          r"by that HAR, so at $\lambda=0$ the extra features carry no incremental signal and the",
          r"nominal size is $0.05$. Under $\lambda>0$ a zero-sum combination of lags $7$--$25$ enters the",
          r"conditional mean, which HAR cannot span. $T=250$, $P=25$, $\ztil=1$, $n=700$, $300$",
-         r"replications, one-sided at $5\%$. $\mathcal R$ is the sanity ratio \eqref{eq:ratio}, which",
+         r"replications, one-sided at $5\%$. The corrected test uses the window-residual $\hat\sigma^2_w$ and a",
+         r"Bartlett long-run variance; CW uses the sample variance. Bold marks a CW or corrected-test",
+         r"rejection frequency at $\lambda=0$ outside the $95\%$ Monte Carlo band of an exact test at",
+         r"$300$ replications, $0.025$ to $0.075$. $\mathcal R$ is the sanity ratio \eqref{eq:ratio}, which",
          r"equals $\kldv$ at $\lambda=0$ and exceeds it thereafter because the realised squared",
          r"differential contains the systematic component. The mean-squared-error gap is reported only in panel (a), where the corrected test",
          r"rejects, and the mean corrected statistic only in panel (b), where it never does.",
@@ -723,16 +743,20 @@ def tab_har_power():
          r"$\lambda$ & $\Psihatn$ & $\mathcal R$ & $\MSPE_1-\MSPE_2$ & DM & CW & CC"
          r" & mean $t_{\mathrm{CC}}$ \\", r"\midrule"]
     for r in get("lags"):
-        cc = ("\\textbf{%.3f}" if r["lam"] in (0.0, 0.2) else "%.3f") % r["rej_CC"]
+        hb = 1.96 * math.sqrt(0.0475 / 300)
+        bl = lambda x: ("\\textbf{%.3f}" if (r["lam"] == 0.0 and abs(x - 0.05) > hb) else "%.3f") % x
+        cc = bl(r["rej_CC"])
         L.append(f"{r['lam']:.2f} & {r['Psihat']:.3f} & {r['R_plug']:.2f} & "
-                 f"${q(r['dMSPE'],4)}$ & {r['rej_DM']:.3f} & {r['rej_CW']:.3f} & {cc} & \\\\")
+                 f"${q(r['dMSPE'],4)}$ & {r['rej_DM']:.3f} & {bl(r['rej_CW'])} & {cc} & \\\\")
     L += [r"\addlinespace",
           r"\multicolumn{8}{@{}l}{\emph{(b) alternative is ridge on $P=25$ exogenous features}}\\",
           r"\cmidrule(r){1-8}"]
     for r in [x for x in rows if x["feat"] == "exog"]:
-        cw = ("\\textbf{%.3f}" if r["lam"] == 0.0 else "%.3f") % r["rej_CW"]
+        hb = 1.96 * math.sqrt(0.0475 / 300)
+        bl = lambda x: ("\\textbf{%.3f}" if (r["lam"] == 0.0 and abs(x - 0.05) > hb) else "%.3f") % x
+        cw = bl(r["rej_CW"])
         L.append(f"{r['lam']:.2f} & {r['Psihat']:.3f} & {r['R_plug']:.2f} & & "
-                 f"{r['rej_DM']:.3f} & {cw} & {r['rej_CC']:.3f} & "
+                 f"{r['rej_DM']:.3f} & {cw} & {bl(r['rej_CC'])} & "
                  f"${q(r['mean_CC'],2)}$ \\\\")
     L += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
     w("tab-har-power.tex", L)
@@ -852,7 +876,8 @@ def tab_kappa():
          r"a misspecification effect. Read against panel (a) of \cref{tab:ldv-scope}, which shows that",
          r"replacing those exogenous features by lags of the target returns $\kldv$ to one. The failure",
          r"does not shrink in $T$: at $\rho=0.85$ a fourfold increase in the window moves $\kldv$ only",
-         f"from ${lo:.2f}$ to ${hi:.2f}$.}}",
+         f"from ${lo:.2f}$ at $T=125$ to ${hi:.2f}$ at $T=500$, in a run of the same script not"
+         f" shown in the table.}}",
          r"\label{tab:kappa}", r"\small",
          r"\begin{tabular}{lrrr}", r"\toprule",
          r"\multicolumn{4}{@{}l}{\emph{(a) target persistence $\rho$ and benchmark lags $k$}}\\",
@@ -905,8 +930,10 @@ def tab_pathfunc():
          r"lag structure and the same $P$ as the lag-feature case, so the only thing varying",
          r"across rows is which functional the features are. \emph{Level} functionals share the",
          r"innovation's sign, \emph{magnitude} functionals only its scale. The first two rows are",
-         f"controls reproducing \\cref{{tab:kappa}}'s HAR rows (${ctrl_lags:.2f}$ with lag features,",
-         f"${ctrl_exog:.2f}$ with exogenous ones); they are what validates the harness.",
+         f"controls for \\cref{{tab:ldv-scope}}'s HAR rows (${ctrl_lags:.2f}$ with lag features,",
+         f"${ctrl_exog:.2f}$ with exogenous ones); they are what validates the harness. Panel (a)",
+         r"uses $40$ replications and panels (b) and (c) $20$ per cell, drawn independently, so the",
+         r"control rows differ across panels by Monte Carlo error.",
          r"Panel (b) varies the effective penalty, the window and the intraday grid; panel (c)",
          r"adds a compound-Poisson jump component, so that $RV-BPV$ is genuinely non-zero, which",
          r"is the configuration a jump decomposition exists for.}",
@@ -968,19 +995,22 @@ def tab_signal(S):
          r" the model, correlated $0.5$ with the first predictor. $\Hcov$ holds when"
          r" $2\E[fg]\le0$, $\Hcc$ when $\mu_{CC}\le0$. MSPE gap: mean of"
          r" $\ehat1^2-\ehat2^2$, negative when the enlarged model forecasts worse."
-         r" One-sided $5\%$ rejection frequencies.}",
+         r" One-sided $5\%$ rejection frequencies. Bold marks a CW or corrected-test rate in an"
+         r" $R^2=0$ row outside the $95\%$ Monte Carlo band of an exact test, $0.0365$ to"
+         r" $0.0635$.}",
          r"\label{tab:mc-signal}", r"\small",
          r"\setlength{\tabcolsep}{4.5pt}",
          r"\begin{tabular}{lrrrrrrrrr}", r"\toprule",
          r"signal & $R^2$ & $\hat\Psi_n$ & $2\E[fg]$ & $\E[g^2]$ & $\mu_{CC}$"
          r" & MSPE gap & DM & CW & CC \\",
          r"\midrule"]
+    sb = lambda r, x: (r"\textbf{%.3f}" % x) if (r["R2"] == 0 and abs(x - 0.05) > 0.0135) else "%.3f" % x
     for sig in ("spiked", "dense", "omitted"):
         for r in sorted([x for x in S if x["signal"] == sig], key=lambda x: x["R2"]):
             L.append(f"{NM[sig]} & {r['R2']:.2f} & {r['Psihat']:.3f} & "
                      f"{r['Efg2']:.4f} & {r['Eg2']:.4f} & "
                      f"{r['mu_CC']:.3f} & ${r['mspe_gap']:.3f}$ & {r['rej_DM']:.3f} & "
-                     f"{r['rej_CW']:.3f} & {r['rej_CC']:.3f} \\\\")
+                     f"{sb(r, r['rej_CW'])} & {sb(r, r['rej_CC'])} \\\\")
     L += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
     w("tab-mc-signal.tex", L)
 
@@ -1147,7 +1177,7 @@ def tab_intersection():
     L = [r"\begin{table}[htbp]", r"\centering",
          r"\caption{Size and power of the corrected test under three innovation-variance estimators and "
          r"the intersection rule of \cref{cor:intersection}. Rolling-mean benchmark, $P=6$ AR(1) features "
-         r"with persistence $\rho_x$, dense signal, $T=12$, $n=4{,}000$, ridge penalty as in "
+         r"with persistence $\rho_x$, dense signal, $T=12$, $n=4{,}000$, $b=18$, ridge penalty as in "
          r"\cref{tab:window}. Boundary: the candidate forecast rescaled so that "
          r"$\mu_{\mathrm{CC}}=0$, a point of $\Hcc$ carrying signal; alternative: the unscaled "
          r"forecast, $\mu_{\mathrm{CC}}>0$. Oracle uses the true $\sigma^2$; difference uses "

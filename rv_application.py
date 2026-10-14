@@ -479,8 +479,9 @@ def write_output(rows, meta):
            r"\cref{lem:psi-t}. $R^2_{\text{incr}}$ is the mean-square gap of the alternative "
            r"over HAR divided by HAR's mean squared error, negative when the larger model "
            r"forecasts worse. $\mathcal R$ is the sanity ratio of \eqref{eq:ratio}, which "
-           r"cannot fall below one in population and equals one exactly when the systematic "
-           r"component vanishes. $t_{CC}$ uses the scalar plug-in $\hat\sigma^2_w\Psihat_t$; "
+           r"under innovation exogeneity cannot fall below one in population; in this "
+           r"lagged-target design its null value is $\kldv$, about $0.94$ at light penalties "
+           r"(\cref{tab:ldv-scope}). $t_{CC}$ uses the scalar plug-in $\hat\sigma^2_w\Psihat_t$; "
            r"$t_{CC}^{w}$ uses the weighted correction of \cref{prop:sigma-weighted}, with "
            r"the inner variance taken from first differences of the benchmark residuals, as "
            r"a lagged-dependent-variable benchmark requires.}")
