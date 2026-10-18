@@ -1,0 +1,52 @@
+# mc_overparam full  started 2026-10-16 17:29  -> output/
+  0 cells done, 12 to run; R = 1000
+  G P=  120 c=  10.00 zt= 0.1000 H0-CC  a= 2.194 (a_CC=2.194 F4=True) Psihat= 0.392 mu_CC=+0.0008(0.0006) | DM 0.000 CW 0.750 CC orc 0.066 diff 0.680
+  G P=  120 c=  10.00 zt= 0.1000 alt    a= 1.097 (a_CC=2.194 F4=True) Psihat= 0.098 mu_CC=+0.0093(0.0003) | DM 0.000 CW 0.750 CC orc 0.317 diff 0.733
+  G P=  120 c=  10.00 zt= 0.1000 raw    a= 1.000 (a_CC=2.194 F4=True) Psihat= 0.081 mu_CC=+0.0092(0.0002) | DM 0.000 CW 0.750 CC orc 0.348 diff 0.737
+  [11.8 min]
+  G P=  120 c=  10.00 zt= 0.0010 H0-CC  a= 1.950 (a_CC=1.950 F4=True) Psihat= 0.390 mu_CC=+0.0011(0.0006) | DM 0.000 CW 0.748 CC orc 0.065 diff 0.667
+  G P=  120 c=  10.00 zt= 0.0010 alt    a= 0.975 (a_CC=1.950 F4=True) Psihat= 0.097 mu_CC=+0.0093(0.0003) | DM 0.000 CW 0.748 CC orc 0.298 diff 0.731
+  G P=  120 c=  10.00 zt= 0.0010 raw    a= 1.000 (a_CC=1.950 F4=True) Psihat= 0.103 mu_CC=+0.0094(0.0003) | DM 0.000 CW 0.748 CC orc 0.291 diff 0.729
+  [11.8 min]
+  F P=  200 c=  16.67 zt= 0.0300 H0-CC  a= 2.487 (a_CC=2.487 F4=True) Psihat= 4.692 mu_CC=-0.0004(0.0039) | DM 0.000 CW 1.000 CC orc 0.075 diff 0.895
+  F P=  200 c=  16.67 zt= 0.0300 alt    a= 1.244 (a_CC=2.487 F4=True) Psihat= 1.173 mu_CC=+0.1004(0.0012) | DM 0.000 CW 1.000 CC orc 0.838 diff 0.999
+  F P=  200 c=  16.67 zt= 0.0300 raw    a= 1.000 (a_CC=2.487 F4=True) Psihat= 0.758 mu_CC=+0.0966(0.0009) | DM 0.000 CW 1.000 CC orc 0.959 diff 1.000
+  [13.2 min]
+  G P=   60 c=   5.00 zt= 0.1000 H0-CC  a= 2.222 (a_CC=2.222 F4=True) Psihat= 0.864 mu_CC=-0.0033(0.0010) | DM 0.000 CW 0.924 CC orc 0.040 diff 0.814
+  G P=   60 c=   5.00 zt= 0.1000 alt    a= 1.111 (a_CC=2.222 F4=True) Psihat= 0.216 mu_CC=+0.0171(0.0004) | DM 0.000 CW 0.924 CC orc 0.377 diff 0.904
+  G P=   60 c=   5.00 zt= 0.1000 raw    a= 1.000 (a_CC=2.222 F4=True) Psihat= 0.175 mu_CC=+0.0171(0.0004) | DM 0.000 CW 0.924 CC orc 0.440 diff 0.906
+  [10.5 min]
+  G P=   60 c=   5.00 zt= 0.0010 H0-CC  a= 1.953 (a_CC=1.953 F4=True) Psihat= 0.890 mu_CC=+0.0003(0.0011) | DM 0.000 CW 0.930 CC orc 0.062 diff 0.828
+  G P=   60 c=   5.00 zt= 0.0010 alt    a= 0.976 (a_CC=1.953 F4=True) Psihat= 0.222 mu_CC=+0.0180(0.0004) | DM 0.000 CW 0.930 CC orc 0.386 diff 0.904
+  G P=   60 c=   5.00 zt= 0.0010 raw    a= 1.000 (a_CC=1.953 F4=True) Psihat= 0.233 mu_CC=+0.0180(0.0004) | DM 0.000 CW 0.930 CC orc 0.372 diff 0.901
+  [10.5 min]
+  G P=   24 c=   2.00 zt= 0.1000 H0-CC  a= 2.208 (a_CC=2.208 F4=True) Psihat= 2.580 mu_CC=-0.0010(0.0025) | DM 0.000 CW 0.996 CC orc 0.059 diff 0.953
+  G P=   24 c=   2.00 zt= 0.1000 alt    a= 1.104 (a_CC=2.208 F4=True) Psihat= 0.645 mu_CC=+0.0429(0.0009) | DM 0.000 CW 0.996 CC orc 0.498 diff 0.986
+  G P=   24 c=   2.00 zt= 0.1000 raw    a= 1.000 (a_CC=2.208 F4=True) Psihat= 0.529 mu_CC=+0.0425(0.0007) | DM 0.000 CW 0.996 CC orc 0.579 diff 0.986
+  [10.1 min]
+  F P= 2000 c= 166.67 zt= 0.0030 H0-CC  a= 2.365 (a_CC=2.365 F4=True) Psihat=10.425 mu_CC=+0.0189(0.0098) | DM 0.000 CW 0.999 CC orc 0.074 diff 0.805
+  F P= 2000 c= 166.67 zt= 0.0030 alt    a= 1.182 (a_CC=2.365 F4=True) Psihat= 2.606 mu_CC=+0.1061(0.0027) | DM 0.000 CW 0.999 CC orc 0.394 diff 0.969
+  F P= 2000 c= 166.67 zt= 0.0030 raw    a= 1.000 (a_CC=2.365 F4=True) Psihat= 1.864 mu_CC=+0.1024(0.0021) | DM 0.000 CW 0.999 CC orc 0.515 diff 0.978
+  [31.6 min]
+  G P=   24 c=   2.00 zt= 0.0010 H0-CC  a= 1.834 (a_CC=1.834 F4=True) Psihat= 3.331 mu_CC=-0.0006(0.0037) | DM 0.000 CW 0.981 CC orc 0.066 diff 0.891
+  G P=   24 c=   2.00 zt= 0.0010 alt    a= 0.917 (a_CC=1.834 F4=True) Psihat= 0.833 mu_CC=+0.0417(0.0011) | DM 0.000 CW 0.981 CC orc 0.328 diff 0.964
+  G P=   24 c=   2.00 zt= 0.0010 raw    a= 1.000 (a_CC=1.834 F4=True) Psihat= 0.990 mu_CC=+0.0413(0.0013) | DM 0.000 CW 0.981 CC orc 0.279 diff 0.957
+  [10.1 min]
+  G P=   18 c=   1.50 zt= 0.1000 H0-CC  a= 2.231 (a_CC=2.231 F4=True) Psihat= 3.713 mu_CC=-0.0052(0.0036) | DM 0.000 CW 0.999 CC orc 0.066 diff 0.955
+  G P=   18 c=   1.50 zt= 0.1000 alt    a= 1.115 (a_CC=2.231 F4=True) Psihat= 0.928 mu_CC=+0.0537(0.0011) | DM 0.000 CW 0.999 CC orc 0.483 diff 0.997
+  G P=   18 c=   1.50 zt= 0.1000 raw    a= 1.000 (a_CC=2.231 F4=True) Psihat= 0.746 mu_CC=+0.0534(0.0010) | DM 0.000 CW 0.999 CC orc 0.581 diff 0.997
+  [10.1 min]
+  G P=   18 c=   1.50 zt= 0.0010 H0-CC  a= 1.689 (a_CC=1.689 F4=True) Psihat= 6.075 mu_CC=-0.0065(0.0071) | DM 0.000 CW 0.947 CC orc 0.073 diff 0.833
+  G P=   18 c=   1.50 zt= 0.0010 alt    a= 0.844 (a_CC=1.689 F4=True) Psihat= 1.519 mu_CC=+0.0499(0.0020) | DM 0.000 CW 0.947 CC orc 0.219 diff 0.913
+  G P=   18 c=   1.50 zt= 0.0010 raw    a= 1.000 (a_CC=1.689 F4=True) Psihat= 2.130 mu_CC=+0.0475(0.0027) | DM 0.000 CW 0.947 CC orc 0.168 diff 0.900
+  [10.1 min]
+  G P=    6 c=   0.50 zt= 0.1000 H0-CC  a= 2.206 (a_CC=2.206 F4=True) Psihat= 3.417 mu_CC=+0.0054(0.0028) | DM 0.000 CW 1.000 CC orc 0.076 diff 0.992
+  G P=    6 c=   0.50 zt= 0.1000 alt    a= 1.103 (a_CC=2.206 F4=True) Psihat= 0.854 mu_CC=+0.0938(0.0009) | DM 0.000 CW 1.000 CC orc 0.947 diff 1.000
+  G P=    6 c=   0.50 zt= 0.1000 raw    a= 1.000 (a_CC=2.206 F4=True) Psihat= 0.702 mu_CC=+0.0927(0.0008) | DM 0.000 CW 1.000 CC orc 0.981 diff 1.000
+  [9.8 min]
+  G P=    6 c=   0.50 zt= 0.0010 H0-CC  a= 1.968 (a_CC=1.968 F4=True) Psihat= 4.228 mu_CC=-0.0064(0.0040) | DM 0.000 CW 1.000 CC orc 0.066 diff 0.957
+  G P=    6 c=   0.50 zt= 0.0010 alt    a= 0.984 (a_CC=1.968 F4=True) Psihat= 1.057 mu_CC=+0.0886(0.0012) | DM 0.000 CW 1.000 CC orc 0.764 diff 0.999
+  G P=    6 c=   0.50 zt= 0.0010 raw    a= 1.000 (a_CC=1.968 F4=True) Psihat= 1.092 mu_CC=+0.0885(0.0012) | DM 0.000 CW 1.000 CC orc 0.747 diff 0.999
+  [9.8 min]
+
+# finished in 42.2 min.  36 rows -> output/armO2.json

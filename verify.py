@@ -69,5 +69,8 @@ if __name__ == "__main__":
             r = subprocess.run(cmd, cwd=HERE, capture_output=True, text=True)
             last = (r.stdout.strip().splitlines() or [""])[-1]
             print(last)
+            if r.returncode != 0:
+                err = (r.stderr.strip().splitlines() or ["(no error message)"])[-1]
+                print(f"  FAILED: {' '.join(cmd[1:])}: {err}")
             ok &= (r.returncode == 0 and ("MISMATCH" not in r.stdout))
     sys.exit(0 if ok else 1)

@@ -1,0 +1,20 @@
+# mc_overparam diag  started 2026-10-16 17:16  -> output/
+  0 cells done, 4 to run; R = 1000
+  Fd P=  200 c=  16.67 zt= 0.0300 H0-CC  a= 2.111 (a_CC=2.111 F4=True) Psihat= 3.310 mu_CC=+0.0038(0.0028) | DM 0.000 CW 1.000 CC orc 0.073 diff 0.990
+  Fd P=  200 c=  16.67 zt= 0.0300 alt    a= 1.055 (a_CC=2.111 F4=True) Psihat= 0.827 mu_CC=+0.0737(0.0010) | DM 0.000 CW 1.000 CC orc 0.804 diff 1.000
+  Fd P=  200 c=  16.67 zt= 0.0300 raw    a= 1.000 (a_CC=2.111 F4=True) Psihat= 0.743 mu_CC=+0.0734(0.0009) | DM 0.000 CW 1.000 CC orc 0.834 diff 1.000
+  [12.6 min]
+  Fd P=  200 c=  16.67 zt= 0.0300 H0-CC  a= 2.483 (a_CC=2.483 F4=True) Psihat= 4.578 mu_CC=-0.0032(0.0038) | DM 0.000 CW 1.000 CC orc 0.072 diff 0.987
+  Fd P=  200 c=  16.67 zt= 0.0300 alt    a= 1.242 (a_CC=2.483 F4=True) Psihat= 1.144 mu_CC=+0.0998(0.0012) | DM 0.000 CW 1.000 CC orc 0.847 diff 1.000
+  Fd P=  200 c=  16.67 zt= 0.0300 raw    a= 1.000 (a_CC=2.483 F4=True) Psihat= 0.742 mu_CC=+0.0963(0.0009) | DM 0.000 CW 1.000 CC orc 0.976 diff 1.000
+  [12.6 min]
+  Fd P=  200 c=  16.67 zt= 0.0300 H0-CC  a= 2.158 (a_CC=2.158 F4=True) Psihat= 3.536 mu_CC=-0.0058(0.0030) | DM 0.000 CW 0.999 CC orc 0.064 diff 0.937
+  Fd P=  200 c=  16.67 zt= 0.0300 alt    a= 1.079 (a_CC=2.158 F4=True) Psihat= 0.884 mu_CC=+0.0738(0.0011) | DM 0.000 CW 0.999 CC orc 0.769 diff 0.999
+  Fd P=  200 c=  16.67 zt= 0.0300 raw    a= 1.000 (a_CC=2.158 F4=True) Psihat= 0.759 mu_CC=+0.0736(0.0010) | DM 0.000 CW 0.999 CC orc 0.827 diff 0.999
+  [13.2 min]
+  Fd P=  200 c=  16.67 zt= 0.0300 H0-CC  a= 2.495 (a_CC=2.495 F4=True) Psihat= 4.722 mu_CC=-0.0026(0.0038) | DM 0.000 CW 1.000 CC orc 0.063 diff 0.897
+  Fd P=  200 c=  16.67 zt= 0.0300 alt    a= 1.247 (a_CC=2.495 F4=True) Psihat= 1.180 mu_CC=+0.0994(0.0012) | DM 0.000 CW 1.000 CC orc 0.851 diff 0.998
+  Fd P=  200 c=  16.67 zt= 0.0300 raw    a= 1.000 (a_CC=2.495 F4=True) Psihat= 0.759 mu_CC=+0.0957(0.0009) | DM 0.000 CW 1.000 CC orc 0.969 diff 1.000
+  [13.4 min]
+
+# finished in 13.4 min.  12 rows -> output/armO2_diag.json

@@ -60,6 +60,11 @@ ccpa.intersection(cc_d, cc_w)                   # reject only if both reject
 ccpa.sanity_ratio(yhat1, yhat2, psi, s2w)       # report beside every statistic
 ```
 
+For applied work the same test is available as a pip-installable package,
+[`nctest`](https://github.com/hfallahgoul/nctest) (`pip install nctest`), which also runs the
+Diebold–Mariano and Clark–West tests on their own. `ccpa.py` stays in this package because
+`verify.py` checks it against the simulation engine.
+
 The long-run variance is the Bartlett estimator with sample autocovariances normalised by
 $n$, as in the paper. The bandwidth should satisfy $T \ll b \ll \sqrt{n/T}$; the simulations
 use $b=\max(18, \lceil 1.5T\rceil)$.
@@ -79,6 +84,8 @@ Labels are the paper's `\label`s, which do not move when sections are renumbered
 | `tab:mc-breakdown` | `mc_study.py C` | `output/armC.json` | yes |
 | `tab:mc-signal` | `mc_study.py S` | `output/armS.json` | yes |
 | `tab:mc-complexity` | `mc_study.py D` | `output/armD.json` | yes |
+| `tab:mc-overparam` (panels A and B, the size block and the diagnostic rows) | `mc_overparam.py`, `mc_overparam.py diag` | `output/armO2.json`, `output/armO2_diag.json` | yes |
+| `tab:mc-overparam` (panel C, $R^2=0.005$) | `mc_overparam.py lowsig` | `output/armO2_lowsig.json` | yes |
 | `tab:window` | `mc_window.py` | `output/mc_window/` | yes |
 | `tab:intersection` | `mc_intersection.py` | `output/mc_intersection/` | yes |
 | `tab:kernel-check`, `tab:delta` | `mc_kernel_delta.py` | `output/mc_kernel/` | yes |
@@ -104,6 +111,7 @@ Labels are the paper's `\label`s, which do not move when sections are renumbered
 | figure `fig-rv-disagree` | `fig_rv_disagree.py` | `output/rv_cross/`, `output/rv_cross_multiest/panel.json` | no |
 | `tab:rv-predict`, `tab:rv-predict-robust` | `rv_window_store.py`, then `rv_window_bootstrap.py` | `output/rv_window_bootstrap_*.json` | yes |
 | `tab:voc-psi`, `tab:voc-grid`, figure `fig-voc-psi` | `voc_application.py` | `output/voc_tables/`, `output/voc_figures/` | tables yes |
+| `tab:voc-weighted` | `voc_weighted.py` | `output/voc_tables/voc_weighted.json` | yes |
 
 `build_tables.py` also copies the figures the application scripts draw into the paper's figure
 directory, so one run of it leaves no stale figure behind.
@@ -131,7 +139,14 @@ python mc_window.py --run --signal dense  --R2 0.20 --T 12,18,24,36,48
 python mc_window.py --run --signal dense  --R2 0.10 --T 12,18,24,36,48,60,72,96
 for s in 1 2 3 4 5; do for rho in 0.3 0.95; do for r2 in 0.02 0.1; do
   python mc_intersection.py $rho $r2 12 200 $s; done; done; done
+python mc_overparam.py        # about 45 minutes on four cores
+python mc_overparam.py diag   # about 15 minutes
+python mc_overparam.py lowsig # about 30 minutes
 ```
+
+`mc_overparam.py quick` runs a few replications of every cell to test an installation; its
+output is not used by the paper. The run logs of the three full calls are stored next to their
+output as `output/run_O2_*.log`.
 
 The realized-variance scripts download series from the Risk Lab service of Dacheng Xiu
 (`dachxiu.chicagobooth.edu`) at run time, one request per series, so their results depend on
@@ -154,7 +169,9 @@ The bootstrap draws from one random stream per call, in the order the variants a
 so these four calls, in this form, are what reproduce the stored files.
 
 `voc_application.py` needs only `data/PredictorData2021.csv`, the Goyal–Welch predictor
-file, and runs in under a minute.
+file, and runs in under a minute. `voc_weighted.py` adds the heteroskedasticity-weighted
+correction on the same data and features; it reads nothing `voc_application.py` writes, and
+also runs in under a minute.
 
 ## What the package does not reproduce
 

@@ -1,0 +1,24 @@
+# mc_overparam lowsig  started 2026-10-17 00:22  -> output/
+  0 cells done, 5 to run; R = 1000
+  FL P=  200 c=  16.67 zt= 0.0300 H0-CC  a= 2.481 (a_CC=2.481 F4=True) Psihat= 4.573 mu_CC=-0.0005(0.0037) | DM 0.000 CW 0.110 CC orc 0.065 diff 0.054
+  FL P=  200 c=  16.67 zt= 0.0300 alt    a= 1.241 (a_CC=2.481 F4=True) Psihat= 1.143 mu_CC=+0.0047(0.0011) | DM 0.000 CW 0.110 CC orc 0.076 diff 0.083
+  FL P=  200 c=  16.67 zt= 0.0300 raw    a= 1.000 (a_CC=2.481 F4=True) Psihat= 0.743 mu_CC=+0.0045(0.0008) | DM 0.000 CW 0.110 CC orc 0.076 diff 0.083
+  [12.2 min]
+  FL P=  200 c=  16.67 zt= 0.0300 H0-CC  a= 2.162 (a_CC=2.162 F4=True) Psihat= 3.552 mu_CC=+0.0012(0.0029) | DM 0.000 CW 0.105 CC orc 0.069 diff 0.053
+  FL P=  200 c=  16.67 zt= 0.0300 alt    a= 1.081 (a_CC=2.162 F4=True) Psihat= 0.888 mu_CC=+0.0042(0.0009) | DM 0.000 CW 0.105 CC orc 0.084 diff 0.078
+  FL P=  200 c=  16.67 zt= 0.0300 raw    a= 1.000 (a_CC=2.162 F4=True) Psihat= 0.760 mu_CC=+0.0042(0.0008) | DM 0.000 CW 0.105 CC orc 0.085 diff 0.079
+  [12.8 min]
+  FL P=  200 c=  16.67 zt= 0.0300 H0-CC  a= 2.490 (a_CC=2.490 F4=True) Psihat= 4.710 mu_CC=-0.0078(0.0038) | DM 0.000 CW 0.104 CC orc 0.058 diff 0.054
+  FL P=  200 c=  16.67 zt= 0.0300 alt    a= 1.245 (a_CC=2.490 F4=True) Psihat= 1.178 mu_CC=+0.0030(0.0012) | DM 0.000 CW 0.104 CC orc 0.065 diff 0.062
+  FL P=  200 c=  16.67 zt= 0.0300 raw    a= 1.000 (a_CC=2.490 F4=True) Psihat= 0.760 mu_CC=+0.0035(0.0008) | DM 0.000 CW 0.104 CC orc 0.073 diff 0.070
+  [12.9 min]
+  FL P=  200 c=  16.67 zt= 0.0300 H0-CC  a= 2.146 (a_CC=2.146 F4=True) Psihat= 3.417 mu_CC=+0.0012(0.0028) | DM 0.000 CW 0.117 CC orc 0.074 diff 0.057
+  FL P=  200 c=  16.67 zt= 0.0300 alt    a= 1.073 (a_CC=2.146 F4=True) Psihat= 0.854 mu_CC=+0.0046(0.0009) | DM 0.000 CW 0.117 CC orc 0.094 diff 0.089
+  FL P=  200 c=  16.67 zt= 0.0300 raw    a= 1.000 (a_CC=2.146 F4=True) Psihat= 0.742 mu_CC=+0.0045(0.0008) | DM 0.000 CW 0.117 CC orc 0.094 diff 0.091
+  [11.7 min]
+  FL P= 2000 c= 166.67 zt= 0.0030 H0-CC  a= 2.367 (a_CC=2.367 F4=True) Psihat=10.443 mu_CC=+0.0025(0.0100) | DM 0.000 CW 0.095 CC orc 0.073 diff 0.065
+  FL P= 2000 c= 166.67 zt= 0.0030 alt    a= 1.184 (a_CC=2.367 F4=True) Psihat= 2.611 mu_CC=+0.0056(0.0028) | DM 0.000 CW 0.095 CC orc 0.082 diff 0.073
+  FL P= 2000 c= 166.67 zt= 0.0030 raw    a= 1.000 (a_CC=2.367 F4=True) Psihat= 1.864 mu_CC=+0.0053(0.0021) | DM 0.000 CW 0.095 CC orc 0.087 diff 0.078
+  [31.0 min]
+
+# finished in 31.0 min.  15 rows -> output/armO2_lowsig.json

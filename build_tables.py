@@ -13,6 +13,7 @@ MC_OUT points at a different output directory.  README.md maps every table to it
   tab-mc-features                                output/armB.json
   tab-mc-breakdown                               output/armC.json
   tab-mc-complexity                              output/armD.json
+  tab-mc-overparam                               output/armO2.json, output/armO2_diag.json
   tab-mc-signal                                  output/armS.json
   tab-window                                     output/mc_window/spiked_*.json
   tab-intersection                               output/mc_intersection/*.json
@@ -25,6 +26,7 @@ MC_OUT points at a different output directory.  README.md maps every table to it
   tab-rv-multiest                                output/rv_cross/ and rv_cross_multiest/
   tab-rv-predict, tab-rv-predict-robust          output/rv_window_bootstrap_*.json
   tab-voc-psi, tab-voc-grid                      output/voc_tables/ (voc_application.py)
+  tab-voc-weighted                               output/voc_tables/ (voc_weighted.py)
 
 The p-value figures are drawn here rather than by mc_study.py, so that each row's own
 statistic sits on the diagonal; the t-statistics are the ones the run stored.
@@ -456,6 +458,105 @@ def tab_complexity():
     while L[-1] == r"\addlinespace": L.pop()
     L += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
     w("tab-mc-complexity.tex", L)
+
+
+def tab_overparam():
+    """Arm O (mc_overparam.py): more predictors than observations, with signal present.
+    Reads output/armO2.json, output/armO2_diag.json and output/armO2_lowsig.json; skipped
+    when any is absent.
+    The first run (armO.json, armO_diag.json) measured mu_CC against the raw signal
+    rather than the benchmark-relative one and is not used."""
+    srcs = [os.path.join(OUT, n) for n in ("armO2.json", "armO2_diag.json", "armO2_lowsig.json")]
+    if not all(os.path.exists(s) for s in srcs):
+        print("  (armO2*.json not found; overparametrised table skipped)")
+        return
+    rows = sum((json.load(open(s)) for s in srcs), [])
+
+    def get(part, P, zt=None, rho=None, signal=None, row="raw"):
+        hit = [r for r in rows if r["part"] == part and r["P"] == P and r["row"] == row
+               and (zt is None or abs(r["ztilde"] - zt) < 1e-9)
+               and (rho is None or r.get("rho_x") == rho)
+               and (signal is None or r.get("signal") == signal)]
+        assert len(hit) == 1, (part, P, zt, rho, signal, row, len(hit))
+        return hit[0]
+
+    def b(p):          # bold outside the 95% Monte Carlo band of an exact 5% test
+        s = "%.3f" % p
+        return r"\textbf{%s}" % s if (p < 0.0365 or p > 0.0635) else s
+
+    def line(c, zt, rho, span, h0, fit):
+        cs = ("%.1f" % c) if c < 100 else "%.0f" % c
+        cs = cs[:-2] if cs.endswith(".0") else cs
+        return (f"{cs} & {zt:g} & {rho:.1f} & {span} & "
+                f"{h0['rej_CW']:.3f} & {b(h0['rej_CC_oracle'])} & "
+                f"{b(h0['rej_CC_samp_oracle'])} & {b(h0['rej_CC_diff'])} & "
+                f"{fit['Psihat']:.3f} & {fit['mu_CC']:.3f} & {fit['mspe_gap']:.3f} & "
+                f"{fit['rej_DM']:.3f} & {fit['rej_CC_oracle']:.3f} \\\\")
+
+    L = [r"\begin{table}[htbp]", r"\centering",
+         r"\caption{More predictors than observations. Each row is one design: $T=12$,"
+         r" $n=8{,}000$ forecast origins, bandwidth $b=18$, $1{,}000$ replications,"
+         r" one-sided tests at $5\%$. Panel A uses the Gaussian predictors of"
+         r" \eqref{eq:mc-predictors} with $\rho_x=0$ and $P=cT$, and a signal that is a"
+         r" linear combination of them. Panels B and C use $P$ random Fourier features"
+         r" $\sqrt2\cos(\gamma WR_t+b)$ of $d=5$ raw AR($1$) predictors $R_t$ with"
+         r" persistence $\rho_x$, bandwidth $\gamma=0.3$ and raw penalty $z=0.5$; the signal"
+         r" is a linear combination either of the features (in span) or of the raw"
+         r" predictors (outside). The signal has $R^2=0.10$ in panels A and B and $0.005$,"
+         r" the monthly equity calibration of \cref{sec:fixedT}, in panel C. Each design is"
+         r" simulated once and evaluated twice. The left block multiplies the forecast"
+         r" increment $\yhat2-\yhat1$ by $a_{\mathrm{CC}}=2\E[fg]/\E[g^2]$, estimated on an"
+         r" independent pilot sample of $50$ paths ($200$ in panel C), which puts the design"
+         r" on the boundary of $\Hcc$, $\mu_{\mathrm{CC}}=0$, while $\E[fg]>0$; its entries"
+         r" are rejection frequencies under a true null, that is, size. CW is the"
+         r" Clark--West test; CC is the corrected test with the true $\sigma^2$,"
+         r" studentised by $\hat\omega^2_n$, and samp the same statistic studentised by"
+         r" the sample variance of $\dCC$; the $\hat\sigma^2_\Delta$ column replaces"
+         r" $\sigma^2$ by the difference estimator and studentises by $\hat\omega^2_n$. The"
+         r" right block uses the forecast as estimated, with no rescaling. There"
+         r" $\mu_{\mathrm{CC}}>0$, so its rejection frequencies are power. $\Psihatn$ is"
+         r" the average plug-in correction, $\mu_{\mathrm{CC}}$ the average of $\dCC$ with"
+         r" the true $\sigma^2$, which estimates the population value without bias by"
+         r" \cref{lem:psi-t}, and the MSPE gap the average of $\ehat1^2-\ehat2^2$, negative"
+         r" when the enlarged model forecasts worse; DM and CC use the true $\sigma^2$. The"
+         r" Monte Carlo standard error of a rejection frequency is $0.007$ at a nominal"
+         r" $0.05$; bold marks a size entry of the corrected test outside $0.0365$ to"
+         r" $0.0635$, the $95\%$ band of an exact test. The two $c=0.5$ rows connect panel A"
+         r" to \cref{tab:mc-size}. Generated by \texttt{mc\_overparam.py}.}",
+         r"\label{tab:mc-overparam}", r"\small", r"\setlength{\tabcolsep}{4pt}",
+         r"\begin{tabular}{rrrlrrrrrrrrr}", r"\toprule",
+         r"& & & & \multicolumn{4}{c}{boundary of $\Hcc$ (size)}"
+         r" & \multicolumn{5}{c}{forecast as estimated} \\",
+         r"\cmidrule(lr){5-8}\cmidrule(lr){9-13}",
+         r"& & & & \multicolumn{3}{c}{true $\sigma^2$} & & & & & & \\",
+         r"\cmidrule(lr){5-7}",
+         r"$c$ & $\ztil$ & $\rho_x$ & signal & CW & CC & samp & $\hat\sigma^2_\Delta$"
+         r" & $\Psihatn$ & $\mu_{\mathrm{CC}}$ & MSPE gap & DM & CC \\",
+         r"\midrule",
+         r"\multicolumn{13}{l}{\emph{A. Generic features, $R^2=0.10$}} \\"]
+    for c in (0.5, 1.5, 2.0, 5.0, 10.0):
+        P = int(round(c * 12))
+        for zt in (0.1, 0.001):
+            L.append(line(c, zt, 0.0, "in span", get("G", P, zt, row="H0-CC"), get("G", P, zt)))
+    L += [r"\addlinespace", r"\multicolumn{13}{l}{\emph{B. Random Fourier features, $R^2=0.10$}} \\"]
+    for rho, sg in ((0.3, "raw"), (0.0, "raw"), (0.3, "span"), (0.0, "span")):
+        if (rho, sg) == (0.3, "raw"):
+            h0, fit = get("F", 200, row="H0-CC"), get("F", 200)
+        else:
+            h0 = get("Fd", 200, rho=rho, signal=sg, row="H0-CC")
+            fit = get("Fd", 200, rho=rho, signal=sg)
+        L.append(line(200 / 12, 0.5 * 12 / 200, rho, "in span" if sg == "span" else "outside", h0, fit))
+    L.append(line(2000 / 12, 0.5 * 12 / 2000, 0.3, "outside",
+                  get("F", 2000, row="H0-CC"), get("F", 2000)))
+    L += [r"\addlinespace",
+          r"\multicolumn{13}{l}{\emph{C. Random Fourier features, $R^2=0.005$}} \\"]
+    for P, rho, sg in ((200, 0.3, "raw"), (200, 0.0, "raw"), (200, 0.3, "span"),
+                       (200, 0.0, "span"), (2000, 0.3, "raw")):
+        L.append(line(P / 12, 0.5 * 12 / P, rho, "in span" if sg == "span" else "outside",
+                      get("FL", P, rho=rho, signal=sg, row="H0-CC"),
+                      get("FL", P, rho=rho, signal=sg)))
+    L += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
+    w("tab-mc-overparam.tex", L)
 
 
 # ------------------------------------------------- cross-section (rv_cross/panel.json)
@@ -1093,6 +1194,15 @@ def tab_voc_grid():
     shutil.copyfile(src, os.path.join(TEXTMP if CHECK else TEX, "tab-voc-grid.tex"))
 
 
+def tab_voc_weighted():
+    """Emitted by voc_weighted.py; copied here so --check covers it."""
+    src = os.path.join(OUT, "voc_tables", "tab-voc-weighted.tex")
+    if not os.path.exists(src):
+        print("  (voc_tables/tab-voc-weighted.tex not found; run `python voc_weighted.py`.)")
+        return
+    shutil.copyfile(src, os.path.join(TEXTMP if CHECK else TEX, "tab-voc-weighted.tex"))
+
+
 def tab_window():
     """tab:window from output/mc_window/spiked_*.json (mc_window.py)."""
     import mc_window
@@ -1250,9 +1360,9 @@ if __name__ == "__main__":
     tab_size(A); tab_power(A); tab_closedform(A); tab_grid()
     tab_features(B); tab_breakdown(C); tab_signal(S)
     tab_rv_cross_psi(); tab_rv_cross_stats()
-    tab_cw_har(); tab_har_power(); tab_har_omitted(); tab_voc_psi(); tab_kappa(); tab_complexity()
+    tab_cw_har(); tab_har_power(); tab_har_omitted(); tab_voc_psi(); tab_kappa(); tab_complexity(); tab_overparam()
     tab_kernel(); tab_delta(); tab_pathfunc(); tab_rv_multiest(); 
-    tab_rv_main(); tab_voc_grid(); tab_window(); tab_rv_predict(); tab_intersection()
+    tab_rv_main(); tab_voc_grid(); tab_voc_weighted(); tab_window(); tab_rv_predict(); tab_intersection()
     figures()
     copy_script_figures()
     if CHECK:

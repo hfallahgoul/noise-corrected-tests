@@ -13,3 +13,6 @@ figures/
 *-preview.png
 # run logs record local absolute paths
 output/rv_logs/
+# local scratch, never shipped
+_to_delete/
+output/.lock_*

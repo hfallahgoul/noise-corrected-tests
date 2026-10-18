@@ -478,10 +478,12 @@ def write_output(rows, meta):
            r"the comparison is nested. $c=P/T$ and $\ztil=zT/P$. $\Psihatn$ is exact by "
            r"\cref{lem:psi-t}. $R^2_{\text{incr}}$ is the mean-square gap of the alternative "
            r"over HAR divided by HAR's mean squared error, negative when the larger model "
-           r"forecasts worse. $\mathcal R$ is the sanity ratio of \eqref{eq:ratio}, which "
-           r"under innovation exogeneity cannot fall below one in population; in this "
-           r"lagged-target design its null value is $\kldv$, about $0.94$ at light penalties "
-           r"(\cref{tab:ldv-scope}). $t_{CC}$ uses the scalar plug-in $\hat\sigma^2_w\Psihat_t$; "
+           r"forecasts worse. $\mathcal R$ is the sanity ratio of \eqref{eq:ratio}. Under "
+           r"innovation exogeneity it cannot fall below one in population, but a lagged-target "
+           r"design lacks that property: here its null value is $\kldv$, about $0.94$ at light "
+           r"penalties (\cref{tab:ldv-scope}), and that is the value to compare it with. Where "
+           r"$\Psihatn$ is close to zero the correction hardly moves $t_{CC}$ and the ratio "
+           r"carries no information about it. $t_{CC}$ uses the scalar plug-in $\hat\sigma^2_w\Psihat_t$; "
            r"$t_{CC}^{w}$ uses the weighted correction of \cref{prop:sigma-weighted}, with "
            r"the inner variance taken from first differences of the benchmark residuals, as "
            r"a lagged-dependent-variable benchmark requires.}")
@@ -497,15 +499,12 @@ def write_output(rows, meta):
             L.append(r"\addlinespace")
         pp = str(r["P"]) if r["P"] != prev else ""
         cc = f"{r['c']:.2f}" if r["P"] != prev else ""
-        dag = r"$^{\dagger}$" if r["ratio"] < 1 else ""
         L.append(f"{pp} & {cc} & {_g2(r['zt'])} & {r['Psihat']:.4f} & "
-                 f"{r['ratio']:.2f}{dag} & {r['R2_incr']:.4f} & "
+                 f"{r['ratio']:.2f} & {r['R2_incr']:.4f} & "
                  f"{r['t_DM']:.2f} & {r['t_CW']:.2f} & {r['t_CC']:.2f} & "
                  f"{r.get('t_CC_wdiff', float('nan')):.2f} \\\\")
         prev = r["P"]
     L += [r"\bottomrule",
-          r"\multicolumn{10}{@{}l}{\footnotesize $^{\dagger}$ sanity ratio below one; the"
-          r" corrected statistic should not be read in that row.}",
           r"\end{tabular}", r"\end{table}"]
     open(os.path.join(TABS, f"tab-rv-main{_TAG}.tex"), "w").write(mathsign("\n".join(L) + "\n"))
 
