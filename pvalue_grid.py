@@ -45,13 +45,13 @@ def one_path(theta, scale, gen):
     eps = gen.standard_normal(n+T+1)
     f   = S @ theta
     y   = np.roll(f, 1) + eps
-    g = np.empty(n); v = np.empty(n); psi = np.empty(n); y1 = np.empty(n)
+    g = np.empty(n); v = np.empty(n); psi = np.empty(n); y1 = np.empty(n); fb = np.empty(n)
     for i in range(n):
         X = S[i:i+T]; Y = y[i+1:i+T+1]; F = f[i:i+T]; s = S[i+T]
         B = np.linalg.inv(z*I + X @ X.T / T)
         a = (M @ (B @ (X @ s))) / T
-        y1[i] = Y.mean(); g[i] = a @ F; v[i] = a @ (Y - F); psi[i] = a @ a
-    yt = y[T+1:T+n+1]; ft = f[T:T+n]
+        y1[i] = Y.mean(); g[i] = a @ F; v[i] = a @ (Y - F); psi[i] = a @ a; fb[i] = F.mean()
+    yt = y[T+1:T+n+1]; ft = f[T:T+n] - fb      # benchmark error: f less its window mean
     gs, vs, ps_ = scale*g, scale*v, scale**2*psi        # FIXED scale, no look-ahead
     yh   = y1 + gs + vs
     s2   = SIGMA2 if SIGMA2 is not None else 0.5*np.mean(np.diff(yt)**2)
@@ -76,7 +76,7 @@ for _ in range(60):
     for i in range(0, n, 7):
         X = S[i:i+T]; Y = y[i+1:i+T+1]; F = f[i:i+T]; s = S[i+T]
         B = np.linalg.inv(z*I + X @ X.T / T); a = (M @ (B @ (X @ s))) / T
-        Efg += f[i+T]*(a @ F); Eg2 += (a @ F)**2; Ev2 += (a @ (Y-F))**2
+        Efg += (f[i+T]-F.mean())*(a @ F); Eg2 += (a @ F)**2; Ev2 += (a @ (Y-F))**2
 K = 60*len(range(0, n, 7)); Efg, Eg2, Ev2 = Efg/K, Eg2/K, Ev2/K
 a_CC = 2*Efg/Eg2                 # mu_CC = 0        -> the CC null
 a_DM = 2*Efg/(Eg2 + Ev2)         # MSPE_2 = MSPE_1  -> the DM null

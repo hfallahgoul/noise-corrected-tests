@@ -1,0 +1,177 @@
+# mc_study grid  started 2026-11-06 06:05  -> output/
+====================================================================================================
+P-VALUE GRID  T=8 n=2000 b=12 rho=0.3 Psi*=0.2 R2=0.1 sigma2=oracle
+====================================================================================================
+T_eff=4.3 F1=False F2=False F3=True  c=0.3 z=0.2652 P=2
+pilot: E[fg]=0.05805 E[g2]=0.04032 E[v2]=0.13995
+       a_CC=2.8795  a_DM=0.6440   F4 = True
+
+H0-cov   mu_CC=+0.00000  mspe_gap=-0.13729  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.055      0.63  UNIFORM
+       CC    0.065      0.83  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.048      1.05  UNIFORM
+
+H0-CC    mu_CC=-0.00078  mspe_gap=-1.14752  ratio=1.30
+            rej 5%  sqrt(m)D  uniform?
+       CW    1.000     31.27  not uniform
+       CC    0.058      1.12  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.361     16.08  not uniform
+
+H0-MSPE  mu_CC=+0.05750  mspe_gap=+0.00017  ratio=1.29
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.999     31.33  not uniform
+       CC    0.998     30.68  not uniform
+       DM    0.044      0.48  UNIFORM
+      CCw    0.999     31.00  not uniform
+  [saved] output/pgrid_psi0.2_oracle.pdf / .eps / .png
+  [saved] output/pgrid_psi0.2_oracle.json
+====================================================================================================
+P-VALUE GRID  T=8 n=2000 b=12 rho=0.3 Psi*=0.5 R2=0.1 sigma2=oracle
+====================================================================================================
+T_eff=4.3 F1=False F2=False F3=True  c=0.5 z=0.133 P=4
+pilot: E[fg]=0.06532 E[g2]=0.05373 E[v2]=0.43955
+       a_CC=2.4312  a_DM=0.2648   F4 = True
+
+H0-cov   mu_CC=+0.00000  mspe_gap=-0.43489  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.055      0.89  UNIFORM
+       CC    0.067      1.12  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.046      0.55  UNIFORM
+
+H0-CC    mu_CC=-0.00140  mspe_gap=-2.57764  ratio=1.12
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.974     29.37  not uniform
+       CC    0.068      0.79  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.471     18.56  not uniform
+
+H0-MSPE  mu_CC=+0.03065  mspe_gap=+0.00022  ratio=1.12
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.973     29.43  not uniform
+       CC    0.938     28.21  not uniform
+       DM    0.055      0.93  UNIFORM
+      CCw    0.964     29.05  not uniform
+  [saved] output/pgrid_psi0.5_oracle.pdf / .eps / .png
+  [saved] output/pgrid_psi0.5_oracle.json
+====================================================================================================
+P-VALUE GRID  T=8 n=2000 b=12 rho=0.3 Psi*=1.0 R2=0.1 sigma2=oracle
+====================================================================================================
+T_eff=4.3 F1=False F2=False F3=True  c=0.7 z=0.07482 P=6
+pilot: E[fg]=0.06826 E[g2]=0.06391 E[v2]=0.95558
+       a_CC=2.1360  a_DM=0.1339   F4 = True
+
+H0-cov   mu_CC=+0.00000  mspe_gap=-0.95985  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.051      0.53  UNIFORM
+       CC    0.062      0.93  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.060      1.41  not uniform
+
+H0-CC    mu_CC=-0.00231  mspe_gap=-4.38809  ratio=1.07
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.834     25.86  not uniform
+       CC    0.068      1.05  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.455     17.14  not uniform
+
+H0-MSPE  mu_CC=+0.01718  mspe_gap=+0.00007  ratio=1.07
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.839     25.74  not uniform
+       CC    0.790     24.42  not uniform
+       DM    0.054      0.74  UNIFORM
+      CCw    0.834     25.57  not uniform
+  [saved] output/pgrid_psi1.0_oracle.pdf / .eps / .png
+  [saved] output/pgrid_psi1.0_oracle.json
+====================================================================================================
+P-VALUE GRID  T=8 n=2000 b=12 rho=0.3 Psi*=0.2 R2=0.1 sigma2=diff
+====================================================================================================
+T_eff=4.3 F1=False F2=False F3=True  c=0.3 z=0.2652 P=2
+pilot: E[fg]=0.05805 E[g2]=0.04032 E[v2]=0.13995
+       a_CC=2.8795  a_DM=0.6440   F4 = True
+
+H0-cov   mu_CC=+0.00000  mspe_gap=-0.13729  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.055      0.63  UNIFORM
+       CC    0.048      0.97  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.048      1.05  UNIFORM
+
+H0-CC    mu_CC=-0.00078  mspe_gap=-1.14752  ratio=1.21
+            rej 5%  sqrt(m)D  uniform?
+       CW    1.000     31.27  not uniform
+       CC    0.245     13.36  not uniform
+       DM    0.000     31.62  not uniform
+      CCw    0.361     16.08  not uniform
+
+H0-MSPE  mu_CC=+0.05750  mspe_gap=+0.00017  ratio=1.21
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.999     31.33  not uniform
+       CC    0.999     30.97  not uniform
+       DM    0.044      0.48  UNIFORM
+      CCw    0.999     31.00  not uniform
+  [saved] output/pgrid_psi0.2_diff.pdf / .eps / .png
+  [saved] output/pgrid_psi0.2_diff.json
+====================================================================================================
+P-VALUE GRID  T=8 n=2000 b=12 rho=0.3 Psi*=0.5 R2=0.1 sigma2=diff
+====================================================================================================
+T_eff=4.3 F1=False F2=False F3=True  c=0.5 z=0.133 P=4
+pilot: E[fg]=0.06532 E[g2]=0.05373 E[v2]=0.43955
+       a_CC=2.4312  a_DM=0.2648   F4 = True
+
+H0-cov   mu_CC=+0.00000  mspe_gap=-0.43489  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.055      0.89  UNIFORM
+       CC    0.040      0.59  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.046      0.55  UNIFORM
+
+H0-CC    mu_CC=-0.00140  mspe_gap=-2.57764  ratio=1.05
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.974     29.37  not uniform
+       CC    0.388     16.60  not uniform
+       DM    0.000     31.62  not uniform
+      CCw    0.471     18.56  not uniform
+
+H0-MSPE  mu_CC=+0.03065  mspe_gap=+0.00022  ratio=1.05
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.973     29.43  not uniform
+       CC    0.964     29.01  not uniform
+       DM    0.055      0.93  UNIFORM
+      CCw    0.964     29.05  not uniform
+  [saved] output/pgrid_psi0.5_diff.pdf / .eps / .png
+  [saved] output/pgrid_psi0.5_diff.json
+====================================================================================================
+P-VALUE GRID  T=8 n=2000 b=12 rho=0.3 Psi*=1.0 R2=0.1 sigma2=diff
+====================================================================================================
+T_eff=4.3 F1=False F2=False F3=True  c=0.7 z=0.07482 P=6
+pilot: E[fg]=0.06826 E[g2]=0.06391 E[v2]=0.95558
+       a_CC=2.1360  a_DM=0.1339   F4 = True
+
+H0-cov   mu_CC=+0.00000  mspe_gap=-0.95985  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.051      0.53  UNIFORM
+       CC    0.049      0.95  UNIFORM
+       DM    0.000     31.62  not uniform
+      CCw    0.060      1.41  not uniform
+
+H0-CC    mu_CC=-0.00231  mspe_gap=-4.38809  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.834     25.86  not uniform
+       CC    0.379     16.62  not uniform
+       DM    0.000     31.62  not uniform
+      CCw    0.455     17.14  not uniform
+
+H0-MSPE  mu_CC=+0.01718  mspe_gap=+0.00007  ratio=1.00
+            rej 5%  sqrt(m)D  uniform?
+       CW    0.839     25.74  not uniform
+       CC    0.834     25.73  not uniform
+       DM    0.054      0.74  UNIFORM
+      CCw    0.834     25.57  not uniform
+  [saved] output/pgrid_psi1.0_diff.pdf / .eps / .png
+  [saved] output/pgrid_psi1.0_diff.json
+
+# finished in 25.0 min.  All output in output/

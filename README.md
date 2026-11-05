@@ -79,7 +79,7 @@ Labels are the paper's `\label`s, which do not move when sections are renumbered
 | Paper object | Script that produces the output | Stored output | Checked |
 |---|---|---|---|
 | `tab:mc-size`, `tab:mc-power`, `tab:mc-closedform` | `mc_study.py A` | `output/armA.json` | yes |
-| `tab:mc-grid`, figures `pgrid_*` | `mc_study.py A` simulates; `build_tables.py` draws the figures from the stored JSON | `output/pgrid_*.json`, run log | table yes |
+| `tab:mc-grid`, figures `pgrid_*` | `mc_study.py grid` simulates; `build_tables.py` draws the figures from the stored JSON | `output/pgrid_*.json` | table yes |
 | `tab:mc-features` | `mc_study.py B` | `output/armB.json` | yes |
 | `tab:mc-breakdown` | `mc_study.py C` | `output/armC.json` | yes |
 | `tab:mc-signal` | `mc_study.py S` | `output/armS.json` | yes |
@@ -131,6 +131,7 @@ reproduces the stored output exactly. Rerunning them is not needed to verify the
 
 ```
 python mc_study.py A          # 9-16 minutes each for A, B, C; arm D about 110 minutes
+python mc_study.py grid       # the p-value grid of tab:mc-grid alone, about 15 minutes
 python mc_window.py --run --signal spiked --R2 0.20 --T 12,18,24,36,48 --reps 1000
 python mc_window.py --run --signal spiked --R2 0.10 --T 12,18,24,36,48,60,72,96
 python mc_window.py --run --signal spiked --R2 0.05 --T 12,24,48,96,144
@@ -188,6 +189,21 @@ also runs in under a minute.
 - `rv_application.py` normalises the sample autocovariances in its long-run variance by
   $n-\ell$ rather than $n$. The relative difference is at most $b/n$, under $0.2$ percent at
   the bandwidth and sample size of Section 6.
+
+## Changes
+
+**v1.2.** The simulations with a rolling-mean benchmark measured $\mu_{\mathrm{CC}}=2E[fg]-E[g^2]$
+against the raw signal $f_{t-1}$. The benchmark's systematic error is $f_{t-1}$ less its window
+mean, and that is what the estimand pairs with $g$. `mc_study.py` (the pilot that sets the
+$H_0^{CC}$ and $H_0^{MSPE}$ rescalings, and the reported $\mu_{\mathrm{CC}}$ and $E[fg]$),
+`mc_window.py`, `mc_intersection.py` and `pvalue_grid.py` now use it, and the pilot is four
+times larger. Seeds are unchanged. `tab:mc-grid`, its figures and `tab:intersection` were
+rerun, and the $\mu_{\mathrm{CC}}$ and $2E[fg]$ columns of `tab:mc-signal` and `tab:window`
+recomputed; every rejection frequency outside the rescaled rows is unchanged. The p-value
+grid now stores the MSPE gap in its JSON, so `build_tables.py` no longer reads a run log.
+The two equity tables now state $1{,}141$ months and $1{,}128$ forecasts.
+`output/armS_feasible.json`, behind numbers quoted in the text, still records the old
+$\mu_{\mathrm{CC}}$ field, which the paper does not use; its rejection frequencies are unaffected.
 
 ## Software
 

@@ -16,6 +16,11 @@ import re
 _SIGNED = re.compile(r"(?<![\w\\$])([+-]\d*\.?\d+)")
 
 
+
+def _k(x):
+    """Thousands separator for LaTeX math: 1141 -> 1{,}141."""
+    return f"{x:,}".replace(",", "{,}")
+
 def mathsign(body):
     """Wrap signed numbers in table rows in math mode, so a minus renders as a minus
     and not as a hyphen. Cells already inside $...$ are left alone."""
@@ -136,7 +141,8 @@ def write_tables(rows, meta):
     c = meta["c"]
     L = [r"\begin{table}[htbp]", r"\centering",
          r"\caption{The noise-corrected test on the virtue-of-complexity design."
-         rf" Monthly US excess returns, $n={meta['n']:,}$, $d={meta['d']}$ Goyal--Welch"
+         rf" Monthly US excess returns, ${_k(meta['n'])}$ months and $n={_k(meta['n']-meta['T']-1)}$"
+         rf" forecasts, $d={meta['d']}$ Goyal--Welch"
          rf" predictors, $P={meta['P']:,}$ random Fourier features, $T={meta['T']}$, so"
          rf" $c=P/T={c:,.0f}$. $\ztil=zT/P$ is the scale-free penalty. $\Psihatn$ is"
          r" exact by \cref{lem:psi-t}; the closed form predicts"
@@ -174,7 +180,8 @@ def write_tables(rows, meta):
     # no test statistics, since the sanity ratio blocks the corrected test on this data.
     D = [r"\begin{table}[htbp]", r"\centering",
          r"\caption{Measuring the wedge in a random-feature design."
-         rf" Monthly US excess returns, $n={meta['n']:,}$, $d={meta['d']}$ Goyal--Welch"
+         rf" Monthly US excess returns, ${_k(meta['n'])}$ months and $n={_k(meta['n']-meta['T']-1)}$"
+         rf" forecasts, $d={meta['d']}$ Goyal--Welch"
          rf" predictors, $P={meta['P']:,}$ random Fourier features on a rolling window of"
          rf" $T={meta['T']}$, so $c=P/T={c:,.0f}$ in every cell. $\ztil=zT/P$ is the"
          r" scale-free penalty of \cref{sec:optimal-penalty}. $\Psihatn$ is exact by"

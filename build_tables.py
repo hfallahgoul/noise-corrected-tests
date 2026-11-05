@@ -241,7 +241,6 @@ def tab_closedform(A):
 
 def tab_grid():
     import numpy as np
-    gaps = mspe_gaps_from_log()
     NM = {"H0-cov": r"$\Hcov$", "H0-CC": r"$\Hcc$", "H0-MSPE": r"$\Hmspe$"}
     L = [r"\begin{table}[htbp]", r"\centering",
          r"\caption{Each statistic against each null. Rejection frequencies of the"
@@ -249,8 +248,10 @@ def tab_grid():
          r" $1{,}000$ replications. The corrected statistic is studentised by"
          r" $\hat\omega^2_n$, as in \cref{tab:mc-size}, and the replications are drawn"
          r" independently of that table. The $\Hcc$ and $\Hmspe$ rows carry $R^2=0.10$ and"
-         r" impose their null exactly by rescaling the forecast differential by a factor"
-         r" computed from an independent pilot sample. $\Hcov$ is not reachable that way,"
+         r" impose their null by rescaling the forecast differential by a factor"
+         r" computed from an independent pilot sample, so the null holds up to the pilot's sampling error."
+         r" Since the benchmark is the window mean, the $f$ in $\mu_{CC}=2\E[fg]-\E[g^2]$ is the"
+         r" benchmark's systematic error, $f_{t-1}$ less its window mean. $\Hcov$ is not reachable that way,"
          r" since a positive rescaling multiplies $\E[fg]$ by the same factor; that row is"
          r" instead the $\theta=0$ design at scale one, which sets $\E[fg]$ and $\E[g^2]$"
          r" to zero together. It is therefore the degenerate point at which $\Hcov$ and"
@@ -264,8 +265,7 @@ def tab_grid():
          r" distribution, measured in probability units rather than as a significance"
          r" level, so that a reader can judge the size of a departure and not only its"
          r" detectability. With $1{,}000$ draws, $D_{\mathrm{KS}}>0.043$ rejects uniformity"
-         r" at the $5\%$ level, which two of the nine cells do; two more sit just under"
-         r" the threshold, at $0.040$ and $0.037$."
+         r" at the $5\%$ level@@KS@@."
          r" The last rate column repeats the corrected test with $\sigma^2$ estimated by the"
          r" difference estimator $\hat\sigma^2_\Delta$; DM and CW do not use $\sigma^2$."
          r" Shading marks each null's own statistic, and bold an own-statistic rate outside the"
@@ -278,6 +278,7 @@ def tab_grid():
          r"$\Psi^*$ & null imposed & $\mu_{CC}$ & $\overline{\Delta\MSPE}$ & $\Psihatn$ & DM & CW & CC"
          r" & CC & $D_{\mathrm{KS}}$ \\", r"\midrule"]
     OWN = {"H0-cov": "CW", "H0-CC": "CC", "H0-MSPE": "DM"}
+    KS = []
     for p in ["0.2", "0.5", "1.0"]:
         do = load(f"pgrid_psi{p}_oracle.json")
         dd = load(f"pgrid_psi{p}_diff.json")
@@ -297,7 +298,11 @@ def tab_grid():
                 s3 = (r"\textbf{%.3f}" % v) if abs(round(v, 3) - 0.05) > 0.0135 else "%.3f" % v
                 return r"\cellcolor{black!10}" + s3
             fmt = {c: _f(c, v) for c, v in cells.items()}
-            mu, gap = gaps[(p, k)]
+            if "mspe_gap" in So:                  # v1.2 runs store both in the JSON
+                mu = float(np.mean(So["mu_CC"])); gap = float(np.mean(So["mspe_gap"]))
+            else:                                 # older runs: recover from the run log
+                mu, gap = mspe_gaps_from_log()[(p, k)]
+            KS.append(ksd)
             kss = "%.3f" % ksd
             L.append(f"{p if i==0 else ''} & {NM[k]} & {mu:.4f} & {gap:.3f} & "
                      f"{psihat:.3f} & "
@@ -306,6 +311,18 @@ def tab_grid():
         if p != "1.0":
             L.append(r"\addlinespace")
     L += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
+    words = {0: "none", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five"}
+    nrej = sum(round(x, 3) > 0.043 for x in KS)
+    near = sorted([x for x in KS if 0.035 <= round(x, 3) <= 0.043], reverse=True)
+    if nrej:
+        ks = f", which {words.get(nrej, str(nrej))} of the nine cells {'does' if nrej == 1 else 'do'}"
+    else:
+        ks = ", which none of the nine cells does"
+    if near:
+        ks += (f"; {words.get(len(near), str(len(near)))} more "
+               f"{'sits' if len(near) == 1 else 'sit'} just under the threshold, at "
+               + " and ".join("$%.3f$" % x for x in near))
+    L = [x.replace("@@KS@@", ks) for x in L]
     w("tab-mc-grid.tex", L)
 
 

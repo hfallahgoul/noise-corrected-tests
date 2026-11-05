@@ -1,0 +1,23 @@
+# mc_study S  started 2026-11-06 06:30  -> output/
+====================================================================================================
+ARM S - signal structure: spiked, dense, omitted predictor
+====================================================================================================
+T=12 n=8000 b=18 rho=0.3 c=0.5 z=0.133 P=6  T_eff=6.5 F1=True F2=True F3=True
+  spiked   R2=0.00 | Psihat= 0.4571 mu_CC=+0.00000 gap=-0.45648 | rej DM/CW/CC = 0.000 0.053 0.057
+  spiked   R2=0.02 | Psihat= 0.4570 mu_CC=+0.01640 gap=-0.44069 | rej DM/CW/CC = 0.000 0.538 0.250
+  spiked   R2=0.05 | Psihat= 0.4571 mu_CC=+0.04099 gap=-0.41569 | rej DM/CW/CC = 0.000 0.993 0.743
+  spiked   R2=0.10 | Psihat= 0.4572 mu_CC=+0.08203 gap=-0.37553 | rej DM/CW/CC = 0.000 1.000 0.997
+  spiked   R2=0.20 | Psihat= 0.4571 mu_CC=+0.16386 gap=-0.29411 | rej DM/CW/CC = 0.000 1.000 1.000
+  dense    R2=0.00 | Psihat= 0.4571 mu_CC=+0.00000 gap=-0.45631 | rej DM/CW/CC = 0.000 0.061 0.066
+  dense    R2=0.02 | Psihat= 0.4571 mu_CC=+0.01641 gap=-0.44067 | rej DM/CW/CC = 0.000 0.543 0.258
+  dense    R2=0.05 | Psihat= 0.4570 mu_CC=+0.04101 gap=-0.41617 | rej DM/CW/CC = 0.000 0.986 0.746
+  dense    R2=0.10 | Psihat= 0.4572 mu_CC=+0.08200 gap=-0.37538 | rej DM/CW/CC = 0.000 1.000 0.996
+  dense    R2=0.20 | Psihat= 0.4571 mu_CC=+0.16407 gap=-0.29374 | rej DM/CW/CC = 0.000 1.000 1.000
+  omitted  R2=0.00 | Psihat= 0.4571 mu_CC=+0.00000 gap=-0.45741 | rej DM/CW/CC = 0.000 0.043 0.058
+  omitted  R2=0.02 | Psihat= 0.4572 mu_CC=-0.00276 gap=-0.46044 | rej DM/CW/CC = 0.000 0.111 0.041
+  omitted  R2=0.05 | Psihat= 0.4570 mu_CC=-0.00687 gap=-0.46429 | rej DM/CW/CC = 0.000 0.285 0.031
+  omitted  R2=0.10 | Psihat= 0.4572 mu_CC=-0.01388 gap=-0.47079 | rej DM/CW/CC = 0.000 0.633 0.007
+  omitted  R2=0.20 | Psihat= 0.4572 mu_CC=-0.02759 gap=-0.48519 | rej DM/CW/CC = 0.000 0.972 0.003
+  [saved] output/tab_signal.tex
+
+# finished in 88.8 min.  All output in output/

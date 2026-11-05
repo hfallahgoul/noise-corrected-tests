@@ -96,12 +96,13 @@ def engine(y, S, f, T, z, b, sigma2=1.0):
     dCW = dDM + D**2
     dCC = dDM + sigma2*psi
     rn = math.sqrt(n)
+    fc = ft - sF/T      # benchmark is the window mean: its systematic error is f less sF/T
     return dict(
         t_DM=rn*dDM.mean()/math.sqrt(max(bartlett(dDM, b), 1e-14)),
         t_CW=rn*dCW.mean()/dCW.std(),
         t_CC=rn*dCC.mean()/math.sqrt(max(bartlett(dCC, b), 1e-14)),
-        mspe_gap=float(dDM.mean()), mu_CC=float(np.mean(2*ft*g_ - g_**2)),
-        Psihat=float(psi.mean()), Efg=float(np.mean(ft*g_)), Eg2=float(np.mean(g_**2)))
+        mspe_gap=float(dDM.mean()), mu_CC=float(np.mean(2*fc*g_ - g_**2)),
+        Psihat=float(psi.mean()), Efg=float(np.mean(fc*g_)), Eg2=float(np.mean(g_**2)))
 
 def bw(T):
     return max(18, int(math.ceil(1.5*T)))      # b = 18 at T = 12, as in arm_S; b > T after

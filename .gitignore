@@ -16,3 +16,11 @@ output/rv_logs/
 # local scratch, never shipped
 _to_delete/
 output/.lock_*
+# rendered by mc_study.py next to its output; the paper's figures come from build_tables.py
+output/pgrid_*.pdf
+output/pgrid_*.png
+output/pgrid_*.eps
+# pre-v1.2 output kept locally for comparison, and the local rerun
+output/_pre_v1.2/
+rerun_v1_2.log
+rerun_v1_2.sh

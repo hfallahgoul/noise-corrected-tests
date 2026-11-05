@@ -288,6 +288,7 @@ def run_path(y, feats, f, T, z, b, scale=1.0, sigma2=None, both=False):
     n = len(y) - T - 1
     I = np.eye(T); one = np.ones(T); M = I - np.outer(one, one)/T
     g_ = np.empty(n); v_ = np.empty(n); psi = np.empty(n); y1 = np.empty(n)
+    fbar = np.empty(n)                                   # window mean of the signal
     wpsi = np.empty(n)                                   # weighted correction
     d2h = 0.5*np.r_[0.0, np.diff(y)**2]                  # (1/2)(y_s - y_{s-1})^2
     d2h[0] = d2h[1:].mean()
@@ -296,8 +297,13 @@ def run_path(y, feats, f, T, z, b, scale=1.0, sigma2=None, both=False):
         B = np.linalg.inv(z*I + X @ X.T / T)
         a = (M @ (B @ (X @ s))) / T
         y1[i] = Y.mean(); g_[i] = a @ F; v_[i] = a @ (Y - F); psi[i] = a @ a
+        fbar[i] = F.mean()
         wpsi[i] = float((a**2) @ d2h[i+1:i+T+1])         # rows of the training window
-    yt = y[T+1:T+n+1]; ft = f[T:T+n]
+    yt = y[T+1:T+n+1]
+    # The benchmark is the window mean, so its systematic error is f_{t-1} less the window
+    # mean of f, and that -- not f_{t-1} -- is what mu_CC = 2E[fg] - E[g^2] pairs with g.
+    # (Before v1.2 the raw f_{t-1} was used here and in pilot_scales.)
+    ft = f[T:T+n] - fbar
     gs, vs, ps_ = scale*g_, scale*v_, scale**2*psi
     wp_ = scale**2*wpsi
     yh = y1 + gs + vs
@@ -356,7 +362,7 @@ def run_path(y, feats, f, T, z, b, scale=1.0, sigma2=None, both=False):
     s2 = sigma2 if sigma2 is not None else s2_diff
     return {**common, **block(s2, sigma2 is None)}
 
-def pilot_scales(T, P, n, rho, R2, z, g, reps=25, stride=7):
+def pilot_scales(T, P, n, rho, R2, z, g, reps=100, stride=4):
     """Population moments -> the two FIXED rescalings.  No look-ahead."""
     th = g.standard_normal(P); th /= np.linalg.norm(th); th *= math.sqrt(R2)
     I = np.eye(T); one = np.ones(T); M = I - np.outer(one, one)/T
@@ -366,7 +372,8 @@ def pilot_scales(T, P, n, rho, R2, z, g, reps=25, stride=7):
         for i in range(0, n, stride):
             X = S[i:i+T]; Y = y[i+1:i+T+1]; F = f[i:i+T]; s = S[i+T]
             B = np.linalg.inv(z*I + X @ X.T / T); a = (M @ (B @ (X @ s))) / T
-            Efg += f[i+T]*(a @ F); Eg2 += (a @ F)**2; Ev2 += (a @ (Y-F))**2; K += 1
+            # benchmark error is f less its window mean (see run_path)
+            Efg += (f[i+T] - F.mean())*(a @ F); Eg2 += (a @ F)**2; Ev2 += (a @ (Y-F))**2; K += 1
     Efg, Eg2, Ev2 = Efg/K, Eg2/K, Ev2/K
     return th, 2*Efg/Eg2, 2*Efg/(Eg2+Ev2), {"Efg": Efg, "Eg2": Eg2, "Ev2": Ev2}
 
@@ -595,7 +602,7 @@ def pvalue_grid(T=8, n=2000, b=12, rho=0.3, psit=0.5, R2=0.10, R=1000, s2mode="o
     dump = {lab: {k: A[k].tolist() for k in ("t_DM","t_DM_samp","t_CW","t_CC_hac",
                                              "t_CC_samp","t_CC_cw","t_CC_w",
                                              "Psihat","Psihat_w","ratio","ratio_w",
-                                             "mu_CC")}
+                                             "mu_CC", "mspe_gap")}
             for lab, A in out.items()}
     fn = f"pgrid_psi{psit}_{s2mode}.json"
     save_json(fn, {"design": dict(T=T, n=n, b=b, rho=rho, psi_t=psit, c=c, z=z, P=P,
@@ -816,6 +823,10 @@ if __name__ == "__main__":
         for m in ["oracle", "diff"]:                 # the practical estimator matters
             for pt in ([0.5] if q else [0.2, 0.5, 1.0]):
                 pvalue_grid(psit=pt, R=(80 if q else 1000), s2mode=m)
+    if what == "grid":                               # the p-value grid alone (v1.2 rerun)
+        for m in ["oracle", "diff"]:
+            for pt in [0.2, 0.5, 1.0]:
+                pvalue_grid(psit=pt, R=1000, s2mode=m)
     if what in ("B", "all", "quick"): arm_B(quick=q)
     if what in ("C", "all", "quick"): arm_C(quick=q)
     if what in ("S", "all", "quick"): arm_S(quick=q)

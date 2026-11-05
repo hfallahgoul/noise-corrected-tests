@@ -54,6 +54,7 @@ def stats(y, S, f, T, z, b, a):
     aY = (np.einsum("ij,ij->i", w, XY) - np.einsum("ij,ij->i", xb, w) * sY) / T
     psi = np.einsum("ti,tij,tj->t", w, XX - T * np.einsum("ti,tj->tij", xb, xb), w) / T ** 2
     y1, yt, ft = sY / T, y[T + 1:T + N + 1], f[T:T + N]
+    fc = ft - sF / T          # the benchmark is the window mean: its systematic error
     D, ps, gs = a * aY, a * a * psi, a * g
     dDM = (yt - y1) ** 2 - (yt - y1 - D) ** 2
     rn = math.sqrt(N)
@@ -73,8 +74,8 @@ def stats(y, S, f, T, z, b, a):
     tW = tstat(dW, dW)
     b_t = (W.roll(Fn ** 2, T)[:N] - sF ** 2 / T) / (T - 1)    # lem:sigma-w bias
     return dict(tO=tO, tD=tD, tW=tW,
-                Efg=float(np.mean(ft * g)), Eg2=float(np.mean(g * g)),
-                mu=float(np.mean(2 * ft * gs - gs ** 2)),
+                Efg=float(np.mean(fc * g)), Eg2=float(np.mean(g * g)),
+                mu=float(np.mean(2 * fc * gs - gs ** 2)),
                 b_bias=float(np.mean(b_t * ps)), d_bias=float((s2d - 1) * ps.mean()))
 
 

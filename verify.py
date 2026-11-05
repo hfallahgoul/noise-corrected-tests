@@ -5,7 +5,7 @@ user-facing module ccpa.py in agreement with the simulation engine.
     python verify.py --data        # stored output against MANIFEST.sha256 only
     python verify.py --manifest    # rewrite MANIFEST.sha256 (after a deliberate re-run)
 """
-import hashlib
+import hashlib, re
 import os
 import subprocess
 import sys
@@ -13,7 +13,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 MANIFEST = os.path.join(HERE, "MANIFEST.sha256")
 ROOTS = ("output", os.path.join("ldv_scope", "output"), "data")
-SKIP = {"rv_window_store", "rv_logs"}   # gitignored: not shipped
+SKIP = {"rv_window_store", "rv_logs", "_pre_v1.2"}   # gitignored: not shipped
 
 
 def files():
@@ -21,7 +21,7 @@ def files():
         for d, sub, fs in os.walk(os.path.join(HERE, root)):
             sub[:] = sorted(s for s in sub if s not in SKIP)
             for f in sorted(fs):
-                if not f.startswith("."):
+                if not f.startswith(".") and not re.match(r"pgrid_.*\.(pdf|png|eps)$", f):
                     p = os.path.join(d, f)
                     yield os.path.relpath(p, HERE)
 
