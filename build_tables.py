@@ -17,6 +17,7 @@ MC_OUT points at a different output directory.  README.md maps every table to it
   tab-mc-signal                                  output/armS.json
   tab-window                                     output/mc_window/spiked_*.json
   tab-intersection                               output/mc_intersection/*.json
+  tab-mc-conform, fig-mc-conform                 output/mc_conform/*.json (mc_conform.py)
   tab-kernel-check, tab-delta                    output/mc_kernel/kernel_delta.json
   tab-kappa                                      output/mc_har/
   tab-cw-har, tab-har-power, tab-har-omitted,
@@ -140,7 +141,9 @@ def tab_size(A):
          r" attains it, giving $(\Psi^*,c,z)=(0.05,0.2,0.947)$, $(0.20,0.3,0.265)$,"
          r" $(0.50,0.5,0.133)$ and $(1.00,0.7,0.0748)$ in the four rows of every block,"
          r" with $P=\mathrm{round}(cT)$, so $P$ runs $2,2,4,6$ at $T=8$ and $2,4,6,8$ at"
-         r" $T=12$. The Monte Carlo standard error of any entry is at most $0.016$."
+         r" $T=12$, and the realised $c=P/T$ is $0.25,0.25,0.5,0.75$ and $0.17,0.33,0.5,0.67$;"
+         r" $\Psihatn$ reports the correction each cell attains."
+         r" The Monte Carlo standard error of any entry is at most $0.016$."
          r" Bold marks a rejection frequency outside the $95\%$ Monte Carlo band for an exact"
          r" test, $0.05\pm1.96\sqrt{0.05\cdot0.95/1{,}000}$, that is, below $0.0365$ or above"
          r" $0.0635$. With $80$ such entries, about four would fall outside the band by chance"
@@ -658,10 +661,10 @@ def tab_rv_cross_stats():
 def tab_rv_multiest():
     """The paired cross-section: same assets, same benchmark, two alternatives.
 
-    The own-lags panel and the multi-estimator panel run on slightly different assets, so reporting
-    the two at their own sample sizes would confound the alternative with the sample.  Every
-    cell below is computed on the assets present in both panels AND passing the diagnostic in
-    both at that penalty.
+    Panel A uses every asset present in both panels.  Panel B keeps those passing the sanity
+    ratio in both at that penalty.  Panel A comes first because R >= 1 is exactly the event
+    that the corrected numerator lies below CW's, so screening on it would favour the pattern
+    the table reports; panel B shows the screen changes little.
     """
     import numpy as np
     with open(os.path.join(OUT, "rv_cross_multiest", "panel.json")) as fh:
@@ -675,37 +678,43 @@ def tab_rv_multiest():
          r" penalties, all fixed before either panel was run. They differ in what the"
          r" extra columns are: lags $2,\dots,25$ of the target itself ($P=24$), or five lags each"
          r" of five other Risk Lab estimators of the same latent variance \eqref{eq:rv-multiest}"
-         r" ($P=25$)."
-         r" Each cell uses the assets present in both panels that pass \eqref{eq:ratio} in"
-         r" both at that penalty, so the two rows of a block are the same series and differ"
-         r" in the alternative alone. Every entry after the median is a share of those"
-         r" assets, computed from each asset's own out-of-sample run: gap$<0$, the share whose"
+         r" ($P=25$). Panel A uses every asset present in both panels; panel B keeps those"
+         r" that pass \eqref{eq:ratio} in both at that penalty. In each block the two rows are"
+         r" the same series and differ in the alternative alone. Every entry after the median"
+         r" is a share of those assets, computed from each asset's own out-of-sample run:"
+         r" $\mathcal R\ge1$, the share passing \eqref{eq:ratio}; gap$<0$, the share whose"
          r" mean squared error gap is negative; CW and CC, the shares on which each test rejects"
          r" one-sided at $5\%$; only CW, the share on which CW rejects and the corrected"
          r" statistic does not. The series share a common volatility factor and are not"
          r" independent draws, so these are frequencies across series and not sizes.}",
          r"\label{tab:rv-multiest}", r"\small",
-         r"\setlength{\tabcolsep}{5pt}",
-         r"\begin{tabular}{llrrrrrr}", r"\toprule",
-         r"$\ztil$ & enlarging columns & assets & median $\Psihatn$ & gap$<0$ & CW"
-         r" & CC & only CW \\", r"\midrule"]
+         r"\setlength{\tabcolsep}{4.5pt}",
+         r"\begin{tabular}{llrrrrrrr}", r"\toprule",
+         r"$\ztil$ & enlarging columns & assets & median $\Psihatn$ & $\mathcal R\ge1$ & gap$<0$"
+         r" & CW & CC & only CW \\", r"\midrule"]
 
-    for k, zt in enumerate((0.1, 1.0, 10.0)):
-        o = {r["id"]: r for r in orows if r["zt"] == zt}
-        m = {r["id"]: r for r in mrows if abs(r["zt"] - zt) < 1e-12}
-        ids = sorted(i for i in set(o) & set(m)
-                     if o[i]["ratio"] >= 1.0 and m[i]["ratio"] >= 1.0)
-        if not ids:
-            continue
-        for lab, d in (("own lags", o), ("five estimators", m)):
-            f = lambda key: np.array([d[i][key] for i in ids])
-            cw, cc = f("t_CW") > 1.645, f("t_CC") > 1.645
-            L.append(f"{zt if lab == 'own lags' else ''} & {lab} & {len(ids)} & "
-                     f"{np.median(f('Psihat')):.4f} & {np.mean(f('mspe_gap') < 0):.3f} & "
-                     f"{cw.mean():.3f} & {cc.mean():.3f} & "
-                     f"{(cw & ~cc).mean():.3f} \\\\")
-        if k < 2:
-            L.append(r"\addlinespace")
+    for panel, screen in ((r"\emph{A. All paired series}", False),
+                          (r"\emph{B. Series passing \eqref{eq:ratio} in both panels}", True)):
+        L += [r"\multicolumn{9}{@{}l}{" + panel + r"}\\", r"\addlinespace[2pt]"]
+        for k, zt in enumerate((0.1, 1.0, 10.0)):
+            o = {r["id"]: r for r in orows if r["zt"] == zt}
+            m = {r["id"]: r for r in mrows if abs(r["zt"] - zt) < 1e-12}
+            ids = sorted(i for i in set(o) & set(m)
+                         if not screen or (o[i]["ratio"] >= 1.0 and m[i]["ratio"] >= 1.0))
+            if not ids:
+                continue
+            for lab, d in (("own lags", o), ("five estimators", m)):
+                f = lambda key: np.array([d[i][key] for i in ids])
+                cw, cc = f("t_CW") > 1.645, f("t_CC") > 1.645
+                L.append(f"{zt if lab == 'own lags' else ''} & {lab} & {len(ids)} & "
+                         f"{np.median(f('Psihat')):.4f} & {np.mean(f('ratio') >= 1.0):.3f} & "
+                         f"{np.mean(f('mspe_gap') < 0):.3f} & "
+                         f"{cw.mean():.3f} & {cc.mean():.3f} & "
+                         f"{(cw & ~cc).mean():.3f} \\\\")
+            if k < 2:
+                L.append(r"\addlinespace")
+        if not screen:
+            L.append(r"\midrule")
     L += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
     w("tab-rv-multiest.tex", L)
 
@@ -952,15 +961,15 @@ def tab_delta():
     """
     D = _kdel()["delta"]
     L = [r"\begin{table}[htbp]", r"\centering",
-         r"\caption{The remainder $\Delta$ of \eqref{eq:omega}, evaluated. Both",
+         r"\caption{The remainder $\Drem$ of \eqref{eq:omega}, evaluated. Both",
          r"constituents follow from \cref{lem:kernel} and Isserlis' theorem and are",
          r"computed exactly from the weights \eqref{eq:w}; nothing here is estimated from",
          r"a simulated loss differential. Gaussian i.i.d.\ design and innovations,",
          r"$\sigma^2=1$, $n=400$, $24$ replications; Monte Carlo standard errors are",
          r"below $0.005$ throughout. The last column is the standard deviation the",
-         r"CW-studentised corrected statistic would have if $\Delta$ were the",
+         r"CW-studentised corrected statistic would have if $\Drem$ were the",
          r"only departure from $4\sigma^4\Psi$, that is",
-         r"$\sqrt{(4\sigma^4\Psi+\Delta)/(4\sigma^4\Psi)}$; the $(c,z)$ pairs in rows two,",
+         r"$\sqrt{(4\sigma^4\Psi+\Drem)/(4\sigma^4\Psi)}$; the $(c,z)$ pairs in rows two,",
          r"five and six are those of \cref{tab:size-check}, which reports $0.961$, $1.194$",
          r"and $1.204$ against the $0.917$, $1.139$ and $1.159$ here. The residue is the",
          r"finite-$T$ term of \cref{rem:omega-finite-T}, which enters with the opposite",
@@ -968,8 +977,8 @@ def tab_delta():
          r"\label{tab:delta}", r"\small",
          r"\begin{tabular}{rrr rrr rr rr}", r"\toprule",
          r"$c$ & $z$ & $T$ & $\Psi$ & $4\sigma^4\Psi$ & $V_{\mathrm{off}}$"
-         r" & $\Cov(\mathrm I,\mathrm{II})$ & $\Delta$"
-         r" & $\Delta/4\sigma^4\Psi$ & implied s.d. \\", r"\midrule"]
+         r" & $\Cov(\mathrm I,\mathrm{II})$ & $\Drem$"
+         r" & $\Drem/4\sigma^4\Psi$ & implied s.d. \\", r"\midrule"]
     for r in D:
         L.append(f"{r['c']:g} & {r['z']:g} & {r['T']} & {r['Psi']:.4f} & {r['lead']:.4f} & "
                  f"{r['Voff']:.4f} & {r['covI2']:.4f} & {r['delta']:.4f} & "
@@ -991,7 +1000,7 @@ def tab_kappa():
     L = [r"\begin{table}[htbp]", r"\centering",
          r"\caption{What \cref{lem:psi-t} costs in the one configuration that fails: a benchmark",
          r"regressing on lags of the target against features drawn from outside the target's own past.",
-         r"The entries are $\kldv=\E[(a_t'\eps_t)^2]/(\sigma^2\E\|a_t\|^2)$, the ratio of the true null",
+         r"The entries are $\kldv=\E[(a_t'E_{t-1})^2]/(\sigma^2\E\|a_t\|^2)$, the ratio of the true null",
          r"forecast variance to the plug-in correction; \cref{lem:psi-t} forces $\kldv=1$. Panel (a)",
          r"varies the persistence of the target and the number of benchmark lags at $T=250$, $P=25$,",
          r"$\ztil=1$; panel (b) varies the penalty and the feature count at $\rho=0.85$, $k=3$. The extra",
@@ -1071,7 +1080,7 @@ def tab_pathfunc():
     for k in ("subsamp", "quartic", "bipower", "semivar"):
         L.append(f"{NM[k]} & {base[k]['channel']} & {base[k]['kappa_a']:.3f} \\\\")
 
-    L += [r"\bottomrule", r"\end{tabular}", r"", r"\vspace{6pt}",
+    L += [r"\bottomrule", r"\end{tabular}", r"", r"\vspace{6pt}", r"{\setlength{\tabcolsep}{3pt}%",
           r"\begin{tabular}{l" + "r" * (len(ZG) + len(TG) + len(MG)) + r"}", r"\toprule",
           r"\multicolumn{%d}{@{}l}{\emph{(b) penalty, window length, intraday grid}}\\"
           % (1 + len(ZG) + len(TG) + len(MG)),
@@ -1091,7 +1100,7 @@ def tab_pathfunc():
         lab = "lags (control)" if k == "lags" else NM[k]
         L.append(f"{lab} & " + " & ".join(cells) + r" \\")
 
-    L += [r"\bottomrule", r"\end{tabular}", r"", r"\vspace{6pt}",
+    L += [r"\bottomrule", r"\end{tabular}}", r"", r"\vspace{6pt}",
           r"\begin{tabular}{lrrrrr}", r"\toprule",
           r"\multicolumn{6}{@{}l}{\emph{(c) jump intensity}}\\", r"\cmidrule(r){1-6}",
           r"$\lambda$ & $(RV-BPV)/RV$ & lags & second est. & bipower & quarticity \\",
@@ -1114,8 +1123,9 @@ def tab_signal(S):
          r"\caption{Signal structure, and whether CW is rejecting a true null."
          r" $T=12$, $n=8{,}000$, $b=18$, $\rho_x=0.3$, $\Psi^*=0.5$ ($c=0.5$, $z=0.133$,"
          r" $P=6$), oracle $\sigma^2$, $1{,}000$ replications. Spiked: signal in one"
-         r" predictor. Dense: signal across all six. Omitted: signal from a variable outside"
-         r" the model, correlated $0.5$ with the first predictor. $\Hcov$ holds when"
+         r" predictor. Dense: signal across all six. Omitted: signal proportional to"
+         r" $0.5x_{1,t}+\sqrt{0.75}\,e_t$ with $e_t$ i.i.d.\ $\normal{0}{1}$ and outside the model,"
+         r" so a quarter of its variance lies in the span of the predictors. $\Hcov$ holds when"
          r" $2\E[fg]\le0$, $\Hcc$ when $\mu_{CC}\le0$. MSPE gap: mean of"
          r" $\ehat1^2-\ehat2^2$, negative when the enlarged model forecasts worse."
          r" One-sided $5\%$ rejection frequencies. Bold marks a CW or corrected-test rate in an"
@@ -1193,7 +1203,7 @@ def tab_rv_main():
     import rv_application as A
     R = load(os.path.join("rv_tables", "rv_rows.json"))
     meta = dict(R["meta"])
-    meta["asset"] = (r"the SPDR S\&P 500 ETF (Risk Lab identifier 84398), 7,678 trading days "
+    meta["asset"] = (r"the SPDR S\&P 500 ETF (Risk Lab identifier 84398), 7,711 trading days "
                      r"from 1996 to 2026")
     old, oldfig = A.TABS, A.FIGS
     A.TABS = TEXTMP if CHECK else TEX
@@ -1365,6 +1375,154 @@ SCRIPT_FIGURES = {
 }
 
 
+def _conform():
+    import numpy as np
+    D = {}
+    for fn in glob.glob(os.path.join(OUT, "mc_conform", "*.json")):
+        d = load(fn)
+        D[(d["row"], d["psi_t"], d["n"])] = d
+    return D
+
+
+def tab_conform():
+    """tab:mc-conform from output/mc_conform/ (mc_conform.py): the theorems' own design."""
+    import numpy as np
+    from scipy.stats import norm as _nrm, kstest as _ks
+    D = _conform()
+    if not D:
+        print("  (output/mc_conform/ empty; run `python mc_conform.py --run`. Skipping tab-mc-conform.)")
+        return
+    crit = 1.6448536269514722
+    OWN = {"sharp": "t_CC", "cov": "t_CW", "cc": "t_CC", "mspe": "t_DM", "alt": None}
+    LAB = {"sharp": r"$f\equiv0$", "cov": r"$\Hcov$", "cc": r"$\Hcc$", "mspe": r"$\Hmspe$",
+           "alt": "alternative"}
+    rej = lambda d, k: float(np.mean(np.array(d[k]) > crit))
+    ks = lambda d, k: float(_ks(1 - _nrm.cdf(np.asarray(d[k], float)), "uniform").statistic)
+    reps = next(iter(D.values()))["reps"]
+    h = 1.96 * math.sqrt(0.05 * 0.95 / reps)
+
+    def cell(d, k, own):
+        v = rej(d, k)
+        s = "%.3f" % v
+        if own:
+            s = (r"\textbf{%s}" % s) if abs(round(v, 3) - 0.05) > h else s
+            s = r"\cellcolor{black!10}" + s
+        return s
+
+    L = [r"\begin{table}[htbp]", r"\centering",
+         r"\caption{The three nulls in the design the theorems cover. Zero benchmark, feature rows"
+         r" i.i.d.\ $\normal{0}{I_P}$, innovations i.i.d.\ $\normal{0}{1}$, $\sigma^2$ known,"
+         r" $T=8$, $n=8{,}000$, $b=18$, $P=4$ ($P=6$ at $\Psi^*=1$, which $c=0.5$ cannot reach), $z$ set so that $\Psi(P/T,z)=\Psi^*$, Bartlett bandwidth $b$ with"
+         r" $T<b<\sqrt{n/T}$, @REPS@ replications per cell."
+         r" The signal is $f_{t-1}=\theta'S_{t-1}+u_{t-1}$, where $u$ is an i.i.d.\ $\normal{0}{\tau^2}$"
+         r" predictor left out of the feature set; $R^2_S=\|\theta\|^2$ is the spanned share. No"
+         r" forecast is rescaled: each null is reached by choosing $(R^2_S,\tau^2)$ from an"
+         r" independent pilot, so it holds up to the pilot's sampling error. $\mu_{\mathrm{CC}}$,"
+         r" the MSPE gap and $\Psihatn$ are realised means over replications. One-sided $5\%$"
+         r" rejection frequencies; shading marks each null's own statistic (the corrected one in"
+         r" the $f\equiv0$ row, where every null holds) and bold an own-statistic rate outside"
+         r" the $95\%$ Monte Carlo band of an exact test, @LO@ to @HI@."
+         r" $D_{\mathrm{KS}}$ is the Kolmogorov--Smirnov distance from uniformity of the own"
+         r" statistic's $p$-values. \Cref{tab:mc-conform-n} repeats two rows at three sample sizes.}",
+         r"\label{tab:mc-conform}", r"\small", r"\setlength{\tabcolsep}{4pt}",
+         r"\begin{tabular}{rlrrrrrrrrr}", r"\toprule",
+         r"$\Psi^*$ & null & $R^2_S$ & $\tau^2$ & $\mu_{\mathrm{CC}}$ & MSPE gap & $\Psihatn$ &"
+         r" DM & CW & CC & $D_{\mathrm{KS}}$ \\", r"\midrule"]
+    first = True
+    for p in (0.2, 0.5, 1.0):
+        if not first:
+            L.append(r"\addlinespace")
+        first = False
+        for i, row in enumerate(("sharp", "cov", "cc", "mspe", "alt")):
+            d = D.get((row, p, 8000))
+            if d is None:
+                continue
+            own = OWN[row]
+            mu, gap, ps = (float(np.mean(d[k])) for k in ("mu_CC", "mspe_gap", "Psihat"))
+            sg = lambda x: "$%.3f$" % (0.0 if abs(x) < 5e-4 else x)
+            L.append(f"{p if i == 0 else ''} & {LAB[row]} & {d['R2_span']:.3f} & {d['tau2']:.3f} & "
+                     f"{sg(mu)} & {sg(gap)} & {ps:.3f} & "
+                     f"{cell(d, 't_DM', own == 't_DM')} & {cell(d, 't_CW', own == 't_CW')} & "
+                     f"{cell(d, 't_CC', own == 't_CC')} & "
+                     f"{('%.3f' % ks(d, own)) if own else ''} \\\\")
+    L += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
+    txt = ("\n".join(L) + "\n").replace("@REPS@", "{:,}".format(reps).replace(",", "{,}"))
+    txt = txt.replace("@LO@", "$%.4f$" % (0.05 - h)).replace("@HI@", "$%.4f$" % (0.05 + h))
+    w_raw("tab-mc-conform.tex", txt)
+
+    # tab:mc-conform-n: size of the corrected test against n (online appendix)
+    L = [r"\begin{table}[htbp]", r"\centering",
+         r"\caption{Size of the corrected test against the sample size, in the design of"
+         r" \cref{tab:mc-conform} at $\Psi^*=0.5$: the sharp null $f\equiv0$ and the $\Hcc$"
+         r" boundary with signal present, at three sample sizes, each with a bandwidth inside"
+         r" $T<b<\sqrt{n/T}$. Mean and standard deviation of $t$ over @REPS@ replications;"
+         r" shading and bold as in \cref{tab:mc-conform}.}",
+         r"\label{tab:mc-conform-n}", r"\small", r"\setlength{\tabcolsep}{5pt}",
+         r"\begin{tabular}{rlrrrrrrr}", r"\toprule",
+         r"$n$ & null & $b$ & $T^3/n$ & $\mu_{\mathrm{CC}}$ & mean $t$ & s.d.\ $t$ & CC &"
+         r" $D_{\mathrm{KS}}$ \\", r"\midrule"]
+    for n in (2000, 8000, 32000):
+        for i, row in enumerate(("sharp", "cc")):
+            d = D.get((row, 0.5, n))
+            if d is None:
+                continue
+            t = np.asarray(d["t_CC"], float)
+            nl = "{:,}".format(n).replace(",", "{,}")
+            L.append(f"{(nl if i == 0 else '')} & {LAB[row]} & {(d['b'] if i == 0 else '')} & "
+                     f"{(('%.3f' % (8**3 / n)) if i == 0 else '')} & "
+                     f"$%.3f$ & $%.3f$ & %.3f & {cell(d, 't_CC', True)} & %.3f \\\\"
+                     % (0.0 if abs(np.mean(d['mu_CC'])) < 5e-4 else np.mean(d['mu_CC']),
+                        t.mean(), t.std(), ks(d, 't_CC')))
+    L += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
+    txt = ("\n".join(L) + "\n").replace("@REPS@", "{:,}".format(reps).replace(",", "{,}"))
+    txt = txt.replace("@LO@", "$%.4f$" % (0.05 - h)).replace("@HI@", "$%.4f$" % (0.05 + h))
+    w_raw("tab-mc-conform-n.tex", txt)
+
+
+def fig_conform():
+    """fig:mc-grid: the 3x3 p-value grid in the theorems' own design, Psi* = 0.5, n = 8000."""
+    import numpy as np
+    import matplotlib; matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    from scipy.stats import norm, binom
+    D = _conform()
+    rows = [("cov", r"$H_0^{\mathrm{cov}}$"), ("cc", r"$H_0^{\mathrm{CC}}$"),
+            ("mspe", r"$H_0^{\mathrm{MSPE}}$")]
+    if any((r, 0.5, 8000) not in D for r, _ in rows):
+        print("  (mc_conform cells missing; skipping fig-mc-conform.)")
+        return
+    plt.rcParams.update({"font.family": "serif", "font.size": 9,
+                         "axes.spines.top": False, "axes.spines.right": False,
+                         "pdf.fonttype": 42, "ps.fonttype": 42})
+    COLS = [("Clark-West", "t_CW"), ("noise-corrected", "t_CC"), ("Diebold-Mariano", "t_DM")]
+    COLOR = {0: "#B02418", 1: "#1F5FA8", 2: "#6E6E6E"}
+    R = D[("cc", 0.5, 8000)]["reps"]; nb = 10
+    lo, hi = binom.ppf(0.025, R, 1/nb), binom.ppf(0.975, R, 1/nb)
+    fig, axes = plt.subplots(3, 3, figsize=(9.0, 6.4))
+    for i, (rk, rlab) in enumerate(rows):
+        S = D[(rk, 0.5, 8000)]
+        for j, (cl, ck) in enumerate(COLS):
+            ax = axes[i, j]; p = 1 - norm.cdf(np.array(S[ck])); own = (i == j)
+            counts, _ = np.histogram(p, bins=nb, range=(0, 1))
+            ax.hist(p, bins=nb, range=(0, 1), color=COLOR[j],
+                    alpha=1.0 if own else 0.5, edgecolor="white", linewidth=0.6)
+            ax.axhline(R/nb, ls="--", lw=0.8, color="k")
+            ax.axhline(lo, ls=":", lw=0.7, color="k")
+            ax.axhline(hi, ls=":", lw=0.7, color="k")
+            ax.set_ylim(0, max(R*0.2, 1.05*counts.max()))
+            if own:
+                ax.set_facecolor("#F6F6F2")
+                for s in ("left", "bottom"): ax.spines[s].set_linewidth(1.5)
+            if i == 0: ax.set_title(cl, fontsize=10)
+            if j == 0: ax.set_ylabel(rlab + "\ncount", fontsize=9)
+            if i == 2: ax.set_xlabel("p-value", fontsize=9)
+            ax.tick_params(labelsize=7)
+    fig.tight_layout()
+    fig.savefig(os.path.join(FIGTMP if CHECK else FIG, "fig-mc-conform.pdf"),
+                format="pdf", bbox_inches="tight")
+    plt.close(fig)
+
+
 def copy_script_figures():
     if CHECK:
         return
@@ -1385,7 +1543,8 @@ if __name__ == "__main__":
     tab_cw_har(); tab_har_power(); tab_har_omitted(); tab_voc_psi(); tab_kappa(); tab_complexity(); tab_overparam()
     tab_kernel(); tab_delta(); tab_pathfunc(); tab_rv_multiest(); 
     tab_rv_main(); tab_voc_grid(); tab_voc_weighted(); tab_window(); tab_rv_predict(); tab_intersection()
-    figures()
+    tab_conform()
+    figures(); fig_conform()
     copy_script_figures()
     if CHECK:
         bad = []

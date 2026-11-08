@@ -3,7 +3,7 @@
 Reads the stored target series for SPY (Risk Lab 84398, 5-minute subsampled realized
 volatility from trades, column c5) from output/rv_series/84398.npz, a copy of the
 Risk Lab-derived series stored by rv_window_store.py, keeps the
-paper's sample (to 19 August 2026), and writes figures/fig-rv-data.pdf next to the paper.
+paper's sample (to 9 October 2026), and writes figures/fig-rv-data.pdf next to the paper.
     python fig_rv_data.py
 """
 import os, numpy as np, tempfile
@@ -16,7 +16,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "output", "rv_series", "84398.npz")
 OUTS = [os.path.join(HERE, "output", "rv_figures", "fig-rv-data.pdf"),
         os.path.abspath(os.path.join(HERE, "..", "Latex", "figures", "fig-rv-data.pdf"))]
-END, T, MAXLAG = 20260819, 250, 100
+END, T, MAXLAG = 20261009, 250, 100
 
 d = np.load(SRC, allow_pickle=True)
 date, y = np.asarray(d["date"]).astype(int), np.asarray(d["y"], float)

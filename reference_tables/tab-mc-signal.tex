@@ -1,6 +1,6 @@
 \begin{table}[htbp]
 \centering
-\caption{Signal structure, and whether CW is rejecting a true null. $T=12$, $n=8{,}000$, $b=18$, $\rho_x=0.3$, $\Psi^*=0.5$ ($c=0.5$, $z=0.133$, $P=6$), oracle $\sigma^2$, $1{,}000$ replications. Spiked: signal in one predictor. Dense: signal across all six. Omitted: signal from a variable outside the model, correlated $0.5$ with the first predictor. $\Hcov$ holds when $2\E[fg]\le0$, $\Hcc$ when $\mu_{CC}\le0$. MSPE gap: mean of $\ehat1^2-\ehat2^2$, negative when the enlarged model forecasts worse. One-sided $5\%$ rejection frequencies. Bold marks a CW or corrected-test rate in an $R^2=0$ row outside the $95\%$ Monte Carlo band of an exact test, $0.0365$ to $0.0635$.}
+\caption{Signal structure, and whether CW is rejecting a true null. $T=12$, $n=8{,}000$, $b=18$, $\rho_x=0.3$, $\Psi^*=0.5$ ($c=0.5$, $z=0.133$, $P=6$), oracle $\sigma^2$, $1{,}000$ replications. Spiked: signal in one predictor. Dense: signal across all six. Omitted: signal proportional to $0.5x_{1,t}+\sqrt{0.75}\,e_t$ with $e_t$ i.i.d.\ $\normal{0}{1}$ and outside the model, so a quarter of its variance lies in the span of the predictors. $\Hcov$ holds when $2\E[fg]\le0$, $\Hcc$ when $\mu_{CC}\le0$. MSPE gap: mean of $\ehat1^2-\ehat2^2$, negative when the enlarged model forecasts worse. One-sided $5\%$ rejection frequencies. Bold marks a CW or corrected-test rate in an $R^2=0$ row outside the $95\%$ Monte Carlo band of an exact test, $0.0365$ to $0.0635$.}
 \label{tab:mc-signal}
 \small
 \setlength{\tabcolsep}{4.5pt}

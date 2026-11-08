@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\caption{The three nulls in the design the theorems cover. Zero benchmark, feature rows i.i.d.\ $\normal{0}{I_P}$, innovations i.i.d.\ $\normal{0}{1}$, $\sigma^2$ known, $T=8$, $n=8{,}000$, $b=18$, $P=4$ ($P=6$ at $\Psi^*=1$, which $c=0.5$ cannot reach), $z$ set so that $\Psi(P/T,z)=\Psi^*$, Bartlett bandwidth $b$ with $T<b<\sqrt{n/T}$, 2{,}000 replications per cell. The signal is $f_{t-1}=\theta'S_{t-1}+u_{t-1}$, where $u$ is an i.i.d.\ $\normal{0}{\tau^2}$ predictor left out of the feature set; $R^2_S=\|\theta\|^2$ is the spanned share. No forecast is rescaled: each null is reached by choosing $(R^2_S,\tau^2)$ from an independent pilot, so it holds up to the pilot's sampling error. $\mu_{\mathrm{CC}}$, the MSPE gap and $\Psihatn$ are realised means over replications. One-sided $5\%$ rejection frequencies; shading marks each null's own statistic (the corrected one in the $f\equiv0$ row, where every null holds) and bold an own-statistic rate outside the $95\%$ Monte Carlo band of an exact test, $0.0404$ to $0.0596$. $D_{\mathrm{KS}}$ is the Kolmogorov--Smirnov distance from uniformity of the own statistic's $p$-values. \Cref{tab:mc-conform-n} repeats two rows at three sample sizes.}
+\label{tab:mc-conform}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{rlrrrrrrrrr}
+\toprule
+$\Psi^*$ & null & $R^2_S$ & $\tau^2$ & $\mu_{\mathrm{CC}}$ & MSPE gap & $\Psihatn$ & DM & CW & CC & $D_{\mathrm{KS}}$ \\
+\midrule
+0.2 & $f\equiv0$ & 0.000 & 0.000 & $0.000$ & $-0.194$ & 0.194 & 0.000 & 0.048 & \cellcolor{black!10}0.054 & 0.036 \\
+ & $\Hcov$ & 0.000 & 0.100 & $-0.019$ & $-0.214$ & 0.194 & 0.000 & \cellcolor{black!10}0.052 & 0.001 & 0.024 \\
+ & $\Hcc$ & 0.100 & 0.393 & $0.000$ & $-0.195$ & 0.194 & 0.000 & 1.000 & \cellcolor{black!10}0.054 & 0.012 \\
+ & $\Hmspe$ & 0.382 & 0.500 & $0.195$ & $0.000$ & 0.194 & \cellcolor{black!10}0.052 & 1.000 & 1.000 & 0.014 \\
+ & alternative & 0.100 & 0.000 & $0.076$ & $-0.118$ & 0.194 & 0.000 & 1.000 & 1.000 &  \\
+\addlinespace
+0.5 & $f\equiv0$ & 0.000 & 0.000 & $0.000$ & $-0.510$ & 0.509 & 0.000 & 0.049 & \cellcolor{black!10}0.051 & 0.017 \\
+ & $\Hcov$ & 0.000 & 0.100 & $-0.051$ & $-0.560$ & 0.509 & 0.000 & \cellcolor{black!10}0.051 & 0.000 & 0.033 \\
+ & $\Hcc$ & 0.100 & 0.184 & $0.000$ & $-0.510$ & 0.509 & 0.000 & 1.000 & \cellcolor{black!10}0.051 & 0.035 \\
+ & $\Hmspe$ & 0.817 & 0.500 & $0.508$ & $-0.002$ & 0.509 & \cellcolor{black!10}0.051 & 1.000 & 1.000 & 0.035 \\
+ & alternative & 0.100 & 0.000 & $0.093$ & $-0.416$ & 0.509 & 0.000 & 1.000 & 0.998 &  \\
+\addlinespace
+1.0 & $f\equiv0$ & 0.000 & 0.000 & $0.000$ & $-1.001$ & 1.001 & 0.000 & 0.053 & \cellcolor{black!10}0.059 & 0.016 \\
+ & $\Hcov$ & 0.000 & 0.100 & $-0.100$ & $-1.101$ & 1.001 & 0.000 & \cellcolor{black!10}0.051 & 0.000 & 0.016 \\
+ & $\Hcc$ & 0.100 & 0.091 & $0.000$ & $-1.001$ & 1.001 & 0.000 & 1.000 & \cellcolor{black!10}0.058 & 0.014 \\
+ & $\Hmspe$ & 1.644 & 0.500 & $0.999$ & $-0.002$ & 1.001 & \cellcolor{black!10}0.049 & 1.000 & 1.000 & 0.023 \\
+ & alternative & 0.100 & 0.000 & $0.091$ & $-0.911$ & 1.001 & 0.000 & 1.000 & 0.849 &  \\
+\bottomrule
+\end{tabular}
+\end{table}

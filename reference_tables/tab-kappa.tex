@@ -2,7 +2,7 @@
 \centering
 \caption{What \cref{lem:psi-t} costs in the one configuration that fails: a benchmark
 regressing on lags of the target against features drawn from outside the target's own past.
-The entries are $\kldv=\E[(a_t'\eps_t)^2]/(\sigma^2\E\|a_t\|^2)$, the ratio of the true null
+The entries are $\kldv=\E[(a_t'E_{t-1})^2]/(\sigma^2\E\|a_t\|^2)$, the ratio of the true null
 forecast variance to the plug-in correction; \cref{lem:psi-t} forces $\kldv=1$. Panel (a)
 varies the persistence of the target and the number of benchmark lags at $T=250$, $P=25$,
 $\ztil=1$; panel (b) varies the penalty and the feature count at $\rho=0.85$, $k=3$. The extra

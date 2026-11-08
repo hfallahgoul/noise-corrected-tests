@@ -1,7 +1,7 @@
 """Candidate figure: per-asset t_CW against t_CC in the five-estimator panel (sec:rv-disagree).
 
-Reads output/rv_cross_multiest/panel.json, keeps the middle penalty (ztilde = 1) and the
-series passing the sanity ratio, and plots one point per asset. Writes
+Reads output/rv_cross_multiest/panel.json, keeps the middle penalty (ztilde = 1) and every
+asset present in both panels, and plots one point per asset. Writes
 output/rv_figures/fig-rv-disagree.pdf (and a PNG preview).
     python fig_rv_disagree.py
 """
@@ -15,10 +15,11 @@ rows = json.load(open(os.path.join(HERE, "output", "rv_cross_multiest", "panel.j
 own = json.load(open(os.path.join(HERE, "output", "rv_cross", "panel.json")))
 own = own["rows"] if isinstance(own, dict) else own
 ZT, CRIT = 1.0, 1.645
-# Same sample as tab:rv-multiest: assets present in both panels and passing the sanity
-# ratio in both, at the middle penalty.
-OWN = {r["id"]: r for r in own if r["zt"] == ZT and r.get("ratio", 0) >= 1}
-R = [r for r in rows if r["zt"] == ZT and r["ratio"] >= 1 and r["id"] in OWN]
+# Same sample as panel A of tab:rv-multiest: every asset present in both panels, at the middle
+# penalty.  No screen on the sanity ratio: R >= 1 is the event that the corrected numerator lies
+# below CW's, so conditioning on it would favour the pattern the figure shows.
+OWN = {r["id"]: r for r in own if r["zt"] == ZT}
+R = [r for r in rows if r["zt"] == ZT and r["id"] in OWN]
 xo = np.array([OWN[r["id"]]["t_CW"] for r in R]); yo = np.array([OWN[r["id"]]["t_CC"] for r in R])
 x = np.array([r["t_CW"] for r in R]); y = np.array([r["t_CC"] for r in R])
 spy = [r for r in R if r["id"] == 84398]
@@ -59,6 +60,8 @@ fig.savefig(out + ".pdf"); fig.savefig(out + ".png", dpi=130)
 paper = os.path.abspath(os.path.join(HERE, "..", "Latex", "figures", "fig-rv-disagree.pdf"))
 if os.path.isdir(os.path.dirname(paper)):
     fig.savefig(paper)
-print(f"n={n}", {k: round(v, 3) for k, v in q.items()},
+above = int(np.sum(yo > xo)) + int(np.sum(y > x))
+print(f"n={n}", {k: round(v, 3) for k, v in q.items()}, "own cw_only", round(qo, 3),
+      "points above diagonal: own", int(np.sum(yo > xo)), "five", int(np.sum(y > x)),
       "spy", (spy[0]["t_CW"], spy[0]["t_CC"]) if spy else None,
       "x range", round(x.min(), 2), round(x.max(), 2), "y range", round(y.min(), 2), round(y.max(), 2))

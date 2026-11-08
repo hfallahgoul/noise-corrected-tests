@@ -78,6 +78,7 @@ Labels are the paper's `\label`s, which do not move when sections are renumbered
 
 | Paper object | Script that produces the output | Stored output | Checked |
 |---|---|---|---|
+| `tab:mc-conform`, `tab:mc-conform-n`, figure `fig-mc-conform` | `mc_conform.py --run` | `output/mc_conform/` | tables yes |
 | `tab:mc-size`, `tab:mc-power`, `tab:mc-closedform` | `mc_study.py A` | `output/armA.json` | yes |
 | `tab:mc-grid`, figures `pgrid_*` | `mc_study.py grid` simulates; `build_tables.py` draws the figures from the stored JSON | `output/pgrid_*.json` | table yes |
 | `tab:mc-features` | `mc_study.py B` | `output/armB.json` | yes |
@@ -97,6 +98,7 @@ Labels are the paper's `\label`s, which do not move when sections are renumbered
 | `prop:dof` (numbers in the text) | `mc_dof.py` | `output/mc_dof/` | `mc_dof.py --check` |
 | `app:signal-feasible` (numbers in the text) | `omitted_feasible.py` | `output/armS_feasible.json` | no |
 | `eq:wedge-general` (numbers in Section 3.3) | `mc_fitted_benchmark.py` | `output/mc_fitted_benchmark/` | no |
+| window dependence of $\mu_{\mathrm{CC}}$ (numbers in the text of `sec:mc-window`) | `omitted_window.py` | `output/omitted_window.json` | no |
 
 ### Section 6 and the empirical appendix
 
@@ -130,6 +132,8 @@ arm checkpoints after every cell, so an interrupted run resumes and a completed 
 reproduces the stored output exactly. Rerunning them is not needed to verify the paper.
 
 ```
+python mc_conform.py --run    # the design of tab:mc-conform, about 30 minutes
+python omitted_window.py      # the window-dependence numbers of sec:mc-window, about 5 minutes
 python mc_study.py A          # 9-16 minutes each for A, B, C; arm D about 110 minutes
 python mc_study.py grid       # the p-value grid of tab:mc-grid alone, about 15 minutes
 python mc_window.py --run --signal spiked --R2 0.20 --T 12,18,24,36,48 --reps 1000
@@ -185,12 +189,31 @@ also runs in under a minute.
 - The numerical checks reported inside Appendix A (`tab:psi-check`, `tab:kurt-check`,
   `tab:size-check`, `tab:stud-composite`, `tab:termA`, `tab:ned-fail`) are not produced by a
   script in this package.
-- `tab:conditions` and `tab:gates` state conditions and contain no computed numbers.
+- A few numbers quoted in the text come from checks run outside this package: the $28$
+  percent by which the closed form misstates the realised forecast variance at $\rho_x=0.9$
+  (Section 4.5 and Appendix A), the factor of $68$ at $T=8$ and $\rho_x=0.9$ in the footnote
+  on the effective window (Section 5), the agreement to within $0.015$ in `rem:bias-size`, and
+  the $98$ and $77$ percent variance recovery in `rem:hac-finite`.
+- `tab:conditions`, `tab:gates` and `tab:mc-map` state conditions or summarise designs and
+  contain no computed numbers.
 - `rv_application.py` normalises the sample autocovariances in its long-run variance by
   $n-\ell$ rather than $n$. The relative difference is at most $b/n$, under $0.2$ percent at
   the bandwidth and sample size of Section 6.
 
 ## Changes
+
+**v1.3.** Two scripts are new. `mc_conform.py` runs the one design that meets every condition of the
+limit theory with $\sigma^2$ known, a zero benchmark with i.i.d. Gaussian feature rows and
+innovations, and reaches each null without rescaling the forecast (`tab:mc-conform`,
+`tab:mc-conform-n`, `fig-mc-conform`). `omitted_window.py` produces the window-dependence
+numbers of `sec:mc-window`. `reference_tables/` now holds the two new tables.
+
+The SPY sample is now stated as the one the stored results were computed on, $7{,}711$
+trading days from 2 January 1996 to 9 October 2026 (the caption of `tab:rv-main` said
+$7{,}678$ days), and `fig_rv_data.py` draws the series to the same date instead of 19 August
+2026. `tab:rv-multiest` now leads with the unscreened panel and keeps the screened one as
+panel B, and `fig_rv_disagree.py` uses the unscreened panel as well. The remaining table
+changes are to captions, notation and column spacing.
 
 **v1.2.** The simulations with a rolling-mean benchmark measured $\mu_{\mathrm{CC}}=2E[fg]-E[g^2]$
 against the raw signal $f_{t-1}$. The benchmark's systematic error is $f_{t-1}$ less its window
@@ -206,6 +229,10 @@ The two equity tables now state $1{,}141$ months and $1{,}128$ forecasts.
 $\mu_{\mathrm{CC}}$ field, which the paper does not use; its rejection frequencies are unaffected.
 
 ## Software
+
+Parts of the simulation and replication code were written with the assistance of Claude
+(Anthropic). All code was reviewed and run by the author, and every generated table is
+reproduced from stored output by `verify.py`.
 
 Tested with Python 3.10 and 3.13 and the versions pinned in `requirements.txt`.
 

@@ -1,21 +1,34 @@
 \begin{table}[htbp]
 \centering
-\caption{The cross-section, paired: what changes when the enlarging columns change. Both rows of each block use the HAR benchmark \eqref{eq:rv-har} on the same series, the same rolling window $T=250$ and the same penalties, all fixed before either panel was run. They differ in what the extra columns are: lags $2,\dots,25$ of the target itself ($P=24$), or five lags each of five other Risk Lab estimators of the same latent variance \eqref{eq:rv-multiest} ($P=25$). Each cell uses the assets present in both panels that pass \eqref{eq:ratio} in both at that penalty, so the two rows of a block are the same series and differ in the alternative alone. Every entry after the median is a share of those assets, computed from each asset's own out-of-sample run: gap$<0$, the share whose mean squared error gap is negative; CW and CC, the shares on which each test rejects one-sided at $5\%$; only CW, the share on which CW rejects and the corrected statistic does not. The series share a common volatility factor and are not independent draws, so these are frequencies across series and not sizes.}
+\caption{The cross-section, paired: what changes when the enlarging columns change. Both rows of each block use the HAR benchmark \eqref{eq:rv-har} on the same series, the same rolling window $T=250$ and the same penalties, all fixed before either panel was run. They differ in what the extra columns are: lags $2,\dots,25$ of the target itself ($P=24$), or five lags each of five other Risk Lab estimators of the same latent variance \eqref{eq:rv-multiest} ($P=25$). Panel A uses every asset present in both panels; panel B keeps those that pass \eqref{eq:ratio} in both at that penalty. In each block the two rows are the same series and differ in the alternative alone. Every entry after the median is a share of those assets, computed from each asset's own out-of-sample run: $\mathcal R\ge1$, the share passing \eqref{eq:ratio}; gap$<0$, the share whose mean squared error gap is negative; CW and CC, the shares on which each test rejects one-sided at $5\%$; only CW, the share on which CW rejects and the corrected statistic does not. The series share a common volatility factor and are not independent draws, so these are frequencies across series and not sizes.}
 \label{tab:rv-multiest}
 \small
-\setlength{\tabcolsep}{5pt}
-\begin{tabular}{llrrrrrr}
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{llrrrrrrr}
 \toprule
-$\ztil$ & enlarging columns & assets & median $\Psihatn$ & gap$<0$ & CW & CC & only CW \\
+$\ztil$ & enlarging columns & assets & median $\Psihatn$ & $\mathcal R\ge1$ & gap$<0$ & CW & CC & only CW \\
 \midrule
-0.1 & own lags & 437 & 0.1019 & 1.000 & 0.309 & 0.112 & 0.199 \\
- & five estimators & 437 & 0.2226 & 1.000 & 0.748 & 0.005 & 0.744 \\
+\multicolumn{9}{@{}l}{\emph{A. All paired series}}\\
+\addlinespace[2pt]
+0.1 & own lags & 993 & 0.1015 & 0.458 & 1.000 & 0.164 & 0.099 & 0.093 \\
+ & five estimators & 993 & 0.2290 & 0.972 & 1.000 & 0.734 & 0.020 & 0.721 \\
 \addlinespace
-1.0 & own lags & 471 & 0.0750 & 1.000 & 0.293 & 0.119 & 0.174 \\
- & five estimators & 471 & 0.1106 & 1.000 & 0.843 & 0.013 & 0.830 \\
+1.0 & own lags & 993 & 0.0744 & 0.474 & 1.000 & 0.153 & 0.089 & 0.083 \\
+ & five estimators & 993 & 0.1136 & 0.997 & 1.000 & 0.835 & 0.009 & 0.827 \\
 \addlinespace
-10.0 & own lags & 589 & 0.0166 & 0.988 & 0.212 & 0.107 & 0.105 \\
- & five estimators & 589 & 0.0238 & 0.993 & 0.874 & 0.073 & 0.801 \\
+10.0 & own lags & 993 & 0.0165 & 0.597 & 0.993 & 0.134 & 0.073 & 0.062 \\
+ & five estimators & 993 & 0.0237 & 0.995 & 0.995 & 0.880 & 0.069 & 0.811 \\
+\midrule
+\multicolumn{9}{@{}l}{\emph{B. Series passing \eqref{eq:ratio} in both panels}}\\
+\addlinespace[2pt]
+0.1 & own lags & 437 & 0.1019 & 1.000 & 1.000 & 0.309 & 0.112 & 0.199 \\
+ & five estimators & 437 & 0.2226 & 1.000 & 1.000 & 0.748 & 0.005 & 0.744 \\
+\addlinespace
+1.0 & own lags & 471 & 0.0750 & 1.000 & 1.000 & 0.293 & 0.119 & 0.174 \\
+ & five estimators & 471 & 0.1106 & 1.000 & 1.000 & 0.843 & 0.013 & 0.830 \\
+\addlinespace
+10.0 & own lags & 589 & 0.0166 & 1.000 & 0.988 & 0.212 & 0.107 & 0.105 \\
+ & five estimators & 589 & 0.0238 & 1.000 & 0.993 & 0.874 & 0.073 & 0.801 \\
 \bottomrule
 \end{tabular}
 \end{table}
